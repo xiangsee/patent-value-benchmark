@@ -128,3 +128,21 @@ Knowledge
 - Value Realization Stage (R0–R5)
 
 下一阶段进入 Historical Benchmark + Patent Value Ledger schema 实装。
+
+
+## Milestone D Progress — Ledger + Diagnostic
+
+状态：**核心输入/输出闭环已建立**
+
+已完成：
+- Patent Value Ledger 1.0 Draft
+- Patent Value Diagnostic 1.0 Draft
+- Ledger → Diagnostic 确定性生成器
+- CI 校验 Ledger non-inheritance 与 Diagnostic/ Ledger 一致性
+- 首个公开样例：艾可宁
+
+下一步：
+- 定义数据字典与人类可读报告模板
+- 确定代码 / 数据 / 文档许可证
+- 增加 CITATION.cff
+- 准备 v0.1.0 Public Release
