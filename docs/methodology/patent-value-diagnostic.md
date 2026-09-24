@@ -8,7 +8,7 @@ Patent Value Diagnostic 是 Patent Value Ledger 的标准输出端。
 
 ### 1. Current State
 - 当前 R0–R5 阶段
-- 当前最高 Evidence Level
+- 当前已出现的 Evidence Levels（可并存，非单调等级）
 - exact patent → value carrier 是否已经建立
 - patent-level attributable value 是否已经建立
 - Observability 状态
@@ -48,5 +48,7 @@ python tools/generate_diagnostics.py --check
 ```
 
 生成文件：`data/diagnostics/generated.jsonl`
+
+人类可读报告由 `tools/render_reports.py` 生成到 `reports/generated/`。
 
 生成器是确定性的：同一Ledger必须生成同一Diagnostic。
