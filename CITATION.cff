@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use the Xiangsee Patent Value Benchmark, please cite this repository and the version or commit you used."
+title: "Xiangsee Patent Value Benchmark"
+type: dataset
+authors:
+  - name: "xiangsee"
+version: "0.1.0-draft"
+repository-code: "https://github.com/xiangsee/patent-value-benchmark"
+url: "https://github.com/xiangsee/patent-value-benchmark"
+abstract: "An open, evidence-traceable framework, benchmark dataset, Patent Value Ledger and Diagnostic for studying how patents become demonstrable technology assets."
+keywords:
+  - patent value
+  - high-value patents
+  - patent evidence
+  - patent valuation
+  - intellectual property
+  - benchmark
