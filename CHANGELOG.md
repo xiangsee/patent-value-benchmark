@@ -34,3 +34,9 @@
 - 第24届 Round 2 新增 P24-POWER-001（中车变频 Gold vs 阳光电源 MPPT Silver）。
 - 电力电子组强化两条 V0.7 规则：产品类别价值不得自动继承给 exact patent；post-T0 ground truth 不得回填 T0 evidence。
 - 第24届当前累计3组外部验证配对，V0.7 仍为 Proposal。
+
+- 第24届 Round 3 新增 P24-BIOLOGIC-001（艾可宁 Gold vs 北京生物新冠灭活疫苗 Silver）。
+- 第24届达到4组跨届次验证最低门槛。
+- V0.7 正式 adopted 为 Patent Value Benchmark research architecture。
+- 明确：V0.7不宣称Gold/Silver预测能力，不输出获奖概率。
+- 新增 V0.7 状态Schema，正式分离 Value / Attribution-Evidence / Observability / Realization Stage。
