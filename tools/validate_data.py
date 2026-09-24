@@ -1,16 +1,10 @@
 #!/usr/bin/env python3
-"""Validate Xiangsee Patent Value Benchmark JSONL datasets.
+"""Validate Xiangsee Patent Value Benchmark datasets.
 
-Checks:
-1. JSON syntax and JSON Schema conformance.
-2. Unique IDs within each entity class.
-3. Cross-file references (sources, evidence, matched-pair patent IDs).
-4. Non-Unknown assessments must cite at least one evidence record.
-5. Evidence records must use T0-eligible sources.
-6. T0-eligible sources with known public-availability dates must not be post-T0
-   when they are used as evidence for the current validation dataset.
+The validator checks structural integrity, cross-file references, T0 discipline,
+and the non-inheritance rules introduced by V0.7.
 
-This script intentionally does not score patents or infer missing facts.
+It intentionally does not score patents and does not infer missing facts.
 """
 
 from __future__ import annotations
@@ -30,6 +24,7 @@ SCHEMAS = {
     "patents": ROOT / "schema" / "patent-record.schema.json",
     "evidence": ROOT / "schema" / "evidence.schema.json",
     "pairs": ROOT / "schema" / "matched-pair.schema.json",
+    "ledgers": ROOT / "schema" / "patent-value-ledger.schema.json",
 }
 
 DATA_GLOBS = {
@@ -37,6 +32,7 @@ DATA_GLOBS = {
     "patents": "data/patents/*.jsonl",
     "evidence": "data/evidence/*.jsonl",
     "pairs": "data/matched-pairs/*.jsonl",
+    "ledgers": "data/ledgers/*.jsonl",
 }
 
 ID_FIELDS = {
@@ -44,6 +40,7 @@ ID_FIELDS = {
     "patents": "record_id",
     "evidence": "evidence_id",
     "pairs": "pair_id",
+    "ledgers": "ledger_id",
 }
 
 
@@ -67,6 +64,29 @@ def load_jsonl(paths: list[Path]) -> list[tuple[Path, int, dict[str, Any]]]:
 
 def fail(errors: list[str], message: str) -> None:
     errors.append(message)
+
+
+def collect_ledger_evidence_ids(item: dict[str, Any]) -> set[str]:
+    ids: set[str] = set()
+
+    ids.update(item.get("knowledge_origin", {}).get("evidence_ids", []))
+    ids.update(item.get("technology", {}).get("evidence_ids", []))
+
+    for carrier in item.get("value_carriers", []):
+        ids.update(carrier.get("evidence_ids", []))
+
+    for link in item.get("value_links", []):
+        ids.update(link.get("evidence_ids", []))
+
+    for metric in item.get("value_metrics", []):
+        ids.update(metric.get("evidence_ids", []))
+
+    ids.update(
+        item.get("v0_7_state", {})
+        .get("attribution_evidence_state", {})
+        .get("evidence_ids", [])
+    )
+    return ids
 
 
 def main() -> int:
@@ -103,6 +123,7 @@ def main() -> int:
     sources = lookups["sources"]
     patents = lookups["patents"]
     evidence = lookups["evidence"]
+    ledgers = lookups["ledgers"]
 
     # Evidence -> source integrity.
     for evidence_id, item in evidence.items():
@@ -145,20 +166,69 @@ def main() -> int:
             if patent_t0 and patent_t0 != item.get("t0_date"):
                 fail(errors, f"pair {pair_id}: T0 mismatch for {rid}: pair={item.get('t0_date')} patent={patent_t0}")
 
-    # Public-availability sanity check for evidence used by 25th records.
-    t0_dates = {
-        item.get("cutoff", {}).get("t0_date")
-        for item in patents.values()
-        if item.get("cutoff", {}).get("t0_date")
-    }
-    if len(t0_dates) == 1:
-        t0 = next(iter(t0_dates))
-        for evidence_id, item in evidence.items():
-            source_id = item.get("source_id")
-            src = sources.get(source_id, {})
-            public_date = src.get("publicly_available_date")
-            if item.get("t0_eligible") and public_date and public_date > t0:
-                fail(errors, f"evidence {evidence_id}: source {source_id} public date {public_date} is after T0 {t0}")
+    # Patent Value Ledger validation.
+    for ledger_id, item in ledgers.items():
+        for source_id in item.get("source_ids", []):
+            if source_id not in sources:
+                fail(errors, f"ledger {ledger_id}: missing source {source_id}")
+
+        ledger_evidence_ids = collect_ledger_evidence_ids(item)
+        for evidence_id in ledger_evidence_ids:
+            if evidence_id not in evidence:
+                fail(errors, f"ledger {ledger_id}: references missing evidence {evidence_id}")
+
+        obs = item.get("observation", {})
+        t0 = obs.get("t0_date")
+        if obs.get("time_policy") == "historical_t0_cutoff" and not t0:
+            fail(errors, f"ledger {ledger_id}: historical_t0_cutoff requires t0_date")
+
+        # Check public-availability dates only for evidence actually used by this ledger.
+        if t0:
+            for evidence_id in ledger_evidence_ids:
+                ev = evidence.get(evidence_id)
+                if not ev:
+                    continue
+                src = sources.get(ev.get("source_id"), {})
+                public_date = src.get("publicly_available_date")
+                if public_date and public_date > t0:
+                    fail(
+                        errors,
+                        f"ledger {ledger_id}: evidence {evidence_id} source public date "
+                        f"{public_date} is after ledger T0 {t0}"
+                    )
+
+        state = item.get("v0_7_state", {})
+        attr = state.get("attribution_evidence_state", {})
+        stage = state.get("realization_stage")
+        exact_link = attr.get("exact_patent_value_carrier_link")
+        patent_value = attr.get("patent_level_attributable_value")
+
+        # V0.7 non-inheritance rule:
+        # Patent-level R3/R4/R5 requires at least a non-Unknown exact-patent link.
+        if stage in {"R3", "R4", "R5"} and exact_link == "unknown":
+            fail(
+                errors,
+                f"ledger {ledger_id}: {stage} requires a non-Unknown exact_patent_value_carrier_link"
+            )
+
+        # R5 specifically requires attributable patent-level value.
+        if stage == "R5" and patent_value == "unknown":
+            fail(
+                errors,
+                f"ledger {ledger_id}: R5 requires non-Unknown patent_level_attributable_value"
+            )
+
+        if stage == "R5":
+            exact_metrics = [
+                m for m in item.get("value_metrics", [])
+                if m.get("scope_level") == "exact_patent"
+                and m.get("attribution_status") != "unknown"
+            ]
+            if not exact_metrics:
+                fail(
+                    errors,
+                    f"ledger {ledger_id}: R5 requires at least one attributable exact_patent value metric"
+                )
 
     if errors:
         print(f"Validation failed with {len(errors)} error(s):", file=sys.stderr)
