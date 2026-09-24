@@ -146,3 +146,18 @@ Knowledge
 - CITATION.cff 已完成
 - 许可证选项已形成，待最终决定
 - 下一步执行外部冷启动复现、Schema freeze与v0.1.0 Release
+
+
+## Research Track — V0.8 Value Construct & Rights Control
+
+状态：**研究中，未adopt**
+
+理论锚定已完成第一轮：
+- 区分Policy / Technological Quality / Private Asset / Realized Operating / Social-Strategic value constructs
+- 识别V0.7缺项：Rights Control、Counterfactual Control、Option/Future Value、Portfolio Context
+- Screening Signals（citations/family/claims/renewal等）与Value Proof正式分离
+- 提出Patent Age“两只钟”：survival/revealed-value vs remaining-exclusivity
+
+V0.7继续作为当前正式架构。
+
+V0.8只有经过预注册的Rights Control、Option Value、Portfolio Context样本验证后才讨论adopt。
