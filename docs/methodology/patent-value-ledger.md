@@ -92,3 +92,27 @@ Ledger 的默认输出是：
 - 专利价值“拍脑袋金额”
 - 无证据的排行榜
 - 把 Unknown 当0的评分
+
+
+## Evidence Levels are non-ordinal
+
+E1–E5可以并存，不使用“最高证据等级”的表达。
+
+例如：
+- E2：产品已经产生销售
+- E3：exact patent 已明确映射到产品
+- E5：许可备案或监管文件提供独立核验
+
+这三种证据回答不同问题，不能简单写成 E5 > E3 > E2。
+
+Ledger 使用：
+`evidence_levels_present`
+
+## Realization Stage Evidence
+
+R1–R5必须填写 `realization_stage_evidence_ids`。
+
+原因是：
+> “阶段”本身也必须是可追溯的事实判断。
+
+例如R2必须能指向许可、转让或质押证据；不能只由研究者手工选择R2。
