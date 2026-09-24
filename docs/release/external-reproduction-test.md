@@ -11,6 +11,17 @@
 
 不要求参与过本项目研究。
 
+## Start here
+
+测试者只需要仓库，不应得到额外口头说明。
+
+第一步打开：
+
+- `docs/getting-started.md`
+- `docs/cold-start-quick-reference.md`
+
+然后按指南执行。
+
 ## Test task
 
 请选择一件**不在现有示例中的中国发明专利**。
@@ -22,6 +33,7 @@
 3. Patent Value Ledger
 4. 本地运行CI相关脚本
 5. 生成Diagnostic和Markdown report
+6. 使用仓库PR模板提交
 
 ## Tester must not receive
 
