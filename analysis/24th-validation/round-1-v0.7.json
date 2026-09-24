@@ -1,0 +1,155 @@
+{
+  "edition": 24,
+  "t0_date": "2022-10-31",
+  "model_under_test": "v0.7-proposal",
+  "model_status": "proposal_not_adopted",
+  "protocol": {
+    "freeze_25th_results": true,
+    "later_sources_allowed_for": [
+      "award_label",
+      "post_t0_ground_truth_check"
+    ],
+    "later_sources_forbidden_for": [
+      "t0_value_evidence",
+      "t0_attribution",
+      "t0_realization_stage"
+    ],
+    "scoring": false
+  },
+  "pairs": [
+    {
+      "pair_id": "P24-PHARMA-001",
+      "gold": {
+        "record_id": "P24-G-ZL201580045311.2",
+        "title": "EGFR抑制剂及其制备和应用",
+        "assignee": "江苏豪森药业集团有限公司"
+      },
+      "silver": {
+        "record_id": "P24-S-ZL201310245354.8",
+        "title": "一类五元杂环并吡啶类化合物及其制备方法和用途",
+        "assignee": "中国科学院上海药物研究所、上海海和药物研究开发股份有限公司"
+      },
+      "matching_basis": [
+        "same_edition",
+        "same_industry",
+        "small_molecule_oncology",
+        "enterprise_drug_development"
+      ],
+      "v0_7": {
+        "gold": {
+          "value_state": {
+            "technical_state": "confirmed_EGFR_inhibitor_patent",
+            "product_context": "aumolertinib already approved and reimbursed before T0",
+            "patent_to_product_attribution_t0": "unknown_in_reviewed_public_sources"
+          },
+          "evidence_state": {
+            "E1": "available",
+            "E2": "strong_product_regulatory_and_clinical_evidence",
+            "E3": "unknown_at_T0",
+            "E4": "unknown",
+            "E5": "regulatory_product_evidence_available_but_not_patent_attribution"
+          },
+          "observability_state": {
+            "patent": "public",
+            "product_regulatory": "public_regulated",
+            "exact_patent_product_mapping": "not_observed_pre_T0_in_reviewed_sources",
+            "later_ground_truth_mapping": "confirmed_post_T0_excluded_from_predictors"
+          },
+          "realization_stage_publicly_defensible": "R0_confirmed; product context compatible with R4, but exact patent linkage prevents assigning R4 to the patent from public T0 evidence alone"
+        },
+        "silver": {
+          "value_state": {
+            "technical_state": "confirmed_cMet_inhibitor_patent",
+            "product_context": "SCC244/gumarontinib pivotal Phase II completed; NDA accepted with priority review before T0",
+            "patent_to_product_attribution_t0": "confirmed"
+          },
+          "evidence_state": {
+            "E1": "available",
+            "E2": "strong_clinical_and_regulatory_pipeline_evidence",
+            "E3": "confirmed_exact_patent_to_SCC244",
+            "E4": "unknown",
+            "E5": "regulated_disclosure_and_clinical_evidence"
+          },
+          "observability_state": {
+            "patent": "public",
+            "exact_patent_product_mapping": "disclosed_regulated",
+            "clinical_regulatory": "public",
+            "market_sales": "not_yet_applicable_at_T0"
+          },
+          "realization_stage_publicly_defensible": "R3_confirmed; approaching R4 but not marketed by T0"
+        }
+      },
+      "result": {
+        "architecture_value": "supports_separating_value_state_from_observability",
+        "gold_silver_prediction": "not_claimed",
+        "key_observation": "Silver has better pre-T0 exact-patent observability, while Gold has a more mature product/regulatory context. A single evidence-completeness score would conflate these dimensions."
+      }
+    },
+    {
+      "pair_id": "P24-SOFT-001",
+      "gold": {
+        "record_id": "P24-G-ZL201511034171.7",
+        "title": "一种分布式存储系统升级方法和装置",
+        "assignee": "阿里云计算有限公司"
+      },
+      "silver": {
+        "record_id": "P24-S-ZL201510104674.0",
+        "title": "大数据分析挖掘管理面与业务面的关联方法及系统",
+        "assignee": "中国联合网络通信集团有限公司"
+      },
+      "matching_basis": [
+        "same_edition",
+        "software_infrastructure",
+        "large_enterprise",
+        "platform_backend_method"
+      ],
+      "v0_7": {
+        "gold": {
+          "value_state": {
+            "technical_state": "confirmed_distributed_storage_upgrade_method",
+            "patent_to_product_attribution_t0": "unknown"
+          },
+          "evidence_state": {
+            "E1": "available",
+            "E2": "unknown",
+            "E3": "unknown",
+            "E4": "unknown",
+            "E5": "patent_document_only"
+          },
+          "observability_state": {
+            "patent": "public",
+            "product_mapping": "unknown",
+            "scale": "unknown",
+            "attributable_value": "unknown"
+          },
+          "realization_stage_publicly_defensible": "R0_confirmed; R1-R5 unknown"
+        },
+        "silver": {
+          "value_state": {
+            "technical_state": "confirmed_big_data_management_business_plane_linkage_method",
+            "patent_to_product_attribution_t0": "unknown"
+          },
+          "evidence_state": {
+            "E1": "available",
+            "E2": "unknown",
+            "E3": "unknown",
+            "E4": "unknown",
+            "E5": "patent_document_only"
+          },
+          "observability_state": {
+            "patent": "public",
+            "product_mapping": "unknown",
+            "scale": "unknown",
+            "attributable_value": "unknown"
+          },
+          "realization_stage_publicly_defensible": "R0_confirmed; R1-R5 unknown"
+        }
+      },
+      "result": {
+        "architecture_value": "supports_observability_layer",
+        "gold_silver_prediction": "public_T0_cannot_distinguish",
+        "key_observation": "The architecture records 'unknown due to observability' rather than silently treating absent product evidence as low value."
+      }
+    }
+  ]
+}
