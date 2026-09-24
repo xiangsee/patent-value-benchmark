@@ -1,0 +1,414 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/xiangsee/patent-value-benchmark/schema/patent-value-diagnostic.schema.json",
+  "title": "Xiangsee Patent Value Diagnostic",
+  "type": "object",
+  "required": [
+    "diagnostic_id",
+    "schema_version",
+    "ledger_id",
+    "patent",
+    "analysis_mode",
+    "current_state",
+    "confirmed_chain",
+    "observed_metrics",
+    "unresolved_gaps",
+    "next_evidence_tasks",
+    "warnings",
+    "output_limits"
+  ],
+  "properties": {
+    "diagnostic_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "schema_version": {
+      "const": "1.0-draft"
+    },
+    "ledger_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "patent": {
+      "type": "object",
+      "required": [
+        "application_number",
+        "title"
+      ],
+      "properties": {
+        "application_number": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "analysis_mode": {
+      "enum": [
+        "public",
+        "internal"
+      ]
+    },
+    "current_state": {
+      "type": "object",
+      "required": [
+        "realization_stage",
+        "stage_label",
+        "highest_evidence_level",
+        "exact_patent_value_carrier_link",
+        "patent_level_attributable_value",
+        "observability"
+      ],
+      "properties": {
+        "realization_stage": {
+          "enum": [
+            "R0",
+            "R1",
+            "R2",
+            "R3",
+            "R4",
+            "R5",
+            "unknown"
+          ]
+        },
+        "stage_label": {
+          "type": "string"
+        },
+        "highest_evidence_level": {
+          "enum": [
+            "E1",
+            "E2",
+            "E3",
+            "E4",
+            "E5",
+            "unknown"
+          ]
+        },
+        "exact_patent_value_carrier_link": {
+          "enum": [
+            "confirmed",
+            "strong_evidence",
+            "inference",
+            "unknown"
+          ]
+        },
+        "patent_level_attributable_value": {
+          "enum": [
+            "confirmed",
+            "strong_evidence",
+            "inference",
+            "unknown"
+          ]
+        },
+        "observability": {
+          "type": "object",
+          "required": [
+            "enterprise",
+            "product_project",
+            "exact_patent_mapping",
+            "attributable_value"
+          ],
+          "properties": {
+            "enterprise": {
+              "enum": [
+                "public",
+                "disclosed_regulated",
+                "internal",
+                "restricted",
+                "unknown"
+              ]
+            },
+            "product_project": {
+              "enum": [
+                "public",
+                "disclosed_regulated",
+                "internal",
+                "restricted",
+                "unknown"
+              ]
+            },
+            "exact_patent_mapping": {
+              "enum": [
+                "public",
+                "disclosed_regulated",
+                "internal",
+                "restricted",
+                "unknown"
+              ]
+            },
+            "attributable_value": {
+              "enum": [
+                "public",
+                "disclosed_regulated",
+                "internal",
+                "restricted",
+                "unknown"
+              ]
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "confirmed_chain": {
+      "type": "object",
+      "required": [
+        "value_carriers",
+        "links"
+      ],
+      "properties": {
+        "value_carriers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "carrier_id",
+              "name",
+              "carrier_type",
+              "link_status",
+              "evidence_ids"
+            ],
+            "properties": {
+              "carrier_id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "carrier_type": {
+                "type": "string"
+              },
+              "link_status": {
+                "enum": [
+                  "confirmed",
+                  "strong_evidence",
+                  "inference"
+                ]
+              },
+              "evidence_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "link_id",
+              "from_node",
+              "to_node",
+              "relation",
+              "status",
+              "evidence_ids"
+            ],
+            "properties": {
+              "link_id": {
+                "type": "string"
+              },
+              "from_node": {
+                "type": "string"
+              },
+              "to_node": {
+                "type": "string"
+              },
+              "relation": {
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "confirmed",
+                  "strong_evidence",
+                  "inference"
+                ]
+              },
+              "evidence_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "observed_metrics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "metric_id",
+          "scope_level",
+          "metric_name",
+          "value",
+          "attribution_status",
+          "evidence_ids"
+        ],
+        "properties": {
+          "metric_id": {
+            "type": "string"
+          },
+          "scope_level": {
+            "enum": [
+              "enterprise",
+              "product_project",
+              "exact_patent"
+            ]
+          },
+          "metric_name": {
+            "type": "string"
+          },
+          "value": {
+            "type": [
+              "number",
+              "string",
+              "null"
+            ]
+          },
+          "unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "period": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "attribution_status": {
+            "enum": [
+              "confirmed",
+              "strong_evidence",
+              "inference",
+              "unknown"
+            ]
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "unresolved_gaps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "gap_type",
+          "description",
+          "needed_evidence",
+          "observability"
+        ],
+        "properties": {
+          "gap_type": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "needed_evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "observability": {
+            "enum": [
+              "public",
+              "disclosed_regulated",
+              "internal",
+              "restricted",
+              "unknown"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "next_evidence_tasks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "task_id",
+          "gap_type",
+          "objective",
+          "target_evidence_level",
+          "needed_evidence"
+        ],
+        "properties": {
+          "task_id": {
+            "type": "string"
+          },
+          "gap_type": {
+            "type": "string"
+          },
+          "objective": {
+            "type": "string"
+          },
+          "target_evidence_level": {
+            "enum": [
+              "E1",
+              "E2",
+              "E3",
+              "E4",
+              "E5",
+              "unknown"
+            ]
+          },
+          "needed_evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "output_limits": {
+      "type": "object",
+      "required": [
+        "gold_probability",
+        "unsupported_patent_value_amount",
+        "automatic_ranking"
+      ],
+      "properties": {
+        "gold_probability": {
+          "const": false
+        },
+        "unsupported_patent_value_amount": {
+          "const": false
+        },
+        "automatic_ranking": {
+          "const": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
