@@ -25,6 +25,7 @@ SCHEMAS = {
     "evidence": ROOT / "schema" / "evidence.schema.json",
     "pairs": ROOT / "schema" / "matched-pair.schema.json",
     "ledgers": ROOT / "schema" / "patent-value-ledger.schema.json",
+    "diagnostics": ROOT / "schema" / "patent-value-diagnostic.schema.json",
 }
 
 DATA_GLOBS = {
@@ -33,6 +34,7 @@ DATA_GLOBS = {
     "evidence": "data/evidence/*.jsonl",
     "pairs": "data/matched-pairs/*.jsonl",
     "ledgers": "data/ledgers/*.jsonl",
+    "diagnostics": "data/diagnostics/*.jsonl",
 }
 
 ID_FIELDS = {
@@ -41,6 +43,7 @@ ID_FIELDS = {
     "evidence": "evidence_id",
     "pairs": "pair_id",
     "ledgers": "ledger_id",
+    "diagnostics": "diagnostic_id",
 }
 
 
@@ -124,6 +127,7 @@ def main() -> int:
     patents = lookups["patents"]
     evidence = lookups["evidence"]
     ledgers = lookups["ledgers"]
+    diagnostics = lookups["diagnostics"]
 
     # Evidence -> source integrity.
     for evidence_id, item in evidence.items():
@@ -229,6 +233,43 @@ def main() -> int:
                     errors,
                     f"ledger {ledger_id}: R5 requires at least one attributable exact_patent value metric"
                 )
+
+    # Diagnostic -> Ledger / Evidence integrity.
+    for diagnostic_id, item in diagnostics.items():
+        ledger_id = item.get("ledger_id")
+        if ledger_id not in ledgers:
+            fail(errors, f"diagnostic {diagnostic_id}: missing ledger {ledger_id}")
+            continue
+
+        referenced_evidence: set[str] = set()
+        for carrier in item.get("confirmed_chain", {}).get("value_carriers", []):
+            referenced_evidence.update(carrier.get("evidence_ids", []))
+        for link in item.get("confirmed_chain", {}).get("links", []):
+            referenced_evidence.update(link.get("evidence_ids", []))
+        for metric in item.get("observed_metrics", []):
+            referenced_evidence.update(metric.get("evidence_ids", []))
+
+        for evidence_id in referenced_evidence:
+            if evidence_id not in evidence:
+                fail(errors, f"diagnostic {diagnostic_id}: references missing evidence {evidence_id}")
+
+        # Diagnostic current state must be a faithful projection of the Ledger.
+        ledger_state = ledgers[ledger_id].get("v0_7_state", {})
+        diag_state = item.get("current_state", {})
+        if diag_state.get("realization_stage") != ledger_state.get("realization_stage"):
+            fail(errors, f"diagnostic {diagnostic_id}: realization_stage differs from ledger {ledger_id}")
+
+        ledger_attr = ledger_state.get("attribution_evidence_state", {})
+        for field in (
+            "highest_evidence_level",
+            "exact_patent_value_carrier_link",
+            "patent_level_attributable_value",
+        ):
+            if diag_state.get(field) != ledger_attr.get(field):
+                fail(errors, f"diagnostic {diagnostic_id}: {field} differs from ledger {ledger_id}")
+
+        if diag_state.get("observability") != ledger_state.get("observability_state"):
+            fail(errors, f"diagnostic {diagnostic_id}: observability differs from ledger {ledger_id}")
 
     if errors:
         print(f"Validation failed with {len(errors)} error(s):", file=sys.stderr)
