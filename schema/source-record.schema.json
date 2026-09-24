@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/xiangsee/patent-value-benchmark/schema/source-record.schema.json",
+  "title": "Xiangsee Source Registry Record",
+  "type": "object",
+  "required": [
+    "source_id",
+    "title",
+    "publisher",
+    "url",
+    "source_type",
+    "source_date",
+    "accessed_date",
+    "t0_eligible"
+  ],
+  "properties": {
+    "source_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "publisher": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "source_type": {
+      "enum": [
+        "official_award_list",
+        "patent_document",
+        "regulatory",
+        "standard",
+        "annual_report",
+        "prospectus",
+        "company_disclosure",
+        "government",
+        "academic",
+        "media",
+        "other"
+      ]
+    },
+    "source_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "accessed_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "t0_eligible": {
+      "type": "boolean"
+    },
+    "archive_note": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "license_note": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}
