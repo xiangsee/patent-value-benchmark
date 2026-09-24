@@ -30,3 +30,7 @@
 - 新增 V0.7 External Validation Protocol。
 - 第24届 Round 1 完成2组：创新药与软件基础设施。
 - 初步验证 Value State / Evidence / Observability / Realization Stage 分层具有解释价值，但 V0.7 仍未 adopted。
+
+- 第24届 Round 2 新增 P24-POWER-001（中车变频 Gold vs 阳光电源 MPPT Silver）。
+- 电力电子组强化两条 V0.7 规则：产品类别价值不得自动继承给 exact patent；post-T0 ground truth 不得回填 T0 evidence。
+- 第24届当前累计3组外部验证配对，V0.7 仍为 Proposal。
