@@ -17,7 +17,7 @@
 ## Milestone A — 25th Validation Set
 
 目标：
-- 扩展至约 10–12 组高质量 Gold–Silver matched pairs
+- 扩展至约 10–12 组高质量 Gold–Silver matched pairs（当前 7 组）
 - 覆盖至少：
   - 生命科学
   - 医疗器械
