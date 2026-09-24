@@ -127,14 +127,28 @@ CI 同时检查：
 - Ledger → Diagnostic 是否同步；
 - Diagnostic → Markdown report 是否同步。
 
+## Quick Start
+
+第一次使用请直接看：
+
+- `docs/getting-started.md` — 30分钟冷启动
+- `docs/cold-start-quick-reference.md` — 一页速查
+
+一键生成贡献草稿：
+
+```bash
+python tools/scaffold_ledger.py \
+  --application-number ZL202012345678.9 \
+  --title "你的专利名称"
+```
+
 ## v0.1.0 Pre-release
 
 发布前状态见 `docs/release/v0.1.0-readiness.md`。
 
 目前剩余核心事项：
-1. 许可证最终选择；
-2. 一次不依赖本对话上下文的外部冷启动复现；
-3. Schema freeze + GitHub tag/release。
+1. 一次不依赖本对话上下文的外部冷启动复现；
+2. Schema freeze + GitHub tag/release。
 
 
 ## License
