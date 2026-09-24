@@ -130,7 +130,8 @@ def diagnostic_from_ledger(ledger: dict[str, Any]) -> dict[str, Any]:
         "current_state": {
             "realization_stage": stage,
             "stage_label": STAGE_LABELS[stage],
-            "highest_evidence_level": attr["highest_evidence_level"],
+            "evidence_levels_present": attr["evidence_levels_present"],
+            "realization_stage_evidence_ids": state["realization_stage_evidence_ids"],
             "exact_patent_value_carrier_link": attr["exact_patent_value_carrier_link"],
             "patent_level_attributable_value": attr["patent_level_attributable_value"],
             "observability": observability,
