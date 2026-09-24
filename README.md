@@ -23,6 +23,7 @@ Xiangsee Patent Value Benchmark 是《详见》（**xiangsee**）发起的开放
 - 第 24 届中国专利奖：完成V0.7跨届外部压力测试，四层架构已 adopted
 - 历届 Gold / Silver / Excellent 结构化基准库设计
 - Patent Value Ledger 1.0 Draft：Schema、公开模板、首个示例与CI验证已上线
+- Patent Value Diagnostic 1.0 Draft：由Ledger确定性生成诊断、缺口和下一步补证任务
 
 ## 核心研究链
 
@@ -86,3 +87,24 @@ CI 会阻止：
 - R5 没有专利级可归因价值；
 - Ledger 引用不存在的 source/evidence；
 - 历史 T0 使用未来来源。
+
+
+## Patent Value Diagnostic
+
+Ledger 的标准输出不是总分，而是 Diagnostic：
+
+- 当前 R0–R5
+- 当前最高 evidence level
+- 已确认的 exact patent → value carrier 链
+- 产品/项目/专利级指标及其 scope
+- unresolved gaps
+- next evidence tasks
+- non-inheritance / T0 warnings
+
+生成：
+
+```bash
+python tools/generate_diagnostics.py
+```
+
+CI 会执行 `--check`，保证 Diagnostic 与 Ledger 不发生版本漂移。
