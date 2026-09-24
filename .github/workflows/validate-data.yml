@@ -4,16 +4,21 @@ on:
   push:
     paths:
       - "data/**"
+      - "reports/**"
       - "schema/**"
       - "tools/validate_data.py"
       - "tools/generate_diagnostics.py"
+      - "tools/render_reports.py"
       - "requirements-dev.txt"
       - ".github/workflows/validate-data.yml"
   pull_request:
     paths:
       - "data/**"
+      - "reports/**"
       - "schema/**"
       - "tools/validate_data.py"
+      - "tools/generate_diagnostics.py"
+      - "tools/render_reports.py"
       - "requirements-dev.txt"
       - ".github/workflows/validate-data.yml"
 
@@ -37,3 +42,6 @@ jobs:
 
       - name: Check generated diagnostics
         run: python tools/generate_diagnostics.py --check
+
+      - name: Check generated Markdown reports
+        run: python tools/render_reports.py --check
