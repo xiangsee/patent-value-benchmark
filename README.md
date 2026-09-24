@@ -1,29 +1,86 @@
 # Xiangsee Patent Value Benchmark
 
-**《详见》高价值专利开放基准库**
+**《详见》专利价值开放基准库**
 
 > Status: Research Preview / Work in Progress
 
-Xiangsee Patent Value Benchmark 是《详见》（**xiangsee**）发起的开放研究项目。项目以中国专利奖等经过现实世界验证的高价值专利样本为起点，研究一项知识如何从技术形成、专利保护，进入产品 / 工艺 / 平台 / 工程，并最终形成可验证的经济与社会价值。
+Xiangsee Patent Value Benchmark 是《详见》（**xiangsee**）发起的开放研究项目。
 
-本项目的目标不是“预测谁一定会获得中国专利金奖”，而是建立一个可复核、可反驳、可持续更新的 **Gold Readiness / Patent Value Benchmark**，帮助研究者、企业和专业服务机构回答：
+项目研究的对象不是某一种奖项，也不是一个固定“高价值专利”标签，而是：
+
+> **如何用可复核的证据描述一件专利的技术质量、权利控制力、现实价值实现、未来选择权，以及这些价值究竟能够归因到哪里。**
+
+中国专利奖是项目早期的重要真实世界样本来源之一，但**不构成通用专利价值的定义，也不再作为主项目的目标变量**。
+
+项目希望帮助研究者、企业和专业服务机构回答：
 
 - 一件专利为什么可能成为核心技术资产？
 - 技术价值如何从企业级、产品级进一步追溯到具体专利？
-- 金奖、银奖与优秀奖样本之间有哪些可观察差异？
-- 哪些证据能够支持“专利已经形成现实价值”的判断？
+- 如何区分政策统计意义上的“高价值”、技术质量、私人资产价值、现实经营价值与社会/战略价值？
+- 权利范围、稳定性、剩余期限、地域覆盖、绕开成本和组合语境如何影响专利资产价值？
+- 哪些公开信号适合用于筛选候选专利，哪些证据才足以支持价值归因？
 - 如何避免结果泄漏、幸存者偏差以及把 Unknown 错误编码成 0？
+
+## 两条研究线
+
+### A. Patent Value Benchmark — 主干
+
+通用专利价值研究。
+
+当前核心包括：
+- Value State
+- Attribution / Evidence
+- Observability
+- Value Realization
+- Value Construct
+- Rights Control（研究中）
+- Counterfactual Control（研究中）
+- Option / Future Value（研究中）
+- Portfolio Context（研究中）
+- Screening Signals（与Value Proof分离）
+
+### B. China Patent Award Research — 独立模块
+
+中国专利金奖 / 银奖 / 优秀奖研究作为独立需求长期保留。
+
+该模块研究：
+- 历届获奖项目与制度变化
+- Gold / Silver / Excellent 的可观察差异
+- 评奖标准与实际结果之间的关系
+- 获奖项目后续技术、产业与经济表现
+- 奖项能否作为某些价值维度的外部验证信号
+
+**边界规则：**
+- 不把“是否获奖”作为通用价值模型的目标变量；
+- 不把金奖评价逻辑直接等同于经济价值；
+- 金奖模块中经跨样本验证具有普适性的变量，可以进入通用模型候选集；
+- 两条线可以交叉验证，但不合并为同一个需求。
+
+详见：`docs/research-tracks.md`。
 
 ## 当前研究阶段
 
-当前研究架构：**V0.7 (adopted)**
+当前正式研究架构：**V0.7 (adopted)**
+
+V0.7更准确的定位是：
+
+> **Patent Value Evidence & Realization Architecture**
+
+它把以下四层分开：
+- Value State
+- Attribution / Evidence State
+- Observability State
+- Value Realization Stage
 
 正在进行：
-- 第 25 届中国专利奖：V0.6 10组配对已封存并完成Cross-pair Synthesis
-- 第 24 届中国专利奖：完成V0.7跨届外部压力测试，四层架构已 adopted
-- 历届 Gold / Silver / Excellent 结构化基准库设计
-- Patent Value Ledger 1.0 Draft：Schema、公开模板、首个示例与CI验证已上线
-- Patent Value Diagnostic 1.0 Draft：由Ledger确定性生成诊断、缺口和下一步补证任务
+- V0.8 Value Construct & Rights Control 研究议程
+- Patent Value Ledger 1.0 Draft
+- Patent Value Diagnostic 1.0 Draft
+- 通用样本与非奖项样本扩展
+- 外部冷启动复现
+- Schema freeze + v0.1.0 release
+
+历史上，第25届和第24届中国专利奖 Gold–Silver 样本曾用于形成和压力测试 V0.6/V0.7。该研究链完整保留，作为**模型形成史和奖项专项研究证据**，但不意味着今后的通用模型仍以奖项为中心。
 
 ## 核心研究链
 
@@ -41,56 +98,49 @@ Regulatory / Standard / Market
 Revenue / Social Impact
 ```
 
-每一条箭头都需要 Evidence，而不是依靠企业规模、产品销量或获奖结果自动推定。
-
-V0.7进一步把 **Value State / Attribution & Evidence / Observability / Value Realization Stage** 四层分开，防止把“价值低”和“公开看不见”混为一谈。
+每一条箭头都需要 Evidence，而不是依靠企业规模、产品销量、政策标签或获奖结果自动推定。
 
 ## 核心原则
 
 1. **Patent-level attribution**：企业价值不能自动归因给具体专利。
-2. **T0 cutoff**：历史验证只使用申报截止日前已存在的信息，避免 Outcome Leakage。
-3. **Unknown ≠ 0**：公开信息缺失不能被编码为“没有价值”。
-4. **Gold vs Silver matched pairs**：优先比较同届、同技术领域、申请时间与主体类型接近的样本。
-5. **Public / Private separation**：公开库只发布可以合法公开、可追溯的数据与方法；企业内部经营、合同、客户及受限数据不进入公共数据层。
-6. **Reproducibility**：重要判断保留来源、日期、证据等级、推断状态和版本。
+2. **Value construct first**：先说明研究的是哪一种“价值”，再谈指标。
+3. **T0 cutoff**：历史验证只使用截止日前已存在的信息，避免 Outcome Leakage。
+4. **Unknown ≠ 0**：公开信息缺失不能被编码为“没有价值”。
+5. **Screening ≠ Proof**：引用、家族、权利要求、维持年限等首先是筛选信号，不自动构成价值事实。
+6. **Award ≠ Universal Value**：获奖结果可以作为特定研究样本或外部信号，但不是通用价值定义。
+7. **Public / Private separation**：公开库只发布可以合法公开、可追溯的数据与方法；企业内部经营、合同、客户及受限数据不进入公共数据层。
+8. **Reproducibility**：重要判断保留来源、日期、证据等级、推断状态和版本。
 
 ## 目录
 
 - `docs/methodology/`：研究方法与模型版本
-- `data/`：清洗后的开放基准数据（逐步发布）
-- `analysis/`：样本外验证与研究分析
+- `docs/research-tracks.md`：通用价值模型与专利奖专项模块的边界
+- `analysis/theory/`：通用价值理论研究
+- `analysis/china-patent-award/`：中国专利奖专项入口
+- `analysis/24th-validation/`、`analysis/25th-validation/`：历史奖项样本验证记录
+- `data/`：清洗后的开放基准数据
 - `schema/`：开放数据与 Patent Value Ledger Schema
 - `data/ledgers/`：可校验的专利价值账本
 - `examples/patent-value-ledger/`：提交模板
 
-## 品牌
-
-《详见》英文统一为 **xiangsee**。
-
----
-
-本项目仍处于研究阶段。当前模型和字段可能随着反证测试与样本外验证继续修订；重要变更将记录在 CHANGELOG 中。
-
-
 ## Patent Value Ledger
-
-V0.7 已经落成可填写的 **Patent Value Ledger 1.0 Draft**。
 
 一张账本串联：
 
 `Knowledge → Technology → Patent → Value Carrier → Real-world Validation → Attributable Value`
 
-公开模板见 `examples/patent-value-ledger/template.json`。当前验收示例覆盖 R0 / R2 / R4：
+公开模板见 `examples/patent-value-ledger/template.json`。
+
+当前验收示例覆盖 R0 / R2 / R4：
 - `data/ledgers/example-r0-huawei.jsonl`
 - `data/ledgers/example-r2-power-license.jsonl`
-- `data/ledgers/example-aikening.jsonl`。
+- `data/ledgers/example-aikening.jsonl`
 
 CI 会阻止：
 - R3/R4/R5 没有 exact-patent 映射；
 - R5 没有专利级可归因价值；
 - Ledger 引用不存在的 source/evidence；
 - 历史 T0 使用未来来源。
-
 
 ## Patent Value Diagnostic
 
@@ -112,7 +162,6 @@ python tools/generate_diagnostics.py
 
 CI 会执行 `--check`，保证 Diagnostic 与 Ledger 不发生版本漂移。
 
-
 ## Human-readable Reports
 
 结构化 Diagnostic 还会确定性渲染为 Markdown：
@@ -122,10 +171,6 @@ python tools/render_reports.py
 ```
 
 输出位于 `reports/generated/`。
-
-CI 同时检查：
-- Ledger → Diagnostic 是否同步；
-- Diagnostic → Markdown report 是否同步。
 
 ## Quick Start
 
@@ -149,7 +194,6 @@ python tools/scaffold_ledger.py \
 目前剩余核心事项：
 1. 一次不依赖本对话上下文的外部冷启动复现；
 2. Schema freeze + GitHub tag/release。
-
 
 ## License
 
