@@ -1,0 +1,253 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/xiangsee/patent-value-benchmark/schema/patent-record.schema.json",
+  "title": "Xiangsee Patent Record",
+  "type": "object",
+  "required": [
+    "record_id",
+    "award",
+    "patent",
+    "cutoff",
+    "sources",
+    "status"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string"
+    },
+    "award": {
+      "type": "object",
+      "required": [
+        "edition",
+        "level",
+        "year"
+      ],
+      "properties": {
+        "edition": {
+          "type": "integer"
+        },
+        "level": {
+          "enum": [
+            "gold",
+            "silver",
+            "excellent",
+            "unknown"
+          ]
+        },
+        "year": {
+          "type": "integer"
+        },
+        "official_list_source_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "patent": {
+      "type": "object",
+      "required": [
+        "application_number",
+        "title"
+      ],
+      "properties": {
+        "application_number": {
+          "type": "string"
+        },
+        "publication_number": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "grant_number": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "title": {
+          "type": "string"
+        },
+        "application_date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "priority_date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "grant_date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "patent_type": {
+          "enum": [
+            "invention",
+            "utility_model",
+            "design",
+            "unknown"
+          ]
+        },
+        "ipc": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "cpc": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "assignees": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "inventors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "cutoff": {
+      "type": "object",
+      "required": [
+        "t0_date",
+        "policy"
+      ],
+      "properties": {
+        "t0_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "policy": {
+          "const": "only_evidence_available_on_or_before_t0"
+        },
+        "post_t0_excluded": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "classification": {
+      "type": "object",
+      "properties": {
+        "industry": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "value_carrier": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "organization_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "assessment": {
+      "type": "object",
+      "properties": {
+        "relative_technological_differentiation": {
+          "$ref": "#/$defs/assessmentField"
+        },
+        "value_carrier_centrality": {
+          "$ref": "#/$defs/assessmentField"
+        },
+        "patent_level_attribution": {
+          "$ref": "#/$defs/assessmentField"
+        },
+        "real_world_validation_depth": {
+          "$ref": "#/$defs/assessmentField"
+        },
+        "scale_and_diffusion": {
+          "$ref": "#/$defs/assessmentField"
+        },
+        "evidence_traceability": {
+          "$ref": "#/$defs/assessmentField"
+        },
+        "industry_social_impact": {
+          "$ref": "#/$defs/assessmentField"
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "reviewed",
+        "verified",
+        "published"
+      ]
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "$defs": {
+    "assessmentField": {
+      "type": "object",
+      "required": [
+        "status",
+        "evidence_ids"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "confirmed",
+            "strong_evidence",
+            "inference",
+            "unknown"
+          ]
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
