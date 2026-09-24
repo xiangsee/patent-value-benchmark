@@ -1,0 +1,35 @@
+name: Validate benchmark data
+
+on:
+  push:
+    paths:
+      - "data/**"
+      - "schema/**"
+      - "tools/validate_data.py"
+      - "requirements-dev.txt"
+      - ".github/workflows/validate-data.yml"
+  pull_request:
+    paths:
+      - "data/**"
+      - "schema/**"
+      - "tools/validate_data.py"
+      - "requirements-dev.txt"
+      - ".github/workflows/validate-data.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install validation dependencies
+        run: python -m pip install -r requirements-dev.txt
+
+      - name: Validate JSONL data
+        run: python tools/validate_data.py
