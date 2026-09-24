@@ -1,81 +1,73 @@
-# Licensing Strategy — Decision Required
+# Licensing Policy
 
-状态：**尚未选择许可证。**
+状态：**Decided for v0.1.0**
 
-在 v0.1.0 正式发布前，建议分别处理代码、原创文档和结构化数据，而不是用一个 LICENSE 覆盖所有内容。
+## Final decision
 
-## 1. Code
+- **Code / CI / JSON Schema:** Apache License 2.0
+- **Original documentation:** Creative Commons Attribution 4.0 International (CC BY 4.0)
+- **Original structured data / curation:** CC BY 4.0
+- **Third-party source documents:** not relicensed
 
-范围示例：
-- `tools/*.py`
-- GitHub Actions
-- JSON Schema中具有软件/规范性质的部分
+## Scope
 
-候选：
+### Apache-2.0
+Applies to original:
+- `tools/`
+- `.github/workflows/`
+- `schema/`
+- other project-authored software code
 
-### Option A — MIT
-优点：
-- 简单、宽松、行业接受度高；
-- 有利于企业、代理机构、研究者直接集成。
+### CC BY 4.0
+Applies to Xiangsee-created:
+- README / CONTRIBUTING
+- `docs/`
+- `analysis/`
+- `data/` structured records, curation, annotations and derived benchmark coding
+- `examples/`
+- `reports/`
+- CITATION metadata and other project-authored prose/structured content
 
-注意：
-- 专利/商标等权利声明相对Apache-2.0更简洁。
+## Third-party boundary
 
-### Option B — Apache-2.0
-优点：
-- 宽松；
-- 对专利授权条款更明确；
-- 大型企业/基础设施项目较常见。
+The project may cite or link to:
+- patent documents
+- government/regulatory documents
+- standards
+- annual reports / prospectuses
+- academic papers
+- company disclosures
+- media reports
+- other databases or websites
 
-建议倾向：**Apache-2.0 或 MIT 二选一。**
+Those third-party works are **not** made Apache-2.0 or CC BY 4.0 merely because
+they are cited by this repository.
 
-## 2. Original Documentation
+The public repository generally stores source links and original structured
+facts/annotations rather than third-party source files.
 
-范围：
-- 方法论
-- Data Dictionary
-- README
-- 原创分析文档
+## Attribution
 
-候选：
-- **CC BY 4.0**：允许复制、改编和商业使用，要求署名。
-- **CC BY-SA 4.0**：衍生内容需同许可分享，更强的开放回流要求。
+Recommended attribution for CC BY materials:
 
-若目标是成为行业通用标准，通常更倾向 **CC BY 4.0**。
+> Xiangsee Patent Value Benchmark, xiangsee, version/commit used,
+> https://github.com/xiangsee/patent-value-benchmark
 
-## 3. Structured Dataset
+## Rationale
 
-范围：
-- 本项目原创整理的结构化字段
-- source registry中的链接、日期、状态
-- 自己形成的 evidence/ledger/diagnostic 编码
+Apache-2.0 was selected for code because it is permissive and includes an
+explicit patent-license framework useful for industry-facing infrastructure.
 
-候选：
-- **CC BY 4.0**：要求署名；
-- **CC0 1.0**：最大限度降低数据复用摩擦。
+CC BY 4.0 was selected for documentation and structured data to keep commercial
+reuse and adaptation open while preserving attribution to xiangsee and the
+benchmark.
 
-需要特别区分：
+## Files
 
-> 对第三方事实做结构化整理，不意味着本项目拥有第三方原始文档的版权或数据库权利。
-
-仓库不应把受限数据库或第三方PDF全文重新授权出去。
-
-## 4. Recommended package for decision
-
-一个较平衡的组合：
-
-- Code: **Apache-2.0**
-- Original docs: **CC BY 4.0**
-- Original structured data: **CC BY 4.0**
-- Third-party source documents: **not redistributed / original rights reserved by their owners**
-
-更开放的数据方案可把 structured data 改为 CC0。
-
-## 5. Before adding LICENSE files
-
-需要用户明确决定：
-1. Code：MIT 还是 Apache-2.0？
-2. Docs：CC BY 4.0 还是 CC BY-SA 4.0？
-3. Data：CC BY 4.0 还是 CC0 1.0？
-
-在明确决定前，本仓库不添加会造成误解的总LICENSE。
+- Top-level scope: `LICENSE`
+- Notice: `NOTICE.md`
+- Apache-2.0 full text: `LICENSES/Apache-2.0.txt`
+- CC BY 4.0 full text: `LICENSES/CC-BY-4.0.txt`
+- Data note: `data/LICENSE.md`
+- Documentation note: `docs/LICENSE.md`
+- Code note: `CODE-LICENSE.md`
