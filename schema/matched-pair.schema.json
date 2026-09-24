@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/xiangsee/patent-value-benchmark/schema/matched-pair.schema.json",
+  "title": "Xiangsee Gold-Silver Matched Pair",
+  "type": "object",
+  "required": [
+    "pair_id",
+    "edition",
+    "t0_date",
+    "gold_record_id",
+    "comparison_record_id",
+    "matching_basis",
+    "result"
+  ],
+  "properties": {
+    "pair_id": {
+      "type": "string"
+    },
+    "edition": {
+      "type": "integer"
+    },
+    "t0_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "gold_record_id": {
+      "type": "string"
+    },
+    "comparison_record_id": {
+      "type": "string"
+    },
+    "comparison_level": {
+      "enum": [
+        "silver",
+        "excellent"
+      ]
+    },
+    "matching_basis": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "same_edition",
+          "same_industry",
+          "similar_ipc",
+          "similar_filing_window",
+          "similar_org_type",
+          "similar_value_carrier",
+          "other"
+        ]
+      }
+    },
+    "pre_registered_dimensions": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "relative_technological_differentiation",
+          "value_carrier_centrality",
+          "patent_level_attribution",
+          "real_world_validation_depth",
+          "scale_and_diffusion",
+          "evidence_traceability",
+          "industry_social_impact"
+        ]
+      }
+    },
+    "result": {
+      "type": "object",
+      "required": [
+        "distinguishable_from_public_t0_evidence",
+        "summary"
+      ],
+      "properties": {
+        "distinguishable_from_public_t0_evidence": {
+          "enum": [
+            "yes",
+            "no",
+            "uncertain"
+          ]
+        },
+        "summary": {
+          "type": "string"
+        },
+        "dimensions_with_observed_difference": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "dimensions_unknown": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}
