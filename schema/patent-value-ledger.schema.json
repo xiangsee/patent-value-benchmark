@@ -405,7 +405,8 @@
         "value_state",
         "attribution_evidence_state",
         "observability_state",
-        "realization_stage"
+        "realization_stage",
+        "realization_stage_evidence_ids"
       ],
       "properties": {
         "value_state": {
@@ -464,22 +465,12 @@
         "attribution_evidence_state": {
           "type": "object",
           "required": [
-            "highest_evidence_level",
+            "evidence_levels_present",
             "exact_patent_value_carrier_link",
             "patent_level_attributable_value",
             "evidence_ids"
           ],
           "properties": {
-            "highest_evidence_level": {
-              "enum": [
-                "E1",
-                "E2",
-                "E3",
-                "E4",
-                "E5",
-                "unknown"
-              ]
-            },
             "exact_patent_value_carrier_link": {
               "enum": [
                 "confirmed",
@@ -500,6 +491,19 @@
               "type": "array",
               "items": {
                 "type": "string"
+              }
+            },
+            "evidence_levels_present": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "E1",
+                  "E2",
+                  "E3",
+                  "E4",
+                  "E5"
+                ]
               }
             }
           },
@@ -563,6 +567,12 @@
             "R5",
             "unknown"
           ]
+        },
+        "realization_stage_evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         }
       },
       "additionalProperties": false
