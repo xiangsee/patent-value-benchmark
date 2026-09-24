@@ -20,3 +20,8 @@
 - 对非 Unknown 的分析判断，要求至少引用一个 evidence record。
 
 - Milestone A 达到 10 组 matched pairs，暂停第25届扩样，进入 Cross-pair Synthesis。
+
+- 完成第25届 V0.6 Cross-pair Synthesis：10组中 2 Yes / 4 No / 4 Uncertain。
+- 确认公开T0证据在 10/10 配对中均无法解决 patent-level attribution。
+- 提出 V0.7 架构候选：Value State / Attribution-Evidence State / Observability State / Value Realization Stage。
+- V0.7 暂不 adopted，计划使用第24届进行外部验证。
