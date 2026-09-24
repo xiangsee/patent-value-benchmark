@@ -100,3 +100,16 @@ Knowledge
 - 不将其表述为 Gold-vs-Silver prediction model；
 - 进入 V0.7 architecture proposal；
 - 下一外部验证集为第24届。
+
+
+## Milestone B — 24th External Validation
+
+状态：**进行中**
+
+- T0 = 2022-10-31
+- V0.7 仍为 Proposal，未 adopted
+- 第25届结果冻结
+- Round 1：2组配对
+  - P24-PHARMA-001
+  - P24-SOFT-001
+- 计划达到4–6组后再做架构判断
