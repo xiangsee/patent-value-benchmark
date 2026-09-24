@@ -48,3 +48,9 @@
 - Patent Value Diagnostic 1.0 Draft 上线：新增Schema、确定性生成器、艾可宁人类可读示例和generated dataset。
 - CI新增Diagnostic→Ledger一致性校验、Diagnostic证据引用校验和生成文件漂移检查。
 - Diagnostic明确禁止Gold概率、无E4支持的专利金额估值和自动排名。
+
+- E1–E5 从“最高等级”语义迁移为可并存的 `evidence_levels_present`，避免误读为单调评分阶梯。
+- R1–R5新增 `realization_stage_evidence_ids`，要求价值实现阶段本身可追溯。
+- 新增R0（华为无线通信）、R2（电网专利许可）验收Ledger，与艾可宁R4组成R0/R2/R4三阶段测试集。
+- 新增Data Dictionary、CITATION.cff、许可证策略说明和v0.1.0 readiness checklist。
+- 新增Markdown报告渲染器并纳入CI漂移检查。
