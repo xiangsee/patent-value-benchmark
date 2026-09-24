@@ -84,3 +84,19 @@ Knowledge
 - CI 全部通过
 
 > License 在正式发布前单独确定，不在研究阶段擅自替用户选择。
+
+
+## Milestone A Result — V0.6 Cross-pair Synthesis
+
+第25届 10 组 matched pairs 已完成横向综合。
+
+结果：
+- Yes: 2
+- No: 4
+- Uncertain: 4
+
+正式结论：
+- V0.6 保留为 readiness / evidence research baseline；
+- 不将其表述为 Gold-vs-Silver prediction model；
+- 进入 V0.7 architecture proposal；
+- 下一外部验证集为第24届。
