@@ -44,3 +44,7 @@
 - Patent Value Ledger 1.0 Draft 上线：新增 Schema、方法文档、模板、贡献协议和首个公开示例（艾可宁）。
 - Ledger CI 新增跨引用校验与V0.7 Non-inheritance硬规则：R3/R4/R5必须有exact-patent link，R5必须有专利级可归因价值。
 - 将第24届Ledger示例Evidence从第25届预览数据中拆分，保持数据集语义边界。
+
+- Patent Value Diagnostic 1.0 Draft 上线：新增Schema、确定性生成器、艾可宁人类可读示例和generated dataset。
+- CI新增Diagnostic→Ledger一致性校验、Diagnostic证据引用校验和生成文件漂移检查。
+- Diagnostic明确禁止Gold概率、无E4支持的专利金额估值和自动排名。
