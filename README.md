@@ -22,7 +22,7 @@ Xiangsee Patent Value Benchmark 是《详见》（**xiangsee**）发起的开放
 - 第 25 届中国专利奖：V0.6 10组配对已封存并完成Cross-pair Synthesis
 - 第 24 届中国专利奖：完成V0.7跨届外部压力测试，四层架构已 adopted
 - 历届 Gold / Silver / Excellent 结构化基准库设计
-- Patent Value Ledger（专利价值账本）Schema
+- Patent Value Ledger 1.0 Draft：Schema、公开模板、首个示例与CI验证已上线
 
 ## 核心研究链
 
@@ -58,7 +58,9 @@ V0.7进一步把 **Value State / Attribution & Evidence / Observability / Value 
 - `docs/methodology/`：研究方法与模型版本
 - `data/`：清洗后的开放基准数据（逐步发布）
 - `analysis/`：样本外验证与研究分析
-- `schema/`：开放数据与 Patent Value Ledger Schema（筹备中）
+- `schema/`：开放数据与 Patent Value Ledger Schema
+- `data/ledgers/`：可校验的专利价值账本
+- `examples/patent-value-ledger/`：提交模板
 
 ## 品牌
 
@@ -67,3 +69,20 @@ V0.7进一步把 **Value State / Attribution & Evidence / Observability / Value 
 ---
 
 本项目仍处于研究阶段。当前模型和字段可能随着反证测试与样本外验证继续修订；重要变更将记录在 CHANGELOG 中。
+
+
+## Patent Value Ledger
+
+V0.7 已经落成可填写的 **Patent Value Ledger 1.0 Draft**。
+
+一张账本串联：
+
+`Knowledge → Technology → Patent → Value Carrier → Real-world Validation → Attributable Value`
+
+公开模板见 `examples/patent-value-ledger/template.json`，首个示例见 `data/ledgers/example-aikening.jsonl`。
+
+CI 会阻止：
+- R3/R4/R5 没有 exact-patent 映射；
+- R5 没有专利级可归因价值；
+- Ledger 引用不存在的 source/evidence；
+- 历史 T0 使用未来来源。
