@@ -54,3 +54,6 @@
 - 新增R0（华为无线通信）、R2（电网专利许可）验收Ledger，与艾可宁R4组成R0/R2/R4三阶段测试集。
 - 新增Data Dictionary、CITATION.cff、许可证策略说明和v0.1.0 readiness checklist。
 - 新增Markdown报告渲染器并纳入CI漂移检查。
+
+- 许可证决策完成：代码/CI/JSON Schema 使用 Apache-2.0；原创文档与原创结构化数据使用 CC BY 4.0。
+- 新增多许可证边界说明、NOTICE、代码/数据/文档许可证说明；第三方来源材料不被本仓库重新授权。
