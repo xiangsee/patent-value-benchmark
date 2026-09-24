@@ -204,8 +204,16 @@ def main() -> int:
         state = item.get("v0_7_state", {})
         attr = state.get("attribution_evidence_state", {})
         stage = state.get("realization_stage")
+        stage_evidence_ids = state.get("realization_stage_evidence_ids", [])
         exact_link = attr.get("exact_patent_value_carrier_link")
         patent_value = attr.get("patent_level_attributable_value")
+
+        # Every claimed realization beyond R0 must cite evidence for that stage.
+        if stage in {"R1", "R2", "R3", "R4", "R5"} and not stage_evidence_ids:
+            fail(errors, f"ledger {ledger_id}: {stage} requires realization_stage_evidence_ids")
+        for evidence_id in stage_evidence_ids:
+            if evidence_id not in evidence:
+                fail(errors, f"ledger {ledger_id}: realization stage references missing evidence {evidence_id}")
 
         # V0.7 non-inheritance rule:
         # Patent-level R3/R4/R5 requires at least a non-Unknown exact-patent link.
@@ -216,6 +224,9 @@ def main() -> int:
             )
 
         # R5 specifically requires attributable patent-level value.
+        if stage == "R5" and "E4" not in attr.get("evidence_levels_present", []):
+            fail(errors, f"ledger {ledger_id}: R5 requires E4 in evidence_levels_present")
+
         if stage == "R5" and patent_value == "unknown":
             fail(
                 errors,
@@ -260,8 +271,11 @@ def main() -> int:
             fail(errors, f"diagnostic {diagnostic_id}: realization_stage differs from ledger {ledger_id}")
 
         ledger_attr = ledger_state.get("attribution_evidence_state", {})
+        if diag_state.get("realization_stage_evidence_ids") != ledger_state.get("realization_stage_evidence_ids", []):
+            fail(errors, f"diagnostic {diagnostic_id}: realization_stage_evidence_ids differ from ledger {ledger_id}")
+
         for field in (
-            "highest_evidence_level",
+            "evidence_levels_present",
             "exact_patent_value_carrier_link",
             "patent_level_attributable_value",
         ):
