@@ -1,0 +1,158 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/xiangsee/patent-value-benchmark/schema/v0.7-state.schema.json",
+  "title": "Xiangsee Patent Value State V0.7",
+  "type": "object",
+  "required": [
+    "value_state",
+    "attribution_evidence_state",
+    "observability_state",
+    "realization_stage"
+  ],
+  "properties": {
+    "value_state": {
+      "type": "object",
+      "properties": {
+        "technical_differentiation": {
+          "enum": [
+            "confirmed",
+            "strong_evidence",
+            "inference",
+            "unknown"
+          ]
+        },
+        "value_carrier_centrality": {
+          "enum": [
+            "confirmed",
+            "strong_evidence",
+            "inference",
+            "unknown"
+          ]
+        },
+        "real_world_validation": {
+          "enum": [
+            "confirmed",
+            "strong_evidence",
+            "inference",
+            "unknown"
+          ]
+        },
+        "scale_diffusion": {
+          "enum": [
+            "confirmed",
+            "strong_evidence",
+            "inference",
+            "unknown"
+          ]
+        },
+        "industry_social_impact": {
+          "enum": [
+            "confirmed",
+            "strong_evidence",
+            "inference",
+            "unknown"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "attribution_evidence_state": {
+      "type": "object",
+      "properties": {
+        "highest_evidence_level": {
+          "enum": [
+            "E1",
+            "E2",
+            "E3",
+            "E4",
+            "E5",
+            "unknown"
+          ]
+        },
+        "exact_patent_value_carrier_link": {
+          "enum": [
+            "confirmed",
+            "strong_evidence",
+            "inference",
+            "unknown"
+          ]
+        },
+        "patent_level_attributable_value": {
+          "enum": [
+            "confirmed",
+            "strong_evidence",
+            "inference",
+            "unknown"
+          ]
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "observability_state": {
+      "type": "object",
+      "properties": {
+        "enterprise": {
+          "enum": [
+            "public",
+            "disclosed_regulated",
+            "internal",
+            "restricted",
+            "unknown"
+          ]
+        },
+        "product_project": {
+          "enum": [
+            "public",
+            "disclosed_regulated",
+            "internal",
+            "restricted",
+            "unknown"
+          ]
+        },
+        "exact_patent_mapping": {
+          "enum": [
+            "public",
+            "disclosed_regulated",
+            "internal",
+            "restricted",
+            "unknown"
+          ]
+        },
+        "attributable_value": {
+          "enum": [
+            "public",
+            "disclosed_regulated",
+            "internal",
+            "restricted",
+            "unknown"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "realization_stage": {
+      "enum": [
+        "R0",
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "unknown"
+      ]
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}
