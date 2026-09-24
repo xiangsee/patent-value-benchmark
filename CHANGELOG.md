@@ -25,3 +25,8 @@
 - 确认公开T0证据在 10/10 配对中均无法解决 patent-level attribution。
 - 提出 V0.7 架构候选：Value State / Attribution-Evidence State / Observability State / Value Realization Stage。
 - V0.7 暂不 adopted，计划使用第24届进行外部验证。
+
+- 启动第24届跨届次外部验证，T0=2022-10-31。
+- 新增 V0.7 External Validation Protocol。
+- 第24届 Round 1 完成2组：创新药与软件基础设施。
+- 初步验证 Value State / Evidence / Observability / Realization Stage 分层具有解释价值，但 V0.7 仍未 adopted。
