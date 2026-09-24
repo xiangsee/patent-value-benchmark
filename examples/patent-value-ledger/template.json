@@ -1,0 +1,84 @@
+{
+  "ledger_id": "LEDGER-EXAMPLE-0001",
+  "schema_version": "1.0-draft",
+  "analysis_mode": "public",
+  "patent": {
+    "application_number": "ZLXXXXXXXXXXXX.X",
+    "publication_number": null,
+    "grant_number": null,
+    "title": "填写专利名称",
+    "assignees": [],
+    "filing_date": null,
+    "earliest_priority_date": null,
+    "grant_date": null,
+    "family_note": null
+  },
+  "observation": {
+    "as_of_date": "2026-09-24",
+    "t0_date": null,
+    "time_policy": "current_state",
+    "post_t0_ground_truth_allowed": false
+  },
+  "knowledge_origin": {
+    "status": "unknown",
+    "description": null,
+    "origin_types": [
+      "unknown"
+    ],
+    "evidence_ids": []
+  },
+  "technology": {
+    "problem": "填写技术问题",
+    "mechanism": "填写核心机制",
+    "relative_differentiation": "unknown",
+    "comparison_baseline": null,
+    "evidence_ids": []
+  },
+  "value_carriers": [
+    {
+      "carrier_id": "VC-1",
+      "carrier_type": "unknown",
+      "name": "待确认价值载体",
+      "link_status": "unknown",
+      "description": null,
+      "evidence_ids": []
+    }
+  ],
+  "value_links": [],
+  "value_metrics": [],
+  "v0_7_state": {
+    "value_state": {
+      "technical_differentiation": "unknown",
+      "value_carrier_centrality": "unknown",
+      "real_world_validation": "unknown",
+      "scale_diffusion": "unknown",
+      "industry_social_impact": "unknown"
+    },
+    "attribution_evidence_state": {
+      "highest_evidence_level": "unknown",
+      "exact_patent_value_carrier_link": "unknown",
+      "patent_level_attributable_value": "unknown",
+      "evidence_ids": []
+    },
+    "observability_state": {
+      "enterprise": "unknown",
+      "product_project": "unknown",
+      "exact_patent_mapping": "unknown",
+      "attributable_value": "unknown"
+    },
+    "realization_stage": "R0"
+  },
+  "gaps": [
+    {
+      "gap_type": "exact_patent_mapping",
+      "description": "需要证明该专利是否进入具体价值载体",
+      "needed_evidence": [
+        "产品技术映射、招股书、技术文档或其他E3证据"
+      ],
+      "observability": "unknown"
+    }
+  ],
+  "source_ids": [],
+  "review_status": "draft",
+  "notes": "模板中的Unknown必须保留为Unknown，不能默认写成0。"
+}
