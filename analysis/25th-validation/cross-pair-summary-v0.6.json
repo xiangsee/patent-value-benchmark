@@ -1,0 +1,29 @@
+{
+  "model": "v0.6",
+  "edition": 25,
+  "t0_date": "2024-02-05",
+  "matched_pairs": 10,
+  "result_counts": {
+    "yes": 2,
+    "no": 4,
+    "uncertain": 4
+  },
+  "observed_difference_counts": {
+    "evidence_traceability": 5,
+    "real_world_validation_depth": 2,
+    "value_carrier_centrality": 1,
+    "scale_and_diffusion": 1,
+    "relative_technological_differentiation": 1,
+    "patent_level_attribution": 0,
+    "industry_social_impact": 0
+  },
+  "key_findings": [
+    "Large-scale commercialization is not sufficient for Gold.",
+    "Exact patent-to-product mapping is not sufficient for Gold.",
+    "Patent-level attribution remained unresolved in all 10 matched pairs from public T0 evidence.",
+    "Evidence traceability is the most frequently observed public difference but is confounded by disclosure regime.",
+    "Telecom, software infrastructure and foundational AI show strong observability ceilings.",
+    "V0.6 is useful for readiness/evidence diagnosis but is not supported as a stable Gold-vs-Silver predictor."
+  ],
+  "next_step": "formalize V0.7 architecture proposal and validate on 24th edition without altering 25th results"
+}
