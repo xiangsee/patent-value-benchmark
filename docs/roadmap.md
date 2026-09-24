@@ -2,122 +2,125 @@
 
 ## Research Preview — current
 
-当前研究架构：**V0.7 adopted**
+当前正式研究架构：**V0.7 adopted**
 
-目标不是预测奖项，而是建立可复核的高价值专利基准与 Gold Readiness 诊断框架。
+主项目目标是建立可复核、可反驳、可持续更新的 **Patent Value Benchmark**，而不是预测任何奖项。
 
-### 已完成
-- 第 26 届：开发集 / 反事实测试
-- 第 25 届：10组matched-pair验证与Cross-pair Synthesis已完成
-- 数据 Schema
-- Source Registry
-- T0 / Outcome Leakage 规则
-- 自动数据校验
+从2026-09-24起，研究正式拆分为两条线：
 
-## Milestone A — 25th Validation Set
+- **Track A — Patent Value Benchmark**：通用专利价值主干
+- **Track B — China Patent Award Research**：中国专利奖专项模块
 
-目标：
-- 扩展至约 10–12 组高质量 Gold–Silver matched pairs（当前 10 组，Milestone A 最低目标已完成）
-- 覆盖至少：
-  - 生命科学
-  - 医疗器械
-  - 通信
-  - 半导体 / 装备
-  - 先进材料
-  - 新能源 / 电力
-  - AI / 软件基础设施
-  - 记录无法形成高质量 matched pair 的产业缺口，而非强行配对
-- 明确记录“可区分 / 不可区分 / 不确定”
-- 不因单个案例修改 V0.6
+两条线共享证据纪律、T0规则和数据治理，但不共享目标变量。
 
-状态：**完成最低目标，停止扩样，进入 Cross-pair Synthesis。**
+详见 `docs/research-tracks.md`。
 
-完成条件：
-- 跨行业重复出现的规律与失败模式可被独立复核
-- 数据全部通过 Schema 与 cross-reference validation
+---
 
-## Milestone B — V0.7 Decision
+## Track A — Patent Value Benchmark
 
-只有在 Milestone A 完成后才决定：
-- 保持 V0.6
-- 或提出 V0.7
+### 当前正式架构：V0.7
 
-任何新增变量必须说明：
-1. 哪些旧样本促使修改；
-2. 是否属于真实机制而非历史过拟合；
-3. 如何在未见样本上检验。
+已采用：
+- Value State
+- Attribution / Evidence State
+- Observability State
+- Value Realization Stage (R0–R5)
 
-## Milestone C — Historical Benchmark
+V0.7不输出总分，也不预测Gold。
+
+### Research Track — V0.8 Value Construct & Rights Control
+
+状态：**研究中，未adopt**
+
+理论锚定已完成第一轮：
+- 区分 Policy / Technological Quality / Private Asset / Realized Operating / Social-Strategic value constructs
+- 识别V0.7缺项：Rights Control、Counterfactual Control、Option/Future Value、Portfolio Context
+- Screening Signals（citations/family/claims/renewal等）与Value Proof正式分离
+- 提出Patent Age“两只钟”：survival/revealed-value vs remaining-exclusivity
+
+下一阶段优先完成：
+1. 4组 Same-realization / Different-rights-control 对照样本
+2. 4个 Early-stage Option retrospectives
+3. 1个 SEP / portfolio 案例
+4. 1个“高龄但剩余期限短”的 Two Clocks 案例
+5. 至少一批完全不依赖中国专利奖标签的通用样本
+
+只有完成预注册验证后，才讨论V0.8是否 adopted。
+
+### Patent Value Ledger + Diagnostic
+
+状态：**核心输入/输出闭环已建立**
+
+已完成：
+- Patent Value Ledger 1.0 Draft
+- Patent Value Diagnostic 1.0 Draft
+- Ledger → Diagnostic 确定性生成器
+- Diagnostic → Markdown report 渲染
+- CI校验 non-inheritance、cross-reference、T0 和版本一致性
+- R0 / R2 / R4 公开验收样例
+
+下一步：
+- 外部冷启动复现
+- 根据复现结果修正文档 / schema
+- Schema freeze
+- v0.1.0 release
+
+---
+
+## Track B — China Patent Award Research
+
+中国专利奖研究作为独立长期模块保留。
+
+### 已完成的历史研究
+
+#### 第25届
+- 10组 Gold–Silver matched pairs
+- Cross-pair Synthesis
+- V0.6 的主要形成样本
+
+#### 第24届
+- 4组跨届压力测试
+- 创新药、软件基础设施、电力电子、生物制品
+- 用于V0.7外部验证
+
+这些记录继续保存在：
+- `analysis/25th-validation/`
+- `analysis/24th-validation/`
+
+专项入口：
+- `analysis/china-patent-award/README.md`
+
+### 后续独立议程
 
 逐步扩展：
-- 第 20–24 届 Gold / Silver
-- 后续再加入 Excellent
-- 逐步回溯更早届次
+- 历届 Gold / Silver / Excellent
+- 评奖标准与结果的制度史
+- 同届同领域匹配研究
+- 获奖后技术、市场、许可、诉讼、标准、产业化表现
+- 金奖是否对某些 value constructs 提供稳定外部信号
 
 历史数据必须区分当时的评奖制度与当前制度，避免跨制度直接横比。
 
-## Milestone D — Patent Value Ledger
+---
 
-发布开放的 Patent Value Ledger Schema：
+## Historical provenance — V0.6 / V0.7
 
-```text
-Knowledge
-  → Technology
-  → Patent
-  → Product / Process / Platform / Project
-  → Regulatory / Standard / Market
-  → Revenue / Social Impact
-```
+项目早期曾以中国专利奖样本为主要现实世界验证入口。
 
-每条连接保留证据、日期、置信状态和来源。
+### V0.6 Cross-pair Synthesis
 
-## Milestone E — v0.1.0 Public Release
-
-首次正式版本发布前完成：
-- README 完整化
-- 数据字典
-- 示例记录
-- CONTRIBUTING
-- CITATION.cff
-- 开放许可证策略（代码 / 数据 / 文档分别处理）
-- 首批可复核 benchmark dataset
-- CI 全部通过
-
-> License 在正式发布前单独确定，不在研究阶段擅自替用户选择。
-
-
-## Milestone A Result — V0.6 Cross-pair Synthesis
-
-第25届 10 组 matched pairs 已完成横向综合。
-
-结果：
+第25届10组 matched pairs：
 - Yes: 2
 - No: 4
 - Uncertain: 4
 
-正式结论：
-- V0.6 保留为 readiness / evidence research baseline；
-- 不将其表述为 Gold-vs-Silver prediction model；
-- 进入 V0.7 architecture proposal；
-- 下一外部验证集为第24届。
+得到的关键结论不是“能预测Gold”，而是：
+- 单一readiness分数无法稳定区分奖项结果；
+- 必须拆开价值、归因、可观察性和实现阶段；
+- 不能用事后故事修补 Unknown。
 
-
-## Milestone B — 24th External Validation
-
-状态：**最低外部验证门槛完成；V0.7 research architecture 已 adopted**
-
-- T0 = 2022-10-31
-- V0.7 仍为 Proposal，未 adopted
-- 第25届结果冻结
-- Round 1：2组配对
-  - P24-PHARMA-001
-  - P24-SOFT-001
-- Round 2：P24-POWER-001
-- Round 3：P24-BIOLOGIC-001，累计4组
-- 完成首次架构判断：V0.7 adopted（不宣称Gold预测能力）
-
-
-## Milestone B Result — V0.7 Adopted
+### V0.7 External Validation
 
 第24届4组跨届压力测试达到预设最低门槛。
 
@@ -127,37 +130,25 @@ Knowledge
 - Observability State
 - Value Realization Stage (R0–R5)
 
-下一阶段进入 Historical Benchmark + Patent Value Ledger schema 实装。
+这些结果现在被视为：
 
+> **通用架构的历史形成证据 + 中国专利奖专项研究资产**
 
-## Milestone D Progress — Ledger + Diagnostic
+而不是主项目未来样本设计的默认模板。
 
-状态：**核心输入/输出闭环已建立**
+---
 
-已完成：
-- Patent Value Ledger 1.0 Draft
-- Patent Value Diagnostic 1.0 Draft
-- Ledger → Diagnostic 确定性生成器
-- CI 校验 Ledger non-inheritance 与 Diagnostic/ Ledger 一致性
-- R0 / R2 / R4 三类公开验收样例
+## Public release — v0.1.0
 
-下一步：
-- 数据字典与人类可读报告生成器已完成
-- CITATION.cff 已完成
-- 许可证选项已形成，待最终决定
-- 下一步执行外部冷启动复现、Schema freeze与v0.1.0 Release
-
-
-## Research Track — V0.8 Value Construct & Rights Control
-
-状态：**研究中，未adopt**
-
-理论锚定已完成第一轮：
-- 区分Policy / Technological Quality / Private Asset / Realized Operating / Social-Strategic value constructs
-- 识别V0.7缺项：Rights Control、Counterfactual Control、Option/Future Value、Portfolio Context
-- Screening Signals（citations/family/claims/renewal等）与Value Proof正式分离
-- 提出Patent Age“两只钟”：survival/revealed-value vs remaining-exclusivity
-
-V0.7继续作为当前正式架构。
-
-V0.8只有经过预注册的Rights Control、Option Value、Portfolio Context样本验证后才讨论adopt。
+首次正式版本发布前完成：
+- README 完整化
+- 数据字典
+- 示例记录
+- CONTRIBUTING
+- CITATION.cff
+- 多许可证边界确认
+- 首批可复核 benchmark dataset
+- 外部冷启动复现
+- Schema freeze
+- CI 全部通过
+- Git tag + GitHub release
