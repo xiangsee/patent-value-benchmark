@@ -135,3 +135,15 @@ CI 同时检查：
 1. 许可证最终选择；
 2. 一次不依赖本对话上下文的外部冷启动复现；
 3. Schema freeze + GitHub tag/release。
+
+
+## License
+
+This is a multi-licensed repository:
+
+- **Code / CI / JSON Schemas:** Apache-2.0
+- **Original documentation:** CC BY 4.0
+- **Original structured data / curation:** CC BY 4.0
+- **Third-party source materials:** not relicensed; rights remain with their owners
+
+See `LICENSE`, `NOTICE.md`, and `LICENSES/` for the full scope.
