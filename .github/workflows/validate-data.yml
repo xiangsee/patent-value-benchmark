@@ -9,6 +9,8 @@ on:
       - "tools/validate_data.py"
       - "tools/generate_diagnostics.py"
       - "tools/render_reports.py"
+      - "tools/scaffold_ledger.py"
+      - "tools/scaffold_ledger.py"
       - "requirements-dev.txt"
       - ".github/workflows/validate-data.yml"
   pull_request:
@@ -36,6 +38,9 @@ jobs:
 
       - name: Install validation dependencies
         run: python -m pip install -r requirements-dev.txt
+
+      - name: Compile Python tools
+        run: python -m py_compile tools/validate_data.py tools/generate_diagnostics.py tools/render_reports.py tools/scaffold_ledger.py
 
       - name: Validate JSONL data
         run: python tools/validate_data.py
