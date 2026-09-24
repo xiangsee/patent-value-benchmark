@@ -1,0 +1,59 @@
+# Licensing
+
+Xiangsee Patent Value Benchmark is a **multi-licensed repository**.
+
+## Code and software-like materials — Apache-2.0
+
+The following are licensed under the Apache License 2.0:
+
+- `tools/`
+- `.github/workflows/`
+- `schema/`
+- other original software code added by this project
+
+Full text: `LICENSES/Apache-2.0.txt`
+
+SPDX identifier: `Apache-2.0`
+
+## Original documentation and structured data — CC BY 4.0
+
+Original materials created by Xiangsee in the following areas are licensed under
+Creative Commons Attribution 4.0 International:
+
+- `README.md`
+- `CONTRIBUTING.md`
+- `docs/`
+- `analysis/`
+- `data/` (only Xiangsee-created structure, annotations, classifications, evidence records, ledgers, diagnostics and other original compilation/curation)
+- `examples/`
+- `reports/`
+- project-authored metadata such as `CITATION.cff`
+
+Full text: `LICENSES/CC-BY-4.0.txt`
+
+SPDX identifier: `CC-BY-4.0`
+
+Attribution should identify **Xiangsee Patent Value Benchmark / xiangsee** and,
+where practical, the version or commit used.
+
+## Third-party materials and facts
+
+This repository cites or links to patents, regulatory filings, standards,
+annual reports, academic papers, company disclosures, media reports and other
+third-party sources.
+
+The repository's licenses **do not relicense those third-party works**.
+Copyright, database rights, trademarks and other rights in third-party source
+materials remain with their respective owners.
+
+The project generally stores links and Xiangsee-created structured facts /
+annotations rather than redistributing third-party source documents.
+
+## No implied patent-value warranty
+
+The licenses govern reuse of project materials. They do not constitute:
+- a warranty that a patent is valid or valuable;
+- a legal, accounting or investment opinion;
+- an authorization to reuse third-party source content beyond applicable law.
+
+See `NOTICE.md` for attribution and scope notes.
