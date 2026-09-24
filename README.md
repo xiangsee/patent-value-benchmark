@@ -80,7 +80,10 @@ V0.7 已经落成可填写的 **Patent Value Ledger 1.0 Draft**。
 
 `Knowledge → Technology → Patent → Value Carrier → Real-world Validation → Attributable Value`
 
-公开模板见 `examples/patent-value-ledger/template.json`，首个示例见 `data/ledgers/example-aikening.jsonl`。
+公开模板见 `examples/patent-value-ledger/template.json`。当前验收示例覆盖 R0 / R2 / R4：
+- `data/ledgers/example-r0-huawei.jsonl`
+- `data/ledgers/example-r2-power-license.jsonl`
+- `data/ledgers/example-aikening.jsonl`。
 
 CI 会阻止：
 - R3/R4/R5 没有 exact-patent 映射；
@@ -94,7 +97,7 @@ CI 会阻止：
 Ledger 的标准输出不是总分，而是 Diagnostic：
 
 - 当前 R0–R5
-- 当前最高 evidence level
+- 当前已出现的 evidence levels（非单调、可并存）
 - 已确认的 exact patent → value carrier 链
 - 产品/项目/专利级指标及其 scope
 - unresolved gaps
@@ -108,3 +111,27 @@ python tools/generate_diagnostics.py
 ```
 
 CI 会执行 `--check`，保证 Diagnostic 与 Ledger 不发生版本漂移。
+
+
+## Human-readable Reports
+
+结构化 Diagnostic 还会确定性渲染为 Markdown：
+
+```bash
+python tools/render_reports.py
+```
+
+输出位于 `reports/generated/`。
+
+CI 同时检查：
+- Ledger → Diagnostic 是否同步；
+- Diagnostic → Markdown report 是否同步。
+
+## v0.1.0 Pre-release
+
+发布前状态见 `docs/release/v0.1.0-readiness.md`。
+
+目前剩余核心事项：
+1. 许可证最终选择；
+2. 一次不依赖本对话上下文的外部冷启动复现；
+3. Schema freeze + GitHub tag/release。
