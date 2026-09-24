@@ -7,7 +7,6 @@ on:
       - "schema/**"
       - "tools/validate_data.py"
       - "tools/generate_diagnostics.py"
-      - "tools/generate_diagnostics.py"
       - "requirements-dev.txt"
       - ".github/workflows/validate-data.yml"
   pull_request:
