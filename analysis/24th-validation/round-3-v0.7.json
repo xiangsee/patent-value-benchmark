@@ -1,0 +1,60 @@
+{
+  "edition": 24,
+  "round": 3,
+  "t0_date": "2022-10-31",
+  "model_under_test": "v0.7-proposal",
+  "pair": {
+    "pair_id": "P24-BIOLOGIC-001",
+    "gold": {
+      "record_id": "P24-G-ZL03816434.5",
+      "title": "HIV感染的肽衍生物融合抑制剂",
+      "assignee": "前沿生物药业（南京）股份有限公司"
+    },
+    "silver": {
+      "record_id": "P24-S-ZL202010537730.0",
+      "title": "新型冠状病毒Vero细胞灭活疫苗病毒液及其生产方法",
+      "assignee": "北京生物制品研究所有限责任公司、中国生物技术股份有限公司"
+    },
+    "matching_basis": [
+      "same_edition",
+      "biologics",
+      "regulated_health_product",
+      "real_world_use_before_t0"
+    ],
+    "v0_7": {
+      "gold": {
+        "value_state": {
+          "product": "Aikening / albuvirtide",
+          "regulatory_status": "marketed since 2018",
+          "pre_t0_scale": "2021 sales RMB40.5029m; 111,834 units; >200 designated hospitals; >100 DTP pharmacies"
+        },
+        "attribution_evidence": {
+          "E3": "confirmed: regulated SSE disclosure explicitly places ZL03816434.5 inside Albuvirtide product technology and states that product technology is core to Aikening development",
+          "E4": "unknown: no defensible standalone share of revenue/performance attributable only to this Chinese patent",
+          "E5": "regulated disclosure and product approval"
+        },
+        "observability_state": "high: disclosed/regulatory",
+        "realization_stage": "R4 confirmed; R5 unknown"
+      },
+      "silver": {
+        "value_state": {
+          "product": "BIBP-CorV / Beijing Institute inactivated COVID-19 vaccine",
+          "regulatory_status": "conditionally approved in China before T0; WHO EUL in 2021",
+          "pre_t0_scale": "global public-health deployment; COVAX agreement for up to 170m Beijing Institute doses"
+        },
+        "attribution_evidence": {
+          "E3": "strong evidence: patent claims a Vero-cell inactivated SARS-CoV-2 vaccine product; official NHC/WHO sources identify Beijing Institute's marketed vaccine as a Vero-cell inactivated product, but reviewed T0 sources do not provide an explicit patent-number-to-product table",
+          "E4": "unknown: no standalone attributable share of vaccine public-health/economic value assigned to the patent",
+          "E5": "official patent, NHC, WHO and COVAX-related sources"
+        },
+        "observability_state": "high at product/regulatory level; exact-patent linkage strong but not fully explicit",
+        "realization_stage": "R4 strong/confirmed at product level with strong exact-patent linkage; R5 unknown"
+      }
+    },
+    "result": {
+      "architecture_value": "strong_support",
+      "gold_silver_prediction": "not_claimed",
+      "key_observation": "Both Gold and Silver had clear, large real-world health value before T0. The architecture avoids ranking them by scale and instead separates actual value, exact-patent attribution, evidence quality and observability. R5 remains unresolved on both sides."
+    }
+  }
+}
