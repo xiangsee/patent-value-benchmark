@@ -40,3 +40,7 @@
 - V0.7 正式 adopted 为 Patent Value Benchmark research architecture。
 - 明确：V0.7不宣称Gold/Silver预测能力，不输出获奖概率。
 - 新增 V0.7 状态Schema，正式分离 Value / Attribution-Evidence / Observability / Realization Stage。
+
+- Patent Value Ledger 1.0 Draft 上线：新增 Schema、方法文档、模板、贡献协议和首个公开示例（艾可宁）。
+- Ledger CI 新增跨引用校验与V0.7 Non-inheritance硬规则：R3/R4/R5必须有exact-patent link，R5必须有专利级可归因价值。
+- 将第24届Ledger示例Evidence从第25届预览数据中拆分，保持数据集语义边界。
