@@ -17,7 +17,7 @@
 ## Milestone A — 25th Validation Set
 
 目标：
-- 扩展至约 10–12 组高质量 Gold–Silver matched pairs（当前 8 组）
+- 扩展至约 10–12 组高质量 Gold–Silver matched pairs（当前 10 组，Milestone A 最低目标已完成）
 - 覆盖至少：
   - 生命科学
   - 医疗器械
@@ -29,6 +29,8 @@
   - 记录无法形成高质量 matched pair 的产业缺口，而非强行配对
 - 明确记录“可区分 / 不可区分 / 不确定”
 - 不因单个案例修改 V0.6
+
+状态：**完成最低目标，停止扩样，进入 Cross-pair Synthesis。**
 
 完成条件：
 - 跨行业重复出现的规律与失败模式可被独立复核
