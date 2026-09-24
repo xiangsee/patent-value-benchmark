@@ -6,6 +6,8 @@ on:
       - "data/**"
       - "schema/**"
       - "tools/validate_data.py"
+      - "tools/generate_diagnostics.py"
+      - "tools/generate_diagnostics.py"
       - "requirements-dev.txt"
       - ".github/workflows/validate-data.yml"
   pull_request:
@@ -33,3 +35,6 @@ jobs:
 
       - name: Validate JSONL data
         run: python tools/validate_data.py
+
+      - name: Check generated diagnostics
+        run: python tools/generate_diagnostics.py --check
