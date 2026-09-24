@@ -112,4 +112,5 @@ Knowledge
 - Round 1：2组配对
   - P24-PHARMA-001
   - P24-SOFT-001
+- Round 2：新增 P24-POWER-001，当前累计3组
 - 计划达到4–6组后再做架构判断
