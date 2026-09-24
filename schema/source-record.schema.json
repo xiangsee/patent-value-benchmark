@@ -10,6 +10,7 @@
     "url",
     "source_type",
     "source_date",
+    "publicly_available_date",
     "accessed_date",
     "t0_eligible"
   ],
@@ -49,12 +50,25 @@
       ],
       "format": "date"
     },
+    "publicly_available_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
     "accessed_date": {
       "type": "string",
       "format": "date"
     },
     "t0_eligible": {
       "type": "boolean"
+    },
+    "t0_eligibility_basis": {
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "archive_note": {
       "type": [
