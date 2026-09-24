@@ -55,7 +55,7 @@
       "industry_social_impact": "unknown"
     },
     "attribution_evidence_state": {
-      "highest_evidence_level": "unknown",
+      "evidence_levels_present": [],
       "exact_patent_value_carrier_link": "unknown",
       "patent_level_attributable_value": "unknown",
       "evidence_ids": []
@@ -66,7 +66,8 @@
       "exact_patent_mapping": "unknown",
       "attributable_value": "unknown"
     },
-    "realization_stage": "R0"
+    "realization_stage": "R0",
+    "realization_stage_evidence_ids": []
   },
   "gaps": [
     {
