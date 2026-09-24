@@ -104,7 +104,7 @@ Knowledge
 
 ## Milestone B — 24th External Validation
 
-状态：**进行中**
+状态：**最低外部验证门槛完成；V0.7 research architecture 已 adopted**
 
 - T0 = 2022-10-31
 - V0.7 仍为 Proposal，未 adopted
@@ -112,5 +112,19 @@ Knowledge
 - Round 1：2组配对
   - P24-PHARMA-001
   - P24-SOFT-001
-- Round 2：新增 P24-POWER-001，当前累计3组
-- 计划达到4–6组后再做架构判断
+- Round 2：P24-POWER-001
+- Round 3：P24-BIOLOGIC-001，累计4组
+- 完成首次架构判断：V0.7 adopted（不宣称Gold预测能力）
+
+
+## Milestone B Result — V0.7 Adopted
+
+第24届4组跨届压力测试达到预设最低门槛。
+
+正式采用：
+- Value State
+- Attribution / Evidence State
+- Observability State
+- Value Realization Stage (R0–R5)
+
+下一阶段进入 Historical Benchmark + Patent Value Ledger schema 实装。
