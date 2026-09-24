@@ -2,13 +2,13 @@
 
 ## Research Preview — current
 
-当前模型：**V0.6 frozen**
+当前研究架构：**V0.7 adopted**
 
 目标不是预测奖项，而是建立可复核的高价值专利基准与 Gold Readiness 诊断框架。
 
 ### 已完成
 - 第 26 届：开发集 / 反事实测试
-- 第 25 届：样本外验证 Round 1–2
+- 第 25 届：10组matched-pair验证与Cross-pair Synthesis已完成
 - 数据 Schema
 - Source Registry
 - T0 / Outcome Leakage 规则
@@ -139,10 +139,10 @@ Knowledge
 - Patent Value Diagnostic 1.0 Draft
 - Ledger → Diagnostic 确定性生成器
 - CI 校验 Ledger non-inheritance 与 Diagnostic/ Ledger 一致性
-- 首个公开样例：艾可宁
+- R0 / R2 / R4 三类公开验收样例
 
 下一步：
-- 定义数据字典与人类可读报告模板
-- 确定代码 / 数据 / 文档许可证
-- 增加 CITATION.cff
-- 准备 v0.1.0 Public Release
+- 数据字典与人类可读报告生成器已完成
+- CITATION.cff 已完成
+- 许可证选项已形成，待最终决定
+- 下一步执行外部冷启动复现、Schema freeze与v0.1.0 Release
