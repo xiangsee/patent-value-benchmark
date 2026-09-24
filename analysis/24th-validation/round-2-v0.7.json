@@ -1,0 +1,76 @@
+{
+  "edition": 24,
+  "round": 2,
+  "t0_date": "2022-10-31",
+  "model_under_test": "v0.7-proposal",
+  "model_status": "proposal_not_adopted",
+  "pair": {
+    "pair_id": "P24-POWER-001",
+    "gold": {
+      "record_id": "P24-G-ZL201410144513.X",
+      "title": "变频装置及其功率扩展方法",
+      "assignee": "中车株洲电力机车研究所有限公司"
+    },
+    "silver": {
+      "record_id": "P24-S-ZL201480005701.2",
+      "title": "一种MPPT集中模式退出、切换方法及其相关应用",
+      "assignee": "阳光电源股份有限公司"
+    },
+    "matching_basis": [
+      "same_edition",
+      "power_electronics",
+      "converter_control",
+      "large_industrial_enterprise",
+      "similar_filing_period"
+    ],
+    "v0_7": {
+      "gold": {
+        "value_state": {
+          "technical_state": "confirmed_modular_converter_power_expansion_method",
+          "product_or_project_context_t0": "unknown_at_exact_patent_level",
+          "later_ground_truth": "post_T0_government_source_reports broad deployment in rail transit, industrial conversion and renewable-energy generation; excluded from T0 predictors"
+        },
+        "evidence_state": {
+          "E1": "available",
+          "E2": "unknown_at_exact_patent_level",
+          "E3": "unknown",
+          "E4": "unknown",
+          "E5": "patent_document_available"
+        },
+        "observability_state": {
+          "patent": "public",
+          "exact_patent_to_product": "unknown_pre_T0",
+          "scale_and_economic_impact": "unknown_pre_T0_in_reviewed_sources",
+          "post_T0_ground_truth": "available_but_excluded"
+        },
+        "realization_stage_publicly_defensible": "R0 confirmed; R1-R5 unknown from reviewed pre-T0 public evidence"
+      },
+      "silver": {
+        "value_state": {
+          "technical_state": "confirmed_photovoltaic_inverter_MPPT_mode_switching_method",
+          "product_category_context": "Sungrow photovoltaic inverters were already at large commercial scale before T0",
+          "exact_patent_to_product_attribution_t0": "unknown"
+        },
+        "evidence_state": {
+          "E1": "strong_enterprise_and_product_category_context",
+          "E2": "strong_product_category_scale: 2021 PV-inverter/power-conversion-equipment revenue RMB 9.0508bn; inverter sales 47GW",
+          "E3": "unknown_exact_patent_to_specific_product",
+          "E4": "unknown",
+          "E5": "exact patent had Anhui Provincial Patent Gold Award before T0"
+        },
+        "observability_state": {
+          "patent": "public",
+          "enterprise_product_scale": "disclosed_regulated",
+          "exact_patent_product_mapping": "unknown",
+          "attributable_value": "unknown"
+        },
+        "realization_stage_publicly_defensible": "R0 confirmed for the patent; product category is clearly at R4, but R4 must not be inherited by the exact patent without E3"
+      }
+    },
+    "result": {
+      "architecture_value": "strong_support_for_level_non_inheritance_and_observability_separation",
+      "gold_silver_prediction": "public_T0_cannot_distinguish",
+      "key_observation": "The Silver-side company/product category had stronger publicly disclosed scale before T0, yet exact-patent attribution remained missing. The Gold-side patent later proved to have broad real-world deployment, but that information was not publicly observable before T0 in reviewed sources. V0.7 correctly prevents both product-category value inheritance and post-T0 backfilling."
+    }
+  }
+}
