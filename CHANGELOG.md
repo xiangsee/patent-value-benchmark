@@ -61,3 +61,9 @@
 - 新增30分钟冷启动指南、单页速查、Ledger脚手架工具和冷启动PR模板。
 - Issue #2 已改写为可直接执行的外部复现任务；无需历史聊天或额外口头说明。
 - CI新增Python工具编译检查，冷启动脚手架、数据、Diagnostic与Markdown报告全链路通过。
+
+- 启动V0.8理论研究线，但V0.7继续为正式架构。
+- 完成“高价值专利”Value Construct拆分：Policy / Technological Quality / Private Asset / Realized Operating / Social-Strategic。
+- 将citations、family size、claims、renewal、litigation等定位为Screening Signals，而非直接Value Proof。
+- 提出候选新层：Rights Control、Counterfactual Control、Value Horizon / Option Value、Portfolio Context。
+- 提出Patent Age“两只钟”解释：长期维持体现revealed value，但剩余排他期随年龄缩短。
