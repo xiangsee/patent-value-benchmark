@@ -16,11 +16,11 @@ Xiangsee Patent Value Benchmark 是《详见》（**xiangsee**）发起的开放
 
 ## 当前研究阶段
 
-当前模型版本：**V0.6 (frozen for out-of-sample validation)**
+当前研究架构：**V0.7 (adopted)**
 
 正在进行：
-- 第 26 届中国专利奖：开发样本与 Gold / Silver 对照
-- 第 25 届中国专利奖：样本外验证
+- 第 25 届中国专利奖：V0.6 10组配对已封存并完成Cross-pair Synthesis
+- 第 24 届中国专利奖：完成V0.7跨届外部压力测试，四层架构已 adopted
 - 历届 Gold / Silver / Excellent 结构化基准库设计
 - Patent Value Ledger（专利价值账本）Schema
 
@@ -41,6 +41,8 @@ Revenue / Social Impact
 ```
 
 每一条箭头都需要 Evidence，而不是依靠企业规模、产品销量或获奖结果自动推定。
+
+V0.7进一步把 **Value State / Attribution & Evidence / Observability / Value Realization Stage** 四层分开，防止把“价值低”和“公开看不见”混为一谈。
 
 ## 核心原则
 
