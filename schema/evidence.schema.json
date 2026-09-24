@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/xiangsee/patent-value-benchmark/schema/evidence.schema.json",
+  "title": "Xiangsee Evidence Record",
+  "type": "object",
+  "required": [
+    "evidence_id",
+    "source_id",
+    "evidence_level",
+    "status",
+    "observed_date",
+    "t0_eligible",
+    "claim"
+  ],
+  "properties": {
+    "evidence_id": {
+      "type": "string"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "claim": {
+      "type": "string"
+    },
+    "evidence_level": {
+      "enum": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ]
+    },
+    "status": {
+      "enum": [
+        "confirmed",
+        "strong_evidence",
+        "inference",
+        "unknown"
+      ]
+    },
+    "observed_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "source_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "t0_eligible": {
+      "type": "boolean"
+    },
+    "value_carrier": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "metric": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "metric_value": {
+      "type": [
+        "number",
+        "string",
+        "null"
+      ]
+    },
+    "unit": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "independent_verification": {
+      "type": "boolean"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}
