@@ -26,7 +26,7 @@
 ## Observed Metrics
 
 - **Google total revenue**: 1465934000 USD (FY2003 (H1 2004 separately disclosed at USD 1.351835bn)) — scope=`enterprise`, attribution=`unknown`
-- **licensed rights horizon**: exclusive license through 2011; patent stated to expire in 2017 (2004-08-04) — scope=`exact_patent`, attribution=`confirmed`
+- **licensed rights horizon**: exclusive license through 2011; patent stated to expire in 2017 (2004-07-26) — scope=`exact_patent`, attribution=`confirmed`
 
 ## Unresolved Gaps
 
@@ -48,7 +48,7 @@
 
 - Enterprise or product value must not be automatically inherited by the exact patent.
 - Unknown means unobserved or unresolved, not zero value.
-- Historical diagnostic is frozen at T0=2004-08-04; post-T0 information must not be backfilled.
+- Historical diagnostic is frozen at T0=2004-07-26; post-T0 information must not be backfilled.
 
 ## Output Limits
 
