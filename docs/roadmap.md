@@ -240,3 +240,28 @@ Taction带来的Realization Path目前只是exploratory dimension，不修改现
 - Schema freeze
 - CI 全部通过
 - Git tag + GitHub release
+
+
+---
+
+## Realization Path — three-path replication complete
+
+Issue #16预注册复制已完成：
+
+1. **Taction v. Apple** — litigation → damages verdict → cash unresolved
+2. **Editas → Vertex → DRI** — license → upfront cash → recurring fee → receivable monetization
+3. **Wirtgen ITC** — infringement → exclusion order → continuing control realization
+
+主要修正：
+
+- Infringement不是所有路径的必经节点；
+- Remedy State改为更一般的 **Realization Mechanism**；
+- Cash Realization改为 **Economic Realization State**；
+- Realization Path采用 **Event Log → deterministic Snapshot**；
+- rights subject需要支持claim set / patent / portfolio / field rights / receivable。
+
+研究结论见：
+- `analysis/non-award-validation/realization-path/three-path-synthesis.md`
+- `analysis/theory/patent-value-state-model-1.1-realization-path.md`
+
+下一步允许设计Experimental Realization Path Schema 0.1，但V0.8仍未adopt。
