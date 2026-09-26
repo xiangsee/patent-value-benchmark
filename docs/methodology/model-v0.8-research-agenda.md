@@ -216,7 +216,14 @@ Round 1已经明确架构方向，下一阶段不继续无边界增加字段，�
 
 **Package A 4/4预注册门槛已完成。**
 
-下一步允许进入Experimental Claim-set Rights Control Schema设计，但这不等于V0.8 adopted。
+Experimental Claim-set Rights Control Schema 0.1 已实现并进入CI验证：
+
+- `schema/experimental/claim-set-rights-control.schema.json`
+- `data/experimental/rights-control/four-pair-backfill.jsonl`
+- `tools/validate_rights_control.py`
+- `tests/test_rights_control.py`
+
+它是可测试实验对象，不等于V0.8 adopted，也不改变正式v1 Ledger Schema。
 
 样本要求：
 - realization stage接近；
