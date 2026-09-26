@@ -210,8 +210,13 @@ Round 1已经明确架构方向，下一阶段不继续无边界增加字段，�
 1. i4i v. Microsoft × Amgen v. Sanofi
 2. Apple v. Samsung：US7469381 claim 19 × US7844915 claim 8
 3. SynQor：US7564702 claim 56 × US7272021 claim 30
+4. Wirtgen US7828309 claim 29 × Caterpillar US7140693 claim 19
 
-第三组把控制条件进一步收紧到同一权利人、同一DC-DC技术家族、同一侵权诉讼，并让两个claim都停在R4。结果仍然出现material Rights Control差异：claim 56的相关再审挑战未成立，而claim 30的obviousness rejection由Federal Circuit明确维持。
+第四组进入工业道路铣刨机械，并继续保持R4对R4。Wirtgen claim 29在IPR中未被证明不可专利；Caterpillar claim 19则出现PTAB不可专利FWD，但同一T0尚未发出取消证书且ITC LEO仍然有效。由此进一步验证Rights Control需要claim-set、程序、finality和operative remedy四类状态。
+
+**Package A 4/4预注册门槛已完成。**
+
+下一步允许进入Experimental Claim-set Rights Control Schema设计，但这不等于V0.8 adopted。
 
 样本要求：
 - realization stage接近；
@@ -252,7 +257,7 @@ CRISPR已完成第一个portfolio case。
 
 V0.8只有在至少完成以下门槛后才讨论adopted：
 
-- **4组** Rights Control matched pairs — 当前 **3 / 4**
+- **4组** Rights Control matched pairs — 当前 **4 / 4（门槛完成）**
 - **4个** clean early-stage option retrospectives — 当前 **0 / 4**
 - **至少1个** portfolio case — 当前 **1 / 1**
 - **至少1个** Two Clocks case — 当前 **1 / 1**
