@@ -29,13 +29,13 @@
 
 ## Unresolved Gaps
 
-- **patent_value_attribution**: The mixed 2010 damages judgment is not apportioned to this exact claim. (observability: `restricted`)
+- **patent_value_attribution**: The mixed 2010 damages judgment is not apportioned to US7564702 claim 56. (observability: `restricted`)
 - **other**: V0.7 cannot separately encode that claim 56's challenged patentability was sustained in reexamination/appellate review at T0. (observability: `public`)
 
 ## Next Evidence Tasks
 
 - **TASK-01 → E4**: 建立专利级性能、成本或经济价值归因
-  - claim-specific royalty/damages allocation
+  - claim-56-specific royalty/damages allocation
   - incremental technical contribution
   - claim-specific bargaining evidence
 - **TASK-02 → unknown**: 补齐Ledger列明的证据缺口
