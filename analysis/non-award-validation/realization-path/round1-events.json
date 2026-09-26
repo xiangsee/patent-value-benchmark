@@ -1,0 +1,214 @@
+{
+  "research_object": "Realization Path round-1 comparative event log",
+  "status": "research-only; pre-schema",
+  "as_of_date": "2026-09-26",
+  "paths": [
+    {
+      "path_id": "RP-TACTION-APPLE-2026",
+      "path_type": "litigation_damages",
+      "rights_subject": {
+        "scope_type": "claim_sets",
+        "identifiers": [
+          "US10659885 asserted claims",
+          "US10820117 asserted claims"
+        ]
+      },
+      "actor": "Taction Technology, Inc.",
+      "counterparty": "Apple Inc.",
+      "jurisdiction": "US",
+      "events": [
+        {
+          "event_type": "adverse_merits_decision",
+          "event_date": null,
+          "date_label": "2023 summary judgment",
+          "state_effect": "Apple-specific infringement path blocked before trial",
+          "evidence_ids": [
+            "E-RP-TACTION-2023-SJ"
+          ]
+        },
+        {
+          "event_type": "vacatur_remand",
+          "event_date": "2025-08-13",
+          "state_effect": "infringement path reopened",
+          "evidence_ids": [
+            "E-RP-TACTION-2025-VACATE"
+          ]
+        },
+        {
+          "event_type": "remedy_evidence_restricted",
+          "event_date": "2026-08-11",
+          "state_effect": "apportionment/reasonable-royalty evidentiary basis narrowed",
+          "evidence_ids": [
+            "E-RP-TACTION-2026-APPORTIONMENT-EXCLUSION"
+          ]
+        },
+        {
+          "event_type": "remedy_evidence_partially_reopened",
+          "event_date": "2026-09-03",
+          "state_effect": "limited supplementation of apportionment record allowed",
+          "evidence_ids": [
+            "E-RP-TACTION-2026-APPORTIONMENT-SUPPLEMENT"
+          ]
+        },
+        {
+          "event_type": "jury_verdict",
+          "event_date": "2026-09-25",
+          "state_effect": "jury infringement finding and approximately USD 5.7bn damages verdict",
+          "evidence_ids": [
+            "E-RP-TACTION-2026-VERDICT"
+          ]
+        }
+      ],
+      "current_snapshot": {
+        "entitlement_or_infringement_state": "jury_infringement_finding",
+        "realization_mechanisms": [
+          "damages_verdict"
+        ],
+        "economic_realization": {
+          "modes": [
+            "contingent_legal_claim"
+          ],
+          "cash_received": "unknown",
+          "control_realized": "not_applicable",
+          "finality": "post_trial_and_appeal_unresolved"
+        }
+      },
+      "model_learning": [
+        "jury verdict is not collected cash",
+        "damages/apportionment state can change independently from infringement state",
+        "litigation path is event-driven and reversible"
+      ]
+    },
+    {
+      "path_id": "RP-EDITAS-VERTEX-CAS9-2024",
+      "path_type": "license_transaction",
+      "rights_subject": {
+        "scope_type": "portfolio_field_rights",
+        "identifiers": [
+          "Editas Cas9 gene-editing technology / certain Cas9-I patents in SCD/TDT field"
+        ]
+      },
+      "actor": "Editas Medicine, Inc.",
+      "counterparty": "Vertex Pharmaceuticals Incorporated",
+      "jurisdiction": "US / contractual field license",
+      "events": [
+        {
+          "event_type": "license_executed",
+          "event_date": "2023-12-12",
+          "state_effect": "non-exclusive field license created contractual payment rights",
+          "evidence_ids": [
+            "E-RP-EDITAS-2023-LICENSE"
+          ]
+        },
+        {
+          "event_type": "cash_payment_received",
+          "event_date": null,
+          "date_label": "Q4 2023; confirmed 2024-02-28",
+          "state_effect": "USD 50m upfront cash realized",
+          "evidence_ids": [
+            "E-RP-EDITAS-2023-UPFRONT-RECEIVED"
+          ]
+        },
+        {
+          "event_type": "recurring_license_fee_received",
+          "event_date": null,
+          "date_label": "Q1 2024; confirmed 2024-05-08",
+          "state_effect": "USD 10m annual license fee realized",
+          "evidence_ids": [
+            "E-RP-EDITAS-2024-ANNUAL-FEE"
+          ]
+        },
+        {
+          "event_type": "receivable_monetization",
+          "event_date": "2024-10-03",
+          "state_effect": "certain future Vertex-license receivables sold to DRI for USD 57m upfront cash",
+          "evidence_ids": [
+            "E-RP-EDITAS-2024-DRI"
+          ]
+        }
+      ],
+      "current_snapshot": {
+        "entitlement_or_infringement_state": "not_required_for_license_path",
+        "realization_mechanisms": [
+          "nonexclusive_license",
+          "recurring_license_fees",
+          "receivable_monetization"
+        ],
+        "economic_realization": {
+          "modes": [
+            "cash_received",
+            "contractual_future_cash",
+            "secondary_monetization"
+          ],
+          "cash_received": "confirmed_multiple_events",
+          "control_realized": "licensed_nonexclusive",
+          "finality": "contractual_performance_ongoing"
+        }
+      },
+      "model_learning": [
+        "realized patent-related value can occur without an infringement judgment",
+        "Realization Path subject may be a portfolio/field right rather than an exact patent",
+        "realization can branch: license payments can later be monetized as receivables",
+        "do not mechanically sum primary-license cash and secondary receivable monetization as intrinsic patent value"
+      ]
+    },
+    {
+      "path_id": "RP-WIRTGEN-CAT-309-LEO-2026",
+      "path_type": "exclusion_control",
+      "rights_subject": {
+        "scope_type": "claim_set",
+        "identifiers": [
+          "US7828309 claim 29"
+        ]
+      },
+      "actor": "Wirtgen America, Inc.",
+      "counterparty": "Caterpillar road-milling imports",
+      "jurisdiction": "US / Section 337",
+      "events": [
+        {
+          "event_type": "infringement_or_section337_violation",
+          "event_date": "2019-07-17",
+          "state_effect": "claim 29 mapped to infringing Caterpillar PM620",
+          "evidence_ids": [
+            "E-ROAD-WIRTGEN-309-E3-C29"
+          ]
+        },
+        {
+          "event_type": "exclusion_order_issued",
+          "event_date": "2019-07-18",
+          "state_effect": "limited exclusion order created operative import-control remedy",
+          "evidence_ids": [
+            "E-ROAD-WIRTGEN-309-E2-LEO"
+          ]
+        },
+        {
+          "event_type": "exclusion_order_outstanding",
+          "event_date": "2026-09-26",
+          "state_effect": "USITC register continues to list 337-TA-1067 as outstanding",
+          "evidence_ids": [
+            "E-RP-WIRTGEN-2026-LEO-OUTSTANDING"
+          ]
+        }
+      ],
+      "current_snapshot": {
+        "entitlement_or_infringement_state": "section337_infringement_established",
+        "realization_mechanisms": [
+          "limited_exclusion_order"
+        ],
+        "economic_realization": {
+          "modes": [
+            "control_exclusion"
+          ],
+          "cash_received": "not_required",
+          "control_realized": "operative",
+          "finality": "remedy_outstanding"
+        }
+      },
+      "model_learning": [
+        "economic realization does not require a money award",
+        "cash_realization_state is too narrow for general patent-value paths",
+        "control/exclusion is itself a realized economic state"
+      ]
+    }
+  ]
+}
