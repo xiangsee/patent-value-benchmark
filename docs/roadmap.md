@@ -265,3 +265,29 @@ Issue #16预注册复制已完成：
 - `analysis/theory/patent-value-state-model-1.1-realization-path.md`
 
 下一步允许设计Experimental Realization Path Schema 0.1，但V0.8仍未adopt。
+
+
+## Experimental Realization Path 0.1 — implemented
+
+Issue #20已完成工程化：
+
+- event-log schema
+- generated snapshot schema
+- three-path structured backfill
+- deterministic projector
+- validator
+- unit tests
+- CI integration
+- data dictionary / design note
+
+Canonical rule:
+
+> **Events are facts; Snapshot is generated.**
+
+三个canonical fixtures在CI中固定为：
+
+- Taction：jury verdict存在，但cash realization仍为unresolved；
+- Editas：无merits infringement judgment，仍可通过license实现现金并进一步货币化应收款；
+- Wirtgen：通过ITC exclusion order实现control，cash = not_required。
+
+Experimental 0.1仍与formal v1 Ledger Schema隔离，也不改变V0.8 adoption threshold。
