@@ -1,0 +1,204 @@
+{
+  "network_id": "CRISPR-CAS9-PORTFOLIO-NETWORK-T0-2026-08-05",
+  "status": "experimental research object — not schema-adopted",
+  "t0_date": "2026-08-05",
+  "purpose": "Represent portfolio, claim-set, license and jurisdiction dependencies that cannot be expressed in a standalone patent ledger.",
+  "nodes": [
+    {
+      "id": "BROAD-PORTFOLIO",
+      "type": "portfolio",
+      "label": "Broad/MIT/Harvard CRISPR-Cas9 estate"
+    },
+    {
+      "id": "CVC-PORTFOLIO",
+      "type": "portfolio",
+      "label": "UC Berkeley / University of Vienna / Charpentier CRISPR-Cas9 estate"
+    },
+    {
+      "id": "TOOLGEN-PORTFOLIO",
+      "type": "portfolio",
+      "label": "ToolGen CRISPR portfolio"
+    },
+    {
+      "id": "SIGMA-PORTFOLIO",
+      "type": "portfolio",
+      "label": "Sigma-Aldrich CRISPR portfolio"
+    },
+    {
+      "id": "US8697359-C18",
+      "type": "claim_set",
+      "label": "US8697359 claim 18"
+    },
+    {
+      "id": "CVC-15981807-C156",
+      "type": "claim_set",
+      "label": "CVC application 15/981,807 claim 156"
+    },
+    {
+      "id": "EDITAS",
+      "type": "licensee",
+      "label": "Editas Medicine"
+    },
+    {
+      "id": "VERTEX-CRISPR",
+      "type": "commercialization_stack",
+      "label": "Vertex / CRISPR Therapeutics CASGEVY commercialization stack"
+    },
+    {
+      "id": "CASGEVY",
+      "type": "product",
+      "label": "CASGEVY"
+    },
+    {
+      "id": "US",
+      "type": "jurisdiction",
+      "label": "United States"
+    },
+    {
+      "id": "EU",
+      "type": "jurisdiction",
+      "label": "European patent system / Europe"
+    },
+    {
+      "id": "UK-NL",
+      "type": "jurisdiction",
+      "label": "United Kingdom / Netherlands litigation contexts"
+    }
+  ],
+  "edges": [
+    {
+      "from": "US8697359-C18",
+      "to": "CVC-15981807-C156",
+      "relation": "PTAB Count 1 competing subject matter",
+      "status": "confirmed",
+      "evidence_ids": [
+        "E-CRISPR-PTAB-E5-COUNT1"
+      ]
+    },
+    {
+      "from": "BROAD-PORTFOLIO",
+      "to": "CVC-PORTFOLIO",
+      "relation": "Interference 106,115 and broader priority disputes",
+      "status": "confirmed",
+      "evidence_ids": [
+        "E-CRISPR-PTAB-E5-PARTY-SET",
+        "E-CRISPR-PTAB-E5-PRIORITY"
+      ]
+    },
+    {
+      "from": "BROAD-PORTFOLIO",
+      "to": "EDITAS",
+      "relation": "in-licensed",
+      "status": "confirmed",
+      "evidence_ids": [
+        "E-CRISPR-EDITAS-E1-INLICENSED-BROAD"
+      ]
+    },
+    {
+      "from": "EDITAS",
+      "to": "VERTEX-CRISPR",
+      "relation": "non-exclusive Cas9 license including CASGEVY field",
+      "status": "confirmed",
+      "evidence_ids": [
+        "E-CRISPR-EDITAS-E2-VERTEX-LICENSE"
+      ]
+    },
+    {
+      "from": "CVC-PORTFOLIO",
+      "to": "VERTEX-CRISPR",
+      "relation": "portfolio rights reported in CASGEVY IP stack",
+      "status": "confirmed",
+      "evidence_ids": [
+        "E-CRISPR-VERTEX-E2-MULTIPORTFOLIO"
+      ]
+    },
+    {
+      "from": "VERTEX-CRISPR",
+      "to": "CASGEVY",
+      "relation": "develops/commercializes",
+      "status": "confirmed",
+      "evidence_ids": [
+        "E-CRISPR-VERTEX-E2-CASGEVY-REVENUE"
+      ]
+    },
+    {
+      "from": "TOOLGEN-PORTFOLIO",
+      "to": "CASGEVY",
+      "relation": "asserted patent rights / litigation",
+      "status": "confirmed",
+      "evidence_ids": [
+        "E-CRISPR-VERTEX-E2-MULTIPORTFOLIO"
+      ]
+    },
+    {
+      "from": "BROAD-PORTFOLIO",
+      "to": "TOOLGEN-PORTFOLIO",
+      "relation": "U.S. interference",
+      "status": "confirmed",
+      "evidence_ids": [
+        "E-CRISPR-EDITAS-E1-PARALLEL-PROCEEDINGS"
+      ]
+    },
+    {
+      "from": "CVC-PORTFOLIO",
+      "to": "TOOLGEN-PORTFOLIO",
+      "relation": "U.S. interference",
+      "status": "confirmed",
+      "evidence_ids": [
+        "E-CRISPR-EDITAS-E1-PARALLEL-PROCEEDINGS"
+      ]
+    },
+    {
+      "from": "BROAD-PORTFOLIO",
+      "to": "SIGMA-PORTFOLIO",
+      "relation": "U.S. interference",
+      "status": "confirmed",
+      "evidence_ids": [
+        "E-CRISPR-EDITAS-E1-PARALLEL-PROCEEDINGS"
+      ]
+    },
+    {
+      "from": "CVC-PORTFOLIO",
+      "to": "SIGMA-PORTFOLIO",
+      "relation": "U.S. interference",
+      "status": "confirmed",
+      "evidence_ids": [
+        "E-CRISPR-EDITAS-E1-PARALLEL-PROCEEDINGS"
+      ]
+    },
+    {
+      "from": "BROAD-PORTFOLIO",
+      "to": "EU",
+      "relation": "mixed revocation/amended-claim outcomes",
+      "status": "confirmed",
+      "evidence_ids": [
+        "E-CRISPR-EDITAS-E1-PARALLEL-PROCEEDINGS"
+      ]
+    },
+    {
+      "from": "CVC-PORTFOLIO",
+      "to": "US",
+      "relation": "large unaffected patent estate remains after Count 1 priority decision",
+      "status": "strong_evidence",
+      "evidence_ids": [
+        "E-CRISPR-CVC-E1-UNAFFECTED-PORTFOLIO"
+      ]
+    },
+    {
+      "from": "CVC-PORTFOLIO",
+      "to": "EU",
+      "relation": "non-U.S. estate remains",
+      "status": "strong_evidence",
+      "evidence_ids": [
+        "E-CRISPR-CVC-E1-UNAFFECTED-PORTFOLIO"
+      ]
+    }
+  ],
+  "non_inheritance_rules": [
+    "PTAB priority outcome for Count 1 does not determine all CRISPR-Cas9 patent rights.",
+    "Portfolio license consideration does not equal the value of US8697359.",
+    "CASGEVY revenue does not inherit to any single CRISPR patent.",
+    "A U.S. priority/validity state does not automatically carry into Europe or other jurisdictions.",
+    "A product may depend on multiple complementary or blocking portfolios simultaneously."
+  ]
+}

@@ -6,7 +6,7 @@
 
 主项目目标是建立可复核、可反驳、可持续更新的 **Patent Value Benchmark**，而不是预测任何奖项。
 
-从2026-09-24起，研究正式拆分为两条线：
+从2026-09-24起，研究分为两条线：
 
 - **Track A — Patent Value Benchmark**：通用专利价值主干
 - **Track B — China Patent Award Research**：中国专利奖专项模块
@@ -22,6 +22,7 @@
 ### 当前正式架构：V0.7
 
 已采用：
+
 - Value State
 - Attribution / Evidence State
 - Observability State
@@ -29,40 +30,98 @@
 
 V0.7不输出总分，也不预测Gold。
 
-### Research Track — V0.8 Value Construct & Rights Control
+### V0.8 Research — Round 1 complete, not adopted
 
-状态：**研究中，未adopt**
+第一轮完全不依赖中国专利奖标签的机制型压力测试已完成：
 
-理论锚定已完成第一轮：
-- 区分 Policy / Technological Quality / Private Asset / Realized Operating / Social-Strategic value constructs
-- 识别V0.7缺项：Rights Control、Counterfactual Control、Option/Future Value、Portfolio Context
-- Screening Signals（citations/family/claims/renewal等）与Value Proof正式分离
-- 提出Patent Age“两只钟”：survival/revealed-value vs remaining-exclusivity
+| Archetype | Tested mechanism | Main result |
+|---|---|---|
+| i4i v. Microsoft | Litigation value / enforcement | R5仍不能替代Rights Control |
+| Amgen v. Sanofi | Claim-set validity | Rights Control需要claim-set granularity |
+| PageRank | Same patent / two T0s | Two Clocks成立；R-stage不是价值等级 |
+| CRISPR-Cas9 | Portfolio dependency | 单件专利Ledger之外需要Portfolio & Jurisdiction Network |
 
-下一阶段优先完成：
-1. 4组 Same-realization / Different-rights-control 对照样本
-2. 4个 Early-stage Option retrospectives
-3. 1个 SEP / portfolio 案例
-4. 1个“高龄但剩余期限短”的 Two Clocks 案例
-5. 至少一批完全不依赖中国专利奖标签的通用样本
+Round 1综合：
 
-只有完成预注册验证后，才讨论V0.8是否 adopted。
+`analysis/non-award-validation/round1-cross-case-synthesis-v0.8.md`
 
-### Patent Value Ledger + Diagnostic
+当前假说状态：
+
+- H1 Rights Control：第一组对照支持，仍需复制
+- H2a Date/context dependence：支持
+- H2b Two Clocks：支持
+- H2c Clean early-stage option sample：尚未验证
+- H3 Portfolio Dependency：支持
+- H4 Monetary evidence is contextual：跨诉讼/组合许可两类场景支持
+
+### V0.8 adoption progress
+
+- Rights Control matched pairs：**1 / 4**
+- clean early-stage option retrospectives：**0 / 4**
+- portfolio case：**1 / 1**
+- Two Clocks case：**1 / 1**
+- SEP / patent-pool / cross-license replication：**0 / 1**
+
+因此：
+
+> **V0.8 remains not adopted.**
+
+下一阶段转入最小复制验证，而不是继续增加未经验证的新字段。
+
+#### Package A — Rights Control Replication
+再做3组跨行业对照。
+
+#### Package B — Early-stage Option Value
+寻找4个真正T0=R0/R1、后来形成重大现实价值的历史专利。PageRank不计入。
+
+#### Package C — Portfolio / Licensing Replication
+至少再做：
+- 1个SEP / patent-pool / cross-license；
+- 1个非生命科学复杂产品。
+
+### Candidate architecture after Round 1
+
+```text
+Value Construct
+    +
+Value Realization R0–R5
+    +
+Attribution / Evidence
+    +
+Observability
+    +
+Claim-set Rights Control
+    +
+Value Horizon / Two Clocks
+    +
+Portfolio & Jurisdiction Network
+
+Screening Signals remain outside value facts.
+```
+
+这仍是研究候选结构，不是冻结Schema。
+
+---
+
+## Patent Value Ledger + Diagnostic
 
 状态：**核心输入/输出闭环已建立**
 
 已完成：
+
 - Patent Value Ledger 1.0 Draft
 - Patent Value Diagnostic 1.0 Draft
 - Ledger → Diagnostic 确定性生成器
 - Diagnostic → Markdown report 渲染
 - CI校验 non-inheritance、cross-reference、T0 和版本一致性
-- R0 / R2 / R4 公开验收样例
+- R0 / R2 / R4 / R5公开样例
+- 非奖项机制样本已进入同一数据链
 
 下一步：
+
 - 外部冷启动复现
 - 根据复现结果修正文档 / schema
+- 在V0.8研究与v0.1.0基础设施release之间保持版本边界
 - Schema freeze
 - v0.1.0 release
 
@@ -111,11 +170,13 @@ V0.7不输出总分，也不预测Gold。
 ### V0.6 Cross-pair Synthesis
 
 第25届10组 matched pairs：
+
 - Yes: 2
 - No: 4
 - Uncertain: 4
 
 得到的关键结论不是“能预测Gold”，而是：
+
 - 单一readiness分数无法稳定区分奖项结果；
 - 必须拆开价值、归因、可观察性和实现阶段；
 - 不能用事后故事修补 Unknown。
@@ -125,6 +186,7 @@ V0.7不输出总分，也不预测Gold。
 第24届4组跨届压力测试达到预设最低门槛。
 
 正式采用：
+
 - Value State
 - Attribution / Evidence State
 - Observability State
@@ -141,6 +203,7 @@ V0.7不输出总分，也不预测Gold。
 ## Public release — v0.1.0
 
 首次正式版本发布前完成：
+
 - README 完整化
 - 数据字典
 - 示例记录
