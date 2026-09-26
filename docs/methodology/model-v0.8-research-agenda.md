@@ -266,3 +266,61 @@ V0.8只有在至少完成以下门槛后才讨论adopted：
 并且必须完成一次新的cross-case synthesis，证明候选结构跨样本增加解释力而不是历史过拟合。
 
 V0.7继续作为正式架构。
+
+
+---
+
+## Exploratory dimension discovered after Package A — Realization Path
+
+Taction v. Apple exposes a distinction not fully represented by the current V0.7 / Rights Control objects:
+
+> **Economic Value Base ≠ State-dependent Realizable Value.**
+
+The conceptual model is documented at:
+
+`analysis/theory/patent-value-state-model-1.0.md`
+
+First case note:
+
+`analysis/non-award-validation/taction-state-migration-2026.md`
+
+### Three-layer organization
+
+```text
+Value Base
+├─ Technology State
+└─ Product State
+
+Rights Control
+└─ Claim-set legal control
+
+Realization Path
+├─ Infringement State
+├─ Remedy State
+└─ Cash / Economic Realization State
+```
+
+Cross-cutting:
+- Time / T0
+- Jurisdiction
+- Evidence / Observability
+- Enforcement Capacity
+- Portfolio & Jurisdiction Network
+
+### Important boundary
+
+This does **not** modify the existing V0.8 adoption rule.
+
+The Realization Path dimension was discovered during research and therefore requires separate preregistration and replication before any schema adoption decision.
+
+It must not be silently absorbed into Claim-set Rights Control.
+
+### Conceptual guardrails
+
+- jury verdict ≠ intrinsic patent price
+- jury verdict ≠ realized cash
+- litigation financing / enforcement resources ≠ patent quality
+- infringement state ≠ product implementation state
+- remedy state ≠ rights validity state
+- V0.7 R0–R5 ≠ cash/legal realization state
+

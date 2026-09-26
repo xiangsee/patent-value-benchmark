@@ -87,27 +87,44 @@ Package A停止继续扩样。下一步进入Claim-set Rights Control候选Schem
 - 1个SEP / patent-pool / cross-license；
 - 1个非生命科学复杂产品。
 
-### Candidate architecture after Round 1
+### Candidate architecture after Round 1 + Taction state-model refinement
 
 ```text
-Value Construct
-    +
-Value Realization R0–R5
-    +
-Attribution / Evidence
-    +
-Observability
-    +
+Value Base
+├─ Technology State
+└─ Product State
+
+        +
+
+V0.7 Realization / Evidence
+R0 → R5
+
+        +
+
 Claim-set Rights Control
-    +
+
+        +
+
+Realization Path
+├─ Infringement State
+├─ Remedy State
+└─ Cash / Economic Realization State
+
+        +
+
 Value Horizon / Two Clocks
-    +
+
+        +
+
 Portfolio & Jurisdiction Network
+
+Cross-cutting:
+Time/T0 · Jurisdiction · Evidence/Observability · Enforcement Capacity
 
 Screening Signals remain outside value facts.
 ```
 
-这仍是研究候选结构，不是冻结Schema。
+Taction带来的Realization Path目前只是exploratory dimension，不修改现有V0.8 adoption threshold；需要单独预注册验证。
 
 ---
 
