@@ -56,7 +56,7 @@ Round 1综合：
 
 ### V0.8 adoption progress
 
-- Rights Control matched pairs：**3 / 4**
+- Rights Control matched pairs：**4 / 4（完成）**
 - clean early-stage option retrospectives：**0 / 4**
 - portfolio case：**1 / 1**
 - Two Clocks case：**1 / 1**
@@ -69,12 +69,15 @@ Round 1综合：
 下一阶段转入最小复制验证，而不是继续增加未经验证的新字段。
 
 #### Package A — Rights Control Replication
-已完成3/4：
+**已完成4/4：**
 1. i4i × Amgen
 2. Apple ’381 claim 19 × Apple ’915 claim 8
 3. SynQor ’702 claim 56 × ’021 claim 30
+4. Wirtgen ’309 claim 29 × Caterpillar ’693 claim 19
 
-SynQor第三组实现R4对R4、同权利人/同技术家族/同诉讼环境下的更严格复制，进一步支持Rights Control作为独立维度。下一步只剩1组，优先工业机械、汽车、能源装备或制造工艺。
+第四组进入工业道路铣刨机械，并出现“PTAB不利FWD但取消尚未生效、ITC排除令仍在执行”的并存状态，证明Rights Control不能压成valid/invalid布尔值。
+
+Package A停止继续扩样。下一步进入Claim-set Rights Control候选Schema设计与Package B/C剩余验证。
 
 #### Package B — Early-stage Option Value
 寻找4个真正T0=R0/R1、后来形成重大现实价值的历史专利。PageRank不计入。
