@@ -1,0 +1,344 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/xiangsee/patent-value-benchmark/schema/experimental/claim-set-rights-control.schema.json",
+  "title": "Xiangsee Experimental Claim-set Rights Control",
+  "description": "Experimental, non-score state object for claim-set legal control. Not part of the formal v1 Ledger schema.",
+  "type": "object",
+  "required": [
+    "rights_control_id",
+    "schema_version",
+    "source_ledger_ids",
+    "patent_id",
+    "claim_set_id",
+    "claims_at_issue",
+    "jurisdiction",
+    "as_of_date",
+    "scope_type",
+    "value_carrier_mapping",
+    "adjudication_events",
+    "finality_state",
+    "operative_control",
+    "evidence_ids"
+  ],
+  "properties": {
+    "rights_control_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "schema_version": {
+      "const": "experimental-0.1"
+    },
+    "source_ledger_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "patent_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "claim_set_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "claims_at_issue": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "jurisdiction": {
+      "type": "string",
+      "minLength": 1
+    },
+    "as_of_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "scope_type": {
+      "enum": [
+        "single_claim",
+        "multiple_claims",
+        "asserted_claim_set",
+        "unknown"
+      ]
+    },
+    "value_carrier_mapping": {
+      "type": "object",
+      "required": [
+        "status",
+        "carrier_ids",
+        "evidence_ids"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "confirmed",
+            "strong_evidence",
+            "inference",
+            "unknown"
+          ]
+        },
+        "carrier_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "evidence_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "adjudication_events": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "event_id",
+          "proceeding_type",
+          "forum",
+          "decision_date",
+          "claims_at_issue",
+          "outcome_category",
+          "outcome_detail",
+          "procedural_status",
+          "evidence_ids"
+        ],
+        "properties": {
+          "event_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "proceeding_type": {
+            "enum": [
+              "district_court",
+              "court_of_appeals",
+              "supreme_court",
+              "ex_parte_reexamination",
+              "inter_partes_review",
+              "section_337_itc",
+              "ptab_other",
+              "other"
+            ]
+          },
+          "forum": {
+            "type": "string",
+            "minLength": 1
+          },
+          "decision_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "claims_at_issue": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "outcome_category": {
+            "enum": [
+              "rights_upheld",
+              "rights_adverse",
+              "mixed",
+              "procedural",
+              "unknown"
+            ]
+          },
+          "outcome_detail": {
+            "type": "string",
+            "minLength": 1
+          },
+          "procedural_status": {
+            "enum": [
+              "final",
+              "nonfinal",
+              "appealed",
+              "remanded",
+              "partially_final",
+              "operative_pending_formal_effect",
+              "further_review_possible",
+              "unknown"
+            ]
+          },
+          "evidence_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "finality_state": {
+      "type": "object",
+      "required": [
+        "status",
+        "appeal_status",
+        "rehearing_status",
+        "formal_effect",
+        "evidence_ids"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "final",
+            "nonfinal",
+            "partially_final",
+            "formal_effect_pending",
+            "unknown"
+          ]
+        },
+        "appeal_status": {
+          "enum": [
+            "none_known",
+            "pending",
+            "exhausted",
+            "remanded",
+            "further_review_possible",
+            "unknown"
+          ]
+        },
+        "rehearing_status": {
+          "enum": [
+            "none_known",
+            "pending",
+            "denied",
+            "granted",
+            "unknown"
+          ]
+        },
+        "formal_effect": {
+          "enum": [
+            "confirmed",
+            "cancelled",
+            "not_issued",
+            "not_applicable",
+            "pending",
+            "unknown"
+          ]
+        },
+        "evidence_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "operative_control": {
+      "type": "object",
+      "required": [
+        "enforceability_state",
+        "remedy_types",
+        "remedy_status",
+        "evidence_ids"
+      ],
+      "properties": {
+        "enforceability_state": {
+          "enum": [
+            "operative",
+            "limited",
+            "adverse",
+            "uncertain",
+            "extinguished",
+            "unknown"
+          ]
+        },
+        "remedy_types": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "permanent_injunction",
+              "limited_exclusion_order",
+              "other_exclusion",
+              "none",
+              "unknown"
+            ]
+          }
+        },
+        "remedy_status": {
+          "enum": [
+            "operative",
+            "none",
+            "stayed",
+            "vacated",
+            "expired",
+            "pending",
+            "unknown"
+          ]
+        },
+        "evidence_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "evidence_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

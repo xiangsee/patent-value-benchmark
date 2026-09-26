@@ -77,7 +77,7 @@ Round 1综合：
 
 第四组进入工业道路铣刨机械，并出现“PTAB不利FWD但取消尚未生效、ITC排除令仍在执行”的并存状态，证明Rights Control不能压成valid/invalid布尔值。
 
-Package A停止继续扩样。下一步进入Claim-set Rights Control候选Schema设计与Package B/C剩余验证。
+Package A停止继续扩样。实验性 Claim-set Rights Control Schema 0.1 已实现并接入CI，但仍与正式v1 Ledger Schema隔离。下一阶段转入Package B/C剩余验证，以及Issue #16的Realization Path复制研究。
 
 #### Package B — Early-stage Option Value
 寻找4个真正T0=R0/R1、后来形成重大现实价值的历史专利。PageRank不计入。
