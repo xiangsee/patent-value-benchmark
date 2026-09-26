@@ -204,7 +204,13 @@ Round 1已经明确架构方向，下一阶段不继续无边界增加字段，�
 
 ### Package A — Rights Control Replication
 
-目标：再完成3组 Same-realization / Different-rights-control 对照，使累计达到至少4组。
+目标：累计完成至少4组 Same-realization / Different-rights-control 对照。
+
+当前已完成：
+1. i4i v. Microsoft × Amgen v. Sanofi
+2. Apple v. Samsung：US7469381 claim 19 × US7844915 claim 8
+
+第二组在同一智能手机商业/诉讼环境内再次显示：更高的Value Realization并不意味着更强的当前Rights Control；claim-set Rights Control还需要记录reexamination / adjudication / finality等程序状态。
 
 样本要求：
 - realization stage接近；
@@ -245,7 +251,7 @@ CRISPR已完成第一个portfolio case。
 
 V0.8只有在至少完成以下门槛后才讨论adopted：
 
-- **4组** Rights Control matched pairs — 当前 **1 / 4**
+- **4组** Rights Control matched pairs — 当前 **2 / 4**
 - **4个** clean early-stage option retrospectives — 当前 **0 / 4**
 - **至少1个** portfolio case — 当前 **1 / 1**
 - **至少1个** Two Clocks case — 当前 **1 / 1**
