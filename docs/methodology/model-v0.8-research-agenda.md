@@ -331,3 +331,33 @@ It must not be silently absorbed into Claim-set Rights Control.
 - remedy state ≠ rights validity state
 - V0.7 R0–R5 ≠ cash/legal realization state
 
+
+
+### Realization Path experimental 0.1 — implementation status
+
+Issue #16的三路径复制完成后，Issue #20已将Realization Path实现为独立实验对象。
+
+当前结构：
+
+```text
+Canonical Events
+      ↓ deterministic projection
+Current Snapshot
+├─ entitlement_state
+├─ realization_mechanisms
+└─ economic_realization
+   ├─ cash
+   ├─ control
+   └─ contractual_future_value
+```
+
+关键治理规则：
+
+- source event log禁止手工填写`current_snapshot`；
+- observed amount不自动求和成intrinsic patent value；
+- verdict amount与cash receipt分离；
+- exclusion/control可构成economic realization而不要求cash；
+- infringement不是license/transaction路径的必经节点；
+- Enforcement Capacity继续作为context，不进入score。
+
+这仍是exploratory object，不计入既有V0.8 adoption门槛，也不修改formal v1 Ledger Schema。
