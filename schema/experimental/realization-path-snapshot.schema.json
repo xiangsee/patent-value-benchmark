@@ -1,0 +1,216 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/xiangsee/patent-value-benchmark/schema/experimental/realization-path-snapshot.schema.json",
+  "title": "Xiangsee Generated Realization Path Snapshot",
+  "description": "Generated from canonical Realization Path events. Never edit by hand.",
+  "type": "object",
+  "required": [
+    "snapshot_id",
+    "schema_version",
+    "path_id",
+    "as_of_date",
+    "entitlement_state",
+    "realization_mechanisms",
+    "economic_realization",
+    "observed_amount_events",
+    "evidence_ids",
+    "warnings"
+  ],
+  "properties": {
+    "snapshot_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "schema_version": {
+      "const": "experimental-0.1"
+    },
+    "path_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "as_of_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "entitlement_state": {
+      "enum": [
+        "rights_available",
+        "asserted",
+        "adverse",
+        "unresolved",
+        "established",
+        "contractual",
+        "unknown"
+      ]
+    },
+    "realization_mechanisms": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "license",
+          "settlement",
+          "damages_verdict",
+          "judgment",
+          "injunction",
+          "exclusion_order",
+          "assignment",
+          "sale",
+          "receivable_monetization"
+        ]
+      }
+    },
+    "economic_realization": {
+      "type": "object",
+      "required": [
+        "cash",
+        "control",
+        "contractual_future_value"
+      ],
+      "properties": {
+        "cash": {
+          "type": "object",
+          "required": [
+            "status",
+            "event_ids"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "none",
+                "not_required",
+                "unresolved",
+                "received",
+                "partial",
+                "due",
+                "contingent",
+                "written_off",
+                "mixed",
+                "unknown"
+              ]
+            },
+            "event_ids": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "control": {
+          "type": "object",
+          "required": [
+            "status",
+            "event_ids"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "not_applicable",
+                "none",
+                "operative",
+                "stayed",
+                "modified",
+                "vacated",
+                "expired",
+                "unknown"
+              ]
+            },
+            "event_ids": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "contractual_future_value": {
+          "type": "object",
+          "required": [
+            "states",
+            "event_ids"
+          ],
+          "properties": {
+            "states": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "recurring_fee_right",
+                  "royalty_right",
+                  "contingent_payment_right",
+                  "receivable",
+                  "receivable_sold"
+                ]
+              }
+            },
+            "event_ids": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "observed_amount_events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "event_id",
+          "value",
+          "currency",
+          "amount_scope",
+          "payment_status",
+          "economic_object"
+        ],
+        "properties": {
+          "event_id": {
+            "type": "string"
+          },
+          "value": {
+            "type": "number",
+            "minimum": 0
+          },
+          "currency": {
+            "type": "string"
+          },
+          "amount_scope": {
+            "type": "string"
+          },
+          "payment_status": {
+            "type": "string"
+          },
+          "economic_object": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "evidence_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

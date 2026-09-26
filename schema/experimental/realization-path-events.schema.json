@@ -1,0 +1,307 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/xiangsee/patent-value-benchmark/schema/experimental/realization-path-events.schema.json",
+  "title": "Xiangsee Experimental Realization Path Event Log",
+  "description": "Canonical event-sourced input for Realization Path. Current snapshots are generated, never hand-maintained.",
+  "type": "object",
+  "required": [
+    "path_id",
+    "schema_version",
+    "rights_subject",
+    "path_type",
+    "actor",
+    "counterparties",
+    "jurisdiction",
+    "as_of_date",
+    "events"
+  ],
+  "properties": {
+    "path_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "schema_version": {
+      "const": "experimental-0.1"
+    },
+    "rights_subject": {
+      "type": "object",
+      "required": [
+        "scope_type",
+        "identifiers"
+      ],
+      "properties": {
+        "scope_type": {
+          "enum": [
+            "claim_set",
+            "patent",
+            "portfolio",
+            "field_rights",
+            "receivable"
+          ]
+        },
+        "identifiers": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "path_type": {
+      "enum": [
+        "litigation_damages",
+        "voluntary_license",
+        "settlement",
+        "exclusion_control",
+        "assignment_sale",
+        "hybrid",
+        "other"
+      ]
+    },
+    "actor": {
+      "type": "string",
+      "minLength": 1
+    },
+    "counterparties": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "jurisdiction": {
+      "type": "string",
+      "minLength": 1
+    },
+    "as_of_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "events": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "event_id",
+          "event_type",
+          "date_precision",
+          "state_effect",
+          "evidence_ids"
+        ],
+        "properties": {
+          "event_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "event_type": {
+            "enum": [
+              "rights_available",
+              "assertion",
+              "infringement_alleged",
+              "adverse_merits_decision",
+              "infringement_established",
+              "appeal",
+              "vacatur_remand",
+              "reopened",
+              "apportionment_challenged",
+              "expert_evidence_excluded",
+              "expert_evidence_admitted",
+              "jury_verdict",
+              "judgment_entered",
+              "judgment_modified",
+              "verdict_vacated",
+              "license_executed",
+              "settlement_executed",
+              "assignment",
+              "sale",
+              "cash_payment_received",
+              "partial_cash_received",
+              "recurring_fee_received",
+              "contingent_payment_created",
+              "receivable_created",
+              "receivable_monetized",
+              "injunction_issued",
+              "exclusion_order_issued",
+              "remedy_stayed",
+              "remedy_modified",
+              "remedy_vacated",
+              "remedy_expired",
+              "remedy_outstanding",
+              "written_off"
+            ]
+          },
+          "event_date": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "date_precision": {
+            "enum": [
+              "exact",
+              "quarter",
+              "year",
+              "unknown"
+            ]
+          },
+          "date_label": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "state_effect": {
+            "type": "string",
+            "minLength": 1
+          },
+          "amount": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "required": [
+              "value",
+              "currency",
+              "amount_scope",
+              "payment_status",
+              "economic_object"
+            ],
+            "properties": {
+              "value": {
+                "type": "number",
+                "minimum": 0
+              },
+              "currency": {
+                "type": "string",
+                "minLength": 1
+              },
+              "amount_scope": {
+                "enum": [
+                  "jury_verdict",
+                  "judgment",
+                  "license_upfront",
+                  "annual_fee",
+                  "royalty",
+                  "settlement",
+                  "sale_proceeds",
+                  "receivable_sale_proceeds",
+                  "contingent_payment",
+                  "other"
+                ]
+              },
+              "payment_status": {
+                "enum": [
+                  "received",
+                  "partial",
+                  "due",
+                  "contingent",
+                  "unresolved",
+                  "written_off",
+                  "unknown"
+                ]
+              },
+              "economic_object": {
+                "enum": [
+                  "claim_set",
+                  "patent",
+                  "portfolio",
+                  "field_rights",
+                  "license_contract",
+                  "receivable",
+                  "judgment_claim",
+                  "other"
+                ]
+              },
+              "note": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          },
+          "contractual_future_effects": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "recurring_fee_right",
+                "royalty_right",
+                "contingent_payment_right",
+                "receivable",
+                "receivable_sold"
+              ]
+            }
+          },
+          "evidence_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "enforcement_capacity_context": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "required": [
+        "status",
+        "observability"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "not_assessed",
+            "observed_context",
+            "unknown"
+          ]
+        },
+        "observability": {
+          "enum": [
+            "public",
+            "disclosed_regulated",
+            "internal",
+            "restricted",
+            "unknown"
+          ]
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

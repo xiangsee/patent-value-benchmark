@@ -11,6 +11,8 @@ on:
       - "tools/render_reports.py"
       - "tools/scaffold_ledger.py"
       - "tools/validate_rights_control.py"
+      - "tools/validate_realization_paths.py"
+      - "tools/project_realization_paths.py"
       - "tests/**"
       - "requirements-dev.txt"
       - ".github/workflows/validate-data.yml"
@@ -23,6 +25,8 @@ on:
       - "tools/generate_diagnostics.py"
       - "tools/render_reports.py"
       - "tools/validate_rights_control.py"
+      - "tools/validate_realization_paths.py"
+      - "tools/project_realization_paths.py"
       - "tests/**"
       - "requirements-dev.txt"
       - ".github/workflows/validate-data.yml"
@@ -43,7 +47,7 @@ jobs:
         run: python -m pip install -r requirements-dev.txt
 
       - name: Compile Python tools
-        run: python -m py_compile tools/validate_data.py tools/generate_diagnostics.py tools/render_reports.py tools/scaffold_ledger.py tools/validate_rights_control.py
+        run: python -m py_compile tools/validate_data.py tools/generate_diagnostics.py tools/render_reports.py tools/scaffold_ledger.py tools/validate_rights_control.py tools/validate_realization_paths.py tools/project_realization_paths.py
 
       - name: Validate JSONL data
         run: python tools/validate_data.py
@@ -53,6 +57,15 @@ jobs:
 
       - name: Test experimental Rights Control
         run: python -m unittest discover -s tests -p "test_rights_control.py"
+
+      - name: Validate experimental Realization Path
+        run: python tools/validate_realization_paths.py
+
+      - name: Test experimental Realization Path
+        run: python -m unittest discover -s tests -p "test_realization_paths.py"
+
+      - name: Check generated Realization Path snapshots
+        run: python tools/project_realization_paths.py --check
 
       - name: Check generated diagnostics
         run: python tools/generate_diagnostics.py --check

@@ -51,3 +51,29 @@ limited exclusion order are allowed to coexist.
 
 Passing the experimental validator does **not** promote the object into the
 formal v1 schema.
+
+
+## Experimental Realization Path
+
+Run locally:
+
+```bash
+python tools/validate_realization_paths.py
+python -m unittest discover -s tests -p "test_realization_paths.py"
+python tools/project_realization_paths.py --check
+```
+
+The event log is canonical. Generated snapshots must match the deterministic
+projector exactly.
+
+The validation/test suite specifically verifies:
+
+- jury verdict amount can coexist with unresolved cash realization
+- voluntary license can realize cash without an infringement judgment
+- exclusion order can realize economic control without cash receipt
+- event dates/evidence cannot leak past T0
+- source records cannot contain a hand-maintained `current_snapshot`
+- realization-score fields are rejected
+- observed amounts are preserved by scope rather than summed into intrinsic patent value
+
+Passing these checks does not promote Realization Path into the formal v1 Ledger schema.
