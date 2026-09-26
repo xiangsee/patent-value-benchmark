@@ -56,7 +56,7 @@ Round 1综合：
 
 ### V0.8 adoption progress
 
-- Rights Control matched pairs：**2 / 4**
+- Rights Control matched pairs：**3 / 4**
 - clean early-stage option retrospectives：**0 / 4**
 - portfolio case：**1 / 1**
 - Two Clocks case：**1 / 1**
@@ -69,11 +69,12 @@ Round 1综合：
 下一阶段转入最小复制验证，而不是继续增加未经验证的新字段。
 
 #### Package A — Rights Control Replication
-已完成2/4：
+已完成3/4：
 1. i4i × Amgen
 2. Apple ’381 claim 19 × Apple ’915 claim 8
+3. SynQor ’702 claim 56 × ’021 claim 30
 
-Apple/Samsung同场景复制进一步支持：Rights Control是claim-set、时间与程序状态变量，不能由R-stage推导。下一步再做2组跨行业对照。
+SynQor第三组实现R4对R4、同权利人/同技术家族/同诉讼环境下的更严格复制，进一步支持Rights Control作为独立维度。下一步只剩1组，优先工业机械、汽车、能源装备或制造工艺。
 
 #### Package B — Early-stage Option Value
 寻找4个真正T0=R0/R1、后来形成重大现实价值的历史专利。PageRank不计入。
