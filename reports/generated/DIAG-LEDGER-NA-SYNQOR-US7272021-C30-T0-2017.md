@@ -29,13 +29,13 @@
 
 ## Unresolved Gaps
 
-- **patent_value_attribution**: The mixed 2010 damages judgment is not apportioned to this exact claim. (observability: `restricted`)
+- **patent_value_attribution**: The mixed 2010 damages judgment is not apportioned to US7272021 claim 30. (observability: `restricted`)
 - **other**: V0.7 cannot separately encode that the Federal Circuit affirmed the Board's obviousness rejection of claim 30 at T0, despite the claim's earlier commercial infringement history. (observability: `public`)
 
 ## Next Evidence Tasks
 
 - **TASK-01 → E4**: 建立专利级性能、成本或经济价值归因
-  - claim-specific royalty/damages allocation
+  - claim-30-specific royalty/damages allocation
   - incremental technical contribution
   - claim-specific bargaining evidence
 - **TASK-02 → unknown**: 补齐Ledger列明的证据缺口
