@@ -188,13 +188,19 @@ class ScaffoldTrapHintTests(unittest.TestCase):
         )
         notes = ledger["notes"]
         self.assertIn("before this application filing", notes)
+        self.assertIn("validate_data.py emits a soft", notes)
         self.assertIn("equipment or component", notes)
+        self.assertIn("materials → material", notes)
 
     def test_cli_help_path_still_builds(self):
         parser = scaffold.build_parser()
         args = parser.parse_args(["--application-number", "ZL1", "--title", "t"])
         self.assertEqual("ZL1", args.application_number)
 
+    def test_module_prints_document_soft_warning(self):
+        src = Path(scaffold.__file__).read_text(encoding="utf-8")
+        self.assertIn("validate_data.py will soft-warn", src)
+        self.assertIn("materials → material", src)
 
 
 class PrefilingSoftWarningTests(unittest.TestCase):

@@ -202,9 +202,11 @@ def build_ledger(
             "but must NOT put E3 in evidence_levels_present. "
             "Traps: (1) sibling-family false mapping; (2) R0+E2 is allowed but does not raise R; "
             "(3) portfolio 300+ narratives do not inherit to this patent; "
-            "(4) project/product news dated before this application filing ≈ nearly always another case. "
-            "carrier_type hint: mechanical inventions often use equipment or component "
-            "(also process/material/product_system/… — see schema enum; do not leave unknown forever once known). "
+            "(4) project/product news dated before this application filing ≈ nearly always another case — "
+            "validate_data.py emits a soft (non-failing) warning when E2/product-ish dates precede filing. "
+            "carrier_type hint: mechanical → often equipment or component; materials → material "
+            "(or process when the claim set is primarily a preparation route); also "
+            "product_system/software_algorithm/… — see schema enum; do not leave unknown forever once known. "
             "See docs/cold-start-trap-checklist.md."
         ),
     }
@@ -329,9 +331,10 @@ def main(argv: list[str] | None = None) -> int:
     print("  - '300+ patent portfolio' narratives are product/enterprise scope — no auto R3+/R5.")
     print("  - evidence_levels_present: supporting levels only (status≠unknown); unknown-E3 ≠ present.")
     print("  - Project/product news dated BEFORE this application filing ≈ nearly always another case.")
-    print("  carrier_type hint (mechanical stumble): prefer equipment or component when that fits;")
-    print("    also process / material / product_system / software_algorithm / … (schema enum).")
-    print("    Do not leave carrier_type=unknown forever once the carrier class is known.")
+    print("    validate_data.py will soft-warn (non-failing) when E2/product-ish dates precede filing.")
+    print("  carrier_type hint: mechanical → often equipment or component; materials → material")
+    print("    (or process when claims are mainly a preparation route); also product_system /")
+    print("    software_algorithm / … (schema enum). Do not leave unknown forever once known.")
     print("  Checklist: docs/cold-start-trap-checklist.md")
     print("  Round 2 synthesis (V0.8 NOT adopted):")
     print("    analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md")

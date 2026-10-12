@@ -65,6 +65,7 @@
 - [ ] 是否误把「申请前已存在的产品线」当成本案 E3？
 - [ ] 规则自检：**申请日前的项目/产品新闻 ≈ 几乎总是他案（或与本案无关的产品层事实）**
 - [ ] `validate_data.py` 若打印 soft warning（`pre-filing … not E3`）：是否已核对、**未**据此升 R3+？（警告**不**失败 CI）
+- [ ] `scaffold_ledger.py` notes / 终端是否已提醒「validate_data 会对申请日前 E2/产品类日期 soft-warn」？
 
 ## G. 提交前命令
 
