@@ -50,14 +50,14 @@ Round 1综合：
 - H1 Rights Control：第一组对照支持，仍需复制
 - H2a Date/context dependence：支持
 - H2b Two Clocks：支持
-- H2c Clean early-stage option sample：尚未验证
+- H2c Clean early-stage option sample：已有 2 个干净回顾（mRNA + OLED）；仍需复制至 4/4
 - H3 Portfolio Dependency：支持
 - H4 Monetary evidence is contextual：跨诉讼/组合许可两类场景支持
 
 ### V0.8 adoption progress
 
 - Rights Control matched pairs：**4 / 4（完成）**
-- clean early-stage option retrospectives：**1 / 4**
+- clean early-stage option retrospectives：**2 / 4**
 - portfolio case：**1 / 1**
 - Two Clocks case：**1 / 1**
 - SEP / patent-pool / cross-license replication：**0 / 1**
@@ -82,8 +82,9 @@ Package A停止继续扩样。实验性 Claim-set Rights Control Schema 0.1 已�
 #### Package B — Early-stage Option Value
 寻找4个真正T0=R0/R1、后来形成重大现实价值的历史专利。PageRank不计入。
 
-当前进度：**1 / 4**
+当前进度：**2 / 4**
 1. US8278036B2（Karikó–Weissman modified nucleoside RNA）— early T0=2012-10-02 停在 **R0**；分析见 `analysis/non-award-validation/mrna-us8278036-early-option-packageb.md`。
+2. US4539507A（Tang–VanSlyke / Kodak thin-film organic EL）— early T0=1987-09-21 停在 **R0**；分析见 `analysis/non-award-validation/oled-us4539507-early-option-packageb.md`。
 
 #### Package C — Portfolio / Licensing Replication
 至少再做：
