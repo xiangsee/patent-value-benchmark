@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/xiangsee/patent-value-benchmark/schema/experimental/claim-set-rights-control.schema.json",
-  "title": "Xiangsee Experimental Claim-set Rights Control",
-  "description": "Experimental, non-score state object for claim-set legal control. Not part of the formal v1 Ledger schema.",
+  "title": "EXPERIMENTAL — Claim-set Rights Control (not formal schema 1.0)",
+  "description": "Experimental, non-score state object for claim-set legal control. Not part of the formal v1 Ledger schema. EXPERIMENTAL ONLY — NOT part of formal Patent Value Ledger/Diagnostic schema_version 1.0 (V0.7 remains adopted; V0.8 is research-only).",
   "type": "object",
   "required": [
     "rights_control_id",

@@ -146,14 +146,39 @@ def main() -> int:
             },
             {
                 "gap_type": "exact_patent_mapping",
-                "description": "Need to determine whether this exact patent maps to a specific product, process, platform, project or other value carrier.",
-                "needed_evidence": ["product/patent mapping", "regulated disclosure", "technical documentation", "implementation proof"],
+                "description": (
+                    "Need to determine whether THIS exact patent number maps to a specific value carrier. "
+                    "Do not inherit mapping from a sibling/same-day family patent cited in secondary sources."
+                ),
+                "needed_evidence": [
+                    "product/patent mapping that names this patent number",
+                    "regulated disclosure",
+                    "technical documentation",
+                    "implementation proof",
+                ],
+                "observability": "unknown",
+            },
+            {
+                "gap_type": "patent_value_attribution",
+                "description": (
+                    "Portfolio / program narratives (e.g. '300+ patents supporting the product') are "
+                    "enterprise/product scope. Do not auto-upgrade this single patent to R3+/R5."
+                ),
+                "needed_evidence": [
+                    "E3 naming this patent number",
+                    "optional E4 for patent-level attributable value",
+                ],
                 "observability": "unknown",
             },
         ],
         "source_ids": [],
         "review_status": "draft",
-        "notes": "Cold-start scaffold. Keep Unknown where evidence is not yet sufficient.",
+        "notes": (
+            "Cold-start scaffold. Keep Unknown where evidence is not yet sufficient. "
+            "Traps: (1) sibling-family false mapping; (2) R0+E2 is allowed but does not raise R; "
+            "(3) portfolio 300+ narratives do not inherit to this patent. "
+            "See docs/cold-start-trap-checklist.md."
+        ),
     }
 
     source_path.write_text("", encoding="utf-8")
@@ -172,6 +197,14 @@ def main() -> int:
     print("  5. Run: python tools/generate_diagnostics.py")
     print("  6. Run: python tools/render_reports.py")
     print("  7. Re-run validation/checks before opening a PR.")
+    print()
+    print("Cold-start traps (do not skip):")
+    print("  - Sibling / same-day family patents: never inherit exact mapping from a peer number.")
+    print("  - R0 + E2 is allowed; R0 + E2 ≠ R3 (product-layer evidence does not raise R alone).")
+    print("  - '300+ patent portfolio' narratives are product/enterprise scope — no auto R3+/R5.")
+    print("  Checklist: docs/cold-start-trap-checklist.md")
+    print("  Round 2 synthesis (V0.8 NOT adopted):")
+    print("    analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md")
     return 0
 
 

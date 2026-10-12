@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/xiangsee/patent-value-benchmark/schema/experimental/realization-path-snapshot.schema.json",
-  "title": "Xiangsee Generated Realization Path Snapshot",
-  "description": "Generated from canonical Realization Path events. Never edit by hand.",
+  "title": "EXPERIMENTAL (generated) — Realization Path Snapshot (not formal schema 1.0)",
+  "description": "Generated from canonical Realization Path events. Never edit by hand. EXPERIMENTAL ONLY — NOT part of formal Patent Value Ledger/Diagnostic schema_version 1.0 (V0.7 remains adopted; V0.8 is research-only).",
   "type": "object",
   "required": [
     "snapshot_id",

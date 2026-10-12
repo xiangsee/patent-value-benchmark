@@ -119,9 +119,12 @@ Revenue / Social Impact
 - `analysis/china-patent-award/`：中国专利奖专项入口
 - `analysis/24th-validation/`、`analysis/25th-validation/`：历史奖项样本验证记录
 - `data/`：清洗后的开放基准数据
-- `schema/`：开放数据与 Patent Value Ledger Schema
+- `schema/`：开放数据与 Patent Value Ledger Schema（见 `schema/README.md`）
+- `schema/experimental/`：**实验对象**，不是正式 schema 1.0（见该目录 README）
 - `data/ledgers/`：可校验的专利价值账本
 - `examples/patent-value-ledger/`：提交模板
+- `docs/cold-start-trap-checklist.md`：冷启动陷阱自查
+- `analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md`：Round 2 综合（**不 adopt V0.8**）
 
 ## Patent Value Ledger
 
@@ -178,6 +181,8 @@ python tools/render_reports.py
 
 - `docs/getting-started.md` — 30分钟冷启动
 - `docs/cold-start-quick-reference.md` — 一页速查
+- `docs/cold-start-trap-checklist.md` — 同族误映射 / R0+E2 / 300+ 组合陷阱
+- Round 2 综合（V0.8 **未**采纳）：`analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md`
 
 一键生成贡献草稿：
 
@@ -194,7 +199,7 @@ python tools/scaffold_ledger.py \
 v0.1.0 冻结内容：
 - Ledger / Diagnostic `schema_version: "1.0"`
 - Evidence / Source Registry schemas（结构冻结；无独立 schema_version 字段）
-- V0.7 研究架构仍为正式方法基线；`schema/experimental/*` 不在本冻结范围
+- V0.7 研究架构仍为正式方法基线；`schema/experimental/*` 不在本冻结范围（见 `schema/experimental/README.md`）
 
 ## License
 
