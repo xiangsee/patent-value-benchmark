@@ -71,6 +71,8 @@ Rights Control 回答的是：
 
 ---
 
+> **2026-10-12：** RC 对普通专利**永远可选**；允许**无裁决** RC 记录（见 [`claim-set-rights-control-experimental-0.1.md`](claim-set-rights-control-experimental-0.1.md)「No-ruling records」）。仍 experimental-0.1。
+
 ## 4. 什么时候 **不要** 升格进 schema 1.0
 
 下列任一成立，就 **停止**，保持 experimental：

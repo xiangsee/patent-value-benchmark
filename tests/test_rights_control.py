@@ -72,6 +72,64 @@ class RightsControlValidationTests(unittest.TestCase):
         errors = self.validate(record)
         self.assertTrue(any("rights_control_score" in e for e in errors))
 
+    def no_ruling_record(self):
+        # In-memory fixture on an existing ordinary contrib ledger; not a data file.
+        return {
+            "rights_control_id": "RC-TEST-NO-RULING-ZL202110873119X",
+            "schema_version": "experimental-0.1",
+            "source_ledger_ids": ["LEDGER-ZL202110873119.X"],
+            "patent_id": "CN113467774B",
+            "claim_set_id": "CN113467774B-ALL",
+            "claims_at_issue": ["all"],
+            "jurisdiction": "CN",
+            "as_of_date": "2026-10-12",
+            "scope_type": "all_granted_claims",
+            "adjudication_events": [],
+            "finality_state": {
+                "status": "not_applicable",
+                "appeal_status": "none_known",
+                "rehearing_status": "none_known",
+                "formal_effect": "not_applicable",
+                "evidence_ids": [],
+            },
+            "operative_control": {
+                "enforceability_state": "unknown",
+                "remedy_types": ["none"],
+                "remedy_status": "none",
+                "evidence_ids": [],
+            },
+            # Legal-status lookup context only (no ruling found); PP01 does not set any RC state.
+            "evidence_ids": ["E-TIP-PP01-PRESERVATION-CONTEXT"],
+            "notes": "No-ruling RC record; optional; PP01 is context only (PP01 != R/RC).",
+        }
+
+    def test_no_ruling_record_validates(self):
+        self.assertEqual([], self.validate(self.no_ruling_record()))
+
+    def test_no_ruling_record_requires_not_applicable_finality(self):
+        record = self.no_ruling_record()
+        record["finality_state"]["status"] = "final"
+        errors = self.validate(record)
+        self.assertTrue(any("no-ruling record requires" in e for e in errors))
+
+    def test_not_applicable_finality_with_events_is_rejected(self):
+        record = copy.deepcopy(self.records[0])
+        record["finality_state"]["status"] = "not_applicable"
+        errors = self.validate(record)
+        self.assertTrue(any("requires zero adjudication_events" in e for e in errors))
+
+    def test_value_carrier_mapping_is_optional(self):
+        record = copy.deepcopy(self.records[0])
+        record.pop("value_carrier_mapping", None)
+        self.assertEqual([], self.validate(record))
+
+    def test_rc_not_required_for_ordinary_ledgers(self):
+        # Ordinary contrib ledgers have no RC record and the formal surface stays valid.
+        rc_ledgers = {lid for r in self.records for lid in r["source_ledger_ids"]}
+        contrib = {lid for lid in self.ledger_ids if lid.startswith("LEDGER-ZL")}
+        self.assertTrue(contrib)
+        self.assertFalse(contrib & rc_ledgers)
+
 
 if __name__ == "__main__":
     unittest.main()

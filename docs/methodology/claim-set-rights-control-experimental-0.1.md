@@ -170,3 +170,10 @@ Experimental 0.1通过CI，只表示：
 - Rights Control已经可以做总分；
 - Counterfactual Control已经验证。
 
+## No-ruling records & optionality（2026-10-12 用户决定）
+
+- **RC 对普通专利永远可选**：冷启动 / 普通 contrib 不需要、也不默认创建 RC 记录。
+- **允许无裁决 RC 记录**：`adjudication_events` 可为空数组；此时 `finality_state.status` 与 `formal_effect` 必须为 `not_applicable`（无需 finality 证据）；有事件时禁止 `not_applicable`。
+- `scope_type` 新增 `all_granted_claims`（未诉专利无「asserted」集合）。
+- `value_carrier_mapping` 改为 **可选**（不再属 RC 核心；V0.7 E3 为唯一真相来源）；若填写，仍需证据规则。
+- 仍为 `experimental-0.1`；**不**影响 formal schema 1.0；**不**采纳 V0.8。

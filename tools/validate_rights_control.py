@@ -12,6 +12,9 @@ Checks:
 - T0 discipline for adjudication events and evidence
 - source Ledger references
 - required evidence for value-carrier mapping / finality / operative control
+- no-ruling records (empty adjudication_events) must use
+  finality_state status/formal_effect = not_applicable (RC is always optional
+  for ordinary patents; a no-ruling record is allowed but never required)
 
 It deliberately allows contradictory-but-valid legal states, for example:
 an adverse PTAB FWD + no cancellation certificate + an operative ITC LEO.
@@ -106,13 +109,25 @@ def validate_semantics(
                     f"({observed} > {as_of})"
                 )
 
-    mapping = record.get("value_carrier_mapping", {})
-    if mapping.get("status") != "unknown" and not mapping.get("evidence_ids"):
+    # value_carrier_mapping is optional (not RC core); V0.7 E3 remains the source of truth.
+    mapping = record.get("value_carrier_mapping")
+    if mapping is not None and mapping.get("status") != "unknown" and not mapping.get("evidence_ids"):
         errors.append(f"{rid}: non-Unknown value_carrier_mapping requires evidence")
 
     finality = record.get("finality_state", {})
-    if not finality.get("evidence_ids"):
-        errors.append(f"{rid}: finality_state requires evidence")
+    events = record.get("adjudication_events", [])
+    if not events:
+        # No-ruling RC record: finality is not applicable; no finality evidence needed.
+        if finality.get("status") != "not_applicable" or finality.get("formal_effect") != "not_applicable":
+            errors.append(
+                f"{rid}: no-ruling record requires finality_state.status and "
+                "formal_effect = not_applicable"
+            )
+    else:
+        if finality.get("status") == "not_applicable":
+            errors.append(f"{rid}: finality_state.status=not_applicable requires zero adjudication_events")
+        if not finality.get("evidence_ids"):
+            errors.append(f"{rid}: finality_state requires evidence")
 
     operative = record.get("operative_control", {})
     if operative.get("enforceability_state") != "unknown" and not operative.get("evidence_ids"):

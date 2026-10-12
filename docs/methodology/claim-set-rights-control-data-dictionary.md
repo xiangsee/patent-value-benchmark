@@ -13,9 +13,9 @@
 | `jurisdiction` | 权利状态所属司法辖区 | 不跨辖区继承 |
 | `as_of_date` | 状态快照T0 | 所有事件/证据不得晚于T0 |
 | `scope_type` | 单一claim、多claim、asserted set等 | 不代表价值高低 |
-| `value_carrier_mapping.status` | claim set与价值载体映射是否建立 | Unknown ≠ no mapping |
+| `value_carrier_mapping.status` | claim set与价值载体映射是否建立 | Unknown ≠ no mapping；整个对象**可选**（非 RC 核心） |
 | `value_carrier_mapping.carrier_ids` | 对应现有Ledger的value carrier | 不自动继承产品价值 |
-| `adjudication_events` | 权利相关裁判/行政程序事件 | 可以有多个、方向可以变化 |
+| `adjudication_events` | 权利相关裁判/行政程序事件 | 可以有多个、方向可以变化；**可为空**（无裁决记录，此时 finality = `not_applicable`） |
 | `proceeding_type` | court / reexam / IPR / ITC等 | 只描述程序类型 |
 | `outcome_category` | rights_upheld / rights_adverse / mixed等 | 不是总分 |
 | `procedural_status` | final / remanded / further review等 | 与outcome分开 |
