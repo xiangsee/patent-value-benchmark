@@ -196,5 +196,104 @@ class ScaffoldTrapHintTests(unittest.TestCase):
         self.assertEqual("ZL1", args.application_number)
 
 
+
+class PrefilingSoftWarningTests(unittest.TestCase):
+    """Soft warnings must never become hard errors (exit 0 still expected)."""
+
+    def test_e2_observed_before_filing_warns(self):
+        ledger = _ledger("R0", ["E2"], "unknown")
+        ledger["patent"] = {"filing_date": "2020-11-30"}
+        ledger["v0_7_state"]["attribution_evidence_state"]["evidence_ids"] = ["E-PRE"]
+        evidence = {
+            "E-PRE": {
+                "evidence_level": "E2",
+                "status": "confirmed",
+                "observed_date": "2012-10-09",
+                "source_date": "2013-04-28",
+                "source_id": "S-PRE",
+            }
+        }
+        sources = {
+            "S-PRE": {
+                "source_type": "media",
+                "publicly_available_date": "2013-04-28",
+                "source_date": "2013-04-28",
+            }
+        }
+        warns = v.prefiling_product_warnings("L1", ledger, evidence, sources)
+        self.assertTrue(warns)
+        self.assertTrue(any("before patent.filing_date" in w for w in warns))
+        self.assertTrue(any("not E3" in w for w in warns))
+        self.assertTrue(any("soft warning" in w for w in warns))
+        # Hard coldstart path still clean for R0+E2.
+        self.assertEqual([], v.coldstart_consistency_errors("L1", ledger, evidence))
+
+    def test_no_filing_date_no_warning(self):
+        ledger = _ledger("R0", ["E2"], "unknown")
+        ledger["patent"] = {"filing_date": None}
+        ledger["v0_7_state"]["attribution_evidence_state"]["evidence_ids"] = ["E-PRE"]
+        evidence = {
+            "E-PRE": {
+                "evidence_level": "E2",
+                "status": "confirmed",
+                "observed_date": "2012-10-09",
+                "source_id": "S-PRE",
+            }
+        }
+        sources = {"S-PRE": {"source_type": "media", "publicly_available_date": "2012-10-09"}}
+        self.assertEqual([], v.prefiling_product_warnings("L1", ledger, evidence, sources))
+
+    def test_post_filing_e2_no_warning(self):
+        ledger = _ledger("R0", ["E2"], "unknown")
+        ledger["patent"] = {"filing_date": "2020-11-30"}
+        ledger["v0_7_state"]["attribution_evidence_state"]["evidence_ids"] = ["E-POST"]
+        evidence = {
+            "E-POST": {
+                "evidence_level": "E2",
+                "status": "confirmed",
+                "observed_date": "2024-01-01",
+                "source_date": "2024-01-01",
+                "source_id": "S-POST",
+            }
+        }
+        sources = {
+            "S-POST": {
+                "source_type": "company_disclosure",
+                "publicly_available_date": "2024-01-01",
+                "source_date": "2024-01-01",
+            }
+        }
+        self.assertEqual([], v.prefiling_product_warnings("L1", ledger, evidence, sources))
+
+    def test_patent_document_prefiling_ignored_unless_e2(self):
+        """Earlier patent_document dates alone are not the trap."""
+        ledger = _ledger("R0", ["E1"], "unknown")
+        ledger["patent"] = {"filing_date": "2020-11-30"}
+        ledger["source_ids"] = ["S-PAT"]
+        sources = {
+            "S-PAT": {
+                "source_type": "patent_document",
+                "publicly_available_date": "2015-01-01",
+                "source_date": "2015-01-01",
+            }
+        }
+        self.assertEqual([], v.prefiling_product_warnings("L1", ledger, {}, sources))
+
+    def test_product_ish_source_id_before_filing_warns(self):
+        ledger = _ledger("R0", [], "unknown")
+        ledger["patent"] = {"filing_date": "2020-11-30"}
+        ledger["source_ids"] = ["S-REG"]
+        sources = {
+            "S-REG": {
+                "source_type": "media",
+                "publicly_available_date": "2013-04-28",
+                "source_date": "2013-04-28",
+            }
+        }
+        warns = v.prefiling_product_warnings("L1", ledger, {}, sources)
+        self.assertTrue(any("S-REG" in w for w in warns))
+
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -10,6 +10,10 @@ value needs E4 (blocks sibling-family / portfolio inheritance shortcuts);
 evidence_levels_present lists only levels with status≠unknown support
 (sought-but-not-found / unknown-E3 rows do not count as present).
 
+Soft (non-failing) warnings: when patent.filing_date exists and an E2 /
+product-ish source or evidence date is earlier than filing, print a hint that
+pre-filing news ≈ likely another case / not E3. Warnings never change exit code.
+
 It intentionally does not score patents and does not infer missing facts.
 """
 
@@ -116,6 +120,90 @@ def supporting_evidence_levels(evidence_rows: list[dict[str, Any]]) -> set[str]:
     return levels
 
 
+
+# Source types that commonly carry product / project / capacity narrative.
+# patent_document / official_award_list / academic are excluded: earlier dates
+# there are normal (prior art, awards, papers) and not the pre-filing trap.
+PRODUCT_ISH_SOURCE_TYPES = frozenset(
+    {
+        "company_disclosure",
+        "media",
+        "annual_report",
+        "prospectus",
+        "government",
+        "regulatory",
+        "other",
+    }
+)
+
+
+def _date_earlier(date_str: Any, filing: str) -> bool:
+    """True when date_str is a non-empty YYYY-MM-DD string strictly before filing."""
+    if not isinstance(date_str, str) or not date_str:
+        return False
+    return date_str < filing
+
+
+def prefiling_product_warnings(
+    ledger_id: str,
+    item: dict[str, Any],
+    evidence_by_id: dict[str, dict[str, Any]],
+    sources_by_id: dict[str, dict[str, Any]],
+) -> list[str]:
+    """Soft advisories: E2/product-ish dates before filing ≈ another case / not E3.
+
+    Never appended to the hard-error list — callers print these and still exit 0.
+    """
+    warnings: list[str] = []
+    filing = (item.get("patent") or {}).get("filing_date")
+    if not isinstance(filing, str) or not filing:
+        return warnings
+
+    seen: set[tuple[str, str, str]] = set()
+
+    def add(kind: str, ref_id: str, date_val: str, date_field: str) -> None:
+        key = (kind, ref_id, date_val)
+        if key in seen:
+            return
+        seen.add(key)
+        warnings.append(
+            f"ledger {ledger_id}: {kind} {ref_id} {date_field}={date_val} is before "
+            f"patent.filing_date={filing} — pre-filing product/project news ≈ likely "
+            f"another case / not E3 for this patent (soft warning; does not fail CI)"
+        )
+
+    referenced_eids = collect_ledger_evidence_ids(item)
+    for eid in sorted(referenced_eids):
+        ev = evidence_by_id.get(eid)
+        if not ev:
+            continue
+        if ev.get("evidence_level") != "E2":
+            continue
+        for field in ("observed_date", "source_date"):
+            d = ev.get(field)
+            if _date_earlier(d, filing):
+                add("evidence", eid, d, field)
+        src = sources_by_id.get(ev.get("source_id"), {})
+        for field in ("publicly_available_date", "source_date"):
+            d = src.get(field)
+            if _date_earlier(d, filing):
+                add("source", ev.get("source_id") or "?", d, field)
+
+    # Also scan ledger source_ids that are product-ish even if not yet wired to E2.
+    for sid in item.get("source_ids") or []:
+        src = sources_by_id.get(sid)
+        if not src:
+            continue
+        if src.get("source_type") not in PRODUCT_ISH_SOURCE_TYPES:
+            continue
+        for field in ("publicly_available_date", "source_date"):
+            d = src.get(field)
+            if _date_earlier(d, filing):
+                add("source", sid, d, field)
+
+    return warnings
+
+
 def coldstart_consistency_errors(
     ledger_id: str,
     item: dict[str, Any],
@@ -172,6 +260,7 @@ def coldstart_consistency_errors(
 
 def main() -> int:
     errors: list[str] = []
+    warnings: list[str] = []
     datasets: dict[str, list[tuple[Path, int, dict[str, Any]]]] = {}
 
     for kind, pattern in DATA_GLOBS.items():
@@ -304,6 +393,9 @@ def main() -> int:
         for message in coldstart_consistency_errors(ledger_id, item, evidence):
             fail(errors, message)
 
+        for message in prefiling_product_warnings(ledger_id, item, evidence, sources):
+            warnings.append(message)
+
         # R5 specifically requires attributable patent-level value.
         if stage == "R5" and "E4" not in attr.get("evidence_levels_present", []):
             fail(errors, f"ledger {ledger_id}: R5 requires E4 in evidence_levels_present")
@@ -371,6 +463,11 @@ def main() -> int:
         for error in errors:
             print(f"- {error}", file=sys.stderr)
         return 1
+
+    if warnings:
+        print(f"Validation soft warnings ({len(warnings)}; do not fail CI):", file=sys.stderr)
+        for warning in warnings:
+            print(f"- {warning}", file=sys.stderr)
 
     counts = {kind: len(rows) for kind, rows in datasets.items()}
     print("Validation passed.")
