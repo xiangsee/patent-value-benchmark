@@ -11,6 +11,7 @@ Maintenance plateau（2026-10-12）：**V0.7 / schema 1.0 稳定**；V0.8 / RC /
 
 #### Changed
 - Roadmap / cold-start-status / research-tracks / V0.8 research agenda：增加「design draft in progress / research-only」指针。
+- V0.8 probes P1–P4、P6（docs only）：`docs/methodology/v0.8-probes/`；P5 待点名。未改 schema / validator / ledger。
 
 ### Theme: Round 2 V0.8 replication（#24–#30；research-only，未采纳）
 
