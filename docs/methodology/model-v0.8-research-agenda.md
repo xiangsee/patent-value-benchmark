@@ -85,6 +85,15 @@ Amgen压力测试表明，简单的patent-level valid / invalid状态可能过�
 - blocking_power
 - freedom_to_operate_dependency
 
+**预注册（replication before schema）：** [#37](https://github.com/xiangsee/patent-value-benchmark/issues/37)
+
+第一对 matched cases（analysis-first；**不**新增 formal Ledger；**不**建 experimental schema）：
+
+1. i4i / US5787449 @ T0=2010-03-10（R5）— hard feature-level NIA → `analysis/non-award-validation/counterfactual-i4i-us5787449.md`
+2. Apple / US7469381 claim 19 @ Counterfactual T0=2014-03-06（R4 锚点）— documented NIA + low product-level blocking → `analysis/non-award-validation/counterfactual-apple-us7469381-bounceback.md`
+
+硬边界：禁令/终局 ∈ Rights Control；金额事件 ∈ Realization Path；**禁止**把 design-around 写成伪精确美元或 score。仍 **不** adopt V0.8。
+
 ### 4. Value Horizon
 
 PageRank同一专利双T0测试支持把Patent Age拆成“两只钟”：

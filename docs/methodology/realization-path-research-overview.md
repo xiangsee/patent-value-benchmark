@@ -243,4 +243,6 @@ python tools/render_reports.py --check
 - 不提供 Realization Score / 专利总价值加总
 - 不把本轨道当作冷启动必填项
 - 不把 Rights Control / Counterfactual Control / Enforcement Capacity scores 静默并入本对象
+
+姊妹预注册（独立对象，**无** schema）：Counterfactual Control — [#37](https://github.com/xiangsee/patent-value-benchmark/issues/37)；案例见 `analysis/non-award-validation/counterfactual-*.md`。NIA / design-around ≠ cash/verdict。
 - 不把手改 `generated-snapshots.jsonl` 当成合法更新路径
