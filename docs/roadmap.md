@@ -20,6 +20,8 @@
 ## Track A — Patent Value Benchmark
 
 > **维护平台期**：正式方法 V0.7 + schema 1.0；V0.8 research-only；普通样本扩样暂停。详见 [`cold-start-status.md`](cold-start-status.md)。
+>
+> **V0.8 design draft in progress / research-only；formal = V0.7 + schema 1.0** → [`methodology/model-v0.8-design-draft.md`](methodology/model-v0.8-design-draft.md)（**未**冻结、**未**采纳）。
 
 ### 当前正式架构：V0.7
 
