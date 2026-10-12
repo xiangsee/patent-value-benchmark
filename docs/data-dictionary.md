@@ -1,6 +1,6 @@
 # Data Dictionary
 
-版本：**v0.1.0 draft**
+版本：**v0.1.0**（schemas frozen）
 
 本文件定义 Xiangsee Patent Value Benchmark 的核心术语。目标是让不同研究者、企业和代理师对同一字段尽量得到一致理解。
 

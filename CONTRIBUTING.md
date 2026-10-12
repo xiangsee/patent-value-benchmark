@@ -71,3 +71,14 @@ python tools/validate_data.py
 - 必要时标记为 Unknown / disputed。
 
 这个库允许“暂时不知道”。
+
+## Schema version (v0.1.0)
+
+Ledger and Diagnostic contributions must use:
+
+```json
+"schema_version": "1.0"
+```
+
+`1.0-draft` is retired. Experimental schemas under `schema/experimental/` are optional research tracks and are not required for ordinary Ledger PRs.
+

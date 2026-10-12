@@ -70,7 +70,7 @@ def main() -> int:
     historical = bool(args.t0)
     ledger = {
         "ledger_id": f"LEDGER-{stem}",
-        "schema_version": "1.0-draft",
+        "schema_version": "1.0",
         "analysis_mode": "public",
         "patent": {
             "application_number": args.application_number,

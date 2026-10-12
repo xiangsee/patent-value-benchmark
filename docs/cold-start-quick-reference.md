@@ -46,3 +46,10 @@ python tools/validate_data.py
 python tools/generate_diagnostics.py --check
 python tools/render_reports.py --check
 ```
+
+## Pitfalls (#2 / PR #22)
+
+- Sibling / same-day family patents: do **not** inherit mapping from a peer patent number.
+- **R0 + E2 is allowed; R0 + E2 ≠ R3.**
+- “300+ patent portfolio” narratives are product/enterprise scope — never auto-upgrade a single patent to R3+/R5.
+

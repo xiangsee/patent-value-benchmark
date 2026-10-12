@@ -3,6 +3,26 @@
 ## Unreleased
 
 ### Added
+- (none yet)
+
+### Changed
+- (none yet)
+
+## [0.1.0] - 2026-10-12
+
+### Added
+- Freeze Patent Value Ledger / Diagnostic schemas at `schema_version: "1.0"` for v0.1.0.
+- Mark Evidence / Source Registry schemas structure-frozen with the release.
+- Complete external cold-start reproduction (#2 / PR #22): BYD ZL201910544929.3 stopped at R0.
+- Add v0.1.0 release notes and update readiness checklist to Released.
+- Document sibling-patent / R0+E2 / portfolio non-inheritance cold-start pitfalls from #22 feedback.
+
+### Changed
+- CITATION.cff version `0.1.0-draft` → `0.1.0`.
+- README / Data Dictionary / methodology titles drop “Draft” for Ledger & Diagnostic 1.0.
+
+### Historical notes (pre-freeze development)
+
 - 初始化 Xiangsee Patent Value Benchmark 公共研究库。
 - 冻结 Patent Value Benchmark V0.6，开始第 25 届样本外验证。
 - 建立 E1–E5 证据等级。

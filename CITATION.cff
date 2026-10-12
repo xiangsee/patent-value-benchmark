@@ -4,7 +4,7 @@ title: "Xiangsee Patent Value Benchmark"
 type: dataset
 authors:
   - name: "xiangsee"
-version: "0.1.0-draft"
+version: "0.1.0"
 repository-code: "https://github.com/xiangsee/patent-value-benchmark"
 url: "https://github.com/xiangsee/patent-value-benchmark"
 abstract: "An open, evidence-traceable framework, benchmark dataset, Patent Value Ledger and Diagnostic for studying how patents become demonstrable technology assets."
