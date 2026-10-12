@@ -1,0 +1,170 @@
+{
+  "network_id": "BYD-BLADE-CTP-PRODUCT-PORTFOLIO-NETWORK-T0-2026-10-12",
+  "status": "experimental research object — not schema-adopted",
+  "t0_date": "2026-10-12",
+  "purpose": "Represent non-life-science complex product-portfolio dependencies that a standalone V0.7 ledger cannot express: complementary CTP claim sets, sibling mis-mapping risk, cell/pack layering, and multi-vehicle platform edges.",
+  "anchor_patent": "CN110165116B",
+  "nodes": [
+    {
+      "id": "CN110165116B",
+      "type": "patent",
+      "label": "CN110165116B long-cell pack support / CTP structure (anchor)"
+    },
+    {
+      "id": "CN110165115B",
+      "type": "patent",
+      "label": "CN110165115B pack volume-utilization sibling (V1/V2≥55%)"
+    },
+    {
+      "id": "CN110165118B",
+      "type": "patent",
+      "label": "CN110165118B same-day pack sibling (Issue #2 cold-start)"
+    },
+    {
+      "id": "CTP-FAMILY",
+      "type": "portfolio",
+      "label": "BYD 2019-01-09 priority / 2019-06-21 CTP & long-cell filing wave"
+    },
+    {
+      "id": "BLADE-PLATFORM",
+      "type": "product_platform",
+      "label": "Blade Battery CTP product platform"
+    },
+    {
+      "id": "HAN-EV",
+      "type": "product",
+      "label": "BYD Han EV"
+    },
+    {
+      "id": "TANG",
+      "type": "product",
+      "label": "BYD Tang (Blade-equipped per company messaging)"
+    },
+    {
+      "id": "ATTO3",
+      "type": "product",
+      "label": "BYD Atto 3 (Blade-equipped per company messaging)"
+    },
+    {
+      "id": "PORTFOLIO-NARRATIVE-300",
+      "type": "program_narrative",
+      "label": "Media-reported >300 core patents Blade portfolio claim"
+    }
+  ],
+  "edges": [
+    {
+      "from": "CN110165116B",
+      "to": "CTP-FAMILY",
+      "relation": "member_of",
+      "status": "confirmed",
+      "evidence_ids": [
+        "E-BYD-CTP-FAMILY-MEMBERSHIP"
+      ]
+    },
+    {
+      "from": "CN110165115B",
+      "to": "CTP-FAMILY",
+      "relation": "member_of",
+      "status": "confirmed",
+      "evidence_ids": [
+        "E-BYD-CTP-SIBLING-115-VOLUME"
+      ]
+    },
+    {
+      "from": "CN110165118B",
+      "to": "CTP-FAMILY",
+      "relation": "member_of",
+      "status": "confirmed",
+      "evidence_ids": [
+        "E-BYD-CTP-SIBLING-118-MISMAP-RISK"
+      ]
+    },
+    {
+      "from": "CN110165115B",
+      "to": "CN110165116B",
+      "relation": "complementary_claim_theme",
+      "status": "confirmed",
+      "detail": "utilization threshold vs structure/support drafting",
+      "evidence_ids": [
+        "E-BYD-CTP-SIBLING-115-VOLUME"
+      ]
+    },
+    {
+      "from": "CN110165118B",
+      "to": "CN110165116B",
+      "relation": "sibling_mis_mapping_risk",
+      "status": "confirmed",
+      "detail": "same title/priority cluster; distinct grants",
+      "evidence_ids": [
+        "E-BYD-CTP-SIBLING-118-MISMAP-RISK"
+      ]
+    },
+    {
+      "from": "CTP-FAMILY",
+      "to": "BLADE-PLATFORM",
+      "relation": "underpins_candidate",
+      "status": "unknown",
+      "detail": "family themes match Blade CTP messaging; exact practiced subset unknown",
+      "evidence_ids": [
+        "E-BYD-BLADE-PRODUCT-LAUNCH-2020",
+        "E-BYD-BLADE-PORTFOLIO-MEDIA-2020"
+      ]
+    },
+    {
+      "from": "BLADE-PLATFORM",
+      "to": "HAN-EV",
+      "relation": "equipped_in",
+      "status": "confirmed",
+      "evidence_ids": [
+        "E-BYD-BLADE-PRODUCT-LAUNCH-2020",
+        "E-BYD-BLADE-MULTI-VEHICLE-FITMENT"
+      ]
+    },
+    {
+      "from": "BLADE-PLATFORM",
+      "to": "TANG",
+      "relation": "equipped_in",
+      "status": "confirmed",
+      "evidence_ids": [
+        "E-BYD-BLADE-MULTI-VEHICLE-FITMENT"
+      ]
+    },
+    {
+      "from": "BLADE-PLATFORM",
+      "to": "ATTO3",
+      "relation": "equipped_in",
+      "status": "confirmed",
+      "evidence_ids": [
+        "E-BYD-BLADE-MULTI-VEHICLE-FITMENT"
+      ]
+    },
+    {
+      "from": "CN110165116B",
+      "to": "BLADE-PLATFORM",
+      "relation": "exact_implemented_in",
+      "status": "unknown",
+      "evidence_ids": [
+        "E-BYD-BLADE-116-SECONDARY-CITATION"
+      ]
+    },
+    {
+      "from": "PORTFOLIO-NARRATIVE-300",
+      "to": "CN110165116B",
+      "relation": "not_apportioned_to",
+      "status": "confirmed",
+      "evidence_ids": [
+        "E-BYD-BLADE-PORTFOLIO-MEDIA-2020"
+      ]
+    }
+  ],
+  "h3_pressure_test": {
+    "question": "Does standalone V0.7 R-stage lose material information for a commercially successful non-life-science complex product portfolio?",
+    "answer": "yes",
+    "lost_information": [
+      "complementary claim-set layering inside one CTP architecture",
+      "sibling mis-mapping risk across same-title grants",
+      "platform→multi-vehicle edges without patent→platform exact maps",
+      "portfolio-size narrative that cannot be inherited by any one grant"
+    ]
+  }
+}
