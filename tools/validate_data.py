@@ -6,7 +6,9 @@ and the non-inheritance rules introduced by V0.7.
 
 Cold-start consistency levers also enforce: non-Unknown exact links need E3;
 R0 cannot claim a resolved exact link; non-Unknown patent-level attributable
-value needs E4 (blocks sibling-family / portfolio inheritance shortcuts).
+value needs E4 (blocks sibling-family / portfolio inheritance shortcuts);
+evidence_levels_present lists only levels with status≠unknown support
+(sought-but-not-found / unknown-E3 rows do not count as present).
 
 It intentionally does not score patents and does not infer missing facts.
 """
@@ -96,11 +98,32 @@ def collect_ledger_evidence_ids(item: dict[str, Any]) -> set[str]:
     return ids
 
 
-def coldstart_consistency_errors(ledger_id: str, item: dict[str, Any]) -> list[str]:
+def supporting_evidence_levels(evidence_rows: list[dict[str, Any]]) -> set[str]:
+    """Return evidence levels that have at least one status≠unknown row.
+
+    Sought-but-not-found rows (e.g. E3 with status=unknown) are valid audit
+    trail entries but do NOT count toward evidence_levels_present.
+    """
+    levels: set[str] = set()
+    for row in evidence_rows:
+        if row.get("status") == "unknown":
+            continue
+        level = row.get("evidence_level")
+        if level:
+            levels.add(level)
+    return levels
+
+
+def coldstart_consistency_errors(
+    ledger_id: str,
+    item: dict[str, Any],
+    evidence_by_id: dict[str, dict[str, Any]] | None = None,
+) -> list[str]:
     """Return cold-start consistency violations for one ledger row.
 
-    Encodes three traps from external cold-start (#2 / PR #22) and Round 2:
-    sibling-family false mapping, R0+E2 without raising R, portfolio non-inheritance.
+    Encodes traps from external cold-start (#2 / PR #22 / PR #32) and Round 2:
+    sibling-family false mapping, R0+E2 without raising R, portfolio
+    non-inheritance, and unknown-E3 not counting as present.
     """
     errors: list[str] = []
     state = item.get("v0_7_state", {})
@@ -125,6 +148,23 @@ def coldstart_consistency_errors(ledger_id: str, item: dict[str, Any]) -> list[s
             f"ledger {ledger_id}: patent_level_attributable_value={patent_value} requires E4 "
             f"in evidence_levels_present (portfolio/program scope does not inherit)"
         )
+
+    # evidence_levels_present must be backed by status≠unknown evidence among
+    # ledger-referenced rows. Unknown-E3 (sought but not found) may remain in
+    # the evidence file for audit but must not list E3 as present.
+    if evidence_by_id is not None and levels:
+        referenced_ids = collect_ledger_evidence_ids(item)
+        referenced_rows = [
+            evidence_by_id[eid] for eid in referenced_ids if eid in evidence_by_id
+        ]
+        supported = supporting_evidence_levels(referenced_rows)
+        unsupported = sorted(levels - supported)
+        if unsupported:
+            errors.append(
+                f"ledger {ledger_id}: evidence_levels_present includes {unsupported} "
+                f"without status≠unknown supporting evidence "
+                f"(unknown-E3 / sought-but-not-found rows do not count as present)"
+            )
     return errors
 
 
@@ -259,7 +299,7 @@ def main() -> int:
                 f"ledger {ledger_id}: {stage} requires a non-Unknown exact_patent_value_carrier_link"
             )
 
-        for message in coldstart_consistency_errors(ledger_id, item):
+        for message in coldstart_consistency_errors(ledger_id, item, evidence):
             fail(errors, message)
 
         # R5 specifically requires attributable patent-level value.

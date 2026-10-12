@@ -3,6 +3,9 @@
 ## Unreleased
 
 ### Added
+- Scaffold optional bibliographic flags: `--publication-number`, `--grant-number`, `--filing-date`, `--grant-date`, `--earliest-priority-date`, `--family-note` (hand-lookup hints; no office scrapers).
+- Docs: `evidence_levels_present` vs unknown-E3 (sought-but-not-found) rule from PR #32 ordinary cold-start friction.
+- Getting Started: `.venv` setup for `jsonschema` dependency.
 - Cold-start trap checklist: `docs/cold-start-trap-checklist.md` (sibling-family false mapping, R0+E2, portfolio 300+ non-inheritance).
 - `schema/README.md` and `schema/experimental/README.md` banners clarifying experimental ≠ formal schema 1.0.
 - Package B early-stage option retrospective #1: US8278036B2 (Karikó–Weissman) at T0=2012-10-02 stops at R0 (#11).
@@ -14,8 +17,9 @@
 - Round 2 adoption-readiness synthesis: `analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md` (#11). Documents completed replication packages, V0.7 gaps, future adoption criteria, and explicit **keep V0.7 / V0.8 research-only** recommendation. No schema adoption.
 
 ### Changed
-- `tools/scaffold_ledger.py` prints cold-start traps and seeds gap/notes hints; links Round 2 synthesis.
-- `tools/validate_data.py` cold-start consistency levers (E3 for non-Unknown exact link; R0 exact link must be unknown; E4 for non-Unknown patent-level value).
+- `tools/scaffold_ledger.py` prints cold-start traps and seeds gap/notes hints; links Round 2 synthesis; optional biblio flags + hand-fill prompts; notes encode unknown-E3 ≠ present.
+- `tools/validate_data.py` cold-start consistency levers (E3 for non-Unknown exact link; R0 exact link must be unknown; E4 for non-Unknown patent-level value; `evidence_levels_present` must have status≠unknown support).
+- Getting Started / quick-ref / data dictionary / trap checklist clarify unknown-E3 and `.venv`.
 - Getting Started / cold-start quick-ref / README link Round 2 synthesis and trap checklist.
 - Experimental schema titles/descriptions bannered as not formal 1.0.
 - Roadmap / V0.8 research agenda Package B progress 0/4 → 1/4 → 2/4 → 3/4 → **4/4**.

@@ -38,6 +38,16 @@ E5回答“有没有独立核验”，E4回答“价值能不能归到这件专�
 
 而不是“最高等级E3”。
 
+### `evidence_levels_present` 与 unknown 行
+
+只把**有 status≠unknown 支撑**的层级写入该数组。
+
+- 允许：证据文件里保留 `evidence_level=E3` 且 `status=unknown` 的「寻而未得」行（审计轨迹）。
+- 禁止：仅因存在 unknown-E3 行，就把 `"E3"` 写入 `evidence_levels_present`。
+- 冷启动常见形态（#2 / #32）：R0 + 产品 E2 + 寻而未得 E3 → `evidence_levels_present: ["E2"]`。
+
+硬规则：**unknown-E3 ≠ present**；Unknown ≠ 0。
+
 ## 3. Value Realization Stage
 
 | Stage | 名称 | 必要含义 |
