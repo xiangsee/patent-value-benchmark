@@ -250,9 +250,11 @@ Experimental Claim-set Rights Control Schema 0.1 已实现并进入CI验证：
 
 CRISPR已完成第一个portfolio case。
 
-下一步至少增加：
-- 1个SEP / patent-pool / cross-license案例；
-- 1个非生命科学复杂产品案例。
+SEP / patent-pool 外部复制已完成：
+- **US6825782B2**（NTT Docomo）∈ Via LA AVC/H.264 Patent Portfolio License；T0=2026-10-12；standalone **R2**；池费率与被许可人生态不得继承为单件专利价值。
+
+仍缺：
+- 1个非生命科学复杂产品组合案例。
 
 检验：
 - Portfolio & Jurisdiction Network是否跨行业成立；
@@ -265,10 +267,10 @@ CRISPR已完成第一个portfolio case。
 V0.8只有在至少完成以下门槛后才讨论adopted：
 
 - **4组** Rights Control matched pairs — 当前 **4 / 4（门槛完成）**
-- **4个** clean early-stage option retrospectives — 当前 **3 / 4**
+- **4个** clean early-stage option retrospectives — 当前 **4 / 4**
 - **至少1个** portfolio case — 当前 **1 / 1**
 - **至少1个** Two Clocks case — 当前 **1 / 1**
-- **至少1个** SEP / patent-pool / cross-license外部复制案例 — 当前 **0 / 1**
+- **至少1个** SEP / patent-pool / cross-license外部复制案例 — 当前 **1 / 1**（US6825782B2 / Via LA AVC pool）
 
 并且必须完成一次新的cross-case synthesis，证明候选结构跨样本增加解释力而不是历史过拟合。
 
