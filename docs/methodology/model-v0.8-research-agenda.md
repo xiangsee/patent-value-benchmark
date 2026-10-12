@@ -4,6 +4,8 @@
 
 V0.7继续是当前正式架构。Formal Ledger / Diagnostic schema 保持冻结的 `1.0`。
 
+**V0.8 design draft in progress / research-only；formal = V0.7 + schema 1.0** → [`model-v0.8-design-draft.md`](model-v0.8-design-draft.md)（**未**冻结、**未**采纳）。
+
 Round 2 adoption-readiness 综合：
 
 `analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md`

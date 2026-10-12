@@ -74,10 +74,10 @@ V0.7更准确的定位是：
 - Value Realization Stage
 
 正在进行：
-- V0.8 Value Construct & Rights Control 研究议程
+- V0.8 Value Construct & Rights Control 研究议程（**design draft in progress / research-only**；formal = V0.7 + schema 1.0；[`docs/methodology/model-v0.8-design-draft.md`](docs/methodology/model-v0.8-design-draft.md) — **未**采纳）
 - Patent Value Ledger 1.0（已冻结）
 - Patent Value Diagnostic 1.0（已冻结）
-- 通用样本与非奖项样本扩展
+- 普通冷启动扩样：**暂停**（维护平台期；见 [`docs/cold-start-status.md`](docs/cold-start-status.md)）
 - 外部冷启动复现（#2 已完成）
 - ~~Schema freeze + v0.1.0 release~~ → **v0.1.0 released**
 

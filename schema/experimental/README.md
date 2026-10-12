@@ -44,6 +44,7 @@ Methodology notes:
 - **Counterfactual Control 对外入口 / inventory（analysis-only；本目录无对应 schema）：** `docs/methodology/counterfactual-control-research-overview.md`
 - `docs/methodology/claim-set-rights-control-experimental-0.1.md`
 - `docs/methodology/realization-path-experimental-0.1.md`
+- **V0.8 design draft（not frozen / not adopted）：** `docs/methodology/model-v0.8-design-draft.md`
 - `docs/methodology/data-validation.md`
 
 ## Rights Control inventory (short)

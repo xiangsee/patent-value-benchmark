@@ -3,6 +3,7 @@
 > 快照日期：2026-10-12（Asia/Shanghai）  
 > 正式方法：**V0.7**；正式 schema：**1.0**（[`v0.1.0`](https://github.com/xiangsee/patent-value-benchmark/releases/tag/v0.1.0) 已冻结）  
 > **不**采纳 V0.8；**无** Counterfactual experimental schema。
+> **V0.8 design draft in progress / research-only；formal = V0.7 + schema 1.0** → [`methodology/model-v0.8-design-draft.md`](methodology/model-v0.8-design-draft.md)。
 
 本页汇总 Track A 上、面向外部复现 / 普通冷启动可用性的 **contrib 样本**（`data/ledgers/contrib-*.jsonl`），按领域分组。奖项示例、Package B/C 非奖项机制样本见 Round 2 综合，不在本表重复。
 
@@ -61,6 +62,7 @@
 - 架构：**V0.7 adopted**（正式）
 - Schema：**1.0 frozen**（[`v0.1.0`](https://github.com/xiangsee/patent-value-benchmark/releases/tag/v0.1.0)）
 - V0.8 / Rights Control / Realization Path / Counterfactual：**research-only**；**不**采纳 V0.8；**不**建 CF experimental schema
+- **V0.8 设计草案进行中**（research-only；formal = V0.7 + schema 1.0）：[`docs/methodology/model-v0.8-design-draft.md`](methodology/model-v0.8-design-draft.md)
 - 采纳 V0.8：**需显式决策**（见 Round 2 综合）
 - **普通冷启动扩样：已暂停**（software ×2、mech、chem、materials + #2 门禁案已覆盖四域；不再新增 contrib ledger，除非显式重启）
 - 允许的维护：文档对齐、校验/CI 修复、研究导读修订；**不开新 ledger**

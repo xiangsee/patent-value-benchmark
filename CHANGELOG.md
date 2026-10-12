@@ -4,6 +4,14 @@
 
 Maintenance plateau（2026-10-12）：**V0.7 / schema 1.0 稳定**；V0.8 / RC / RP / CF 仅 research；**普通冷启动扩样暂停**。采纳 V0.8 需显式决策。状态见 [`docs/cold-start-status.md`](docs/cold-start-status.md) · [`docs/roadmap.md`](docs/roadmap.md)。
 
+### Theme: V0.8 design draft（research/docs；未冻结 / 未采纳）
+
+#### Added
+- V0.8 设计草案：`docs/methodology/model-v0.8-design-draft.md`（目的与非目标、Round 2 事实、候选形状、RC/RP/CF 关系、迁移草图、决策门、可逆探针）。**不** freeze schema；**不** adopt V0.8；formal 仍为 V0.7 + schema 1.0。
+
+#### Changed
+- Roadmap / cold-start-status / research-tracks / V0.8 research agenda：增加「design draft in progress / research-only」指针。
+
 ### Theme: Round 2 V0.8 replication（#24–#30；research-only，未采纳）
 
 #### Added
