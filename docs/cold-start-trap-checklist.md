@@ -6,6 +6,7 @@
 
 关联：
 - Issue [#2](https://github.com/xiangsee/patent-value-benchmark/issues/2) / PR [#22](https://github.com/xiangsee/patent-value-benchmark/pull/22)（外部冷启动）
+- PR [#40](https://github.com/xiangsee/patent-value-benchmark/pull/40)（他案点名 ≠ 本案 E3；PP01 ≠ R/RC）
 - Round 2 综合：[`analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md`](../analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md)
 - 操作指南：[`docs/getting-started.md`](getting-started.md) · [`docs/cold-start-quick-reference.md`](cold-start-quick-reference.md)
 
@@ -35,14 +36,28 @@
 - [ ] 升 R3+ / R5 前是否具备本专利号级 E3（以及 R5 的 E4）？
 - [ ] 规则自检：**portfolio / program scope ≠ single-patent attributable value**
 
-## D. Round 2 额外风险（研究层，勿写进正式 1.0 字段）
+## D. 他案点名 ≠ 本案 E3
+
+- [ ] 公司 IP / 项目新闻点名的是不是**别的**专利号（或只有「发明 N 项 / 实用新型 M 项」计数）？
+- [ ] 是否误把「他案已嵌入产品」叙事写成**本案** E3？
+- [ ] 升 R3+ 前，来源是否点名**本**申请号 / 公开号 / 授权号？
+- [ ] 规则自检：**他案点名 ≠ 本案 E3**
+
+## E. PP01 / 法律状态旗标 ≠ R / RC
+
+- [ ] 是否把 PP01（专利权保全）、质押、许可意向等法律状态旗标当成 R 升级依据？
+- [ ] 是否因 PP01 自动填写 / 发明 Rights Control（RC）正式或实验字段？
+- [ ] 法律状态是否只放在 `family_note` / notes / 语境证据，而**不**抬 R？
+- [ ] 规则自检：**PP01 ≠ R / RC**（RC 研究另走 experimental 导读）
+
+## F. Round 2 额外风险（研究层，勿写进正式 1.0 字段）
 
 - [ ] 有没有把 Rights Control / Realization Path / Counterfactual Control / Portfolio Network 研究或实验对象当成正式 Ledger？（导读：[`rights-control-research-overview.md`](methodology/rights-control-research-overview.md)、[`realization-path-research-overview.md`](methodology/realization-path-research-overview.md)、[`counterfactual-control-research-overview.md`](methodology/counterfactual-control-research-overview.md)）
 - [ ] 有没有把 option signals 写成伪定量分数？
 - [ ] 有没有把一司法辖区权利状态复制到其他国家？
 - [ ] 历史 T0 研究有没有用 post-T0 材料回填？
 
-## E. 提交前命令
+## G. 提交前命令
 
 若使用虚拟环境（见 Getting Started）：
 

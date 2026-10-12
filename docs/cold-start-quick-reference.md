@@ -59,6 +59,8 @@ python tools/render_reports.py --check
 - **R0 + E2 is allowed; R0 + E2 ≠ R3.**
 - “300+ patent portfolio” narratives are product/enterprise scope — never auto-upgrade a single patent to R3+/R5.
 - **unknown-E3 ≠ present:** sought-but-not-found E3 rows do not go into `evidence_levels_present`.
+- **他案点名 ≠ 本案 E3:** company news naming *other* patent numbers (or only filing counts) is not E3 for *this* patent.
+- **PP01 ≠ R / RC:** legal-status flags (e.g. patent-right preservation) are context only — do not raise R or invent Rights Control fields.
 - Scaffold bibliographic flags (`--publication-number`, `--grant-number`, `--filing-date`, `--grant-date`) reduce hand-fill; no office scrapers.
 
 ## Further reading

@@ -291,6 +291,28 @@ R0 允许收录产品/项目层 E2 作为背景观察；**没有 E3 映射时不
 - [ ] 是否存在更常被二手源引用的同日同族专利，导致误映射风险？
 - [ ] 若无法建立 E3，是否诚实停在 R0–R2 并写 Gap？
 
+### 他案点名 ≠ 本案 E3（来自 #40）
+
+公司 IP / 项目新闻常**点名别的专利号**（或只给「发明 N 项、实用新型 M 项」计数），用来支撑「专利已嵌入产品」叙事。那只证明**他案 / 组合**有公开故事，**不能**当作本案的 exact patent → value carrier（E3）。
+
+一句话：
+
+> **他案点名 ≠ 本案 E3。** 来源必须点名**本**申请号 / 公开号 / 授权号，才能谈 R3+。
+
+### PP01 / 法律状态旗标 ≠ R 升级、≠ 自动写 RC（来自 #40）
+
+CNIPA / Google Patents 法律状态里的 **PP01（专利权保全登记）**、质押、许可备案意向等旗标，只是**法律状态语境**。它们：
+
+- **不**自动把 Value Realization 升到更高 R；
+- **不**等于已经填好 Rights Control（RC）实验字段；
+- **不**替代 E3 映射或 E4 归因。
+
+若以后要做 RC 研究，走 `schema/experimental/` + 研究导读；**不要**把 PP01 写进正式 Ledger 1.0 当 R/RC 升级依据。
+
+一句话：
+
+> **PP01 ≠ R / RC。** 法律状态旗标可记 notes / 语境证据，不抬 R、不发明 RC。
+
 ## 11. 进一步阅读（V0.8 未采纳）
 
 冷启动陷阱清单（提交前勾选）：
@@ -308,6 +330,10 @@ Rights Control 研究导读（实验；**不要**写入 Ledger 1.0）：
 Realization Path 研究导读（实验；**不要**写入 Ledger 1.0）：
 
 - [`docs/methodology/realization-path-research-overview.md`](methodology/realization-path-research-overview.md)
+
+Counterfactual Control 研究导读（实验；**不要**写入 Ledger 1.0；**不要**新建 `schema/experimental/counterfactual*`）：
+
+- [`docs/methodology/counterfactual-control-research-overview.md`](methodology/counterfactual-control-research-overview.md)
 
 实验对象目录（**不是**正式 schema）：
 
