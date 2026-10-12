@@ -66,8 +66,13 @@ python tools/render_reports.py --check
 - **申请日前项目/产品新闻 ≈ 他案:** registration / launch / project news dated before *this* application filing is nearly always another case (or product-layer fact), not E3 for this patent. `validate_data.py` emits a **soft warning** (non-failing) when it sees this pattern. `scaffold_ledger.py` notes/terminal mirror that soft-warning rule.
 - Scaffold `carrier_type` hint: mechanical → often `equipment` / `component`; materials → `material` (or `process` when claims are mainly a preparation route); also `product_system` / … (schema enum) — do not leave `unknown` forever once known.
 
+## Soft warnings (`validate_data.py`)
+
+若 stderr 出现 `Validation soft warnings … pre-filing … not E3` 且末行仍是 `Validation passed.`：**exit 0 = 通过**。核对申请日前 E2/产品新闻即可，**不要**发明 E3 或升 R。详见 [`getting-started.md`](getting-started.md) §6.1。
+
 ## Further reading
 
+- Track A cold-start status (by domain): [`docs/cold-start-status.md`](cold-start-status.md)
 - Trap checklist: [`docs/cold-start-trap-checklist.md`](cold-start-trap-checklist.md)
 - Round 2 synthesis (V0.8 **NOT** adopted; formal = V0.7 / schema 1.0):
   [`analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md`](../analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md)

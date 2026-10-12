@@ -125,6 +125,7 @@ Revenue / Social Impact
 - `data/ledgers/`：可校验的专利价值账本
 - `examples/patent-value-ledger/`：提交模板
 - `docs/cold-start-trap-checklist.md`：冷启动陷阱自查
+- `docs/cold-start-status.md`：Track A 冷启动样本状态（按领域）
 - `analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md`：Round 2 综合（**不 adopt V0.8**）
 
 ## Patent Value Ledger
@@ -180,9 +181,10 @@ python tools/render_reports.py
 
 第一次使用请直接看：
 
-- `docs/getting-started.md` — 30分钟冷启动
+- `docs/getting-started.md` — 30分钟冷启动（含 validate soft warning UX）
 - `docs/cold-start-quick-reference.md` — 一页速查
 - `docs/cold-start-trap-checklist.md` — 同族误映射 / R0+E2 / 300+ 组合陷阱
+- `docs/cold-start-status.md` — Track A 普通冷启动样本（software / mech / chem / materials）
 - Round 2 综合（V0.8 **未**采纳）：`analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md`
 
 一键生成贡献草稿：
