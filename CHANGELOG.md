@@ -3,10 +3,10 @@
 ## Unreleased
 
 ### Added
-- (none yet)
+- Package B early-stage option retrospective #1: US8278036B2 (Karikó–Weissman) at T0=2012-10-02 stops at R0 (#11).
 
 ### Changed
-- (none yet)
+- Roadmap / V0.8 research agenda Package B progress 0/4 → 1/4.
 
 ## [0.1.0] - 2026-10-12
 

@@ -26,7 +26,7 @@ V0.8研究的核心问题不是“再多加几个指标”，而是解决：
 - **H1 Rights Control:** supported in the first contrasting pair; replication still required.
 - **H2a Date/context dependence:** supported.
 - **H2b Two Clocks:** supported.
-- **H2c Clean early-stage option value:** not yet tested.
+- **H2c Clean early-stage option value:** first clean retrospective completed (US8278036B2 @ T0=2012-10-02 → R0); 1 / 4 Package B.
 - **H3 Portfolio Dependency:** supported.
 - **H4 Monetary evidence is contextual, not intrinsic price:** supported across litigation and portfolio-license mechanisms.
 
@@ -265,7 +265,7 @@ CRISPR已完成第一个portfolio case。
 V0.8只有在至少完成以下门槛后才讨论adopted：
 
 - **4组** Rights Control matched pairs — 当前 **4 / 4（门槛完成）**
-- **4个** clean early-stage option retrospectives — 当前 **0 / 4**
+- **4个** clean early-stage option retrospectives — 当前 **1 / 4**
 - **至少1个** portfolio case — 当前 **1 / 1**
 - **至少1个** Two Clocks case — 当前 **1 / 1**
 - **至少1个** SEP / patent-pool / cross-license外部复制案例 — 当前 **0 / 1**
