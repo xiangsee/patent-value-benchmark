@@ -82,10 +82,13 @@ Package A停止继续扩样。实验性 Claim-set Rights Control Schema 0.1 已�
 #### Package B — Early-stage Option Value
 寻找4个真正T0=R0/R1、后来形成重大现实价值的历史专利。PageRank不计入。
 
-当前进度：**3 / 4**
+当前进度：**4 / 4（完成）**
 1. US8278036B2（Karikó–Weissman modified nucleoside RNA）— early T0=2012-10-02 停在 **R0**；分析见 `analysis/non-award-validation/mrna-us8278036-early-option-packageb.md`。
 2. US4539507A（Tang–VanSlyke / Kodak thin-film organic EL）— early T0=1987-09-21 停在 **R0**；分析见 `analysis/non-award-validation/oled-us4539507-early-option-packageb.md`。
 3. US4668595A（Yoshino / Asahi Kasei practical nonaqueous secondary battery）— early T0=1987-05-26 停在 **R0**；分析见 `analysis/non-award-validation/lib-us4668595-early-option-packageb.md`。
+4. US4949039A（Grünberg / KFA Jülich multilayer GMR-type magnetic-field sensor）— early T0=1990-08-14 停在 **R0**；分析见 `analysis/non-award-validation/gmr-us4949039-early-option-packageb.md`。
+
+Package B 停止继续扩样（除非未来证据证伪 H2c）。PageRank 仍仅计入 Two Clocks，不计入 Package B。
 
 #### Package C — Portfolio / Licensing Replication
 至少再做：
