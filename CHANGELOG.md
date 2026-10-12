@@ -6,9 +6,10 @@
 - Package B early-stage option retrospective #1: US8278036B2 (Karikó–Weissman) at T0=2012-10-02 stops at R0 (#11).
 - Package B early-stage option retrospective #2: US4539507A (Tang–VanSlyke / Kodak OLED) at T0=1987-09-21 stops at R0 (#11).
 - Package B early-stage option retrospective #3: US4668595A (Yoshino / Asahi Kasei practical nonaqueous secondary battery) at T0=1987-05-26 stops at R0 (#11).
+- Package B early-stage option retrospective #4: US4949039A (Grünberg / KFA Jülich GMR-type magnetic-field sensor) at T0=1990-08-14 stops at R0 (#11). Package B 4/4 complete.
 
 ### Changed
-- Roadmap / V0.8 research agenda Package B progress 0/4 → 1/4 → 2/4 → 3/4.
+- Roadmap / V0.8 research agenda Package B progress 0/4 → 1/4 → 2/4 → 3/4 → **4/4**.
 
 ## [0.1.0] - 2026-10-12
 

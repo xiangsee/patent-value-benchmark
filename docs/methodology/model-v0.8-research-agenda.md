@@ -26,7 +26,7 @@ V0.8研究的核心问题不是“再多加几个指标”，而是解决：
 - **H1 Rights Control:** supported in the first contrasting pair; replication still required.
 - **H2a Date/context dependence:** supported.
 - **H2b Two Clocks:** supported.
-- **H2c Clean early-stage option value:** three clean retrospectives completed (US8278036B2 @ T0=2012-10-02 → R0; US4539507A @ T0=1987-09-21 → R0; US4668595A @ T0=1987-05-26 → R0); 3 / 4 Package B.
+- **H2c Clean early-stage option value:** four clean retrospectives completed (US8278036B2 @ T0=2012-10-02 → R0; US4539507A @ T0=1987-09-21 → R0; US4668595A @ T0=1987-05-26 → R0; US4949039A @ T0=1990-08-14 → R0); **4 / 4 Package B** (threshold met; stop expanding unless H2c is falsified).
 - **H3 Portfolio Dependency:** supported.
 - **H4 Monetary evidence is contextual, not intrinsic price:** supported across litigation and portfolio-license mechanisms.
 
