@@ -31,7 +31,7 @@ V0.7继续作为正式架构：
 V0.8研究：
 - Rights Control（导读：`docs/methodology/rights-control-research-overview.md`；**未**升格进 schema 1.0）
 - Realization Path（导读：`docs/methodology/realization-path-research-overview.md`；**未**升格进 schema 1.0）
-- Counterfactual Control
+- Counterfactual Control（预注册：[#37](https://github.com/xiangsee/patent-value-benchmark/issues/37)；案例：`analysis/non-award-validation/counterfactual-i4i-us5787449.md`、`counterfactual-apple-us7469381-bounceback.md`；**无 schema**）
 - Option / Future Value
 - Portfolio Context
 - Screening Signals
