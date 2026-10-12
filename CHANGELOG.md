@@ -8,10 +8,14 @@
 - Package B early-stage option retrospective #3: US4668595A (Yoshino / Asahi Kasei practical nonaqueous secondary battery) at T0=1987-05-26 stops at R0 (#11).
 - Package B early-stage option retrospective #4: US4949039A (Grünberg / KFA Jülich GMR-type magnetic-field sensor) at T0=1990-08-14 stops at R0 (#11). Package B 4/4 complete.
 - Package C SEP/patent-pool external replication: US6825782B2 (NTT Docomo) inside Via LA AVC/H.264 Patent Portfolio License at T0=2026-10-12 stops at R2 (#11). Package C SEP 1/1.
+- Package C non-life-science complex product portfolio: CN110165116B (BYD Blade CTP family anchor) at T0=2026-10-12 stops at R0 (#11 / #29). Package C complete.
+- Round 2 adoption-readiness synthesis: `analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md` (#11). Documents completed replication packages, V0.7 gaps, future adoption criteria, and explicit **keep V0.7 / V0.8 research-only** recommendation. No schema adoption.
 
 ### Changed
 - Roadmap / V0.8 research agenda Package B progress 0/4 → 1/4 → 2/4 → 3/4 → **4/4**.
 - Roadmap / V0.8 research agenda Package C SEP/pool progress **0/1 → 1/1**.
+- Roadmap / V0.8 research agenda Package C non-LS complex product **0/1 → 1/1**; Round 2 minimum set marked complete with synthesis pointer.
+- Clarify: replication threshold met does **not** auto-adopt V0.8; formal schema stays frozen at 1.0; default methodology stays V0.7.
 
 ## [0.1.0] - 2026-10-12
 

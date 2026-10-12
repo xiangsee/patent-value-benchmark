@@ -2,7 +2,7 @@
 
 Each JSONL row is one patent-value ledger conforming to `schema/patent-value-ledger.schema.json`.
 
-Current status: **1.0 Draft**.
+Current status: **1.0** (frozen at v0.1.0).
 
 Hard rules:
 - Unknown is allowed and preferred over invented precision.
