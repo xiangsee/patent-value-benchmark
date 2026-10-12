@@ -219,6 +219,52 @@ python tools/render_reports.py --check
 人类可读报告会进入：
 - `reports/generated/`
 
+## 6.1 Soft warnings（申请日前 E2）—— 看到也不要慌
+
+`python tools/validate_data.py` 在通过时可能在 **stderr** 打印类似：
+
+```text
+Validation soft warnings (N; do not fail CI):
+- ledger LEDGER-…: evidence E-… observed_date=YYYY-MM-DD is before
+  patent.filing_date=YYYY-MM-DD — pre-filing product/project news ≈ likely
+  another case / not E3 for this patent (soft warning; does not fail CI)
+Validation passed.
+```
+
+### 这是什么意思？
+
+- 校验器发现：**产品 / 项目类 E2**（或 ledger 引用的 product-ish source）的日期 **早于** `patent.filing_date`。
+- 启发式含义：**申请日前的产品/项目新闻 ≈ 几乎总是他案或与本案无关的产品层事实**，不能当作本案 E3。
+- 这是**提醒**，不是硬错误。
+
+### exit code 0 仍然算通过
+
+| 现象 | 是否失败 | 你该怎么做 |
+|---|---|---|
+| 末行 `Validation passed.` + 进程 exit **0** | 否 | 可以继续 `--check` / 开 PR |
+| 只有 soft warnings，没有 hard errors | 否 | 核对日期与字段，**不要**发明 E3 |
+| hard error（schema / 冷启动一致性等） | 是 | 先修硬错误；soft warn 不挡 CI |
+
+CI 与本地一致：**soft warning 不改变 exit code**。
+
+### 正确响应（不要发明 E3）
+
+1. **先比日期**：确认 `observed_date` / `source_date` / `publicly_available_date` 是否真的早于本案申请日。
+2. **保留可复核的 E2 语境**（若有用）：R0 可以挂 E2；**R0 + E2 ≠ R3**。
+3. **不要**因为看到 soft warning 就：
+   - 把该来源改写成 E3；
+   - 升 `realization_stage`；
+   - 把 `exact_patent_value_carrier_link` 从 `unknown` 改成已映射；
+   - 删除合法的他案/产品层证据（除非写错了日期或层级）。
+4. **要做的**：在 Gap / notes 写明「申请前新闻 = 他案/产品层，不继承」；E3 继续 `status=unknown`（寻而未得）且 **不**写入 `evidence_levels_present`。
+5. 若日期其实 **不早于** 申请日：检查是否填错日期字段，修正后 soft warn 会消失。
+
+一句话：
+
+> **Soft warning = 核对提醒；exit 0 = 通过。不要为了消警告去发明 E3。**
+
+相关陷阱条目：§10「申请日前的项目 / 产品新闻 ≈ 他案」· [`cold-start-trap-checklist.md`](cold-start-trap-checklist.md) §H。
+
 ## 7. 看报告，不要看“分数”
 
 报告应该回答：
@@ -318,6 +364,8 @@ CNIPA / Google Patents 法律状态里的 **PP01（专利权保全登记）**、
 
 农药原药登记、环评产能、产品上市新闻等，若**日期早于本案申请日**，几乎总是在描述**更早工艺、他案或产品层事实**，不能当作本案已实现（E3）。
 
+`validate_data.py` 会对这类日期打印 **soft warning**（stderr）；**exit 0 仍算通过**。正确响应见 **§6.1**——核对即可，**不要**为消警告发明 E3。
+
 一句话：
 
 > **申请日前的项目/产品新闻 ≈ 几乎总是他案。** 先比日期，再谈映射。
@@ -329,6 +377,10 @@ CNIPA / Google Patents 法律状态里的 **PP01（专利权保全登记）**、
 scaffold 终端也会打印该提示。
 
 ## 11. 进一步阅读（V0.8 未采纳）
+
+Track A 冷启动样本状态（按领域）：
+
+- [`docs/cold-start-status.md`](cold-start-status.md)
 
 冷启动陷阱清单（提交前勾选）：
 

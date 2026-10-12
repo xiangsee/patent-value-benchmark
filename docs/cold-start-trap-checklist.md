@@ -8,7 +8,7 @@
 - Issue [#2](https://github.com/xiangsee/patent-value-benchmark/issues/2) / PR [#22](https://github.com/xiangsee/patent-value-benchmark/pull/22)（外部冷启动）
 - PR [#40](https://github.com/xiangsee/patent-value-benchmark/pull/40)（他案点名 ≠ 本案 E3；PP01 ≠ R/RC）
 - Round 2 综合：[`analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md`](../analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md)
-- 操作指南：[`docs/getting-started.md`](getting-started.md) · [`docs/cold-start-quick-reference.md`](cold-start-quick-reference.md)
+- 操作指南：[`docs/getting-started.md`](getting-started.md) · [`docs/cold-start-quick-reference.md`](cold-start-quick-reference.md) · [`docs/cold-start-status.md`](cold-start-status.md)
 
 ---
 
@@ -64,7 +64,8 @@
 - [ ] 若早于本案申请日：是否几乎必然在讲**更早工艺 / 他案 / 产品层事实**，而不是本案授权实现？
 - [ ] 是否误把「申请前已存在的产品线」当成本案 E3？
 - [ ] 规则自检：**申请日前的项目/产品新闻 ≈ 几乎总是他案（或与本案无关的产品层事实）**
-- [ ] `validate_data.py` 若打印 soft warning（`pre-filing … not E3`）：是否已核对、**未**据此升 R3+？（警告**不**失败 CI）
+- [ ] `validate_data.py` 若打印 soft warning（`pre-filing … not E3`）：是否已核对、**未**据此升 R3+？（警告**不**失败 CI；**exit 0 = 通过**；UX 见 [`getting-started.md`](getting-started.md) §6.1）
+- [ ] 是否避免「为消警告而发明 E3 / 改 mapping / 抬 R」？
 - [ ] `scaffold_ledger.py` notes / 终端是否已提醒「validate_data 会对申请日前 E2/产品类日期 soft-warn」？
 
 ## G. 提交前命令
