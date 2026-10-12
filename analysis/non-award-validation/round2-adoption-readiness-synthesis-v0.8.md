@@ -112,7 +112,7 @@ Round 2 重复暴露的是 **相邻层缺失**，不是 R-stage 设计错误：
 
 ### 2.4 明确不把下列内容塞进 V0.7
 
-- design-around cost / blocking power 等 Counterfactual Control（预注册复制启动：[#37](https://github.com/xiangsee/patent-value-benchmark/issues/37)；首对 analysis：i4i × Apple ’381；**仍无** schema）；
+- design-around cost / blocking power 等 Counterfactual Control（预注册：[#37](https://github.com/xiangsee/patent-value-benchmark/issues/37)；matched i4i × Apple ’381 + [pair synthesis](counterfactual-i4i-apple381-pair-synthesis.md)；exploratory Via LA SEP FTO；**仍无** schema）；
 - Realization Path 的 event→snapshot 工程对象升格；
 - 任何总分、Gold 概率、bibliometric→价值的短路。
 

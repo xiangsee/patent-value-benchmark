@@ -150,3 +150,7 @@ Essential-counterpart jurisdictions
 - Sources：`data/source-registry/non-award-v0.8-packagec-sep-avc-us6825782.jsonl`
 - Network note object：`analysis/non-award-validation/avc-sep-pool-network.json`
 - Diagnostic：`reports/generated/DIAG-LEDGER-NA-AVC-US6825782-T0-2026.md`
+
+## 八、Counterfactual 探索（独立对象）
+
+Issue [#37](https://github.com/xiangsee/patent-value-benchmark/issues/37) exploratory case：`counterfactual-via-la-us6825782-sep-fto.md`（standard-lock + FRAND/pool FTO；**不**改本 Ledger；**不**计入 #37 matched 最低门槛）。

@@ -115,4 +115,5 @@ Issue #37 第一对只用：
 - 不发明 redesign 美元成本  
 - 不宣布 V0.8 adoption  
 
-Tracker：Issue #37（保持 open，直至复制门槛被显式勾选）。
+配对综合（replication gate）：`counterfactual-i4i-apple381-pair-synthesis.md`。
+Tracker：Issue #37（replication 门由综合笔记勾选；是否关 issue 见综合与进度评论）。
