@@ -356,6 +356,8 @@ citations、family size、claims、generality 等：可存筛选层；需 field/
 | P5 | CF：可选一篇非教科书 qualitative note（若用户点名） | analysis only | CF schema |
 | P6 | 文档一致性巡检 | README / tracks / trap checklist 交叉链接 | 行为变更 |
 
+**探针结果（2026-10-12，research-only）：** 见 [`v0.8-probes/README.md`](v0.8-probes/README.md)。P5 待用户点名案例。
+
 **停止条件：** 任一探针开始暗示「默认贡献必须填 V0.8 字段」→ 立刻停，回到 Gate 1。
 
 ---
