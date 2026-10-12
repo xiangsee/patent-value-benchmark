@@ -244,5 +244,5 @@ python tools/render_reports.py --check
 - 不把本轨道当作冷启动必填项
 - 不把 Rights Control / Counterfactual Control / Enforcement Capacity scores 静默并入本对象
 
-姊妹预注册（独立对象，**无** schema）：Counterfactual Control — [#37](https://github.com/xiangsee/patent-value-benchmark/issues/37)；综合 `counterfactual-i4i-apple381-pair-synthesis.md`；案例见 `analysis/non-award-validation/counterfactual-*.md`。NIA / design-around ≠ cash/verdict；池费率 ≠ redesign cost。
+姊妹研究线（独立对象，**无** schema）：Counterfactual Control — 导读 [`counterfactual-control-research-overview.md`](counterfactual-control-research-overview.md)；[#37](https://github.com/xiangsee/patent-value-benchmark/issues/37) **已关闭 / 复制门完成**；综合 `counterfactual-i4i-apple381-pair-synthesis.md`；案例见 `analysis/non-award-validation/counterfactual-*.md`。NIA / design-around ≠ cash/verdict；池费率 ≠ redesign cost。
 - 不把手改 `generated-snapshots.jsonl` 当成合法更新路径

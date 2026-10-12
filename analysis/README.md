@@ -16,6 +16,13 @@
 Round 2 adoption-readiness（#11 关闭后）：
 - `non-award-validation/round2-adoption-readiness-synthesis-v0.8.md`
 
+
+Counterfactual Control（analysis-only；**无** schema）：
+- 导读：`../docs/methodology/counterfactual-control-research-overview.md`
+- 笔记：`non-award-validation/counterfactual-*.md`
+- Issue [#37](https://github.com/xiangsee/patent-value-benchmark/issues/37) 复制门已关闭；**不** adopt V0.8
+
+
 核心要求：
 - 先声明 value construct
 - Screening Signal 与 Value Proof 分开
