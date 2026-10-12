@@ -11,4 +11,6 @@
 | P5 | CF 非教科书定性笔记 | — | **未执行**：草案规定「若用户点名」才做；用户未点名案例 → 待指定 | 否；需用户点名 |
 | P6 | 文档一致性巡检 | [p6-doc-consistency-audit.md](p6-doc-consistency-audit.md) | 横幅一致；修 1 处陈旧表述（README「通用样本扩展」已在 #47 改为暂停） | 否 |
 
+P1/P2 后续：用户已决定「RC 对普通专利永远可选 + 允许无裁决记录」，已在 RC experimental schema/validator 实施。
+
 停止条件未触发：没有任何探针需要默认贡献填写 V0.8 字段。

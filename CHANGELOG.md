@@ -4,6 +4,13 @@
 
 Maintenance plateau（2026-10-12）：**V0.7 / schema 1.0 稳定**；V0.8 / RC / RP / CF 仅 research；**普通冷启动扩样暂停**。采纳 V0.8 需显式决策。状态见 [`docs/cold-start-status.md`](docs/cold-start-status.md) · [`docs/roadmap.md`](docs/roadmap.md)。
 
+### Theme: Rights Control experimental — optional & no-ruling records（未冻结 / 未采纳）
+
+#### Changed
+- `claim-set-rights-control.schema.json`（experimental-0.1）：`adjudication_events` 可为空；`finality_state.status` 增 `not_applicable`；`scope_type` 增 `all_granted_claims`；`value_carrier_mapping` 改为可选。
+- `validate_rights_control.py`：无裁决记录须 finality = `not_applicable`；有裁决时禁止 `not_applicable`。
+- 测试：无裁决 fixture、可选 mapping、普通 ledger 无需 RC。RC 对普通专利**永远可选**。formal schema 1.0 / V0.7 不变。
+
 ### Theme: V0.8 design draft（research/docs；未冻结 / 未采纳）
 
 #### Added

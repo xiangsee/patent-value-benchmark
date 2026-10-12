@@ -14,7 +14,6 @@
     "jurisdiction",
     "as_of_date",
     "scope_type",
-    "value_carrier_mapping",
     "adjudication_events",
     "finality_state",
     "operative_control",
@@ -67,6 +66,7 @@
         "single_claim",
         "multiple_claims",
         "asserted_claim_set",
+        "all_granted_claims",
         "unknown"
       ]
     },
@@ -113,7 +113,7 @@
     },
     "adjudication_events": {
       "type": "array",
-      "minItems": 1,
+      "minItems": 0,
       "items": {
         "type": "object",
         "required": [
@@ -197,7 +197,8 @@
           }
         },
         "additionalProperties": false
-      }
+      },
+      "description": "May be empty: a no-ruling RC record (ordinary, never-adjudicated patent) is allowed. RC is always optional for ordinary patents."
     },
     "finality_state": {
       "type": "object",
@@ -215,7 +216,8 @@
             "nonfinal",
             "partially_final",
             "formal_effect_pending",
-            "unknown"
+            "unknown",
+            "not_applicable"
           ]
         },
         "appeal_status": {
