@@ -54,10 +54,14 @@
 | [`analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md`](../analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md) | Round 2 综合（**不** adopt V0.8） |
 | [`docs/release/v0.1.0-notes.md`](release/v0.1.0-notes.md) · [Release v0.1.0](https://github.com/xiangsee/patent-value-benchmark/releases/tag/v0.1.0) | 发版说明 |
 
-## 当前基线（勿破坏）
+## 维护平台期（Maintenance plateau）
 
-- 架构：**V0.7 adopted**
-- Schema：**1.0 frozen**（v0.1.0）
-- V0.8 / CF schema：**research-only / 不采纳 / 不建 CF experimental schema**
-- 样本扩展：普通冷启动已覆盖 software ×2、mech、chem、materials + #2 门禁案；**继续扩样属于维护性工作，不是发版阻塞**
+截至 2026-10-12：**Track A 表面已稳定**，进入维护平台期。
+
+- 架构：**V0.7 adopted**（正式）
+- Schema：**1.0 frozen**（[`v0.1.0`](https://github.com/xiangsee/patent-value-benchmark/releases/tag/v0.1.0)）
+- V0.8 / Rights Control / Realization Path / Counterfactual：**research-only**；**不**采纳 V0.8；**不**建 CF experimental schema
+- 采纳 V0.8：**需显式决策**（见 Round 2 综合）
+- **普通冷启动扩样：已暂停**（software ×2、mech、chem、materials + #2 门禁案已覆盖四域；不再新增 contrib ledger，除非显式重启）
+- 允许的维护：文档对齐、校验/CI 修复、研究导读修订；**不开新 ledger**
 

@@ -19,6 +19,8 @@
 
 ## Track A — Patent Value Benchmark
 
+> **维护平台期**：正式方法 V0.7 + schema 1.0；V0.8 research-only；普通样本扩样暂停。详见 [`cold-start-status.md`](cold-start-status.md)。
+
 ### 当前正式架构：V0.7
 
 已采用：
@@ -69,7 +71,9 @@ Round 1综合：
 > **预注册复制门槛已满足，但 V0.8 remains not adopted。**  
 > 正式方法仍为 V0.7；formal schema 仍为冻结的 1.0。采纳与否由用户显式决定。
 
-Round 2 已结束扩样。下一阶段优先非 adoption 工作流（工具链、普通样本、文档可用性），而不是继续增加未经验证的新字段。
+Round 2 已结束扩样。
+
+**维护平台期（2026-10-12）**：Track A 正式表面稳定（V0.7 + schema 1.0）。普通冷启动扩样 **已暂停**。V0.8 / RC / RP / CF 保持 research-only；采纳需显式决策。允许文档/校验维护；**不开新 ledger**。状态快照：[`docs/cold-start-status.md`](cold-start-status.md)。
 
 #### Package A — Rights Control Replication
 **已完成4/4：**

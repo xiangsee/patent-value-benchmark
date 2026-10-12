@@ -2,35 +2,45 @@
 
 ## Unreleased
 
-### Added
-- CI harden: shared `tools/dep_hint.py` prints `.venv` / getting-started tip on missing `jsonschema`.
-- CI: `workflow_dispatch`, pip cache, `compileall` over `tools/`+`tests/`, single `unittest discover` (keeps cold-start levers in CI), clearer `::error` hints on failure.
-- CONTRIBUTING: `.venv` install path aligned with Getting Started.
-- Scaffold optional bibliographic flags: `--publication-number`, `--grant-number`, `--filing-date`, `--grant-date`, `--earliest-priority-date`, `--family-note` (hand-lookup hints; no office scrapers).
-- Docs: `evidence_levels_present` vs unknown-E3 (sought-but-not-found) rule from PR #32 ordinary cold-start friction.
-- Getting Started: `.venv` setup for `jsonschema` dependency.
-- Cold-start trap checklist: `docs/cold-start-trap-checklist.md` (sibling-family false mapping, R0+E2, portfolio 300+ non-inheritance).
-- `schema/README.md` and `schema/experimental/README.md` banners clarifying experimental ≠ formal schema 1.0.
-- Package B early-stage option retrospective #1: US8278036B2 (Karikó–Weissman) at T0=2012-10-02 stops at R0 (#11).
-- Package B early-stage option retrospective #2: US4539507A (Tang–VanSlyke / Kodak OLED) at T0=1987-09-21 stops at R0 (#11).
-- Package B early-stage option retrospective #3: US4668595A (Yoshino / Asahi Kasei practical nonaqueous secondary battery) at T0=1987-05-26 stops at R0 (#11).
-- Package B early-stage option retrospective #4: US4949039A (Grünberg / KFA Jülich GMR-type magnetic-field sensor) at T0=1990-08-14 stops at R0 (#11). Package B 4/4 complete.
-- Package C SEP/patent-pool external replication: US6825782B2 (NTT Docomo) inside Via LA AVC/H.264 Patent Portfolio License at T0=2026-10-12 stops at R2 (#11). Package C SEP 1/1.
-- Package C non-life-science complex product portfolio: CN110165116B (BYD Blade CTP family anchor) at T0=2026-10-12 stops at R0 (#11 / #29). Package C complete.
-- Round 2 adoption-readiness synthesis: `analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md` (#11). Documents completed replication packages, V0.7 gaps, future adoption criteria, and explicit **keep V0.7 / V0.8 research-only** recommendation. No schema adoption.
+Maintenance plateau（2026-10-12）：**V0.7 / schema 1.0 稳定**；V0.8 / RC / RP / CF 仅 research；**普通冷启动扩样暂停**。采纳 V0.8 需显式决策。状态见 [`docs/cold-start-status.md`](docs/cold-start-status.md) · [`docs/roadmap.md`](docs/roadmap.md)。
 
-### Changed
-- GitHub Actions path filter `tools/**` (no per-file list) so new validators stay covered.
-- Workflow step names clarify formal schema 1.0 vs experimental Rights Control / Realization Path.
-- `tools/scaffold_ledger.py` prints cold-start traps and seeds gap/notes hints; links Round 2 synthesis; optional biblio flags + hand-fill prompts; notes encode unknown-E3 ≠ present.
-- `tools/validate_data.py` cold-start consistency levers (E3 for non-Unknown exact link; R0 exact link must be unknown; E4 for non-Unknown patent-level value; `evidence_levels_present` must have status≠unknown support).
-- Getting Started / quick-ref / data dictionary / trap checklist clarify unknown-E3 and `.venv`.
-- Getting Started / cold-start quick-ref / README link Round 2 synthesis and trap checklist.
-- Experimental schema titles/descriptions bannered as not formal 1.0.
-- Roadmap / V0.8 research agenda Package B progress 0/4 → 1/4 → 2/4 → 3/4 → **4/4**.
-- Roadmap / V0.8 research agenda Package C SEP/pool progress **0/1 → 1/1**.
-- Roadmap / V0.8 research agenda Package C non-LS complex product **0/1 → 1/1**; Round 2 minimum set marked complete with synthesis pointer.
-- Clarify: replication threshold met does **not** auto-adopt V0.8; formal schema stays frozen at 1.0; default methodology stays V0.7.
+### Theme: Round 2 V0.8 replication（#24–#30；research-only，未采纳）
+
+#### Added
+- Package B early-stage option retrospectives（各停在 R0）：US8278036B2（#24）、US4539507A（#25）、US4668595A（#26）、US4949039A（#27）→ **B 4/4**。
+- Package C：Via LA AVC/H.264 池 SEP US6825782B2 停在 R2（#28）；非生科复杂产品组合 CN110165116B Blade CTP 停在 R0（#29）→ **C 完成**。
+- Round 2 adoption-readiness 综合：`analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md`（#30）。明确复制门槛已满 **≠** 自动采纳 V0.8。
+
+#### Changed
+- Roadmap / V0.8 research agenda：Package B/C 进度填满；Round 2 最小集完成。
+- 澄清：正式方法仍为 V0.7；formal schema 仍冻结在 1.0。
+
+### Theme: Cold-start quality & ordinary samples（#31–#34、#32、#40–#45）
+
+#### Added
+- Cold-start trap checklist：`docs/cold-start-trap-checklist.md`（同族误映射、R0+E2、300+ 组合不继承）（#31）。
+- `schema/README.md` / `schema/experimental/README.md`：experimental ≠ formal 1.0（#31）。
+- 普通冷启动 contrib（均 R0；扩样现已暂停）：远光 ZL202010574036.6（#32）、天地和兴 ZL202110873119.X（#40）、科达 ZL201911041536.7（#41）、威远 ZL202011377891.4（#42）、中晶 ZL202010866038.2（#44）。
+- Scaffold 可选著录项 flags；CI harden（`.venv` 提示、`compileall`、统一 unittest、`workflow_dispatch`）（#33–#34）。
+- `validate_data.py`：cold-start consistency levers + **pre-filing E2 soft warning**（exit 0）（#31/#43）。
+- Track A 状态页：`docs/cold-start-status.md`；Getting Started §6.1 soft-warn UX（#45）。
+
+#### Changed
+- Scaffold 打印冷启动陷阱 / gap 提示；`carrier_type` 与 soft-warn 提示（#33/#42/#44）。
+- Getting Started / quick-ref / trap checklist / README：unknown-E3、`.venv`、soft warn、状态页链接。
+- GitHub Actions：`tools/**` path filter；步骤名区分 formal 1.0 vs experimental。
+
+### Theme: Research overviews — RC / RP / CF（#35–#40；无 CF schema）
+
+#### Added
+- Rights Control 研究导读 + inventory（#35）：`docs/methodology/rights-control-research-overview.md`。
+- Realization Path 研究导读 + inventory（#36）：`docs/methodology/realization-path-research-overview.md`。
+- Counterfactual Control：预注册 [#37](https://github.com/xiangsee/patent-value-benchmark/issues/37)（已关）；配对笔记 i4i × Apple ’381（#38）；综合 + Via LA exploratory #3（#39）；导读 `counterfactual-control-research-overview.md`（#40）。**不**建 CF experimental schema。
+
+#### Changed
+- `docs/research-tracks.md`：RC / RP / CF 导读与复制门状态交叉链接。
+
+---
 
 ## [0.1.0] - 2026-10-12
 

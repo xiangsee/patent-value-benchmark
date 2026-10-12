@@ -42,6 +42,8 @@ V0.8研究：
 
 样本选择优先围绕待验证机制，而不是围绕“Gold / non-Gold”标签。
 
+**2026-10-12 起**：普通冷启动扩样 **暂停**（维护平台期）；Round 2 / 四域普通样本已齐。重启扩样需显式决策。见 [`docs/cold-start-status.md`](cold-start-status.md)。
+
 ---
 
 ## Track B — China Patent Award Research
