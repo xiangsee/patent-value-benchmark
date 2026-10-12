@@ -57,7 +57,7 @@ Round 1综合：
 ### V0.8 adoption progress
 
 - Rights Control matched pairs：**4 / 4（完成）**
-- clean early-stage option retrospectives：**0 / 4**
+- clean early-stage option retrospectives：**1 / 4**
 - portfolio case：**1 / 1**
 - Two Clocks case：**1 / 1**
 - SEP / patent-pool / cross-license replication：**0 / 1**
@@ -81,6 +81,9 @@ Package A停止继续扩样。实验性 Claim-set Rights Control Schema 0.1 已�
 
 #### Package B — Early-stage Option Value
 寻找4个真正T0=R0/R1、后来形成重大现实价值的历史专利。PageRank不计入。
+
+当前进度：**1 / 4**
+1. US8278036B2（Karikó–Weissman modified nucleoside RNA）— early T0=2012-10-02 停在 **R0**；分析见 `analysis/non-award-validation/mrna-us8278036-early-option-packageb.md`。
 
 #### Package C — Portfolio / Licensing Replication
 至少再做：
