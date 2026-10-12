@@ -38,7 +38,8 @@
 
 Methodology notes:
 
-- **对外入口 / inventory：** `docs/methodology/rights-control-research-overview.md`
+- **Rights Control 对外入口 / inventory：** `docs/methodology/rights-control-research-overview.md`
+- **Realization Path 对外入口 / inventory：** `docs/methodology/realization-path-research-overview.md`
 - `docs/methodology/claim-set-rights-control-experimental-0.1.md`
 - `docs/methodology/realization-path-experimental-0.1.md`
 - `docs/methodology/data-validation.md`
@@ -52,5 +53,18 @@ Methodology notes:
 | 4-pair synthesis | `analysis/non-award-validation/rights-control-4pair-synthesis-v0.8.md` |
 | Validator | `tools/validate_rights_control.py` |
 | Tests | `tests/test_rights_control.py` |
+
+## Realization Path inventory (short)
+
+| Kind | Path |
+|---|---|
+| Overview (start here) | `docs/methodology/realization-path-research-overview.md` |
+| Event log (canonical) | `data/experimental/realization-path/three-path-backfill.jsonl` |
+| Generated snapshots | `data/experimental/realization-path/generated-snapshots.jsonl` |
+| Three-path synthesis | `analysis/non-award-validation/realization-path/three-path-synthesis.md` |
+| Taction anchor | `analysis/non-award-validation/taction-state-migration-2026.md` |
+| Issue | [#16](https://github.com/xiangsee/patent-value-benchmark/issues/16) |
+| Validator / projector | `tools/validate_realization_paths.py`, `tools/project_realization_paths.py` |
+| Tests | `tests/test_realization_paths.py` |
 
 Do **not** elevate these into formal schema 1.0 without an explicit adoption decision.

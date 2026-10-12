@@ -68,4 +68,5 @@ python tools/render_reports.py --check
   [`analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md`](../analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md)
 - Experimental schemas (not formal 1.0): [`schema/experimental/README.md`](../schema/experimental/README.md)
 - Rights Control research overview (do **not** put into Ledger 1.0): [`docs/methodology/rights-control-research-overview.md`](methodology/rights-control-research-overview.md)
+- Realization Path research overview (do **not** put into Ledger 1.0): [`docs/methodology/realization-path-research-overview.md`](methodology/realization-path-research-overview.md)
 

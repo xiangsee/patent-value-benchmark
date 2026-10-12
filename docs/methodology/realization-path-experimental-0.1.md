@@ -1,5 +1,7 @@
 # Experimental Realization Path 0.1
 
+> 对外入口与完整库存：[`realization-path-research-overview.md`](realization-path-research-overview.md)
+
 状态：**experimental / non-adopted**  
 依据：Issue #16 三路径复制完成  
 正式架构：V0.7 remains adopted  

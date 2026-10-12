@@ -305,6 +305,10 @@ Rights Control 研究导读（实验；**不要**写入 Ledger 1.0）：
 
 - [`docs/methodology/rights-control-research-overview.md`](methodology/rights-control-research-overview.md)
 
+Realization Path 研究导读（实验；**不要**写入 Ledger 1.0）：
+
+- [`docs/methodology/realization-path-research-overview.md`](methodology/realization-path-research-overview.md)
+
 实验对象目录（**不是**正式 schema）：
 
 - [`schema/experimental/README.md`](../schema/experimental/README.md)
