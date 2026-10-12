@@ -1,8 +1,12 @@
 # V0.8 Research Agenda — Value Construct, Rights Control & Portfolio Network
 
-状态：**Research Agenda — not adopted**
+状态：**Research Agenda — not adopted**（Round 2 复制门槛已完成；adoption 仍需用户显式决定）
 
-V0.7继续是当前正式架构。
+V0.7继续是当前正式架构。Formal Ledger / Diagnostic schema 保持冻结的 `1.0`。
+
+Round 2 adoption-readiness 综合：
+
+`analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md`
 
 V0.8研究的核心问题不是“再多加几个指标”，而是解决：
 
@@ -248,17 +252,19 @@ Experimental Claim-set Rights Control Schema 0.1 已实现并进入CI验证：
 
 ### Package C — Portfolio / Licensing Replication
 
-CRISPR已完成第一个portfolio case。
+**已完成：**
 
-SEP / patent-pool 外部复制已完成：
-- **US6825782B2**（NTT Docomo）∈ Via LA AVC/H.264 Patent Portfolio License；T0=2026-10-12；standalone **R2**；池费率与被许可人生态不得继承为单件专利价值。
+- CRISPR portfolio case（US8697359，R2）
+- SEP / patent-pool 外部复制：**US6825782B2**（NTT Docomo）∈ Via LA AVC/H.264 Patent Portfolio License；T0=2026-10-12；standalone **R2**；池费率与被许可人生态不得继承为单件专利价值
+- 非生命科学复杂产品组合：**CN110165116B**（比亚迪刀片电池 CTP 族）；T0=2026-10-12；standalone **R0**；同权利人产品系统多专利栈；「300+」仅为 program scope
 
-仍缺：
-- 1个非生命科学复杂产品组合案例。
+检验结果（摘要）：
+- Portfolio & Jurisdiction Network 在生命科学许可网络、标准专利池、同 assignee 复杂产品栈三类机制上均可增加决策信息；
+- graph object 有用，但尚不足以自动升格为正式 schema。
 
-检验：
-- Portfolio & Jurisdiction Network是否跨行业成立；
-- graph object是否真的增加决策信息，而非仅增加叙事复杂度。
+分析：
+- `analysis/non-award-validation/avc-us6825782-sep-pool-packagec.md`
+- `analysis/non-award-validation/byd-blade-cn110165116-portfolio-packagec.md`
 
 ---
 
@@ -268,11 +274,22 @@ V0.8只有在至少完成以下门槛后才讨论adopted：
 
 - **4组** Rights Control matched pairs — 当前 **4 / 4（门槛完成）**
 - **4个** clean early-stage option retrospectives — 当前 **4 / 4**
-- **至少1个** portfolio case — 当前 **1 / 1**
+- **至少1个** portfolio case — 当前 **1 / 1**（CRISPR；另有 Blade 非生科复制）
 - **至少1个** Two Clocks case — 当前 **1 / 1**
 - **至少1个** SEP / patent-pool / cross-license外部复制案例 — 当前 **1 / 1**（US6825782B2 / Via LA AVC pool）
+- **至少1个** 非生命科学复杂产品组合复制 — 当前 **1 / 1**（CN110165116B）
 
 并且必须完成一次新的cross-case synthesis，证明候选结构跨样本增加解释力而不是历史过拟合。
+
+**Round 2 cross-case synthesis：** `analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md`（2026-10-12）
+
+门槛状态：**预注册复制门槛已满足。**
+
+但这只解除「禁止讨论」的硬阻塞，**不触发自动 adoption**。
+
+显式建议（见综合文 §4）：
+
+> **保持 V0.7 adopted；V0.8 research-only；formal schema 保持冻结的 1.0，直到用户另行显式批准。**
 
 V0.7继续作为正式架构。
 

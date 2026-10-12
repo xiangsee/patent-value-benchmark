@@ -10,8 +10,11 @@
 
 主要内容：
 - `theory/`：value construct、rights control、option value、portfolio context等理论研究
-- 后续新增的非奖项样本验证
-- V0.8及以后模型的预注册测试
+- `non-award-validation/`：非奖项机制样本与综合（含 Round 1 / Round 2）
+- V0.8及以后模型的预注册测试（**research-only；不改变 V0.7 adopted**）
+
+Round 2 adoption-readiness（#11 关闭后）：
+- `non-award-validation/round2-adoption-readiness-synthesis-v0.8.md`
 
 核心要求：
 - 先声明 value construct

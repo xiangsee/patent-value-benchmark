@@ -58,15 +58,18 @@ Round 1综合：
 
 - Rights Control matched pairs：**4 / 4（完成）**
 - clean early-stage option retrospectives：**4 / 4**
-- portfolio case：**1 / 1**
+- portfolio case：**1 / 1**（CRISPR；另有 Blade 非生科产品组合复制）
 - Two Clocks case：**1 / 1**
 - SEP / patent-pool / cross-license replication：**1 / 1**（US6825782B2 / Via LA AVC pool）
+- non-life-science complex product portfolio：**1 / 1**（CN110165116B Blade CTP）
+- Round 2 cross-case synthesis：**完成** → `analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md`
 
 因此：
 
-> **V0.8 remains not adopted.**
+> **预注册复制门槛已满足，但 V0.8 remains not adopted。**  
+> 正式方法仍为 V0.7；formal schema 仍为冻结的 1.0。采纳与否由用户显式决定。
 
-下一阶段转入最小复制验证，而不是继续增加未经验证的新字段。
+Round 2 已结束扩样。下一阶段优先非 adoption 工作流（工具链、普通样本、文档可用性），而不是继续增加未经验证的新字段。
 
 #### Package A — Rights Control Replication
 **已完成4/4：**
@@ -92,14 +95,20 @@ Package B 停止继续扩样（除非未来证据证伪 H2c）。PageRank 仍仅
 
 #### Package C — Portfolio / Licensing Replication
 
-已完成：
+**已完成 3 / 3：**
 - CRISPR portfolio case（US8697359，R2）
 - **SEP / patent-pool external replication：US6825782B2（NTT Docomo）∈ Via LA AVC/H.264 Patent Portfolio License，T0=2026-10-12，R2**
+- **非生命科学复杂产品组合：CN110165116B（比亚迪刀片电池 CTP 族锚点），T0=2026-10-12，R0**
 
-仍缺：
-- 1个非生命科学复杂产品组合案例
+分析：
+- `analysis/non-award-validation/avc-us6825782-sep-pool-packagec.md`
+- `analysis/non-award-validation/byd-blade-cn110165116-portfolio-packagec.md`
 
-分析：`analysis/non-award-validation/avc-us6825782-sep-pool-packagec.md`
+Round 2 最小复制集已完成。Adoption-readiness 综合见：
+
+`analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md`
+
+> **V0.8 remains not adopted.** Schema 1.0 unchanged. Default methodology remains V0.7.
 
 ### Candidate architecture after Round 1 + Taction state-model refinement
 
