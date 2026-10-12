@@ -74,11 +74,11 @@ V0.7更准确的定位是：
 
 正在进行：
 - V0.8 Value Construct & Rights Control 研究议程
-- Patent Value Ledger 1.0 Draft
-- Patent Value Diagnostic 1.0 Draft
+- Patent Value Ledger 1.0（已冻结）
+- Patent Value Diagnostic 1.0（已冻结）
 - 通用样本与非奖项样本扩展
-- 外部冷启动复现
-- Schema freeze + v0.1.0 release
+- 外部冷启动复现（#2 已完成）
+- ~~Schema freeze + v0.1.0 release~~ → **v0.1.0 released**
 
 历史上，第25届和第24届中国专利奖 Gold–Silver 样本曾用于形成和压力测试 V0.6/V0.7。该研究链完整保留，作为**模型形成史和奖项专项研究证据**，但不意味着今后的通用模型仍以奖项为中心。
 
@@ -187,13 +187,14 @@ python tools/scaffold_ledger.py \
   --title "你的专利名称"
 ```
 
-## v0.1.0 Pre-release
+## v0.1.0
 
-发布前状态见 `docs/release/v0.1.0-readiness.md`。
+正式发布状态见 `docs/release/v0.1.0-readiness.md` 与 `docs/release/v0.1.0-notes.md`。
 
-目前剩余核心事项：
-1. 一次不依赖本对话上下文的外部冷启动复现；
-2. Schema freeze + GitHub tag/release。
+v0.1.0 冻结内容：
+- Ledger / Diagnostic `schema_version: "1.0"`
+- Evidence / Source Registry schemas（结构冻结；无独立 schema_version 字段）
+- V0.7 研究架构仍为正式方法基线；`schema/experimental/*` 不在本冻结范围
 
 ## License
 

@@ -83,5 +83,6 @@
       ]
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "description": "Frozen with repository release v0.1.0 (structure freeze; this schema has no schema_version field)."
 }

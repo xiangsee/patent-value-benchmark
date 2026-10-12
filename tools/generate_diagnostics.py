@@ -120,7 +120,7 @@ def diagnostic_from_ledger(ledger: dict[str, Any]) -> dict[str, Any]:
 
     return {
         "diagnostic_id": f"DIAG-{ledger['ledger_id']}",
-        "schema_version": "1.0-draft",
+        "schema_version": "1.0",
         "ledger_id": ledger["ledger_id"],
         "patent": {
             "application_number": ledger["patent"]["application_number"],

@@ -1,4 +1,6 @@
-# Patent Value Diagnostic 1.0 Draft
+# Patent Value Diagnostic 1.0
+
+**Schema status (v0.1.0):** frozen at `schema_version: "1.0"` (`schema/patent-value-diagnostic.schema.json`). Breaking changes require a new minor/major schema version.
 
 Patent Value Diagnostic 是 Patent Value Ledger 的标准输出端。
 

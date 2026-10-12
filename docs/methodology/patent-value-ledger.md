@@ -1,4 +1,6 @@
-# Patent Value Ledger 1.0 Draft
+# Patent Value Ledger 1.0
+
+**Schema status (v0.1.0):** frozen at `schema_version: "1.0"` (`schema/patent-value-ledger.schema.json`). Breaking changes require a new minor/major schema version.
 
 Patent Value Ledger（专利价值账本）把 V0.7 从研究架构变成可以实际填写、审阅和持续更新的数据对象。
 

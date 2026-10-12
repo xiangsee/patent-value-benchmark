@@ -1,6 +1,6 @@
 {
   "ledger_id": "LEDGER-EXAMPLE-0001",
-  "schema_version": "1.0-draft",
+  "schema_version": "1.0",
   "analysis_mode": "public",
   "patent": {
     "application_number": "ZLXXXXXXXXXXXX.X",

@@ -23,7 +23,7 @@
       "minLength": 1
     },
     "schema_version": {
-      "const": "1.0-draft"
+      "const": "1.0"
     },
     "ledger_id": {
       "type": "string",
