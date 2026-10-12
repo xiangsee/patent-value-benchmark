@@ -67,4 +67,5 @@ python tools/render_reports.py --check
 - Round 2 synthesis (V0.8 **NOT** adopted; formal = V0.7 / schema 1.0):
   [`analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md`](../analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md)
 - Experimental schemas (not formal 1.0): [`schema/experimental/README.md`](../schema/experimental/README.md)
+- Rights Control research overview (do **not** put into Ledger 1.0): [`docs/methodology/rights-control-research-overview.md`](methodology/rights-control-research-overview.md)
 
