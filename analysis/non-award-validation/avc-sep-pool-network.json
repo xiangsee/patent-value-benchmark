@@ -1,0 +1,100 @@
+{
+  "network_id": "AVC-H264-PATENT-POOL-NETWORK-T0-2026-10-12",
+  "status": "experimental research object — not schema-adopted",
+  "t0_date": "2026-10-12",
+  "purpose": "Represent SEP/patent-pool dependencies that a standalone V0.7 ledger cannot express: multi-licensor membership, standard essentiality edges, rate-card independence from patent count, and licensee-ecosystem scale.",
+  "anchor_patent": "US6825782",
+  "nodes": [
+    {
+      "id": "US6825782",
+      "type": "patent",
+      "label": "US6825782B2 NTT Docomo arithmetic coding / termination"
+    },
+    {
+      "id": "CLAIM-12",
+      "type": "claim_set",
+      "label": "US6825782 claim 12 (Via LA illustrative essential claim)"
+    },
+    {
+      "id": "AVC-POOL",
+      "type": "patent_pool",
+      "label": "AVC/H.264 Patent Portfolio License (Via LA)"
+    },
+    {
+      "id": "H264-STANDARD",
+      "type": "standard",
+      "label": "ISO/IEC 14496-10 / ITU-T H.264 (AVC)"
+    },
+    {
+      "id": "NTT-DOCOMO",
+      "type": "owner_licensor",
+      "label": "NTT DOCOMO, INC. (AVC licensor)"
+    },
+    {
+      "id": "VIA-LA",
+      "type": "pool_administrator",
+      "label": "Via Licensing Alliance"
+    },
+    {
+      "id": "AVC-LICENSEES",
+      "type": "licensee_set",
+      "label": "Public AVC portfolio licensees (multi-industry)"
+    },
+    {
+      "id": "RATE-CARD",
+      "type": "program_economics",
+      "label": "Published unit royalties + enterprise caps (independent of patent count)"
+    }
+  ],
+  "edges": [
+    {
+      "from": "NTT-DOCOMO",
+      "to": "US6825782",
+      "relation": "owns"
+    },
+    {
+      "from": "US6825782",
+      "to": "CLAIM-12",
+      "relation": "contains_claim_set"
+    },
+    {
+      "from": "CLAIM-12",
+      "to": "H264-STANDARD",
+      "relation": "essential_to_sections",
+      "detail": "§9.3 CABAC family per Via LA Feb 2026 cross-ref"
+    },
+    {
+      "from": "US6825782",
+      "to": "AVC-POOL",
+      "relation": "member_of_portfolio_license"
+    },
+    {
+      "from": "NTT-DOCOMO",
+      "to": "AVC-POOL",
+      "relation": "licensor_in"
+    },
+    {
+      "from": "VIA-LA",
+      "to": "AVC-POOL",
+      "relation": "administers"
+    },
+    {
+      "from": "AVC-POOL",
+      "to": "AVC-LICENSEES",
+      "relation": "licenses_to"
+    },
+    {
+      "from": "AVC-POOL",
+      "to": "RATE-CARD",
+      "relation": "prices_as"
+    },
+    {
+      "from": "RATE-CARD",
+      "to": "US6825782",
+      "relation": "not_apportioned_to",
+      "detail": "FAQ: royalties do not change with number of essential patents"
+    }
+  ],
+  "v0_7_standalone_limit": "Standalone ledger can stop honestly at R2 for pool-mediated rights transaction, but cannot encode rate-card independence, multi-licensor membership, or licensee-graph scale without inheriting program facts onto the patent.",
+  "comparison_to_crispr": "CRISPR network emphasizes competing portfolios + stacked licenses + jurisdiction variance. AVC network emphasizes collaborative pool + uniform program pricing + essentiality-to-standard edges."
+}

@@ -50,17 +50,17 @@ Round 1综合：
 - H1 Rights Control：第一组对照支持，仍需复制
 - H2a Date/context dependence：支持
 - H2b Two Clocks：支持
-- H2c Clean early-stage option sample：已有 3 个干净回顾（mRNA + OLED + Yoshino LIB）；仍需复制至 4/4
+- H2c Clean early-stage option sample：4 个干净回顾完成（mRNA + OLED + Yoshino LIB + Grünberg GMR）；**4 / 4**
 - H3 Portfolio Dependency：支持
 - H4 Monetary evidence is contextual：跨诉讼/组合许可两类场景支持
 
 ### V0.8 adoption progress
 
 - Rights Control matched pairs：**4 / 4（完成）**
-- clean early-stage option retrospectives：**3 / 4**
+- clean early-stage option retrospectives：**4 / 4**
 - portfolio case：**1 / 1**
 - Two Clocks case：**1 / 1**
-- SEP / patent-pool / cross-license replication：**0 / 1**
+- SEP / patent-pool / cross-license replication：**1 / 1**（US6825782B2 / Via LA AVC pool）
 
 因此：
 
@@ -91,9 +91,15 @@ Package A停止继续扩样。实验性 Claim-set Rights Control Schema 0.1 已�
 Package B 停止继续扩样（除非未来证据证伪 H2c）。PageRank 仍仅计入 Two Clocks，不计入 Package B。
 
 #### Package C — Portfolio / Licensing Replication
-至少再做：
-- 1个SEP / patent-pool / cross-license；
-- 1个非生命科学复杂产品。
+
+已完成：
+- CRISPR portfolio case（US8697359，R2）
+- **SEP / patent-pool external replication：US6825782B2（NTT Docomo）∈ Via LA AVC/H.264 Patent Portfolio License，T0=2026-10-12，R2**
+
+仍缺：
+- 1个非生命科学复杂产品组合案例
+
+分析：`analysis/non-award-validation/avc-us6825782-sep-pool-packagec.md`
 
 ### Candidate architecture after Round 1 + Taction state-model refinement
 
