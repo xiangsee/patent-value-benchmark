@@ -85,7 +85,9 @@ Amgen压力测试表明，简单的patent-level valid / invalid状态可能过�
 - blocking_power
 - freedom_to_operate_dependency
 
-**预注册（replication before schema）：** [#37](https://github.com/xiangsee/patent-value-benchmark/issues/37)
+对外导读与库存：`docs/methodology/counterfactual-control-research-overview.md`（Issue #37 **closed / replication gate met**；仍 **不** 建 experimental schema；仍 **不** adopt V0.8）。
+
+**预注册（replication before schema）：** [#37](https://github.com/xiangsee/patent-value-benchmark/issues/37)（**已关闭 / completed**）
 
 Matched cases + synthesis（analysis-first；**不**新增 formal Ledger；**不**建 experimental schema）：
 

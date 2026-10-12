@@ -40,6 +40,8 @@ Methodology notes:
 
 - **Rights Control 对外入口 / inventory：** `docs/methodology/rights-control-research-overview.md`
 - **Realization Path 对外入口 / inventory：** `docs/methodology/realization-path-research-overview.md`
+
+- **Counterfactual Control 对外入口 / inventory（analysis-only；本目录无对应 schema）：** `docs/methodology/counterfactual-control-research-overview.md`
 - `docs/methodology/claim-set-rights-control-experimental-0.1.md`
 - `docs/methodology/realization-path-experimental-0.1.md`
 - `docs/methodology/data-validation.md`
@@ -67,4 +69,19 @@ Methodology notes:
 | Validator / projector | `tools/validate_realization_paths.py`, `tools/project_realization_paths.py` |
 | Tests | `tests/test_realization_paths.py` |
 
+
+## Counterfactual Control inventory (short)
+
+> **No** `schema/experimental/counterfactual*` files. Replication tracker [#37](https://github.com/xiangsee/patent-value-benchmark/issues/37) is **closed**; that does **not** authorize a schema.
+
+| Kind | Path |
+|---|---|
+| Overview (start here) | `docs/methodology/counterfactual-control-research-overview.md` |
+| Issue | [#37](https://github.com/xiangsee/patent-value-benchmark/issues/37) (closed / completed) |
+| Matched cases | `analysis/non-award-validation/counterfactual-i4i-us5787449.md`, `counterfactual-apple-us7469381-bounceback.md` |
+| Synthesis | `analysis/non-award-validation/counterfactual-i4i-apple381-pair-synthesis.md` |
+| Exploratory | `analysis/non-award-validation/counterfactual-via-la-us6825782-sep-fto.md` |
+| Validator | **none** (analysis-only) |
+
 Do **not** elevate these into formal schema 1.0 without an explicit adoption decision.
+Do **not** add Counterfactual schemas here without an explicit approval separate from Issue #37 closure.

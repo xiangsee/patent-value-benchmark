@@ -221,4 +221,4 @@ python tools/render_reports.py --check
 - 不把本轨道当作冷启动必填项
 - 不把 Realization Path / Counterfactual Control 静默并入本对象
 
-姊妹预注册（独立对象，**无** schema）：Counterfactual Control — [#37](https://github.com/xiangsee/patent-value-benchmark/issues/37)；matched `counterfactual-i4i-us5787449.md` × `counterfactual-apple-us7469381-bounceback.md`；综合 `counterfactual-i4i-apple381-pair-synthesis.md`；exploratory `counterfactual-via-la-us6825782-sep-fto.md`。
+姊妹研究线（独立对象，**无** schema）：Counterfactual Control — 导读 [`counterfactual-control-research-overview.md`](counterfactual-control-research-overview.md)；[#37](https://github.com/xiangsee/patent-value-benchmark/issues/37) **已关闭 / 复制门完成**；matched `counterfactual-i4i-us5787449.md` × `counterfactual-apple-us7469381-bounceback.md`；综合 `counterfactual-i4i-apple381-pair-synthesis.md`；exploratory `counterfactual-via-la-us6825782-sep-fto.md`。
