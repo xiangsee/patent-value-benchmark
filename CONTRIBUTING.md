@@ -41,6 +41,8 @@ python tools/validate_data.py
 python -m unittest discover -s tests -p 'test_*.py'
 ```
 
+`validate_data.py` 可能在 stderr 打印 **soft warning**：当 E2 / 产品向来源或证据日期早于 `patent.filing_date` 时，提示「申请前新闻 ≈ 他案 / 非 E3」。**不**改变退出码（CI 仍通过）。见 `docs/cold-start-trap-checklist.md` §H。
+
 若报 `ModuleNotFoundError: jsonschema`，说明还在用系统 Python——回到上面创建/激活 `.venv`（详见 `docs/getting-started.md` §1）。
 
 5. 提交 Pull Request。
