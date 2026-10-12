@@ -63,8 +63,8 @@ python tools/render_reports.py --check
 - **PP01 ≠ R / RC:** legal-status flags (e.g. patent-right preservation) are context only — do not raise R or invent Rights Control fields.
 - Scaffold bibliographic flags (`--publication-number`, `--grant-number`, `--filing-date`, `--grant-date`) reduce hand-fill; no office scrapers.
 
-- **申请日前项目/产品新闻 ≈ 他案:** registration / launch / project news dated before *this* application filing is nearly always another case (or product-layer fact), not E3 for this patent. `validate_data.py` emits a **soft warning** (non-failing) when it sees this pattern.
-- Scaffold `carrier_type` hint (mechanical): prefer `equipment` or `component` when that fits; also `process` / `material` / … (schema enum) — do not leave `unknown` forever once known.
+- **申请日前项目/产品新闻 ≈ 他案:** registration / launch / project news dated before *this* application filing is nearly always another case (or product-layer fact), not E3 for this patent. `validate_data.py` emits a **soft warning** (non-failing) when it sees this pattern. `scaffold_ledger.py` notes/terminal mirror that soft-warning rule.
+- Scaffold `carrier_type` hint: mechanical → often `equipment` / `component`; materials → `material` (or `process` when claims are mainly a preparation route); also `product_system` / … (schema enum) — do not leave `unknown` forever once known.
 
 ## Further reading
 
