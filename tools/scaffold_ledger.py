@@ -201,7 +201,10 @@ def build_ledger(
             "sought-but-not-found E3 rows (status=unknown) may stay in evidence for audit "
             "but must NOT put E3 in evidence_levels_present. "
             "Traps: (1) sibling-family false mapping; (2) R0+E2 is allowed but does not raise R; "
-            "(3) portfolio 300+ narratives do not inherit to this patent. "
+            "(3) portfolio 300+ narratives do not inherit to this patent; "
+            "(4) project/product news dated before this application filing ≈ nearly always another case. "
+            "carrier_type hint: mechanical inventions often use equipment or component "
+            "(also process/material/product_system/… — see schema enum; do not leave unknown forever once known). "
             "See docs/cold-start-trap-checklist.md."
         ),
     }
@@ -325,6 +328,10 @@ def main(argv: list[str] | None = None) -> int:
     print("  - R0 + E2 is allowed; R0 + E2 ≠ R3 (product-layer evidence does not raise R alone).")
     print("  - '300+ patent portfolio' narratives are product/enterprise scope — no auto R3+/R5.")
     print("  - evidence_levels_present: supporting levels only (status≠unknown); unknown-E3 ≠ present.")
+    print("  - Project/product news dated BEFORE this application filing ≈ nearly always another case.")
+    print("  carrier_type hint (mechanical stumble): prefer equipment or component when that fits;")
+    print("    also process / material / product_system / software_algorithm / … (schema enum).")
+    print("    Do not leave carrier_type=unknown forever once the carrier class is known.")
     print("  Checklist: docs/cold-start-trap-checklist.md")
     print("  Round 2 synthesis (V0.8 NOT adopted):")
     print("    analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md")

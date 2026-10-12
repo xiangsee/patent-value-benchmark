@@ -177,5 +177,24 @@ class ScaffoldBibliographicTests(unittest.TestCase):
         self.assertEqual("2024-02-02", args.grant_date)
 
 
+
+class ScaffoldTrapHintTests(unittest.TestCase):
+    def test_notes_mention_prefiling_and_carrier_hint(self):
+        ledger = scaffold.build_ledger(
+            application_number="ZL202012345678.9",
+            title="示例",
+            assignees=["甲公司"],
+            as_of_date="2026-10-12",
+        )
+        notes = ledger["notes"]
+        self.assertIn("before this application filing", notes)
+        self.assertIn("equipment or component", notes)
+
+    def test_cli_help_path_still_builds(self):
+        parser = scaffold.build_parser()
+        args = parser.parse_args(["--application-number", "ZL1", "--title", "t"])
+        self.assertEqual("ZL1", args.application_number)
+
+
 if __name__ == "__main__":
     unittest.main()
