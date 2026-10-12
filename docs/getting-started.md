@@ -301,6 +301,10 @@ Round 2 复制门槛综合（**保持 V0.7；不 adopt V0.8；schema 仍为 1.0*
 
 - [`analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md`](../analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md)
 
+Rights Control 研究导读（实验；**不要**写入 Ledger 1.0）：
+
+- [`docs/methodology/rights-control-research-overview.md`](methodology/rights-control-research-overview.md)
+
 实验对象目录（**不是**正式 schema）：
 
 - [`schema/experimental/README.md`](../schema/experimental/README.md)

@@ -220,6 +220,8 @@ Round 1已经明确架构方向，下一阶段不继续无边界增加字段，�
 
 **Package A 4/4预注册门槛已完成。**
 
+对外导读与库存：`docs/methodology/rights-control-research-overview.md`。
+
 Experimental Claim-set Rights Control Schema 0.1 已实现并进入CI验证：
 
 - `schema/experimental/claim-set-rights-control.schema.json`

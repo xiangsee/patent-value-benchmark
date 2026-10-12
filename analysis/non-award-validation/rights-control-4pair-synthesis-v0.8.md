@@ -1,5 +1,7 @@
 # Claim-set Rights Control — 4-Pair Cross-case Synthesis
 
+> 对外入口与库存：[`docs/methodology/rights-control-research-overview.md`](../../docs/methodology/rights-control-research-overview.md)
+
 日期：2026-09-26  
 状态：Package A preregistered replication threshold complete  
 正式架构：V0.7 remains adopted  

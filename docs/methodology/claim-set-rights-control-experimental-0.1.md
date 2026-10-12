@@ -1,5 +1,7 @@
 # Experimental Claim-set Rights Control 0.1
 
+> 对外入口与完整库存：[`rights-control-research-overview.md`](rights-control-research-overview.md)
+
 状态：**experimental / non-adopted**  
 依据：Rights Control 4/4 preregistered replication threshold  
 正式架构：V0.7 remains adopted

@@ -35,6 +35,8 @@ See also `docs/cold-start-trap-checklist.md` and
 
 ## Experimental Claim-set Rights Control
 
+External overview / inventory: [`rights-control-research-overview.md`](rights-control-research-overview.md).
+
 The experimental Rights Control object is validated separately from the formal
 Patent Value Ledger:
 

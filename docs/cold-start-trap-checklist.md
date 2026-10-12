@@ -37,7 +37,7 @@
 
 ## D. Round 2 额外风险（研究层，勿写进正式 1.0 字段）
 
-- [ ] 有没有把 Rights Control / Realization Path / Portfolio Network 实验对象当成正式 Ledger？
+- [ ] 有没有把 Rights Control / Realization Path / Portfolio Network 实验对象当成正式 Ledger？（导读：[`docs/methodology/rights-control-research-overview.md`](methodology/rights-control-research-overview.md)）
 - [ ] 有没有把 option signals 写成伪定量分数？
 - [ ] 有没有把一司法辖区权利状态复制到其他国家？
 - [ ] 历史 T0 研究有没有用 post-T0 材料回填？

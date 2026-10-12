@@ -38,6 +38,19 @@
 
 Methodology notes:
 
+- **对外入口 / inventory：** `docs/methodology/rights-control-research-overview.md`
 - `docs/methodology/claim-set-rights-control-experimental-0.1.md`
 - `docs/methodology/realization-path-experimental-0.1.md`
 - `docs/methodology/data-validation.md`
+
+## Rights Control inventory (short)
+
+| Kind | Path |
+|---|---|
+| Overview (start here) | `docs/methodology/rights-control-research-overview.md` |
+| Experimental records | `data/experimental/rights-control/four-pair-backfill.jsonl` |
+| 4-pair synthesis | `analysis/non-award-validation/rights-control-4pair-synthesis-v0.8.md` |
+| Validator | `tools/validate_rights_control.py` |
+| Tests | `tests/test_rights_control.py` |
+
+Do **not** elevate these into formal schema 1.0 without an explicit adoption decision.

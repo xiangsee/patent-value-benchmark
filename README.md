@@ -33,7 +33,7 @@ Xiangsee Patent Value Benchmark 是《详见》（**xiangsee**）发起的开放
 - Observability
 - Value Realization
 - Value Construct
-- Rights Control（研究中）
+- Rights Control（研究中；对外入口：`docs/methodology/rights-control-research-overview.md`）
 - Counterfactual Control（研究中）
 - Option / Future Value（研究中）
 - Portfolio Context（研究中）
