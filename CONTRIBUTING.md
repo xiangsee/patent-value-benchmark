@@ -31,12 +31,17 @@
 1. 在 `data/source-registry/` 注册来源。
 2. 在 `data/evidence/` 拆分事实证据。
 3. 建立 `data/ledgers/` Ledger。
-4. 运行：
+4. 运行（推荐虚拟环境；系统 Python 常缺 `jsonschema`）：
 
 ```bash
+python3 -m venv .venv
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
 python -m pip install -r requirements-dev.txt
 python tools/validate_data.py
+python -m unittest discover -s tests -p 'test_*.py'
 ```
+
+若报 `ModuleNotFoundError: jsonschema`，说明还在用系统 Python——回到上面创建/激活 `.venv`（详见 `docs/getting-started.md` §1）。
 
 5. 提交 Pull Request。
 
