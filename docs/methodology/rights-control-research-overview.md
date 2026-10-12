@@ -127,7 +127,7 @@ Rights Control 回答的是：
 | `schema/experimental/claim-set-rights-control.schema.json` | Claim-set 法律控制快照 | `experimental-0.1` |
 | `schema/experimental/README.md` | 实验目录横幅与隔离规则 | — |
 
-（同目录下的 Realization Path schemas 是 **另一条** 实验线，不要与 Rights Control 合并。）
+（同目录下的 Realization Path schemas 是 **另一条** 实验线，不要与 Rights Control 合并；导读：[`realization-path-research-overview.md`](realization-path-research-overview.md)。）
 
 ### 6.2 方法论文档
 

@@ -66,6 +66,8 @@ formal v1 schema.
 
 ## Experimental Realization Path
 
+External overview / inventory: [`realization-path-research-overview.md`](realization-path-research-overview.md).
+
 Run locally:
 
 ```bash

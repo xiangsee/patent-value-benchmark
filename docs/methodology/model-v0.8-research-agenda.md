@@ -300,6 +300,8 @@ V0.7继续作为正式架构。
 
 ## Exploratory dimension discovered after Package A — Realization Path
 
+对外导读与库存：`docs/methodology/realization-path-research-overview.md`。
+
 Taction v. Apple exposes a distinction not fully represented by the current V0.7 / Rights Control objects:
 
 > **Economic Value Base ≠ State-dependent Realizable Value.**

@@ -30,6 +30,7 @@ V0.7继续作为正式架构：
 
 V0.8研究：
 - Rights Control（导读：`docs/methodology/rights-control-research-overview.md`；**未**升格进 schema 1.0）
+- Realization Path（导读：`docs/methodology/realization-path-research-overview.md`；**未**升格进 schema 1.0）
 - Counterfactual Control
 - Option / Future Value
 - Portfolio Context

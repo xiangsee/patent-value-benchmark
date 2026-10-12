@@ -1,5 +1,7 @@
 # Realization Path — Three-Path Replication Synthesis
 
+> 对外入口与库存：[`docs/methodology/realization-path-research-overview.md`](../../../docs/methodology/realization-path-research-overview.md)
+
 日期：2026-09-26  
 状态：Issue #16 preregistered three-path replication complete  
 正式架构：V0.7 remains adopted  
