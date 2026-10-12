@@ -18,10 +18,18 @@ The validator checks:
 - evidence using non-T0-eligible sources
 - T0 mismatches across paired records
 - post-T0 public-availability leakage when dates are available
+- cold-start consistency levers:
+  - non-Unknown `exact_patent_value_carrier_link` requires `E3` in `evidence_levels_present`
+  - `R0` requires `exact_patent_value_carrier_link=unknown` (R0+E2 allowed; does not raise R)
+  - non-Unknown `patent_level_attributable_value` requires `E4` in `evidence_levels_present`
 
 A passing validator means that the dataset is internally consistent. It does **not**
 mean that the research conclusions are correct; substantive claims still require
 source review and human judgment.
+
+See also `docs/cold-start-trap-checklist.md` and
+`analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md`
+(V0.8 remains research-only).
 
 
 ## Experimental Claim-set Rights Control

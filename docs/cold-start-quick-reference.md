@@ -53,3 +53,10 @@ python tools/render_reports.py --check
 - **R0 + E2 is allowed; R0 + E2 ≠ R3.**
 - “300+ patent portfolio” narratives are product/enterprise scope — never auto-upgrade a single patent to R3+/R5.
 
+## Further reading
+
+- Trap checklist: [`docs/cold-start-trap-checklist.md`](cold-start-trap-checklist.md)
+- Round 2 synthesis (V0.8 **NOT** adopted; formal = V0.7 / schema 1.0):
+  [`analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md`](../analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md)
+- Experimental schemas (not formal 1.0): [`schema/experimental/README.md`](../schema/experimental/README.md)
+

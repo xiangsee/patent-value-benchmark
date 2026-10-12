@@ -4,6 +4,10 @@
 The validator checks structural integrity, cross-file references, T0 discipline,
 and the non-inheritance rules introduced by V0.7.
 
+Cold-start consistency levers also enforce: non-Unknown exact links need E3;
+R0 cannot claim a resolved exact link; non-Unknown patent-level attributable
+value needs E4 (blocks sibling-family / portfolio inheritance shortcuts).
+
 It intentionally does not score patents and does not infer missing facts.
 """
 
@@ -90,6 +94,38 @@ def collect_ledger_evidence_ids(item: dict[str, Any]) -> set[str]:
         .get("evidence_ids", [])
     )
     return ids
+
+
+def coldstart_consistency_errors(ledger_id: str, item: dict[str, Any]) -> list[str]:
+    """Return cold-start consistency violations for one ledger row.
+
+    Encodes three traps from external cold-start (#2 / PR #22) and Round 2:
+    sibling-family false mapping, R0+E2 without raising R, portfolio non-inheritance.
+    """
+    errors: list[str] = []
+    state = item.get("v0_7_state", {})
+    attr = state.get("attribution_evidence_state", {})
+    stage = state.get("realization_stage")
+    exact_link = attr.get("exact_patent_value_carrier_link")
+    patent_value = attr.get("patent_level_attributable_value")
+    levels = set(attr.get("evidence_levels_present") or [])
+
+    if exact_link != "unknown" and "E3" not in levels:
+        errors.append(
+            f"ledger {ledger_id}: exact_patent_value_carrier_link={exact_link} requires E3 "
+            f"in evidence_levels_present (do not inherit sibling-family mapping)"
+        )
+    if stage == "R0" and exact_link != "unknown":
+        errors.append(
+            f"ledger {ledger_id}: R0 requires exact_patent_value_carrier_link=unknown "
+            f"(R0 + E2 is allowed; R0 + E2 ≠ R3)"
+        )
+    if patent_value != "unknown" and "E4" not in levels:
+        errors.append(
+            f"ledger {ledger_id}: patent_level_attributable_value={patent_value} requires E4 "
+            f"in evidence_levels_present (portfolio/program scope does not inherit)"
+        )
+    return errors
 
 
 def main() -> int:
@@ -222,6 +258,9 @@ def main() -> int:
                 errors,
                 f"ledger {ledger_id}: {stage} requires a non-Unknown exact_patent_value_carrier_link"
             )
+
+        for message in coldstart_consistency_errors(ledger_id, item):
+            fail(errors, message)
 
         # R5 specifically requires attributable patent-level value.
         if stage == "R5" and "E4" not in attr.get("evidence_levels_present", []):

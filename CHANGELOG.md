@@ -3,6 +3,8 @@
 ## Unreleased
 
 ### Added
+- Cold-start trap checklist: `docs/cold-start-trap-checklist.md` (sibling-family false mapping, R0+E2, portfolio 300+ non-inheritance).
+- `schema/README.md` and `schema/experimental/README.md` banners clarifying experimental ≠ formal schema 1.0.
 - Package B early-stage option retrospective #1: US8278036B2 (Karikó–Weissman) at T0=2012-10-02 stops at R0 (#11).
 - Package B early-stage option retrospective #2: US4539507A (Tang–VanSlyke / Kodak OLED) at T0=1987-09-21 stops at R0 (#11).
 - Package B early-stage option retrospective #3: US4668595A (Yoshino / Asahi Kasei practical nonaqueous secondary battery) at T0=1987-05-26 stops at R0 (#11).
@@ -12,6 +14,10 @@
 - Round 2 adoption-readiness synthesis: `analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md` (#11). Documents completed replication packages, V0.7 gaps, future adoption criteria, and explicit **keep V0.7 / V0.8 research-only** recommendation. No schema adoption.
 
 ### Changed
+- `tools/scaffold_ledger.py` prints cold-start traps and seeds gap/notes hints; links Round 2 synthesis.
+- `tools/validate_data.py` cold-start consistency levers (E3 for non-Unknown exact link; R0 exact link must be unknown; E4 for non-Unknown patent-level value).
+- Getting Started / cold-start quick-ref / README link Round 2 synthesis and trap checklist.
+- Experimental schema titles/descriptions bannered as not formal 1.0.
 - Roadmap / V0.8 research agenda Package B progress 0/4 → 1/4 → 2/4 → 3/4 → **4/4**.
 - Roadmap / V0.8 research agenda Package C SEP/pool progress **0/1 → 1/1**.
 - Roadmap / V0.8 research agenda Package C non-LS complex product **0/1 → 1/1**; Round 2 minimum set marked complete with synthesis pointer.

@@ -24,6 +24,7 @@ on:
       - "tools/validate_data.py"
       - "tools/generate_diagnostics.py"
       - "tools/render_reports.py"
+      - "tools/scaffold_ledger.py"
       - "tools/validate_rights_control.py"
       - "tools/validate_realization_paths.py"
       - "tools/project_realization_paths.py"
@@ -51,6 +52,9 @@ jobs:
 
       - name: Validate JSONL data
         run: python tools/validate_data.py
+
+      - name: Test cold-start consistency levers
+        run: python -m unittest discover -s tests -p "test_coldstart_levers.py"
 
       - name: Validate experimental Rights Control
         run: python tools/validate_rights_control.py

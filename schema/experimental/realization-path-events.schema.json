@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/xiangsee/patent-value-benchmark/schema/experimental/realization-path-events.schema.json",
-  "title": "Xiangsee Experimental Realization Path Event Log",
-  "description": "Canonical event-sourced input for Realization Path. Current snapshots are generated, never hand-maintained.",
+  "title": "EXPERIMENTAL — Realization Path Event Log (not formal schema 1.0)",
+  "description": "Canonical event-sourced input for Realization Path. Current snapshots are generated, never hand-maintained. EXPERIMENTAL ONLY — NOT part of formal Patent Value Ledger/Diagnostic schema_version 1.0 (V0.7 remains adopted; V0.8 is research-only).",
   "type": "object",
   "required": [
     "path_id",
