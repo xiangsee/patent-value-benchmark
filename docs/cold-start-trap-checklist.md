@@ -25,6 +25,8 @@
 - [ ] 没有 E3 映射时，是否**仍停在 R0–R2**？
 - [ ] 一句话是否成立：**R0 + E2 is allowed; R0 + E2 ≠ R3**
 - [ ] `exact_patent_value_carrier_link` 在 R0 是否保持 `unknown`？
+- [ ] `evidence_levels_present` 是否**只**含 status≠unknown 支撑的层级？
+- [ ] 若有 `status=unknown` 的 E3「寻而未得」行：是否**未**把 `"E3"` 写入 `evidence_levels_present`？（unknown-E3 ≠ present）
 
 ## C. 「300+ 专利组合」不可继承
 
@@ -42,10 +44,14 @@
 
 ## E. 提交前命令
 
+若使用虚拟环境（见 Getting Started）：
+
 ```bash
+source .venv/bin/activate   # 或直接用 .venv/bin/python ...
 python tools/validate_data.py
 python tools/generate_diagnostics.py --check
 python tools/render_reports.py --check
+python -m unittest discover -s tests -p "test_coldstart_levers.py"
 ```
 
 实验对象（可选，**不**改变正式验收）：

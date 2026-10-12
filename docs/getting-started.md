@@ -19,12 +19,21 @@
 - Python 3.12（3.10+通常也可）
 - 一个你愿意公开研究的中国发明专利
 
-克隆：
+克隆并用 **虚拟环境**（推荐；系统 Python 往往没有 `jsonschema`）：
 
 ```bash
 git clone https://github.com/xiangsee/patent-value-benchmark.git
 cd patent-value-benchmark
+python3 -m venv .venv
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
 python -m pip install -r requirements-dev.txt
+```
+
+若不想 activate，可直接用解释器：
+
+```bash
+.venv/bin/python -m pip install -r requirements-dev.txt
+.venv/bin/python tools/validate_data.py
 ```
 
 先确认基线：
@@ -35,17 +44,21 @@ python tools/generate_diagnostics.py --check
 python tools/render_reports.py --check
 ```
 
-应该全部通过。
+应该全部通过。若报 `ModuleNotFoundError: jsonschema`，说明还在用系统 Python——回到上面创建/激活 `.venv`。
 
 ## 2. 生成一件专利的草稿
 
-当前状态研究：
+当前状态研究（可附带著录项，减少手填）：
 
 ```bash
 python tools/scaffold_ledger.py \
   --application-number ZL202012345678.9 \
   --title "你的专利名称" \
-  --assignee "权利人名称"
+  --assignee "权利人名称" \
+  --publication-number CN123456789A \
+  --grant-number CN123456789B \
+  --filing-date 2020-06-22 \
+  --grant-date 2024-02-02
 ```
 
 历史T0研究：
@@ -57,6 +70,19 @@ python tools/scaffold_ledger.py \
   --assignee "权利人名称" \
   --t0 2024-02-05
 ```
+
+可选著录项（均从专利文献手查，**工具不爬取局端**）：
+
+| 参数 | 含义 | 常见来源 |
+|---|---|---|
+| `--publication-number` | 公开号 | Google Patents / CNIPA |
+| `--grant-number` | 授权号 | 同上 |
+| `--filing-date` | 申请日 | 同上 |
+| `--grant-date` | 授权日 | 同上 |
+| `--earliest-priority-date` | 最早优先权日 | 同上 |
+| `--family-note` | 同族/兄弟专利防误映射备注 | 研究者自填 |
+
+未传的字段会保持 `null`；scaffold 结束时会提示哪些还要手填。
 
 它会生成：
 
@@ -146,6 +172,24 @@ Knowledge
 
 **如果犹豫，停在较低阶段并写Gap。**
 
+## 5.1 `evidence_levels_present` 与 unknown-E3
+
+`evidence_levels_present` 只列出**已经有 status≠unknown 支撑**的证据层级。
+
+| 情况 | 是否写入 `evidence_levels_present` |
+|---|---|
+| E2 产品事实已 `confirmed` / `strong_evidence` / `inference` | ✅ 可写 `"E2"` |
+| 找过 E3 映射但没找到，证据行 `status=unknown`（寻而未得） | ❌ **不要**写 `"E3"` |
+| E3 官方映射已确认 | ✅ 可写 `"E3"` |
+
+寻而未得的 E3 行**可以**留在 `data/evidence/` 里做审计轨迹，并在 Gap / notes 里说明；但 **unknown-E3 ≠ present**。
+
+一句话（来自 #2 / #32 冷启动）：
+
+> **R0 + E2 + unknown-E3 row → `evidence_levels_present: ["E2"]`（不是 `["E2","E3"]`）。**
+
+校验器会拒绝：在 `evidence_levels_present` 里写了某层级，却没有 status≠unknown 的对应证据。
+
 ## 6. 运行完整闭环
 
 先校验：
@@ -233,6 +277,8 @@ R0 允许收录产品/项目层 E2 作为背景观察；**没有 E3 映射时不
 一句话：
 
 > **R0 + E2 is allowed; R0 + E2 ≠ R3.**
+
+寻而未得的 E3（`status=unknown`）可留在证据文件，但 **不要**把 `E3` 写进 `evidence_levels_present`（见 §5.1）。
 
 ### “300+ 专利组合”叙事
 

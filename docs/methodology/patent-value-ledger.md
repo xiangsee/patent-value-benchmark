@@ -110,6 +110,8 @@ E1–E5可以并存，不使用“最高证据等级”的表达。
 Ledger 使用：
 `evidence_levels_present`
 
+填写规则（#32）：只列入有 **status≠unknown** 支撑的层级。证据文件里可以保留 `status=unknown` 的 E3「寻而未得」行做审计，但 **unknown-E3 ≠ present**。
+
 ## Realization Stage Evidence
 
 R1–R5必须填写 `realization_stage_evidence_ids`。

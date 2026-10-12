@@ -7,7 +7,7 @@
 ## Current State
 
 - **Realization Stage:** R0 — Right Exists
-- **Evidence Levels Present:** E1, E2, E3
+- **Evidence Levels Present:** E1, E2
 - **Exact Patent → Value Carrier:** unknown
 - **Patent-level Attributable Value:** unknown
 

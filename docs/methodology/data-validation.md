@@ -22,6 +22,7 @@ The validator checks:
   - non-Unknown `exact_patent_value_carrier_link` requires `E3` in `evidence_levels_present`
   - `R0` requires `exact_patent_value_carrier_link=unknown` (R0+E2 allowed; does not raise R)
   - non-Unknown `patent_level_attributable_value` requires `E4` in `evidence_levels_present`
+  - each level in `evidence_levels_present` needs status≠unknown supporting evidence among ledger-referenced rows (unknown-E3 / sought-but-not-found does not count as present)
 
 A passing validator means that the dataset is internally consistent. It does **not**
 mean that the research conclusions are correct; substantive claims still require
