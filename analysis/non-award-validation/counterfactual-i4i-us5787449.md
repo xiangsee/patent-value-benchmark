@@ -93,4 +93,5 @@ Round 1 笔记 `i4i-us5787449.md` 已经证明：V0.7 能诚实记下 R5 / E3–
 - 不发明美元级 design-around cost  
 - 不宣布 V0.8 adoption  
 
+配对综合（replication gate）：`counterfactual-i4i-apple381-pair-synthesis.md`。
 下一动作见配对案与 Issue #37 tracker。
