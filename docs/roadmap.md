@@ -25,6 +25,8 @@
 >
 > RC 可选并行轨细则（research-only；**未**启动 S1 升格）：[`methodology/rights-control-optional-parallel-plan.md`](methodology/rights-control-optional-parallel-plan.md)。
 >
+> **外推 E3-probe E3-A/B/C**（T0=2026-10-13；A/B=R3，C=R0 claims-fail）：预注册附录 B。
+>
 > **外推 holdout H1–H9**（T0=2026-10-13；已编码；主成功=纪律支持；**未** adopt V0.8）：[`methodology/external-extrapolation-preregistration.md`](methodology/external-extrapolation-preregistration.md) · [`../analysis/non-award-validation/holdout-extrapolation-synthesis.md`](../analysis/non-award-validation/holdout-extrapolation-synthesis.md)。
 
 ### 当前正式架构：V0.7
