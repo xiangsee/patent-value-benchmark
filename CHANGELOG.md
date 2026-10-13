@@ -4,6 +4,11 @@
 
 Maintenance plateau（2026-10-12）：**V0.7 / schema 1.0 稳定**；V0.8 / RC / RP / CF 仅 research；**普通冷启动扩样暂停**。采纳 V0.8 需显式决策。状态见 [`docs/cold-start-status.md`](docs/cold-start-status.md) · [`docs/roadmap.md`](docs/roadmap.md)。
 
+### Theme: RC optional parallel-track plan（research/docs；未升格）
+
+#### Added
+- RC 可选并行轨实施细则：`docs/methodology/rights-control-optional-parallel-plan.md`（反映 #49：永远可选、无裁决、mapping 可选；并存规则；S1 迁移草图；Gate 1–4）。**不** freeze / **不** adopt V0.8。
+
 ### Theme: Counterfactual P5 — Blade non-textbook note（analysis-only；无 CF schema）
 
 #### Added

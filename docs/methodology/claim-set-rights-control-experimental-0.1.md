@@ -177,3 +177,4 @@ Experimental 0.1通过CI，只表示：
 - `scope_type` 新增 `all_granted_claims`（未诉专利无「asserted」集合）。
 - `value_carrier_mapping` 改为 **可选**（不再属 RC 核心；V0.7 E3 为唯一真相来源）；若填写，仍需证据规则。
 - 仍为 `experimental-0.1`；**不**影响 formal schema 1.0；**不**采纳 V0.8。
+- 可选并行轨实施细则（未启动升格）：[`rights-control-optional-parallel-plan.md`](rights-control-optional-parallel-plan.md)。

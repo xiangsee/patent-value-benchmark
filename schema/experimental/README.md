@@ -52,6 +52,7 @@ Methodology notes:
 | Kind | Path |
 |---|---|
 | Overview (start here) | `docs/methodology/rights-control-research-overview.md` |
+| Optional parallel plan (research-only) | `docs/methodology/rights-control-optional-parallel-plan.md` |
 | Experimental records | `data/experimental/rights-control/four-pair-backfill.jsonl` |
 | 4-pair synthesis | `analysis/non-award-validation/rights-control-4pair-synthesis-v0.8.md` |
 | Validator | `tools/validate_rights_control.py` |

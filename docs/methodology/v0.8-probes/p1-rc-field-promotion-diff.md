@@ -29,3 +29,4 @@
 
 - `adjudication_events` minItems 1 → 0；`finality_state.status` 增 `not_applicable`；`scope_type` 增 `all_granted_claims`；`value_carrier_mapping` 移出 required（低风险：现有 9 条记录均仍通过）。
 - `as_of_date → t0_date` 重命名**未做**（会破坏现有记录；留作后续）。
+- 可选并行轨细则：[`../rights-control-optional-parallel-plan.md`](../rights-control-optional-parallel-plan.md)。

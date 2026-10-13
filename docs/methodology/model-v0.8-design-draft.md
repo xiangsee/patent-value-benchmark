@@ -275,7 +275,7 @@ citations、family size、claims、generality 等：可存筛选层；需 field/
 | 阶段 | 内容 | 触发 |
 |---|---|---|
 | **Now（本草案）** | 设计文档 + 状态指针；research-only | 用户已启动设计草案 |
-| **S1 — Optional RC parallel** | 最小 RC 字段并行对象；Ledger 1.0 不动 | 用户显式批准「升格讨论→实施」 |
+| **S1 — Optional RC parallel** | 最小 RC 字段并行对象；Ledger 1.0 不动；细则见 [`rights-control-optional-parallel-plan.md`](rights-control-optional-parallel-plan.md)（**本文件≠批准 S1**） | 用户显式批准「升格讨论→实施」 |
 | **S2 — Horizon annotation** | Diagnostic 或并行 horizon 笔记；无总分 | S1 稳定 + 普通样本探针 |
 | **S3 — Network research object** | 规范化 network JSON + 校验，仍非 Ledger 行内字段 | 非教科书复制 |
 | **S4 — Method label** | 方法论可称「V0.8」；默认贡献合同仍写清 1.0 | 用户显式 adopt |
