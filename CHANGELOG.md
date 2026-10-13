@@ -4,6 +4,11 @@
 
 Maintenance plateau（2026-10-12）：**V0.7 / schema 1.0 稳定**；V0.8 / RC / RP / CF 仅 research；**普通冷启动扩样暂停**。采纳 V0.8 需显式决策。状态见 [`docs/cold-start-status.md`](docs/cold-start-status.md) · [`docs/roadmap.md`](docs/roadmap.md)。
 
+### Theme: External extrapolation pre-registration（评价工具下一步；研究未启动）
+
+#### Added
+- 外推 / 预测效度预注册：`docs/methodology/external-extrapolation-preregistration.md`（holdout vs in-sample、假设、成败标准、小 N 普通/非教科书设计、标签边界、泄漏、与 V0.7/RC 关系、启动前决策门）。**不** freeze；**不**默认 adopt V0.8；**不**发明 gold/美元指标。
+
 ### Theme: RC optional parallel-track plan（research/docs；未升格）
 
 #### Added

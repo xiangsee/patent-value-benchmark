@@ -355,8 +355,11 @@ citations、family size、claims、generality 等：可存筛选层；需 field/
 | P4 | Network JSON 三例（CRISPR/AVC/Blade）键名对齐草图 | 命名约定 md | 新 schema freeze |
 | P5 | CF：可选一篇非教科书 qualitative note（若用户点名） | **已做**：刀片 CN110165116B → [`v0.8-probes/p5-cf-blade-nontextbook.md`](v0.8-probes/p5-cf-blade-nontextbook.md) / [`counterfactual-byd-blade-cn110165116.md`](../../analysis/non-award-validation/counterfactual-byd-blade-cn110165116.md)；analysis only | CF schema |
 | P6 | 文档一致性巡检 | README / tracks / trap checklist 交叉链接 | 行为变更 |
+| — | **外推 / 预测效度预注册**（评价工具下一步） | [`external-extrapolation-preregistration.md`](external-extrapolation-preregistration.md)（研究**未启动**） | 假装已有外推证据 |
 
 **探针结果（2026-10-12，research-only）：** 见 [`v0.8-probes/README.md`](v0.8-probes/README.md)。P5 已用刀片 CTP（无 CATL 材料，未回退 CRISPR）。
+
+**外推预注册：** [`external-extrapolation-preregistration.md`](external-extrapolation-preregistration.md) — 若要把模型当评价工具再推进一步，按该文档做小 N holdout；**合并该文档 ≠ 启动研究**。
 
 **停止条件：** 任一探针开始暗示「默认贡献必须填 V0.8 字段」→ 立刻停，回到 Gate 1。
 
