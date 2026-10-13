@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+### Theme: Holdout E3-probe E3-A/B/C（T0=2026-10-13；claims check）
+
+#### Added
+- E3-A 诺欣顺 / ZL201710337622.7 → **R3**（strong_evidence）；E3-B 迈瑞 CrozFusion / ZL201310419886.9 → **R3**；E3-C 玻麦妍 / ZL202310277767.8 → **R0**（claims check FAIL）。
+- 预注册附录 B；`holdout-e3-abc-synthesis.md`。
+
+#### Notes
+- 有 E3 ≠ 自动 R3+：A/B 停 R3；C 贴纸未过权利要求核验。不 adopt V0.8。
+
+
 ### Theme: External extrapolation holdout H1–H9（T0=2026-10-13；研究编码）
 
 #### Added

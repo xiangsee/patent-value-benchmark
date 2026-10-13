@@ -305,3 +305,19 @@ Holdout 主路径（必须）
 **Artifacts:** `data/ledgers|evidence|source-registry/holdout-ZL*.jsonl`; case notes `analysis/non-award-validation/holdout/H*-….md`; synthesis `analysis/non-award-validation/holdout-extrapolation-synthesis.md`; H9 RC `data/experimental/rights-control/holdout-H9-ZL201910958076.8.jsonl`.
 
 **Decision gates closed by user for this run:** D1 start=yes; D2 N/layers=as table; D3 list=confirmed nominations; D4 T0=uniform 2026-10-13; D5 human gold=off; D7 V0.8=not this PR.
+
+---
+
+## Appendix B — Confirmed E3-probe holdout (E3-A/B/C; locked 2026-10-13)
+
+**User confirmation:** encode E3-A `ZL201710337622.7`, E3-B `ZL201310419886.9`, E3-C `ZL202310277767.8`; **T0=2026-10-13**; E3 only if exact patent→carrier holds after **claims check**; **no auto R3+**.
+
+| ID | ZL | Title (short) | Assignee | Claims check | Formal R | E present | Mapping |
+|---|---|---|---|---|---|---|---|
+| E3-A | ZL201710337622.7 | 助产用凝胶及其制备方法 → 诺欣顺® | 成都英诺新 | **PASS** (plausible) | **R3** | E2+E3 | strong_evidence |
+| E3-B | ZL201310419886.9 | 监护设备生理参数处理 → CrozFusion®/N系列 | 深圳迈瑞 | **PASS** (plausible) | **R3** | E2+E3 | strong_evidence |
+| E3-C | ZL202310277767.8 | 美白抗衰护肤组合物及应用 → 玻麦妍塑颜水 | 江苏仅三 | **FAIL** | **R0** | E2 only | unknown |
+
+**Honesty notes:** E3-C marketing patent sticker ≠ E3 after granted-claim vs public-ingredient check. E3-A/B reach R3 (implemented) only; **no** R4/R5 without E4. Not V0.8 adoption.
+
+**Artifacts:** `data/*/holdout-E3{A,B,C}-ZL*.jsonl`; notes `analysis/non-award-validation/holdout/E3*-….md`.
