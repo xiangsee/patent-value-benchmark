@@ -1,7 +1,7 @@
 # External Extrapolation / Predictive-Validity Pre-registration
 
 日期：2026-10-13  
-状态：**Pre-registration draft — study NOT started；NOT a schema freeze；NOT V0.8 adoption**  
+状态：**Holdout H1–H9 encoded (T0=2026-10-13)；pre-reg locked；NOT a schema freeze；NOT V0.8 adoption**  
 正式方法基线：**V0.7 (adopted)** + **schema 1.0 / v0.1.0**  
 研究语境：Round 2 复制门槛已满但仍偏教科书案；冷启动可用性已证；**外推 / 预测效度尚未评价**  
 关联：[`round2-adoption-readiness-synthesis-v0.8.md`](../../analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md) · [`v0.7-validation-protocol.md`](v0.7-validation-protocol.md) · [`time-cutoff-and-outcome-leakage.md`](time-cutoff-and-outcome-leakage.md) · [`model-v0.8-design-draft.md`](model-v0.8-design-draft.md) · [`cold-start-status.md`](../cold-start-status.md)
@@ -247,10 +247,10 @@ Holdout 主路径（必须）
 
 | # | 决策 | 默认建议 |
 |---|---|---|
-| D1 | 是否批准按本预注册 **启动** holdout 编码？ | 待定（需你说「启动」） |
+| D1 | 是否批准按本预注册 **启动** holdout 编码？ | **已确认启动（2026-10-13）** |
 | D2 | 最终 N 与分层（L1/L2/L3）？ | L1=4–6, L2=2–3, L3=0–1 |
-| D3 | Holdout **具体名单** 谁定？（用户指定 / 代理提名后你确认） | **你确认名单后才能编码** |
-| D4 | 每案 T0 规则：统一「编码日」还是「各自事件日」？ | 建议各自公开事件可核验日；写进名单表 |
+| D3 | Holdout **具体名单** 谁定？（用户指定 / 代理提名后你确认） | **用户已确认附录 A 名单** |
+| D4 | 每案 T0 规则：统一「编码日」还是「各自事件日」？ | **统一编码日 T0=2026-10-13** |
 | D5 | 是否开启人类盲审 gold 门（§6.3）？ | **默认关** |
 | D6 | 失败时是否允许立即改 validate/脚手架（另 PR）？ | 建议允许文档/软规则，不允许改 1.0 必填语义充数 |
 | D7 | 外推成功后是否进入 V0.8 S1 讨论？ | **默认否**；成功只支持 V0.7 外推声明 |
@@ -272,8 +272,36 @@ Holdout 主路径（必须）
 | 项 | 值 |
 |---|---|
 | 类型 | Predictive-validity / external-extrapolation **pre-registration** |
-| 研究状态 | **未启动** |
+| 研究状态 | **已启动并完成 H1–H9 编码（见附录 A）** |
 | Schema | formal 1.0 不动；无新 freeze |
 | 虚假指标 | 无；不报告编造的准确率 |
 
 修订必须追加日期与变更说明；启动后改成败标准视为新预注册。
+
+---
+
+## Appendix A — Confirmed holdout list (locked 2026-10-13)
+
+**User confirmation:** encode full H1–H9; **T0 = 2026-10-13** (uniform encoding-day cutoff); nominated ZL numbers as listed; honest cold-start (Unknown≠0, no inheritance, no fake E3/R3+); L3 H9 optional RC only with evidence ≤T0.
+
+**Study status after this appendix:** **started / encoded** (this PR). Formal baseline remains V0.7 + schema 1.0. Not V0.8 adoption.
+
+| ID | Layer | Application (ZL) | Grant | Title (short) | Assignee (short) | Domain | Formal R | E present | Mapping | Optional RC |
+|---|---|---|---|---|---|---|---|---|---|---|
+| H1 | L1 | ZL202111562464.8 | CN114297223B | 中小企业信息化服务平台 | 深圳空间数字科技 | software | **R0** | [] | unknown | no |
+| H2 | L1 | ZL201910471967.0 | CN110162936B | 软件内容使用授权方法 | 北京比特安索 | software | **R0** | [] | unknown | no |
+| H3 | L1 | ZL202011067792.6 | CN112240323B | 液压摆线马达 | 邢台中威卓特液压 | mechanical | **R0** | [] | unknown | no |
+| H4 | L1 | ZL202011166628.0 | CN112177941B | 新型膏体泵 | 成都博磊化工机械 | chemical_equipment | **R0** | [] | unknown | no |
+| H5 | L1 | ZL202110513769.3 | CN113200747B | 低温烧结氮化铝陶瓷 | 山东鼎鼎 / 深圳鼎鼎 | materials | **R0** | [] | unknown | no |
+| H6 | L2 | ZL202110686604.6 | CN113553338B | RPA+AI 许可证生成 | 来也网络 / 来也科技 | software | **R0** | [E2] | unknown | no |
+| H7 | L2 | ZL202110448799.0 | CN113182524B | 钛基金属陶瓷及刀具 | 赣州澳克泰 / 崇义章源钨业 | materials | **R0** | [E2] | unknown | no |
+| H8 | L2 | ZL202010875322.6 | CN112012978B | 负载敏感充液阀/装载机液压 | 广西柳工机械 | mechanical | **R0** | [E2] | unknown | no |
+| H9 | L3 | ZL201910958076.8 | CN110660074B | 废钢等级划分神经网络 | 北京同创信通 | software | **R0** | [E2] | unknown | **yes** (experimental) |
+
+**Counts:** L1=5, L2=3, L3=1; total N=9 (within pre-reg 8–10 cap).
+
+**Ledger IDs:** `LEDGER-HOLDOUT-H{n}-ZL…` (prefix distinguishes holdout from ordinary `LEDGER-ZL…` contrib so RC-optional tests stay honest).
+
+**Artifacts:** `data/ledgers|evidence|source-registry/holdout-ZL*.jsonl`; case notes `analysis/non-award-validation/holdout/H*-….md`; synthesis `analysis/non-award-validation/holdout-extrapolation-synthesis.md`; H9 RC `data/experimental/rights-control/holdout-H9-ZL201910958076.8.jsonl`.
+
+**Decision gates closed by user for this run:** D1 start=yes; D2 N/layers=as table; D3 list=confirmed nominations; D4 T0=uniform 2026-10-13; D5 human gold=off; D7 V0.8=not this PR.

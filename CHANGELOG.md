@@ -2,9 +2,20 @@
 
 ## Unreleased
 
+### Theme: External extrapolation holdout H1–H9（T0=2026-10-13；研究编码）
+
+#### Added
+- Holdout H1–H9 formal ledgers / evidence / sources（`data/*/holdout-ZL*.jsonl`）；case notes `analysis/non-award-validation/holdout/`；synthesis `holdout-extrapolation-synthesis.md`。
+- L3 H9 optional RC：`data/experimental/rights-control/holdout-H9-ZL201910958076.8.jsonl`（experimental；formal 仍 R0）。
+- 预注册附录 A：确认名单 + 每案 R0 结果（`docs/methodology/external-extrapolation-preregistration.md`）。
+
+#### Notes
+- 9/9 **R0**；Unknown≠0；无假 E3/R3+；不 adopt V0.8；不发明 gold/美元。主成功=过程纪律支持；H-E3 弱 / H-E5 inconclusive（见 synthesis）。
+
+
 Maintenance plateau（2026-10-12）：**V0.7 / schema 1.0 稳定**；V0.8 / RC / RP / CF 仅 research；**普通冷启动扩样暂停**。采纳 V0.8 需显式决策。状态见 [`docs/cold-start-status.md`](docs/cold-start-status.md) · [`docs/roadmap.md`](docs/roadmap.md)。
 
-### Theme: External extrapolation pre-registration（评价工具下一步；研究未启动）
+### Theme: External extrapolation pre-registration（预注册；holdout 已编码见上）
 
 #### Added
 - 外推 / 预测效度预注册：`docs/methodology/external-extrapolation-preregistration.md`（holdout vs in-sample、假设、成败标准、小 N 普通/非教科书设计、标签边界、泄漏、与 V0.7/RC 关系、启动前决策门）。**不** freeze；**不**默认 adopt V0.8；**不**发明 gold/美元指标。
