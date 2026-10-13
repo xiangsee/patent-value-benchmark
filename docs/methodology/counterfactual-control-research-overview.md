@@ -161,6 +161,7 @@ Pass 标准 1–5 由 pair synthesis 勾选为 **满足**（详见 `counterfactu
 | `analysis/non-award-validation/counterfactual-apple-us7469381-bounceback.md` | Case #2 matched | PR [#38](https://github.com/xiangsee/patent-value-benchmark/pull/38) |
 | `analysis/non-award-validation/counterfactual-i4i-apple381-pair-synthesis.md` | Replication-gate synthesis（勾选 pass） | PR [#39](https://github.com/xiangsee/patent-value-benchmark/pull/39) |
 | `analysis/non-award-validation/counterfactual-via-la-us6825782-sep-fto.md` | Case #3 exploratory（不同 R） | PR [#39](https://github.com/xiangsee/patent-value-benchmark/pull/39) |
+| `analysis/non-award-validation/counterfactual-byd-blade-cn110165116.md` | Case #4 exploratory / **非教科书**（R0；portfolio-internal NIA Unknown；**无** CATL 材料） | P5 / 本轮 |
 | [#37](https://github.com/xiangsee/patent-value-benchmark/issues/37) | Tracker；**closed / completed** | 预注册 + 关闭评论 |
 
 ### 7.4 相关正式 Ledger（对照用，仍属 1.0）
@@ -193,6 +194,7 @@ Rights Control / Realization Path 的实验校验 **不** 覆盖本轨道，也 
 2. `counterfactual-i4i-apple381-pair-synthesis.md`（为何 Similar R ≠ Similar alternatives）
 3. `counterfactual-i4i-us5787449.md` 与 `counterfactual-apple-us7469381-bounceback.md`（matched 细节）
 4. （可选）`counterfactual-via-la-us6825782-sep-fto.md`（standard + FTO 探索面）
+5. （可选）`counterfactual-byd-blade-cn110165116.md`（非教科书 R0；portfolio-internal NIA Unknown）
 5. `rights-control-research-overview.md` / `realization-path-research-overview.md`（姊妹边界）
 6. `model-v0.8-research-agenda.md` §3 + `round2-adoption-readiness-synthesis-v0.8.md`（为何仍不 adopt）
 
