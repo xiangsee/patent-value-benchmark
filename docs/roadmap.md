@@ -24,6 +24,8 @@
 > **V0.8 design draft in progress / research-only；formal = V0.7 + schema 1.0** → [`methodology/model-v0.8-design-draft.md`](methodology/model-v0.8-design-draft.md)（**未**冻结、**未**采纳）。
 >
 > RC 可选并行轨细则（research-only；**未**启动 S1 升格）：[`methodology/rights-control-optional-parallel-plan.md`](methodology/rights-control-optional-parallel-plan.md)。
+>
+> **外推 / 预测效度预注册**（评价工具下一步；研究**未启动**）：[`methodology/external-extrapolation-preregistration.md`](methodology/external-extrapolation-preregistration.md)。
 
 ### 当前正式架构：V0.7
 

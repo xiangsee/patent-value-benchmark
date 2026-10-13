@@ -53,6 +53,7 @@
 | [`docs/methodology/realization-path-research-overview.md`](methodology/realization-path-research-overview.md) | Realization Path 研究导读（实验） |
 | [`docs/methodology/counterfactual-control-research-overview.md`](methodology/counterfactual-control-research-overview.md) | Counterfactual 研究导读（**无** schema） |
 | [`analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md`](../analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md) | Round 2 综合（**不** adopt V0.8） |
+| [`docs/methodology/external-extrapolation-preregistration.md`](methodology/external-extrapolation-preregistration.md) | 外推 / 预测效度预注册（评价工具下一步；**未启动**） |
 | [`docs/release/v0.1.0-notes.md`](release/v0.1.0-notes.md) · [Release v0.1.0](https://github.com/xiangsee/patent-value-benchmark/releases/tag/v0.1.0) | 发版说明 |
 
 ## 维护平台期（Maintenance plateau）

@@ -181,6 +181,7 @@ Round 2 重复暴露的是 **相邻层缺失**，不是 R-stage 设计错误：
 | Experimental schemas | 继续隔离在 `schema/experimental/` |
 | Round 2 | 复制门槛完成；本综合关闭「缺 synthesis」项 |
 | 下一步工程 | 工具链、更多普通样本、文档可用性——**不是** adoption |
+| 外推 / 预测效度 | 预注册见 `docs/methodology/external-extrapolation-preregistration.md`（**未启动**；成功≠ V0.8 adopt） |
 
 **推荐决议文本（可供用户一键确认）：**
 

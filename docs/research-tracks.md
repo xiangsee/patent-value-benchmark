@@ -44,6 +44,8 @@ V0.8研究（**design draft in progress / research-only；formal = V0.7 + schema
 
 **2026-10-12 起**：普通冷启动扩样 **暂停**（维护平台期）；Round 2 / 四域普通样本已齐。重启扩样需显式决策。见 [`docs/cold-start-status.md`](cold-start-status.md)。
 
+**外推评价（预注册，未启动）：** 若要以评价工具标准检验 V0.7 在未见过普通专利上的纪律与可操作性，见 [`docs/methodology/external-extrapolation-preregistration.md`](methodology/external-extrapolation-preregistration.md)。成功≠采纳 V0.8；启动前需锁定名单与 N。
+
 ---
 
 ## Track B — China Patent Award Research
