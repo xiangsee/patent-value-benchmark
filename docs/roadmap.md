@@ -25,7 +25,7 @@
 >
 > RC 可选并行轨细则（research-only；**未**启动 S1 升格）：[`methodology/rights-control-optional-parallel-plan.md`](methodology/rights-control-optional-parallel-plan.md)。
 >
-> **外推 / 预测效度预注册**（评价工具下一步；研究**未启动**）：[`methodology/external-extrapolation-preregistration.md`](methodology/external-extrapolation-preregistration.md)。
+> **外推 holdout H1–H9**（T0=2026-10-13；已编码；主成功=纪律支持；**未** adopt V0.8）：[`methodology/external-extrapolation-preregistration.md`](methodology/external-extrapolation-preregistration.md) · [`../analysis/non-award-validation/holdout-extrapolation-synthesis.md`](../analysis/non-award-validation/holdout-extrapolation-synthesis.md)。
 
 ### 当前正式架构：V0.7
 
@@ -79,7 +79,7 @@ Round 1综合：
 
 Round 2 已结束扩样。
 
-**维护平台期（2026-10-12）**：Track A 正式表面稳定（V0.7 + schema 1.0）。普通冷启动扩样 **已暂停**。V0.8 / RC / RP / CF 保持 research-only；采纳需显式决策。允许文档/校验维护；**不开新 ledger**。状态快照：[`docs/cold-start-status.md`](cold-start-status.md)。
+**维护平台期（2026-10-12）**：Track A 正式表面稳定（V0.7 + schema 1.0）。普通冷启动扩样 **已暂停**。V0.8 / RC / RP / CF 保持 research-only；采纳需显式决策。允许文档/校验维护；普通 contrib 扩样仍暂停。**例外：** 预注册锁定的外推 holdout H1–H9（2026-10-13）已入库。状态快照：[`docs/cold-start-status.md`](cold-start-status.md)。
 
 #### Package A — Rights Control Replication
 **已完成4/4：**
