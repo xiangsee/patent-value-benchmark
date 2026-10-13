@@ -22,3 +22,5 @@
 ## 后续（2026-10-12 用户决定，已实施）
 
 RC 对普通专利永远可选；无裁决记录被允许。测试用内存 fixture（基于本 ledger）验证通过，**未**新增数据文件或 ledger。
+
+并行轨细则（何时填/留空）：[`../rights-control-optional-parallel-plan.md`](../rights-control-optional-parallel-plan.md)。
