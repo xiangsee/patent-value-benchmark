@@ -82,6 +82,7 @@ Methodology notes:
 | Matched cases | `analysis/non-award-validation/counterfactual-i4i-us5787449.md`, `counterfactual-apple-us7469381-bounceback.md` |
 | Synthesis | `analysis/non-award-validation/counterfactual-i4i-apple381-pair-synthesis.md` |
 | Exploratory | `analysis/non-award-validation/counterfactual-via-la-us6825782-sep-fto.md` |
+| Exploratory (non-textbook P5) | `analysis/non-award-validation/counterfactual-byd-blade-cn110165116.md` |
 | Validator | **none** (analysis-only) |
 
 Do **not** elevate these into formal schema 1.0 without an explicit adoption decision.

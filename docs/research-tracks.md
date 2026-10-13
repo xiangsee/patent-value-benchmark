@@ -31,7 +31,7 @@ V0.7继续作为正式架构：
 V0.8研究（**design draft in progress / research-only；formal = V0.7 + schema 1.0**；草案：`docs/methodology/model-v0.8-design-draft.md`）：
 - Rights Control（导读：`docs/methodology/rights-control-research-overview.md`；**未**升格进 schema 1.0）
 - Realization Path（导读：`docs/methodology/realization-path-research-overview.md`；**未**升格进 schema 1.0）
-- Counterfactual Control（导读：`docs/methodology/counterfactual-control-research-overview.md`；预注册 [#37](https://github.com/xiangsee/patent-value-benchmark/issues/37) **已关闭 / 复制门完成**；matched：`counterfactual-i4i-us5787449.md` × `counterfactual-apple-us7469381-bounceback.md`；综合：`counterfactual-i4i-apple381-pair-synthesis.md`；exploratory：`counterfactual-via-la-us6825782-sep-fto.md`；**无 schema**）
+- Counterfactual Control（导读：`docs/methodology/counterfactual-control-research-overview.md`；预注册 [#37](https://github.com/xiangsee/patent-value-benchmark/issues/37) **已关闭 / 复制门完成**；matched：`counterfactual-i4i-us5787449.md` × `counterfactual-apple-us7469381-bounceback.md`；综合：`counterfactual-i4i-apple381-pair-synthesis.md`；exploratory：`counterfactual-via-la-us6825782-sep-fto.md`、`counterfactual-byd-blade-cn110165116.md`（P5 非教科书）；**无 schema**）
 - Option / Future Value
 - Portfolio Context
 - Screening Signals

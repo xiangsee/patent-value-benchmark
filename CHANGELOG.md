@@ -4,6 +4,12 @@
 
 Maintenance plateau（2026-10-12）：**V0.7 / schema 1.0 稳定**；V0.8 / RC / RP / CF 仅 research；**普通冷启动扩样暂停**。采纳 V0.8 需显式决策。状态见 [`docs/cold-start-status.md`](docs/cold-start-status.md) · [`docs/roadmap.md`](docs/roadmap.md)。
 
+### Theme: Counterfactual P5 — Blade non-textbook note（analysis-only；无 CF schema）
+
+#### Added
+- Exploratory CF Case #4：`analysis/non-award-validation/counterfactual-byd-blade-cn110165116.md`（刀片 CN110165116B；R0；portfolio-internal NIA=Unknown）。仓库无 CATL 材料，未编造。
+- P5 指针：`docs/methodology/v0.8-probes/p5-cf-blade-nontextbook.md`；CF 导读 / design draft / experimental README 交叉链接。
+
 ### Theme: Rights Control experimental — optional & no-ruling records（未冻结 / 未采纳）
 
 #### Changed

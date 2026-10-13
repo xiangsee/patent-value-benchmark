@@ -353,10 +353,10 @@ citations、family size、claims、generality 等：可存筛选层；需 field/
 | P2 | 用 **已有** 四域 contrib 之一做「RC 是否必要」负例笔记 | analysis 短文：普通 R0 案无需 RC | 新 ledger |
 | P3 | Horizon 信号词典 v0（定性枚举草稿） | docs 附录或 agenda 补丁 | 分数公式 |
 | P4 | Network JSON 三例（CRISPR/AVC/Blade）键名对齐草图 | 命名约定 md | 新 schema freeze |
-| P5 | CF：可选一篇非教科书 qualitative note（若用户点名） | analysis only | CF schema |
+| P5 | CF：可选一篇非教科书 qualitative note（若用户点名） | **已做**：刀片 CN110165116B → [`v0.8-probes/p5-cf-blade-nontextbook.md`](v0.8-probes/p5-cf-blade-nontextbook.md) / [`counterfactual-byd-blade-cn110165116.md`](../../analysis/non-award-validation/counterfactual-byd-blade-cn110165116.md)；analysis only | CF schema |
 | P6 | 文档一致性巡检 | README / tracks / trap checklist 交叉链接 | 行为变更 |
 
-**探针结果（2026-10-12，research-only）：** 见 [`v0.8-probes/README.md`](v0.8-probes/README.md)。P5 待用户点名案例。
+**探针结果（2026-10-12，research-only）：** 见 [`v0.8-probes/README.md`](v0.8-probes/README.md)。P5 已用刀片 CTP（无 CATL 材料，未回退 CRISPR）。
 
 **停止条件：** 任一探针开始暗示「默认贡献必须填 V0.8 字段」→ 立刻停，回到 Gate 1。
 
