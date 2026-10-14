@@ -2,6 +2,18 @@
 
 ## Unreleased
 
+### Theme: T1 short memo — DEMPE ⊥ claims-check / E3–E4
+
+#### Added
+- `docs/methodology/t1-dempe-vs-claims-e3e4.md`（OECD DEMPE 与 V0.7 正交；适用场景；holdout 反混淆例 INT-7/1/9/3/11/5、E4-N5）。
+
+#### Changed
+- `t1-theory-memo-value-construct.md` / `t2-v07-to-ivs-oecd-practice-schools.md` / `world-class-roadmap.md` / `docs/roadmap.md`：交叉指针。
+
+#### Notes
+- **未** adopt V0.8；导航/理论对照，非 TP/估值意见。
+
+
 ### Theme: T4 encode INT-7/9/11（T0=2026-10-13；JP/KR Round 2）
 
 #### Added

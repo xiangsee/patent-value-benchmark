@@ -95,11 +95,12 @@ PageRank 式「同专利、两 T0」与 Package B「早 T0 诚实停 R0」都服
 
 - 不 adopt V0.8；不冻新 schema；不改正式 1.0 字段。  
 - 不宣称本备忘已证明预测效度或美元精度。  
-- 下一版 T1：可补「建构 × 场景」选用表（许可谈判 / 侵权 / 融资披露 / 冷启动诊断）。
+- 下一版 T1：可补「建构 × 场景」选用表（许可谈判 / 侵权 / 融资披露 / 冷启动诊断）。DEMPE ⊥ E3–E4 短备忘已出 → [`t1-dempe-vs-claims-e3e4.md`](t1-dempe-vs-claims-e3e4.md)。
 
 ## 指针
 
 - Formal：[`model-v0.7.md`](model-v0.7.md) · [`evidence-levels.md`](evidence-levels.md) · [`time-cutoff-and-outcome-leakage.md`](time-cutoff-and-outcome-leakage.md)  
-- T2：[`existing-models-comparison-matrix.md`](existing-models-comparison-matrix.md)  
+- T1 短备忘：[`t1-dempe-vs-claims-e3e4.md`](t1-dempe-vs-claims-e3e4.md)（DEMPE ⊥ claims-check / E3–E4）  
+- T2：[`existing-models-comparison-matrix.md`](existing-models-comparison-matrix.md) · [`t2-v07-to-ivs-oecd-practice-schools.md`](t2-v07-to-ivs-oecd-practice-schools.md)  
 - Research：[`model-v0.8-design-draft.md`](model-v0.8-design-draft.md) · [`rights-control-research-overview.md`](rights-control-research-overview.md)  
 - 更深建构讨论：[`../../analysis/theory/value-constructs-and-missing-dimensions.md`](../../analysis/theory/value-constructs-and-missing-dimensions.md)

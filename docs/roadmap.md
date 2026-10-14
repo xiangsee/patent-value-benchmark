@@ -37,6 +37,8 @@
 >
 > **T1 理论备忘 v0**（research）：[`methodology/t1-theory-memo-value-construct.md`](methodology/t1-theory-memo-value-construct.md)。
 
+> **T1 DEMPE ⊥ E3–E4**（research）：[`methodology/t1-dempe-vs-claims-e3e4.md`](methodology/t1-dempe-vs-claims-e3e4.md)。
+
 > **E3-P Round 3**：**P1/P3/P4 已编码**（T0=2026-10-13；3/3 R3）：[`methodology/e3-holdout-nominees-round3.md`](methodology/e3-holdout-nominees-round3.md) · [`../analysis/non-award-validation/holdout-e3-p134-synthesis.md`](../analysis/non-award-validation/holdout-e3-p134-synthesis.md)。
 
 > **E4 Round 1**：**N1/N2/N5 已编码**（T0=2026-10-13；R5/R5/R2）：[`methodology/e4-holdout-nominees-round1.md`](methodology/e4-holdout-nominees-round1.md) · [`../analysis/non-award-validation/holdout-e4-n125-synthesis.md`](../analysis/non-award-validation/holdout-e4-n125-synthesis.md)。
