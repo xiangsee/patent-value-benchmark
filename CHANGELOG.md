@@ -2,6 +2,18 @@
 
 ## Unreleased
 
+### Theme: T2 scenario selection decision tree
+
+#### Added
+- 场景选用决策树：`docs/methodology/t2-scenario-selection-decision-tree.md`（何时仅 V0.7 vs 交接 IVS / OECD TP / FRAND / 诉讼损害；含 mermaid）。
+
+#### Changed
+- #67 备忘 / 比较矩阵 / `world-class-roadmap` / `docs/roadmap`：挂决策树指针。
+
+#### Notes
+- **未** adopt V0.8；导航文档，非合规/估值意见。
+
+
 ### Theme: T2 deepen — V0.7 ↔ IVS 210 / OECD / US·EU·CN practice schools
 
 #### Added

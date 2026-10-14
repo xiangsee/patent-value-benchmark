@@ -1,7 +1,7 @@
 # T2 深化备忘：V0.7 ↔ IVS 210 / OECD 无形资产 / 美欧中实务学派
 
 > Status: **research comparison deepen v0**（2026-10-14 Asia/Shanghai）  
-> Track: **T2** · 承接 [`existing-models-comparison-matrix.md`](existing-models-comparison-matrix.md)  
+> Track: **T2** · 承接 [`existing-models-comparison-matrix.md`](existing-models-comparison-matrix.md) · 场景树 [`t2-scenario-selection-decision-tree.md`](t2-scenario-selection-decision-tree.md)  
 > Formal: **V0.7** + **schema 1.0** · **未** adopt / freeze V0.8 · **不**输出美元总分  
 > 引用纪律：下列来源均经公开网页 / PDF 核验；**无**伪造文献或页码。本页**不是**合规意见或估值结论。
 
@@ -64,7 +64,7 @@ V0.7 是**上游证据—实现闸门**；通过后才适合进入金额 / 费�
 
 - 不 adopt V0.8；不改 schema 1.0；不编码新 ledger。  
 - 不声称本备忘可替代持证评估师 / 税务意见 / 法律意见。  
-- 下一版 T2：场景选用决策树（许可谈判 / 侵权救济 / 融资披露 / 转让定价 / 冷启动诊断 × 用哪一层）。
+- 场景选用决策树：[`t2-scenario-selection-decision-tree.md`](t2-scenario-selection-decision-tree.md)（冷启动 / IVS / OECD TP / FRAND / 诉讼损害）。
 
 ## 5. 已核验来源（URL）
 
@@ -85,6 +85,7 @@ V0.7 是**上游证据—实现闸门**；通过后才适合进入金额 / 费�
 ## 指针
 
 - 矩阵：[`existing-models-comparison-matrix.md`](existing-models-comparison-matrix.md)  
+- 场景树：[`t2-scenario-selection-decision-tree.md`](t2-scenario-selection-decision-tree.md)  
 - T1：[`t1-theory-memo-value-construct.md`](t1-theory-memo-value-construct.md)  
 - Formal：[`model-v0.7.md`](model-v0.7.md) · [`evidence-levels.md`](evidence-levels.md)  
 - 四轨：[`world-class-roadmap.md`](world-class-roadmap.md)
