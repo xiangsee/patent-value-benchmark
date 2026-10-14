@@ -42,7 +42,7 @@ Promotion rule: **explicit user decision** for adopt / freeze / S1. Round 2 read
 
 ## 4. Near-term milestones (next 1–2 cycles)
 
-1. **T4 nominations** — non-star checkable-E3 holdouts via public + iphouse; encode **only** after user confirm ([`e3-holdout-nominees-round2.md`](e3-holdout-nominees-round2.md)).
+1. **T4 nominations / encode** — E3-N1/N2/N5 encoded（T0=2026-10-13；3/3 R0 claims-fail）；N3/N4/N6 仍提名 ([`e3-holdout-nominees-round2.md`](e3-holdout-nominees-round2.md) · [`../../analysis/non-award-validation/holdout-e3-n125-synthesis.md`](../../analysis/non-award-validation/holdout-e3-n125-synthesis.md)).
 2. **T2 comparison v0** — ~~one-page matrix~~ → [`existing-models-comparison-matrix.md`](existing-models-comparison-matrix.md)（2026-10-14）。下一版：场景选用决策树。
 3. **T1 theory memo** — short note: Value Construct × R-stage × RC orthogonality (cite design draft § candidate shape).
 4. **T3 maintenance** — optional RC remains optional; no-ruling records allowed (#49); do not start S1 without Gate decision.

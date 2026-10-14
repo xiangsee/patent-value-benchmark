@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+### Theme: Encode E3-N1/N2/N5 holdouts（T0=2026-10-13；claims check FAIL → R0）
+
+#### Added
+- E3-N1 绽妍三重蛋白 / ZL202210708835.7 → **R0**；E3-N2 焦点福瑞达酶切HA / ZL202110767111.5 → **R0**；E3-N5 奥普特手眼标定 / ZL201810828154.8 → **R0**。
+- Case notes + synthesis：`analysis/non-award-validation/holdout/E3N*.md` · `holdout-e3-n125-synthesis.md`。
+
+#### Notes
+- 3/3 claims-check **FAIL**（配方量/工艺参数/迭代加权算法公开不足）。品牌点名或功能类叙事 = E2 ≠ E3；**不** auto-R3。不 adopt V0.8。
+
+
 ### Theme: T2 existing-models comparison matrix v0（research/docs）
 
 #### Added
