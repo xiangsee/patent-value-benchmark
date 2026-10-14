@@ -42,7 +42,7 @@ Promotion rule: **explicit user decision** for adopt / freeze / S1. Round 2 read
 
 ## 4. Near-term milestones (next 1–2 cycles)
 
-1. **T4 nominations / encode** — E3-N1/N2/N5 encoded（T0=2026-10-13；3/3 R0 claims-fail）；N3/N4/N6 仍提名 ([`e3-holdout-nominees-round2.md`](e3-holdout-nominees-round2.md) · [`../../analysis/non-award-validation/holdout-e3-n125-synthesis.md`](../../analysis/non-award-validation/holdout-e3-n125-synthesis.md))。**Round 3 PASS-oriented 提名**（未编码）：[`e3-holdout-nominees-round3.md`](e3-holdout-nominees-round3.md)（E3-P1–P6；显式 ZL + 规格/处方）。
+1. **T4 nominations / encode** — E3-N1/N2/N5 encoded（T0=2026-10-13；3/3 R0 claims-fail）；N3/N4/N6 仍提名 ([`e3-holdout-nominees-round2.md`](e3-holdout-nominees-round2.md) · [`../../analysis/non-award-validation/holdout-e3-n125-synthesis.md`](../../analysis/non-award-validation/holdout-e3-n125-synthesis.md))。**Round 3**：[nominate](e3-holdout-nominees-round3.md)；**P1/P3/P4 encoded**（T0=2026-10-13；3/3 R3）→ [`../../analysis/non-award-validation/holdout-e3-p134-synthesis.md`](../../analysis/non-award-validation/holdout-e3-p134-synthesis.md)。
 2. **T2 comparison v0** — ~~one-page matrix~~ → [`existing-models-comparison-matrix.md`](existing-models-comparison-matrix.md)（2026-10-14）。下一版：场景选用决策树。
 3. **T1 theory memo** — ~~short note~~ → [`t1-theory-memo-value-construct.md`](t1-theory-memo-value-construct.md)（2026-10-14）。下一版：建构 × 场景选用表。
 4. **T3 maintenance** — optional RC remains optional; no-ruling records allowed (#49); do not start S1 without Gate decision.
