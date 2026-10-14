@@ -45,6 +45,8 @@
 
 > **T4 International Round 1**：INT-1/3/5 已编码（R0/R3/R5）；INT-2/4/6 仍提名 — [`methodology/t4-international-holdout-nominees-round1.md`](methodology/t4-international-holdout-nominees-round1.md)；synthesis [`../analysis/non-award-validation/holdout-int-135-synthesis.md`](../analysis/non-award-validation/holdout-int-135-synthesis.md)。
 
+> **T4 International Round 2（JP/KR）**：**INT-7–INT-12 提名 only**（R0 Style/SIXPAD；E3 Kerendia/Wainua Green List；E4 ReFa 平成31(ネ)10003 / Golfzon 2021나1510）— [`methodology/t4-international-holdout-nominees-round2.md`](methodology/t4-international-holdout-nominees-round2.md)。**未**编码。
+
 ### 当前正式架构：V0.7
 
 已采用：
