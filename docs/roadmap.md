@@ -43,6 +43,8 @@
 
 > **T4 phase synthesis**（H/E3/N/P/E4 合并）：[`../analysis/non-award-validation/holdout-t4-phase-synthesis.md`](../analysis/non-award-validation/holdout-t4-phase-synthesis.md)。**T3 P7** Horizon：[`methodology/v0.8-probes/p7-horizon-worked-example-mrna.md`](methodology/v0.8-probes/p7-horizon-worked-example-mrna.md)。**T3 P8** Network vocabulary：[`methodology/v0.8-probes/p8-network-relation-vocabulary-v0.md`](methodology/v0.8-probes/p8-network-relation-vocabulary-v0.md)（**未** adopt V0.8）。
 
+> **T4 International Round 1 提名**（US/EP；**未**编码）：[`methodology/t4-international-holdout-nominees-round1.md`](methodology/t4-international-holdout-nominees-round1.md)。
+
 ### 当前正式架构：V0.7
 
 已采用：
