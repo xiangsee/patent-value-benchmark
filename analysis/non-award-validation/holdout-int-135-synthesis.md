@@ -14,3 +14,5 @@
 - INT-5 ≈ E4-N1：单件裁判 E4；判赔≠自动 R5（本案条件满足）
 
 Formal = V0.7 + schema 1.0。
+
+Related: [`holdout-t4-cross-jurisdiction-synthesis.md`](holdout-t4-cross-jurisdiction-synthesis.md) · [`holdout-int-7911-synthesis.md`](holdout-int-7911-synthesis.md)
