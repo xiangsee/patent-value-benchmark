@@ -4,7 +4,7 @@
 T0（holdout 钟）：**2026-10-13**（除非另注）  
 正式基线：**V0.7 + schema 1.0** · **未** adopt / freeze V0.8  
 预注册：[`../../docs/methodology/external-extrapolation-preregistration.md`](../../docs/methodology/external-extrapolation-preregistration.md)  
-程序入口：[`../../docs/methodology/world-class-roadmap.md`](../../docs/methodology/world-class-roadmap.md)
+程序入口：[`../../docs/methodology/world-class-roadmap.md`](../../docs/methodology/world-class-roadmap.md) · 执行记分卡：[`../../docs/methodology/t1-t4-executive-scorecard.md`](../../docs/methodology/t1-t4-executive-scorecard.md)
 
 > 把 **已编码** T4 holdout（H / E3-A·B·C / E3-N / E3-P / E4 / INT Round 1+2）收成一份 **跨法域** 可引用笔记。  
 > 不替代各波 synthesis；**不**新编码；**不**发明 gold / 美元内在价格 / 胜诉预测准确率。
