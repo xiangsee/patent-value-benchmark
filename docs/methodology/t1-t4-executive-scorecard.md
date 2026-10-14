@@ -44,17 +44,17 @@
 |---|---|
 | **Done** | P1–P8（含 P7 Horizon、P8 Network vocab）；RC optional 计划 + [#49](https://github.com/xiangsee/patent-value-benchmark/pull/49) 规则；无裁决夹具 `data/experimental/rights-control/fixture-no-ruling-ordinary-r0.jsonl` |
 | **Gaps** | 全部 research / experimental；**无** S1–S3；CF 无 schema |
-| **Next knife** | **停在 Gate 0**——只改探针文档或夹具，不借 T4 n=30 推动 V0.8 |
+| **Next knife** | **停在 Gate 0**——只改探针文档或夹具，不借 T4 n=36 推动 V0.8 |
 
 ## T4 真实外推
 
 | | |
 |---|---|
-| **Done** | 预注册；H→E3→E4 CN 波；INT R1/R2 + **R3 complete（INT-13–18）**；跨法域合成 **#74（n=30）** + INT-13–18 → **n=36**；H-E3 协议稿；Round 3 [`t4-international-holdout-nominees-round3.md`](t4-international-holdout-nominees-round3.md) |
+| **Done** | 预注册；H→E3→E4 CN 波；INT R1/R2 + **R3 complete（INT-13–18）**；跨法域合成 → **n=36**（CN/US/JP/KR/EP·UK）[`../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md`](../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md)；H-E3 协议稿；Round 3 [`t4-international-holdout-nominees-round3.md`](t4-international-holdout-nominees-round3.md) |
 | **Gaps** | INT 余提名（R1/R2）；H-E3 **未开跑**；新人一致率未证 |
 | **Next knife** | （A）用户确认后编 INT-2/4/6/8/10/12；或（B）开 H-E3 盲评——本卡不授权 |
 
-### T4 计数速查（摘自 #74）
+### T4 计数速查（跨法域合成；含 EP/UK Round 3）
 
 | 法域 | n | R 分布 |
 |---|---|---|
@@ -84,4 +84,5 @@
 | [`../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md`](../../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md) | #74 跨法域计数与共享阶梯 |
 | [`external-extrapolation-preregistration.md`](external-extrapolation-preregistration.md) | T4 预注册 |
 | [`t4-inter-rater-blind-protocol-h-e3.md`](t4-inter-rater-blind-protocol-h-e3.md) | H-E3 协议（未开跑） |
-| [`t4-international-holdout-nominees-round3.md`](t4-international-holdout-nominees-round3.md) | T4 INT Round 3 EP/UK 提名（INT-13–18） |
+| [`t4-international-holdout-nominees-round3.md`](t4-international-holdout-nominees-round3.md) | T4 INT Round 3 EP/UK（INT-13–18 **已编码**） |
+| [`../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md`](../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md) | T4 跨法域合成（n=36；含 EP/UK） |
