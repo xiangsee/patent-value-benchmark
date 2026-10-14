@@ -352,6 +352,7 @@ citations、family size、claims、generality 等：可存筛选层；需 field/
 | P1 | RC 最小字段「升格清单」对照 experimental-0.1 | 一页 diff 表（字段 keep/drop/rename） | 改正式 schema |
 | P2 | 用 **已有** 四域 contrib 之一做「RC 是否必要」负例笔记 | analysis 短文：普通 R0 案无需 RC | 新 ledger |
 | P3 | Horizon 信号词典 v0（定性枚举草稿） | docs 附录或 agenda 补丁 | 分数公式 |
+| P7 | Horizon worked example（mRNA） | [`v0.8-probes/p7-horizon-worked-example-mrna.md`](v0.8-probes/p7-horizon-worked-example-mrna.md) | schema / 分数 / adopt |
 | P4 | Network JSON 三例（CRISPR/AVC/Blade）键名对齐草图 | 命名约定 md | 新 schema freeze |
 | P5 | CF：可选一篇非教科书 qualitative note（若用户点名） | **已做**：刀片 CN110165116B → [`v0.8-probes/p5-cf-blade-nontextbook.md`](v0.8-probes/p5-cf-blade-nontextbook.md) / [`counterfactual-byd-blade-cn110165116.md`](../../analysis/non-award-validation/counterfactual-byd-blade-cn110165116.md)；analysis only | CF schema |
 | P6 | 文档一致性巡检 | README / tracks / trap checklist 交叉链接 | 行为变更 |

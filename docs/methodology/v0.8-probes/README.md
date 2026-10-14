@@ -1,4 +1,4 @@
-# V0.8 probes P1–P6（索引）
+# V0.8 probes P1–P7（索引）
 
 > 状态：**V0.8 probe — research-only；NOT frozen / NOT adopted**。正式面仍为 **V0.7 + schema 1.0**。本文件不改任何 schema / validator / ledger。来源：[`../model-v0.8-design-draft.md`](../model-v0.8-design-draft.md) §7。
 
@@ -10,6 +10,7 @@
 | P4 | Network JSON 键名对齐 | [p4-network-json-naming.md](p4-network-json-naming.md) | 三例节点/边键名基本一致，但 relation 词表三套互不相通（CRISPR 用自由文本） | 否（不建 schema） |
 | P5 | CF 非教科书定性笔记 | [p5-cf-blade-nontextbook.md](p5-cf-blade-nontextbook.md) · [`counterfactual-byd-blade-cn110165116.md`](../../../analysis/non-award-validation/counterfactual-byd-blade-cn110165116.md) | 刀片 CN110165116B：R0 + portfolio-internal NIA=Unknown；仓库无 CATL 故未编造；仍无 CF schema | 否 |
 | P6 | 文档一致性巡检 | [p6-doc-consistency-audit.md](p6-doc-consistency-audit.md) | 横幅一致；修 1 处陈旧表述（README「通用样本扩展」已在 #47 改为暂停） | 否 |
+| P7 | Horizon worked example（mRNA） | [p7-horizon-worked-example-mrna.md](p7-horizon-worked-example-mrna.md) | 对 US8278036 @2012-10-02 套用 P3 两钟+OS-*；R0 不抬；无分数 | 否（S2 预备 ≠ 批准 S2） |
 
 P1/P2 后续：用户已决定「RC 对普通专利永远可选 + 允许无裁决记录」，已在 RC experimental schema/validator 实施。
 

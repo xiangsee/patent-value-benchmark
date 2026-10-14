@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+### Theme: T4 phase synthesis + T3 P7 Horizon worked example
+
+#### Added
+- T4 合并笔记：`analysis/non-award-validation/holdout-t4-phase-synthesis.md`（H/E3/N/P/E4 纪律阶梯）。
+- T3 探针 P7：`docs/methodology/v0.8-probes/p7-horizon-worked-example-mrna.md`（mRNA @2012-10-02 套用 P3 两钟+OS-*）。
+
+#### Notes
+- **未** adopt / freeze V0.8；**未**启动 S1/S2；不改 formal schema/ledger。
+
+
 ### Theme: T4 encode E4-N1/N2/N5（T0=2026-10-13）
 
 #### Added
