@@ -69,4 +69,5 @@
 
 - Formal：[`model-v0.7.md`](model-v0.7.md) · [`evidence-levels.md`](evidence-levels.md)  
 - 建构讨论：[`../../analysis/theory/value-constructs-and-missing-dimensions.md`](../../analysis/theory/value-constructs-and-missing-dimensions.md)  
+- T1：[`t1-theory-memo-value-construct.md`](t1-theory-memo-value-construct.md)
 - 四轨：[`world-class-roadmap.md`](world-class-roadmap.md) · Track A：[`../roadmap.md`](../roadmap.md)

@@ -34,6 +34,8 @@
 > **T2 既有模型比较矩阵 v0**（research）：[`methodology/existing-models-comparison-matrix.md`](methodology/existing-models-comparison-matrix.md)。
 >
 > **E3-N1/N2/N5 已编码**（T0=2026-10-13；3/3 R0 claims-fail）：[`../analysis/non-award-validation/holdout-e3-n125-synthesis.md`](../analysis/non-award-validation/holdout-e3-n125-synthesis.md)。
+>
+> **T1 理论备忘 v0**（research）：[`methodology/t1-theory-memo-value-construct.md`](methodology/t1-theory-memo-value-construct.md)。
 
 ### 当前正式架构：V0.7
 

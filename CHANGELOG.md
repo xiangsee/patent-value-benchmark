@@ -2,6 +2,18 @@
 
 ## Unreleased
 
+### Theme: T1 theory memo v0（Value Construct / Two Clocks / RC⊥R）
+
+#### Added
+- T1 短理论备忘：`docs/methodology/t1-theory-memo-value-construct.md`（建构、双时钟、RC⊥R、Screening≠Proof、Unknown≠0、非继承；对照 T2 IVS/引证学校）。
+
+#### Changed
+- `world-class-roadmap.md` / `docs/roadmap.md` / T2 矩阵：T1 v0 指针。
+
+#### Notes
+- 不编码；不 adopt V0.8；不冻 schema。
+
+
 ### Theme: Encode E3-N1/N2/N5 holdouts（T0=2026-10-13；claims check FAIL → R0）
 
 #### Added

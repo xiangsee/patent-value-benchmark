@@ -17,7 +17,7 @@ Goal: extend Xiangsee Patent Value Benchmark toward a **world-class, evidence-fi
 
 | Track | Question | Near-term work | Maps to |
 |---|---|---|---|
-| **T1 Theory research** | What *kinds* of patent value exist, and which layers must stay separate? | Value Construct taxonomy; Two Clocks / Horizon notes; RC vs R-stage orthogonality; CF as analysis-first; keep Screening ≠ Proof | Formal: V0.7 four layers. Research: [`model-v0.8-design-draft.md`](model-v0.8-design-draft.md), RC/RP/CF overviews |
+| **T1 Theory research** | What *kinds* of patent value exist, and which layers must stay separate? | **memo v0 done** → [`t1-theory-memo-value-construct.md`](t1-theory-memo-value-construct.md)；CF analysis-first 仍见导读 | Formal: V0.7 four layers. Research: design draft + RC/RP/CF overviews |
 | **T2 Comparison of existing models** | How do IVS / royalty / citation / ML score / award proxies / litigation damages differ from us? | **v0 done** → [`existing-models-comparison-matrix.md`](existing-models-comparison-matrix.md)；下一版场景决策树 | Docs under `docs/methodology/` + `analysis/theory/`；not schema |
 | **T3 Own innovation testing** | Do RC / RP / Network / Horizon / optional parallel RC improve diagnosis without false inheritance? | Probes P1–P6 (done); optional RC parallel plan (Gate 0); CF non-textbook note; **no** V0.8 adopt by default | Research / experimental schemas only |
 | **T4 Real-world effect validation** | On unseen patents, does the model refuse false R3+ and allow honest R3 when E3 maps? | Extrapolation prereg + H1–H9 (discipline) + E3-A/B/C (claims check); next: non-star checkable-E3 holdouts (**nominate → confirm → encode**) | Formal V0.7 ledgers when encoding; prereg: [`external-extrapolation-preregistration.md`](external-extrapolation-preregistration.md) |
@@ -44,7 +44,7 @@ Promotion rule: **explicit user decision** for adopt / freeze / S1. Round 2 read
 
 1. **T4 nominations / encode** — E3-N1/N2/N5 encoded（T0=2026-10-13；3/3 R0 claims-fail）；N3/N4/N6 仍提名 ([`e3-holdout-nominees-round2.md`](e3-holdout-nominees-round2.md) · [`../../analysis/non-award-validation/holdout-e3-n125-synthesis.md`](../../analysis/non-award-validation/holdout-e3-n125-synthesis.md)).
 2. **T2 comparison v0** — ~~one-page matrix~~ → [`existing-models-comparison-matrix.md`](existing-models-comparison-matrix.md)（2026-10-14）。下一版：场景选用决策树。
-3. **T1 theory memo** — short note: Value Construct × R-stage × RC orthogonality (cite design draft § candidate shape).
+3. **T1 theory memo** — ~~short note~~ → [`t1-theory-memo-value-construct.md`](t1-theory-memo-value-construct.md)（2026-10-14）。下一版：建构 × 场景选用表。
 4. **T3 maintenance** — optional RC remains optional; no-ruling records allowed (#49); do not start S1 without Gate decision.
 5. **Data hygiene** — keep formal CI green; experimental validators separate; no silent schema drift.
 
@@ -79,6 +79,7 @@ Promotion rule: **explicit user decision** for adopt / freeze / S1. Round 2 read
 
 | Doc | Role |
 |---|---|
+| [`t1-theory-memo-value-construct.md`](t1-theory-memo-value-construct.md) | T1 理论备忘（Construct / Two Clocks / RC⊥R） |
 | [`model-v0.7.md`](model-v0.7.md) | Formal method |
 | [`model-v0.8-design-draft.md`](model-v0.8-design-draft.md) | Research shape (not adopted) |
 | [`external-extrapolation-preregistration.md`](external-extrapolation-preregistration.md) | T4 prereg + appendices |
