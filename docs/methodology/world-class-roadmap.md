@@ -109,6 +109,8 @@ Rule reinforced: **E3 ≠ E4**. Mapping ≠ attributable value. Judgment ≠ aut
 | [`e3-holdout-nominees-round2.md`](e3-holdout-nominees-round2.md) | E3-N Round 2（部分已编码 N1/N2/N5） |
 | [`e3-holdout-nominees-round3.md`](e3-holdout-nominees-round3.md) | E3-P Round 3（P1/P3/P4 encoded R3） |
 | [`e4-holdout-nominees-round1.md`](e4-holdout-nominees-round1.md) | E4 Round 1（N1/N2/N5 encoded） |
+| [`t4-international-holdout-nominees-round1.md`](t4-international-holdout-nominees-round1.md) | T4 INT Round 1 US/EP（INT-1/3/5 encoded） |
+| [`t4-international-holdout-nominees-round2.md`](t4-international-holdout-nominees-round2.md) | T4 INT Round 2 JP/KR（INT-7–12 nominate only） |
 | [`../../analysis/non-award-validation/holdout-e4-n125-synthesis.md`](../../analysis/non-award-validation/holdout-e4-n125-synthesis.md) | E4-N1/N2/N5 synthesis（R5/R5/R2） |
 | [`rights-control-optional-parallel-plan.md`](rights-control-optional-parallel-plan.md) | Optional RC parallel track |
 | [`../roadmap.md`](../roadmap.md) · [`../cold-start-status.md`](../cold-start-status.md) | Track A status |
