@@ -1,7 +1,8 @@
 # T4 International Holdout Nominees — Round 1（US / EP）
 
-> Status: **nominate only**（2026-10-14 Asia/Shanghai）  
-> **Not encoded.** Formal: V0.7 / schema 1.0 unchanged. **No** V0.8 adopt/freeze.  
+> Status: **INT-1/3/5 encoded**（T0=2026-10-13；2026-10-14 Asia/Shanghai）· INT-2/4/6 仍提名  
+> Formal: V0.7 / schema 1.0 unchanged. **No** V0.8 adopt/freeze.  
+> Outcomes：[`../../analysis/non-award-validation/holdout-int-135-synthesis.md`](../../analysis/non-award-validation/holdout-int-135-synthesis.md) — **INT-1 R0 · INT-3 R3 · INT-5 R5**。  
 > Verified bibliographic grants via iphouse `search_patents`；E3/E4 公开锚点经 FDA Orange Book / D.Del. judgment / BGH 意见等。  
 > **Excludes** all existing `data/ledgers/*` US/EP（含 i4i、mRNA、CRISPR、AVC、GMR、LIB、OLED、PageRank、Amgen、Apple/Samsung、Synqor、road-milling 等）及全部 CN holdout。
 
@@ -63,12 +64,18 @@ CN T4 波已验证拒抬 / claims-check / 单件判赔纪律。本轮把同一�
 
 ---
 
-## Encoding gate（only if user confirms）
+## Encoding status
 
-1. Confirm subset（建议先 **INT-3 + INT-5 + INT-1** 覆盖 b/c/a；或加 INT-4/INT-6 做 EP）。  
-2. Fix T0.  
-3. Formal V0.7 ledger；judgment≠auto R5；Orange Book≠auto E4。  
-4. Synthesis；**no** V0.8；**no** encode in this PR.
+| ID | Encoded? | R | Note |
+|---|---|---|---|
+| **INT-1** | yes | **R0** | TearLab Osmolarity ≠ LFA/analyte claim；claims FAIL |
+| INT-2 | no | — | 仍提名 |
+| **INT-3** | yes | **R3** | OB Drug product + PI 辅料对齐 claim 1/36/37；无 E4 |
+| INT-4 | no | — | 仍提名（EP 同族） |
+| **INT-5** | yes | **R5** | 单件 royalty ≈$1.80M + 裁判 E3；争议情境 |
+| INT-6 | no | — | 仍提名（EP/DE） |
+
+纪律已落实：产品叙事≠E3；OB≠自动 E4；判赔≠自动 R5（本案 INT-5 条件满足）。**no** V0.8。
 
 ## Related
 

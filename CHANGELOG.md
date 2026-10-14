@@ -2,6 +2,19 @@
 
 ## Unreleased
 
+### Theme: T4 encode INT-1/3/5（T0=2026-10-13）
+
+#### Added
+- Ledgers/evidence/sources：`holdout-INT1-US11536707`（TearLab → **R0**）、`holdout-INT3-US8802735`（Aubagio OB DP → **R3**）、`holdout-INT5-US10376407`（PureWick royalty → **R5**）。
+- Notes：`analysis/non-award-validation/holdout/INT{1,3,5}-*.md`；synthesis：`holdout-int-135-synthesis.md`。
+
+#### Notes
+- INT-1：市售 Osmolarity ≠ 本专利 LFA/analyte 整合 → claims FAIL → R0。
+- INT-3：Orange Book Drug product + PI 辅料对齐 claim 1/36/37 → R3；**无** E4 / 不抬 R4/R5。
+- INT-5：D.Del. 单件 royalty ≈USD 1.80M + 裁判 E3 → R5（争议情境；非内在定价）。
+- INT-2/4/6 **未**编码。**未** adopt V0.8。
+
+
 ### Theme: T4 International holdout nominees Round 1（US/EP；nominate only）
 
 #### Added
