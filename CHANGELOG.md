@@ -2,6 +2,18 @@
 
 ## Unreleased
 
+### Theme: T4 International holdout nominees Round 2（JP/KR；nominate only）
+
+#### Added
+- `docs/methodology/t4-international-holdout-nominees-round2.md`（INT-7–INT-12：MTG Style/SIXPAD R0；Kerendia/Wainua Green List E3；ReFa Art.102 + Golfzon Art.128 E4）。
+
+#### Changed
+- `world-class-roadmap.md` / `docs/roadmap.md`：T4 INT Round 2 提名指针。
+
+#### Notes
+- **仅提名**；不编码；避开 CN holdout 与 Round 1 INT 集合。JP 无药品专利登记簿 → E3 以 KR MFDS Green List 为主。**未** adopt V0.8。
+
+
 ### Theme: T2 scenario selection decision tree
 
 #### Added
