@@ -23,6 +23,8 @@
 | 交易或报告公允价值 | 「值多少钱」 | **IVS 等下游**；非 V0.7 正式输出 |
 | 政策/奖项标签 | 评审或统计口径 | Track B；≠ 通用价值 |
 
+建构×场景选用短表：[`t1-construct-scenario-matrix.md`](t1-construct-scenario-matrix.md)。
+
 规则：**换建构 = 换问题**。把 IVS 金额、引证分、金奖结果直接叫作「专利价值」，属于建构偷换。
 
 ## 2. Two Clocks（双时钟）

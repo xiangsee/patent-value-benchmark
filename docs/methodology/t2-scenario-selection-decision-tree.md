@@ -85,6 +85,7 @@ flowchart TD
 
 - 矩阵：[`existing-models-comparison-matrix.md`](existing-models-comparison-matrix.md)  
 - #67 深化备忘：[`t2-v07-to-ivs-oecd-practice-schools.md`](t2-v07-to-ivs-oecd-practice-schools.md)  
-- T1：[`t1-theory-memo-value-construct.md`](t1-theory-memo-value-construct.md) · [`t1-frand-damages-vs-r5-fmv.md`](t1-frand-damages-vs-r5-fmv.md)（FRAND/判赔 ≠ R5/FMV）  
+- T1：[`t1-theory-memo-value-construct.md`](t1-theory-memo-value-construct.md) · [`t1-frand-damages-vs-r5-fmv.md`](t1-frand-damages-vs-r5-fmv.md) · [`t1-construct-scenario-matrix.md`](t1-construct-scenario-matrix.md)  
+- 走查例：[`t2-decision-tree-walkthrough-int5-int9.md`](t2-decision-tree-walkthrough-int5-int9.md)（INT-5 / INT-9）  
 - Formal：[`model-v0.7.md`](model-v0.7.md) · [`evidence-levels.md`](evidence-levels.md)  
 - 四轨：[`world-class-roadmap.md`](world-class-roadmap.md)
