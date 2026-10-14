@@ -1,7 +1,7 @@
 # T2 深化备忘：V0.7 ↔ IVS 210 / OECD 无形资产 / 美欧中实务学派
 
 > Status: **research comparison deepen v0**（2026-10-14 Asia/Shanghai）  
-> Track: **T2** · 承接 [`existing-models-comparison-matrix.md`](existing-models-comparison-matrix.md) · 场景树 [`t2-scenario-selection-decision-tree.md`](t2-scenario-selection-decision-tree.md)  
+> Track: **T2** · 承接 [`existing-models-comparison-matrix.md`](existing-models-comparison-matrix.md) · 场景树 [`t2-scenario-selection-decision-tree.md`](t2-scenario-selection-decision-tree.md) · DEMPE⊥E3 [`t1-dempe-vs-claims-e3e4.md`](t1-dempe-vs-claims-e3e4.md)  
 > Formal: **V0.7** + **schema 1.0** · **未** adopt / freeze V0.8 · **不**输出美元总分  
 > 引用纪律：下列来源均经公开网页 / PDF 核验；**无**伪造文献或页码。本页**不是**合规意见或估值结论。
 
@@ -57,7 +57,7 @@ V0.7 是**上游证据—实现闸门**；通过后才适合进入金额 / 费�
 1. **先建构、再 T0、再证据**（V0.7）→ 再谈金额（IVS / 中评协 / SSVS）。  
 2. **Orange Book / 说明书 / 判决点名** 可支撑 E3；**不等于** IVS 公允价值。  
 3. **合理许可费 / 判赔 / FRAND 区间** 可作 E4 线索；**不等于** 专利资产市值，也**不**自动 R5（仍要 E3 + exact_patent 指标）。  
-4. **OECD DEMPE** 解释集团回报分配；**不能**代替 claims-check。  
+4. **OECD DEMPE** 解释集团回报分配；**不能**代替 claims-check（展开 → [`t1-dempe-vs-claims-e3e4.md`](t1-dempe-vs-claims-e3e4.md)）。  
 5. **引证 / ML 分** 仍是 Screening，落在矩阵「拒绝对齐」清单。
 
 ## 4. 非目标
@@ -65,6 +65,10 @@ V0.7 是**上游证据—实现闸门**；通过后才适合进入金额 / 费�
 - 不 adopt V0.8；不改 schema 1.0；不编码新 ledger。  
 - 不声称本备忘可替代持证评估师 / 税务意见 / 法律意见。  
 - 场景选用决策树：[`t2-scenario-selection-decision-tree.md`](t2-scenario-selection-decision-tree.md)（冷启动 / IVS / OECD TP / FRAND / 诉讼损害）。
+
+## 4.1 相关
+
+- T1：[`t1-theory-memo-value-construct.md`](t1-theory-memo-value-construct.md) · [`t1-dempe-vs-claims-e3e4.md`](t1-dempe-vs-claims-e3e4.md)
 
 ## 5. 已核验来源（URL）
 
