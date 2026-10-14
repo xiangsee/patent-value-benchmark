@@ -2,6 +2,19 @@
 
 ## Unreleased
 
+### Theme: T4 encode INT-14/16/18（T0=2026-10-13；EP/UK Round 3 · second trio）
+
+- Ledgers/evidence/sources：`holdout-INT14-EP3934499`（Numatic Henry → **R0**）、`holdout-INT16-EP1613296`（Xadago SPC 拒绝 → **R0** 诚实 FAIL）、`holdout-INT18-EP1435338`（Anan/Rhodia UK Head1 £85k → **R5**）。
+- Analysis：`holdout/INT14-EP3934499.md` / `INT16-EP1613296.md` / `INT18-EP1435338.md`；synthesis `holdout-int-141618-synthesis.md`。
+- `t4-international-holdout-nominees-round3.md` / `world-class-roadmap` / `docs/roadmap` / `t1-t4-executive-scorecard`：Round 3 六件均已编码；n=36。
+- **未**改动 INT-13/15/17；**未** adopt V0.8。
+
+诚实结论：
+- INT-14：Henry/Hetty 罐式+HepaFlo ≠ EP3934499 end-cap 滤芯圆筒腔 claim → claims FAIL → R0。
+- INT-16：Claim=safinamide+左旋多巴/PDI 组合产品；Xadago MA=单方；SPC/GB15/046 Art 3(b) 拒绝 → 诚实 FAIL → R0（对偶 INT-15）。
+- INT-18：EWHC 裁判 E3 + **仅** UK Head1 £85k 和解记 E4（海外诉请头驳回 ≠ E4）→ R5（争议情境；非 FMV；territoriality）。
+
+
 ### Theme: T4 encode INT-13/15/17（T0=2026-10-13；EP/UK Round 3）
 
 - Ledgers/evidence/sources：`holdout-INT13-EP3941306`（Dyson → **R0**）、`holdout-INT15-EP1787639`（Fostair UK SPC → **R3**）、`holdout-INT17-EP2430238`（Geofabrics £13.4M → **R5**）。

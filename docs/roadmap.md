@@ -49,7 +49,7 @@
 
 > **T4 International Round 2（JP/KR）**：**INT-7/9/11 已编码**（R0/R3/R5）；INT-8/10/12 仍提名 — [`methodology/t4-international-holdout-nominees-round2.md`](methodology/t4-international-holdout-nominees-round2.md)；synthesis [`../analysis/non-award-validation/holdout-int-7911-synthesis.md`](../analysis/non-award-validation/holdout-int-7911-synthesis.md)。
 >
-> **T4 International Round 3（EP/UK）**：**INT-13/15/17 已编码**（R0/R3/R5）；INT-14/16/18 仍提名 — [`methodology/t4-international-holdout-nominees-round3.md`](methodology/t4-international-holdout-nominees-round3.md)；synthesis [`../analysis/non-award-validation/holdout-int-131517-synthesis.md`](../analysis/non-award-validation/holdout-int-131517-synthesis.md)。
+> **T4 International Round 3（EP/UK）**：**INT-13–18 全编码**（R0×3 / R3×1 / R5×2）— [`methodology/t4-international-holdout-nominees-round3.md`](methodology/t4-international-holdout-nominees-round3.md)；synthesis [`../analysis/non-award-validation/holdout-int-131517-synthesis.md`](../analysis/non-award-validation/holdout-int-131517-synthesis.md) · [`../analysis/non-award-validation/holdout-int-141618-synthesis.md`](../analysis/non-award-validation/holdout-int-141618-synthesis.md)。
 
 ### 当前正式架构：V0.7
 
