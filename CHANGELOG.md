@@ -2,6 +2,19 @@
 
 ## Unreleased
 
+### Theme: T4 E3-P nominees Round 3（PASS-oriented；nominate only）
+
+#### Added
+- Round 3 holdout 提名：`docs/methodology/e3-holdout-nominees-round3.md`（E3-P1–P6；复立坦 / 益气通窍 / 小儿紫贝宣肺 / 芪防鼻通 / 九味止咳 / 阿利沙坦酯吲达帕胺用途权）。
+- 含 N1/N2/N5 失败原因说明 + Round 3 选案过滤器（显式 ZL + 规格/处方/说明书要素）。
+
+#### Changed
+- `world-class-roadmap.md` / `docs/roadmap.md`：T4 Round 3 提名指针。
+
+#### Notes
+- **仅提名**；不编码；不 adopt V0.8；不冻 schema。避开 H/E3-N 与既有 ledgers。
+
+
 ### Theme: T1 theory memo v0（Value Construct / Two Clocks / RC⊥R）
 
 #### Added
