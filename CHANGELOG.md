@@ -2,6 +2,19 @@
 
 ## Unreleased
 
+### Theme: T4 encode E4-N1/N2/N5（T0=2026-10-13）
+
+#### Added
+- Ledgers/evidence/sources：`holdout-E4N1-ZL201410204545.4`（汇顶判赔 → **R5**）、`holdout-E4N2-ZL200680012412.0`（维美德判赔 → **R5**）、`holdout-E4N5-ZL202010875349.5`（奥普具名许可 → **R2**）。
+- Synthesis：`analysis/non-award-validation/holdout-e4-n125-synthesis.md`。
+
+#### Notes
+- 有判赔≠自动 R5：N1/N2 因单件 + 裁判 E3 + exact_patent 指标才升 R5；金额=争议情境。
+- N2：法院采用侵权获利，**未**采信原告销售损失。
+- N5：许可对价记服务费 + 四件捆 → 不升 E4/R5。
+- **未** adopt V0.8。
+
+
 ### Theme: T4 E4 holdout nominees Round 1（nominate only）
 
 #### Added

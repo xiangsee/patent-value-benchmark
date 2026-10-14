@@ -20,7 +20,7 @@ Goal: extend Xiangsee Patent Value Benchmark toward a **world-class, evidence-fi
 | **T1 Theory research** | What *kinds* of patent value exist, and which layers must stay separate? | **memo v0 done** → [`t1-theory-memo-value-construct.md`](t1-theory-memo-value-construct.md)；CF analysis-first 仍见导读 | Formal: V0.7 four layers. Research: design draft + RC/RP/CF overviews |
 | **T2 Comparison of existing models** | How do IVS / royalty / citation / ML score / award proxies / litigation damages differ from us? | **v0 done** → [`existing-models-comparison-matrix.md`](existing-models-comparison-matrix.md)；下一版场景决策树 | Docs under `docs/methodology/` + `analysis/theory/`；not schema |
 | **T3 Own innovation testing** | Do RC / RP / Network / Horizon / optional parallel RC improve diagnosis without false inheritance? | Probes P1–P6 (done); optional RC parallel plan (Gate 0); CF non-textbook note; **no** V0.8 adopt by default | Research / experimental schemas only |
-| **T4 Real-world effect validation** | On unseen patents, does the model refuse false R3+ and allow honest R3 when E3 maps—and can it reach **E4** without inheritance? | H1–H9 R0；E3-A/B R3、C R0；N1/N2/N5 R0；P1/P3/P4 R3；**next: E4 nominees** ([`e4-holdout-nominees-round1.md`](e4-holdout-nominees-round1.md)) | Formal V0.7 when encoding; prereg: [`external-extrapolation-preregistration.md`](external-extrapolation-preregistration.md) |
+| **T4 Real-world effect validation** | On unseen patents, does the model refuse false R3+ and allow honest R3 when E3 maps—and can it reach **E4** without inheritance? | H1–H9 R0；E3-A/B R3、C R0；N1/N2/N5 R0；P1/P3/P4 R3；E4-N1/N2 **R5**、E4-N5 **R2**（T0=2026-10-13）；N3/N4 仍提名 ([`e4-holdout-nominees-round1.md`](e4-holdout-nominees-round1.md) · [`../../analysis/non-award-validation/holdout-e4-n125-synthesis.md`](../../analysis/non-award-validation/holdout-e4-n125-synthesis.md)) | Formal V0.7 when encoding; prereg: [`external-extrapolation-preregistration.md`](external-extrapolation-preregistration.md) |
 
 Tracks are **parallel**. Winning on T3 probes does not auto-adopt V0.8. Winning on T4 discipline does not equal prediction of future cash.
 
@@ -42,7 +42,7 @@ Promotion rule: **explicit user decision** for adopt / freeze / S1. Round 2 read
 
 ## 4. Near-term milestones (next 1–2 cycles)
 
-1. **T4 nominations / encode** — 已完成：H1–H9（纪律 R0）；E3-A/B/C（R3/R3/R0）；E3-N1/N2/N5（R0）；E3-P1/P3/P4（R3）。**新：E4 Round 1 提名 only** → [`e4-holdout-nominees-round1.md`](e4-holdout-nominees-round1.md)（判赔 / 权利人产品销售损失 / 具名 ZL 许可费）。
+1. **T4 nominations / encode** — 已完成：H1–H9（纪律 R0）；E3-A/B/C（R3/R3/R0）；E3-N1/N2/N5（R0）；E3-P1/P3/P4（R3）。**E4 Round 1**：N1/N2/N5 **已编码**（R5/R5/R2）→ [`../../analysis/non-award-validation/holdout-e4-n125-synthesis.md`](../../analysis/non-award-validation/holdout-e4-n125-synthesis.md)；N3/N4 仍提名。
 2. **T2 comparison v0** — ~~one-page matrix~~ → [`existing-models-comparison-matrix.md`](existing-models-comparison-matrix.md)（2026-10-14）。下一版：场景选用决策树。
 3. **T1 theory memo** — ~~short note~~ → [`t1-theory-memo-value-construct.md`](t1-theory-memo-value-construct.md)（2026-10-14）。下一版：建构 × 场景选用表。
 4. **T3 maintenance** — optional RC remains optional; no-ruling records allowed (#49); do not start S1 without Gate decision.
@@ -55,7 +55,8 @@ H1–H9     → R0 ×9     discipline: refuse false lift
 E3-A/B/C  → R3/R3/R0  claims-check works both ways
 E3-N1/2/5 → R0 ×3     narrative ≠ claim elements
 E3-P1/3/4 → R3 ×3     NHSA ZL + 规格/处方 → honest E3 (still no E4)
-E4-N1–N5  → nominate  damages / named sales-loss / named-ZL license
+E4-N1/N2  → R5 ×2   single-ZL court E3+E4 (damages≠intrinsic price)
+E4-N5     → R2       named license but service-fee bundle; no product E3
 ```
 
 Rule reinforced: **E3 ≠ E4**. Mapping a product to a patent does not create attributable value. Encode E4 only with user-confirmed IDs and T0.
@@ -80,7 +81,7 @@ Rule reinforced: **E3 ≠ E4**. Mapping a product to a patent does not create at
 | E3-A/B → R3; E3-C → R0 | Claims-check can pass **and** fail | R4/R5 |
 | E3-N1/N2/N5 → R0 | Brand/process/feature ≠ claim elements | Mid-tier E3 density |
 | E3-P1/P3/P4 → R3 (plausible) | Explicit ZL + dose/处方 can clear E3 | **Still no E4** (no attributable ¥) |
-| E4 Round 1 nominees | Candidate damages / sales-loss / named-ZL license | Not yet encoded; no auto-R4/R5 |
+| E4-N1/N2 → R5; E4-N5 → R2 | Court E4 can clear R5 **with** E3; named license alone stays R2 | N3/N4 still nominate |
 
 ## 7. Operating rules for agents / contributors
 
@@ -100,7 +101,8 @@ Rule reinforced: **E3 ≠ E4**. Mapping a product to a patent does not create at
 | [`external-extrapolation-preregistration.md`](external-extrapolation-preregistration.md) | T4 prereg + appendices |
 | [`e3-holdout-nominees-round2.md`](e3-holdout-nominees-round2.md) | E3-N Round 2（部分已编码 N1/N2/N5） |
 | [`e3-holdout-nominees-round3.md`](e3-holdout-nominees-round3.md) | E3-P Round 3（P1/P3/P4 encoded R3） |
-| [`e4-holdout-nominees-round1.md`](e4-holdout-nominees-round1.md) | E4 Round 1 nominees (**not encoded**) |
+| [`e4-holdout-nominees-round1.md`](e4-holdout-nominees-round1.md) | E4 Round 1（N1/N2/N5 encoded） |
+| [`../../analysis/non-award-validation/holdout-e4-n125-synthesis.md`](../../analysis/non-award-validation/holdout-e4-n125-synthesis.md) | E4-N1/N2/N5 synthesis（R5/R5/R2） |
 | [`rights-control-optional-parallel-plan.md`](rights-control-optional-parallel-plan.md) | Optional RC parallel track |
 | [`../roadmap.md`](../roadmap.md) · [`../cold-start-status.md`](../cold-start-status.md) | Track A status |
 | [`../research-tracks.md`](../research-tracks.md) | Track A / B boundary |
