@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+### Theme: T4 International holdout nominees Round 1（US/EP；nominate only）
+
+#### Added
+- `docs/methodology/t4-international-holdout-nominees-round1.md`（INT-1–INT-6：TearLab/S&D Coffee R0；Aubagio US+EP E3；PureWick royalty + EP1070223 E4）。
+- `world-class-roadmap` / `docs/roadmap`：T4 international near-term pointer。
+
+#### Notes
+- **仅提名**；不编码；避开仓库既有 US/EP ledger 集合。
+
+
 ### Theme: T3 P8 Network relation vocabulary v0
 
 #### Added
