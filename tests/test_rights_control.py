@@ -36,6 +36,9 @@ class RightsControlValidationTests(unittest.TestCase):
             self.ledger_ids,
         )
 
+    def record_with_events(self):
+        return next(r for r in self.records if r["adjudication_events"])
+
     def test_all_backfill_records_validate(self):
         failures = {}
         for record in self.records:
@@ -55,25 +58,25 @@ class RightsControlValidationTests(unittest.TestCase):
         self.assertEqual([], self.validate(record))
 
     def test_event_after_t0_is_rejected(self):
-        record = copy.deepcopy(self.records[0])
+        record = copy.deepcopy(self.record_with_events())
         record["adjudication_events"][0]["decision_date"] = "2099-01-01"
         errors = self.validate(record)
         self.assertTrue(any("occurs after T0" in e for e in errors))
 
     def test_missing_evidence_is_rejected(self):
-        record = copy.deepcopy(self.records[0])
+        record = copy.deepcopy(self.record_with_events())
         record["evidence_ids"].append("E-DOES-NOT-EXIST")
         errors = self.validate(record)
         self.assertTrue(any("missing evidence_id E-DOES-NOT-EXIST" in e for e in errors))
 
     def test_score_field_is_rejected(self):
-        record = copy.deepcopy(self.records[0])
+        record = copy.deepcopy(self.record_with_events())
         record["rights_control_score"] = 99
         errors = self.validate(record)
         self.assertTrue(any("rights_control_score" in e for e in errors))
 
     def no_ruling_record(self):
-        # In-memory fixture on an existing ordinary contrib ledger; not a data file.
+        # In-memory twin of data/experimental/rights-control/fixture-no-ruling-ordinary-r0.jsonl.
         return {
             "rights_control_id": "RC-TEST-NO-RULING-ZL202110873119X",
             "schema_version": "experimental-0.1",
@@ -113,22 +116,63 @@ class RightsControlValidationTests(unittest.TestCase):
         self.assertTrue(any("no-ruling record requires" in e for e in errors))
 
     def test_not_applicable_finality_with_events_is_rejected(self):
-        record = copy.deepcopy(self.records[0])
+        record = copy.deepcopy(self.record_with_events())
         record["finality_state"]["status"] = "not_applicable"
         errors = self.validate(record)
         self.assertTrue(any("requires zero adjudication_events" in e for e in errors))
 
     def test_value_carrier_mapping_is_optional(self):
-        record = copy.deepcopy(self.records[0])
+        record = copy.deepcopy(self.record_with_events())
         record.pop("value_carrier_mapping", None)
         self.assertEqual([], self.validate(record))
 
+    def test_on_disk_no_ruling_fixture_validates(self):
+        """data/experimental/rights-control/fixture-no-ruling-ordinary-r0.jsonl (#49)."""
+        fixture = next(
+            (
+                r
+                for r in self.records
+                if r["rights_control_id"]
+                == "RC-NO-RULING-ZL202110873119X-T0-2026-10-12"
+            ),
+            None,
+        )
+        self.assertIsNotNone(fixture, "missing on-disk no-ruling RC fixture")
+        self.assertEqual([], fixture["adjudication_events"])
+        self.assertEqual("not_applicable", fixture["finality_state"]["status"])
+        self.assertEqual("not_applicable", fixture["finality_state"]["formal_effect"])
+        self.assertNotIn("value_carrier_mapping", fixture)
+        self.assertEqual([], self.validate(fixture))
+
+    def test_on_disk_no_ruling_fixture_distinct_from_h9(self):
+        # H9 has rulings; ordinary no-ruling fixture must stay empty-events.
+        h9 = next(
+            r
+            for r in self.records
+            if r["rights_control_id"].startswith("RC-HOLDOUT-H9")
+        )
+        self.assertTrue(h9["adjudication_events"])
+        no_ruling = next(
+            r
+            for r in self.records
+            if r["rights_control_id"]
+            == "RC-NO-RULING-ZL202110873119X-T0-2026-10-12"
+        )
+        self.assertEqual([], no_ruling["adjudication_events"])
+
     def test_rc_not_required_for_ordinary_ledgers(self):
-        # Ordinary contrib ledgers have no RC record and the formal surface stays valid.
+        # Ordinary contrib ledgers may omit RC entirely; one optional no-ruling
+        # fixture may exist for #49 validation without making RC required.
         rc_ledgers = {lid for r in self.records for lid in r["source_ledger_ids"]}
         contrib = {lid for lid in self.ledger_ids if lid.startswith("LEDGER-ZL")}
         self.assertTrue(contrib)
-        self.assertFalse(contrib & rc_ledgers)
+        # Only the explicit no-ruling research fixture may attach to ordinary ZL.
+        ordinary_with_rc = contrib & rc_ledgers
+        self.assertEqual(
+            {"LEDGER-ZL202110873119.X"},
+            ordinary_with_rc,
+            "ordinary ZL ledgers must not require RC; only #49 no-ruling fixture allowed",
+        )
 
 
 if __name__ == "__main__":
