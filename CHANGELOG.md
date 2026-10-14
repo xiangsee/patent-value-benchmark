@@ -2,6 +2,18 @@
 
 ## Unreleased
 
+### Theme: T2 existing-models comparison matrix v0（research/docs）
+
+#### Added
+- 既有估值/评估族系 vs V0.7 一页矩阵：`docs/methodology/existing-models-comparison-matrix.md`（IVS/特许/成本/引证/ML打分/奖项/诉讼损害/期权）。
+
+#### Changed
+- `world-class-roadmap.md` / `docs/roadmap.md`：T2 v0 完成指针。
+
+#### Notes
+- 不编码；不 adopt V0.8；不冻 schema。
+
+
 ### Theme: World-class roadmap + E3-N nominees Round 2（research/docs；未编码）
 
 #### Added
