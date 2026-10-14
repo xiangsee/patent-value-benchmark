@@ -1,7 +1,8 @@
 # E4 Holdout Nominees — Round 1（realization / attribution；not just E3 map）
 
-> Status: **nominate only**（2026-10-14 Asia/Shanghai）  
-> **Not encoded.** Formal: V0.7 / schema 1.0 unchanged. **No** V0.8 adopt/freeze.  
+> Status: **N1/N2/N5 encoded**（T0=2026-10-13；2026-10-14 Asia/Shanghai）· N3/N4 仍提名  
+> Formal: V0.7 / schema 1.0 unchanged. **No** V0.8 adopt/freeze.  
+> Outcomes：[`../../analysis/non-award-validation/holdout-e4-n125-synthesis.md`](../../analysis/non-award-validation/holdout-e4-n125-synthesis.md) — **N1 R5 · N2 R5 · N5 R2**。  
 > Verified grant **B/C** via iphouse `search_patents`; court facts via `search_cases` / `get_case_detail`.  
 > Excludes: H1–H9, E3-A/B/C, E3-N*, E3-P*, and all `data/ledgers/*`（含 non-award / contrib / example）。
 
@@ -54,12 +55,17 @@ Suggested T0 if later confirmed: **2026-10-13**（same holdout clock） unless u
 | N4 | iphouse case id `1755758` · patent CN101921941B · 川01知民初505 |
 | N5 | 奥普光电关联交易公告（2024-10）· patent CN111998776B · 同合同姐妹 ZL 仅作背景，编码时以用户确认的主键为准 |
 
-## Encoding gate（if user confirms）
+## Encoding status
 
-1. Confirm ID subset（建议先 **N1 + N2 + N5**，覆盖 damages / sales-loss / license 三类）。  
-2. Fix T0.  
-3. Encode formal ledger under V0.7；**E4 需独立于 E3**：即使映射不清，也不要用判赔金额回填假 E3；有判赔≠自动 R5（仍要 attribution / observability 纪律）。  
-4. Synthesis；**no** V0.8 adopt；**no** encode in this PR.
+| ID | Encoded? | R | Note |
+|---|---|---|---|
+| **E4-N1** | yes | **R5** | 单件判赔 + 裁判 E3；金额=争议情境 |
+| **E4-N2** | yes | **R5** | 单件判赔；法院用**侵权获利**（非原告销售损失） |
+| E4-N3 | no | — | 仍提名 |
+| E4-N4 | no | — | 仍提名（双专利残留） |
+| **E4-N5** | yes | **R2** | 具名许可但服务费捆 + 无 E3 产品映射 |
+
+纪律已落实：有判赔≠自动 R5；N5 许可费≠自动 E4。**no** V0.8。
 
 ## Related
 
