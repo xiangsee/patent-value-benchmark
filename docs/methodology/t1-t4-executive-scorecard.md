@@ -16,7 +16,7 @@
 | **T1 理论** | 🟢 文档成套 | Construct + DEMPE⊥E3–E4 + FRAND/判赔≠R5/FMV + **建构×场景表** | 金额学派字段 cheat-sheet 仍可加深 | 可选：与 IVS/OECD 字段级一行对照 |
 | **T2 比较** | 🟢 导航可用 | 矩阵 + IVS/OECD + 决策树 + **INT-5/9 走查** | 仍可加更多法域例 | 可选：再补 E4-N5（许可捆包）走树 |
 | **T3 探针** | 🟡 研究-only | P1–P8；RC 可选+#49 无裁决夹具 | Gate 0；未升格；无 S1 | **保持 Gate 0**；禁借 T4 成功 adopt |
-| **T4 外推** | 🟢 小 N 成波 | **30** 件已编码（CN24+US3+JP2+KR1） | 未编码提名；H-E3 盲评未开跑 | 用户确认后再 encode；或开 H-E3 跑 |
+| **T4 外推** | 🟢 小 N 成波 | **30** 件已编码；**Round 3 EP/UK 提名 INT-13–18** | 未编码提名（含 R3）；H-E3 未开跑 | 用户确认后再 encode；或开 H-E3 跑 |
 
 **Holdout 计数（#74）：** 合计 **n=30** · R0×18 · R2×1 · R3×7 · R5×4 · 仍仅提名：INT-2/4/6、INT-8/10/12、E4-N3/N4。
 
@@ -50,9 +50,9 @@
 
 | | |
 |---|---|
-| **Done** | 预注册；H→E3→E4 CN 波；INT R1/R2 部分编码；跨法域合成 **#74（n=30）**；H-E3 盲评协议稿 [`t4-inter-rater-blind-protocol-h-e3.md`](t4-inter-rater-blind-protocol-h-e3.md) |
-| **Gaps** | INT/E4 提名未编码；H-E3 **未开跑**；冷启动新人一致率未证；EP 等法域空 |
-| **Next knife** | （A）用户确认 ID+T0 后 encode 下一枚；或（B）批准案表后开 H-E3 双人盲评——二者都需另批，本卡不授权 |
+| **Done** | 预注册；H→E3→E4 CN 波；INT R1/R2 部分编码；跨法域合成 **#74（n=30）**；H-E3 协议稿；**Round 3 EP/UK 提名** [`t4-international-holdout-nominees-round3.md`](t4-international-holdout-nominees-round3.md)（INT-13–18；避开 INT-4/6） |
+| **Gaps** | INT 提名未编码（R1 余 / R2 余 / **R3 全**）；H-E3 **未开跑**；新人一致率未证 |
+| **Next knife** | （A）用户确认 ID+T0 后 encode；或（B）开 H-E3 盲评——本卡不授权 |
 
 ### T4 计数速查（摘自 #74）
 
@@ -83,3 +83,4 @@
 | [`../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md`](../../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md) | #74 跨法域计数与共享阶梯 |
 | [`external-extrapolation-preregistration.md`](external-extrapolation-preregistration.md) | T4 预注册 |
 | [`t4-inter-rater-blind-protocol-h-e3.md`](t4-inter-rater-blind-protocol-h-e3.md) | H-E3 协议（未开跑） |
+| [`t4-international-holdout-nominees-round3.md`](t4-international-holdout-nominees-round3.md) | T4 INT Round 3 EP/UK 提名（INT-13–18） |
