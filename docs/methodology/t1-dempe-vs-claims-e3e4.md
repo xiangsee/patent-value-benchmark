@@ -70,6 +70,7 @@
 | Doc | 角色 |
 |---|---|
 | [`t1-theory-memo-value-construct.md`](t1-theory-memo-value-construct.md) | T1 主备忘：Construct / Two Clocks / RC⊥R / 纪律三原则 |
+| [`t1-frand-damages-vs-r5-fmv.md`](t1-frand-damages-vs-r5-fmv.md) | T1 短备忘：FRAND/判赔 ≠ 自动 R5 / ≠ FMV |
 | [`t2-v07-to-ivs-oecd-practice-schools.md`](t2-v07-to-ivs-oecd-practice-schools.md) | T2：V0.7 ↔ IVS 210 / OECD Ch. VI / 美欧中；DEMPE 不能代替 claims-check |
 | [`t2-scenario-selection-decision-tree.md`](t2-scenario-selection-decision-tree.md) | 何时走 V0.7 vs IVS / OECD TP / FRAND / 判赔 |
 | [`evidence-levels.md`](evidence-levels.md) · [`model-v0.7.md`](model-v0.7.md) | E1–E5 与正式架构 |
