@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+### Theme: T4 cross-jurisdiction synthesis + EP/UK Round 3
+
+- 更新 [`analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md`](analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md)：纳入 INT-13–18；合计 **n=36**（R0×21 · R2×1 · R3×8 · R5×6）；五法域表 + SPC 对偶 / 品牌拒抬 / territorial E4 课。
+- 轻触 `t1-t4-executive-scorecard` / `world-class-roadmap`：跨法域指针与 n=36 快照对齐（**无**新编码）。
+- **未**编码 INT-2/4/6/8/10/12；**未**开 H-E3；**未** adopt V0.8。
+
+
 ### Theme: T4 encode INT-14/16/18（T0=2026-10-13；EP/UK Round 3 · second trio）
 
 - Ledgers/evidence/sources：`holdout-INT14-EP3934499`（Numatic Henry → **R0**）、`holdout-INT16-EP1613296`（Xadago SPC 拒绝 → **R0** 诚实 FAIL）、`holdout-INT18-EP1435338`（Anan/Rhodia UK Head1 £85k → **R5**）。
