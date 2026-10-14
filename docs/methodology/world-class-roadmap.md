@@ -46,7 +46,8 @@ Promotion rule: **explicit user decision** for adopt / freeze / S1. Round 2 read
 2. **T2 comparison** — matrix v0 → [`existing-models-comparison-matrix.md`](existing-models-comparison-matrix.md)；深化备忘 → [`t2-v07-to-ivs-oecd-practice-schools.md`](t2-v07-to-ivs-oecd-practice-schools.md)；**场景选用决策树** → [`t2-scenario-selection-decision-tree.md`](t2-scenario-selection-decision-tree.md)（2026-10-14）。
 3. **T1 theory memo** — [`t1-theory-memo-value-construct.md`](t1-theory-memo-value-construct.md)；**DEMPE ⊥ claims-check / E3–E4** → [`t1-dempe-vs-claims-e3e4.md`](t1-dempe-vs-claims-e3e4.md)（2026-10-14）。下一版：建构 × 场景选用表。
 4. **T3 next step** — P7 Horizon + **P8 Network relation vocabulary** → [`v0.8-probes/p8-network-relation-vocabulary-v0.md`](v0.8-probes/p8-network-relation-vocabulary-v0.md)；RC 仍可选；**no-ruling on-disk fixture**（#49 规则）已落地；**不**启动 S1/S2/S3；**不** adopt V0.8。
-5. **Data hygiene** — keep formal CI green; experimental validators separate; no silent schema drift.
+5. **T4 H-E3 inter-rater** — dual-coder blind protocol → [`t4-inter-rater-blind-protocol-h-e3.md`](t4-inter-rater-blind-protocol-h-e3.md)（docs only；开跑需另批案表）。
+6. **Data hygiene** — keep formal CI green; experimental validators separate; no silent schema drift.
 
 ## 4.0 T1–T4 progress board（through PR #72）
 
@@ -57,7 +58,7 @@ Promotion rule: **explicit user decision** for adopt / freeze / S1. Round 2 read
 | **T1 Theory** | **memo v0 + DEMPE⊥E3–E4 done** | [#58](https://github.com/xiangsee/patent-value-benchmark/pull/58) Construct / Two Clocks / RC⊥R；[#72](https://github.com/xiangsee/patent-value-benchmark/pull/72) DEMPE ⊥ claims-check / E3–E4 | Construct × scenario selection table；no V0.8 |
 | **T2 Comparison** | **matrix + deepen + scenario tree done** | [#56](https://github.com/xiangsee/patent-value-benchmark/pull/56) matrix v0；[#67](https://github.com/xiangsee/patent-value-benchmark/pull/67) IVS/OECD/practice schools；[#68](https://github.com/xiangsee/patent-value-benchmark/pull/68) scenario decision tree | Optional worked examples only；not schema |
 | **T3 Innovation probes** | **P1–P8 + optional RC plan；no-ruling fixture** | [#49](https://github.com/xiangsee/patent-value-benchmark/pull/49) RC optional + no-ruling rules；[#51](https://github.com/xiangsee/patent-value-benchmark/pull/51) parallel plan；[#50](https://github.com/xiangsee/patent-value-benchmark/pull/50) P5 CF note；[#63](https://github.com/xiangsee/patent-value-benchmark/pull/63) P7 Horizon；[#64](https://github.com/xiangsee/patent-value-benchmark/pull/64) P8 Network vocab；**this PR** on-disk no-ruling RC fixture | Gate 0 only；**no** S1/S2/S3；**no** V0.8 adopt / freeze |
-| **T4 Extrapolation** | **CN + INT R1/R2 encoded；跨法域合成已写** | [#52](https://github.com/xiangsee/patent-value-benchmark/pull/52) prereg；[#53](https://github.com/xiangsee/patent-value-benchmark/pull/53) H1–H9 R0；[#54](https://github.com/xiangsee/patent-value-benchmark/pull/54)–[#62](https://github.com/xiangsee/patent-value-benchmark/pull/62) E3/E4 waves；[#65](https://github.com/xiangsee/patent-value-benchmark/pull/65)/[#66](https://github.com/xiangsee/patent-value-benchmark/pull/66) INT-1/3/5；[#69](https://github.com/xiangsee/patent-value-benchmark/pull/69)/[#71](https://github.com/xiangsee/patent-value-benchmark/pull/71) INT-7/9/11；[#70](https://github.com/xiangsee/patent-value-benchmark/pull/70) roadmap pointers | INT-2/4/6、INT-8/10/12 nominate-only until confirmed；no auto R5 |
+| **T4 Extrapolation** | **CN + INT R1/R2 encoded；跨法域合成已写** | [#52](https://github.com/xiangsee/patent-value-benchmark/pull/52) prereg；[#53](https://github.com/xiangsee/patent-value-benchmark/pull/53) H1–H9 R0；[#54](https://github.com/xiangsee/patent-value-benchmark/pull/54)–[#62](https://github.com/xiangsee/patent-value-benchmark/pull/62) E3/E4 waves；[#65](https://github.com/xiangsee/patent-value-benchmark/pull/65)/[#66](https://github.com/xiangsee/patent-value-benchmark/pull/66) INT-1/3/5；[#69](https://github.com/xiangsee/patent-value-benchmark/pull/69)/[#71](https://github.com/xiangsee/patent-value-benchmark/pull/71) INT-7/9/11；[#70](https://github.com/xiangsee/patent-value-benchmark/pull/70) roadmap pointers | INT-2/4/6、INT-8/10/12 nominate-only；H-E3 盲评协议已稿、未开跑；no auto R5 |
 
 **PR spine #49 → #72（research / encode / docs；none adopt V0.8）**
 
@@ -95,7 +96,7 @@ Rule reinforced: **E3 ≠ E4**. Mapping ≠ attributable value. Judgment ≠ aut
 - Not a **prediction model** for award / IPO / M&A / litigation win.
 - Not **auto-R3+** from product stickers, brand fame, or portfolio size.
 - Not **V0.8 adopted** or schema 1.x extension without explicit freeze.
-- Not proven **inter-rater reliability** for cold-start newcomers (H-E3 still weak).
+- Not proven **inter-rater reliability** for cold-start newcomers (H-E3 still weak；补测协议 → [`t4-inter-rater-blind-protocol-h-e3.md`](t4-inter-rater-blind-protocol-h-e3.md)，**未**开跑).
 - Not global coverage parity (CN holdouts ≠ multi-jurisdiction validity).
 
 ## 6. Evidence already in hand (baseline)
@@ -131,6 +132,7 @@ Rule reinforced: **E3 ≠ E4**. Mapping ≠ attributable value. Judgment ≠ aut
 | [`model-v0.7.md`](model-v0.7.md) | Formal method |
 | [`model-v0.8-design-draft.md`](model-v0.8-design-draft.md) | Research shape (not adopted) |
 | [`external-extrapolation-preregistration.md`](external-extrapolation-preregistration.md) | T4 prereg + appendices |
+| [`t4-inter-rater-blind-protocol-h-e3.md`](t4-inter-rater-blind-protocol-h-e3.md) | T4 H-E3 双编码盲评协议（新人可操作性；未开跑） |
 | [`e3-holdout-nominees-round2.md`](e3-holdout-nominees-round2.md) | E3-N Round 2（部分已编码 N1/N2/N5） |
 | [`e3-holdout-nominees-round3.md`](e3-holdout-nominees-round3.md) | E3-P Round 3（P1/P3/P4 encoded R3） |
 | [`e4-holdout-nominees-round1.md`](e4-holdout-nominees-round1.md) | E4 Round 1（N1/N2/N5 encoded） |
