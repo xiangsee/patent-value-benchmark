@@ -1,7 +1,8 @@
 # E3 Holdout Nominees — Round 3（PASS-oriented；drugs / formulation）
 
-> Status: **nominate only**（2026-10-14 Asia/Shanghai）  
-> **Not encoded.** Formal: V0.7 / schema 1.0 unchanged. **No** V0.8 adopt/freeze.  
+> Status: **partially encoded**（2026-10-14 Asia/Shanghai）  
+> **Encoded:** E3-P1 / P3 / P4（T0=2026-10-13；3/3 R3 plausible）。P2/P5/P6 仍待确认。  
+> Formal: V0.7 / schema 1.0 unchanged. **No** V0.8 adopt/freeze.  
 > Verified grant **B** via iphouse `search_patents` / `get_patent_detail`.  
 > Excludes: H1–H9, E3-A/B/C, E3-N1–N6 (+ NX/NY), all `data/ledgers/*`（含 contrib / non-award / example）。
 
@@ -69,6 +70,16 @@ Prefer a candidate **only if most of the following hold**:
 | **E3-PX** | 枳实总黄酮片 / 青峰 — 提取工艺权为主；公开难对 claim 工艺参数 → **N2-like FAIL 风险高**，默认不进主名单 |
 | **E3-PY** | 淫羊藿素软胶囊 — NHSA 列「晶型」核心专利；PI 无 XRD 峰 → **晶型 claims 易 FAIL** |
 | **E3-PZ** | 器械 datasheet 中坚案 — 本轮未找到足够强的公开参数↔claim 对，留待下轮专门筛 |
+
+## Encoding results (confirmed subset)
+
+| ID | Result |
+|---|---|
+| E3-P1 | **R3** — claims PASS（plausible；缺增溶剂 wt%） |
+| E3-P3 | **R3** — claims PASS（plausible；缺药味克数） |
+| E3-P4 | **R3** — claims PASS（plausible；缺重量份） |
+
+Synthesis: [`../../analysis/non-award-validation/holdout-e3-p134-synthesis.md`](../../analysis/non-award-validation/holdout-e3-p134-synthesis.md).
 
 ## Encoding gate（if user confirms）
 

@@ -2,6 +2,19 @@
 
 ## Unreleased
 
+### Theme: Encode E3-P1/P3/P4 holdouts（T0=2026-10-13；claims PASS plausible → R3）
+
+#### Added
+- E3-P1 复立坦 / ZL202111620840.4 → **R3**；E3-P3 小儿紫贝宣肺 / ZL200810100459.3 → **R3**；E3-P4 芪防鼻通 / ZL202110966782.4 → **R3**。
+- Case notes + synthesis：`analysis/non-award-validation/holdout/E3P*.md` · `holdout-e3-p134-synthesis.md`。
+
+#### Changed
+- `e3-holdout-nominees-round3.md`：标记 P1/P3/P4 已编码。
+
+#### Notes
+- 3/3 claims-check **PASS (plausible)**（NHSA 显式 ZL + 规格/处方对齐；定量 wt%/份量仍缺口）。**不** auto-R4/R5（无 E4）。不 adopt V0.8。
+
+
 ### Theme: T4 E3-P nominees Round 3（PASS-oriented；nominate only）
 
 #### Added
