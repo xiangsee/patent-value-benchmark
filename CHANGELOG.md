@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+### Theme: T4 E4 holdout nominees Round 1（nominate only）
+
+#### Added
+- E4 提名：`docs/methodology/e4-holdout-nominees-round1.md`（E4-N1–N5：汇顶判赔 / 维美德销售损失判赔 / 朗科许可+判赔 / 攀钢工艺判赔 / 光机所→奥普具名许可）。
+- `world-class-roadmap.md` §4.1：H/E3/N/P 学习摘要 + E4 下一跳。
+
+#### Notes
+- **仅提名**；不编码；不 adopt V0.8。E3≠E4；避开已编码 holdout/ledger 集合。
+
+
 ### Theme: Encode E3-P1/P3/P4 holdouts（T0=2026-10-13；claims PASS plausible → R3）
 
 #### Added
