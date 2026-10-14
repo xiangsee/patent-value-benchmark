@@ -1,6 +1,6 @@
 # T4 International Holdout Nominees — Round 3（EP / UK）
 
-> Status: **INT-13/15/17 encoded**（T0=2026-10-13；2026-10-14 Asia/Shanghai）· INT-14/16/18 仍提名  
+> Status: **INT-13–18 all encoded**（T0=2026-10-13；2026-10-14 Asia/Shanghai）· Round 3 complete  
 > Formal: V0.7 / schema 1.0 unchanged. **No** V0.8 adopt/freeze.  
 > Verified bibliographic grants via iphouse `search_patents`（hyphenated pubs）；E3/E4 公开锚点经 UK SPC / MHRA·EMA 产品语境 / EWHC Patents·IPEC 判决与二次源。  
 > **Excludes：** 全部 CN holdout；Round 1–2 已编码 INT；**明确避开** Round 1 已提名 **INT-4**（EP-2477611-B1 Aubagio 同族）与 **INT-6**（EP-1070223-B1 BGH）；仓库既有 US/EP ledger 教科书集；SEP/FRAND 明星案（Optis / InterDigital 等）。
@@ -71,15 +71,15 @@ Round 1/2 已覆盖 US / EP（部分）/ JP / KR。本轮专攻 **EP(UK) 效力 
 | ID | Encoded? | R | Note |
 |---|---|---|---|
 | **INT-13** | yes | **R0** | Airwrap/Airstrait 叙事 ≠ EP3941306 claim 钉 SKU；claims FAIL |
-| INT-14 | no | — | 提名 only |
+| **INT-14** | yes | **R0** | Henry ≠ EP3934499 end-cap 滤芯 claim；claims FAIL |
 | **INT-15** | yes | **R3** | UK SPC/GB11/051 + Fostair claims PASS；无 E4 |
-| INT-16 | no | — | 提名 only |
+| **INT-16** | yes | **R0** | Xadago mono MA ≠ 组合 claim；SPC/GB15/046 拒绝 → 诚实 FAIL |
 | **INT-17** | yes | **R5** | EWHC 损害探究 ≈£13.4M + 裁判 E3 |
-| INT-18 | no | — | 提名 only |
+| **INT-18** | yes | **R5** | 裁判 E3 + 仅 UK Head1 £85k E4；海外诉请 ≠ E4 |
 
-纪律已落实：产品叙事≠E3；SPC≠自动 E4；判赔≠自动 R5（本案 INT-17 条件满足）。**未**编码 INT-14/16/18。**no** V0.8。
+纪律已落实：产品叙事≠E3；有药≠自动 E3；SPC≠自动 E4；判赔/和解≠自动 R5（INT-17/18 条件满足）；pleadings≠E4。Round 3 六件均已编码。**no** V0.8。
 
-Synthesis: [`../../analysis/non-award-validation/holdout-int-131517-synthesis.md`](../../analysis/non-award-validation/holdout-int-131517-synthesis.md)
+Synthesis: [`../../analysis/non-award-validation/holdout-int-131517-synthesis.md`](../../analysis/non-award-validation/holdout-int-131517-synthesis.md) · [`../../analysis/non-award-validation/holdout-int-141618-synthesis.md`](../../analysis/non-award-validation/holdout-int-141618-synthesis.md)
 
 ## Related
 

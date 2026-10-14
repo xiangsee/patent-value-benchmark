@@ -16,9 +16,9 @@
 | **T1 理论** | 🟢 文档成套 | Construct + DEMPE⊥E3–E4 + FRAND/判赔≠R5/FMV + **建构×场景表** | 金额学派字段 cheat-sheet 仍可加深 | 可选：与 IVS/OECD 字段级一行对照 |
 | **T2 比较** | 🟢 导航可用 | 矩阵 + IVS/OECD + 决策树 + **INT-5/9 走查** | 仍可加更多法域例 | 可选：再补 E4-N5（许可捆包）走树 |
 | **T3 探针** | 🟡 研究-only | P1–P8；RC 可选+#49 无裁决夹具 | Gate 0；未升格；无 S1 | **保持 Gate 0**；禁借 T4 成功 adopt |
-| **T4 外推** | 🟢 小 N 成波 | **33** 件已编码；**Round 3：INT-13/15/17 已编码**；INT-14/16/18 仍提名 | INT 余提名；H-E3 未开跑 | 用户确认后再编 INT-14/16/18；或开 H-E3 跑 |
+| **T4 外推** | 🟢 小 N 成波 | **36** 件已编码；**Round 3 INT-13–18 全编码** | INT R1/R2 余提名；H-E3 未开跑 | 开 H-E3 盲评或编 R1/R2 余提名——本卡不授权 |
 
-**Holdout 计数：** 合计 **n=33**（#74 的 n=30 + INT-13/15/17）· R0×19 · R2×1 · R3×8 · R5×5 · 仍仅提名：INT-2/4/6、INT-8/10/12、INT-14/16/18、E4-N3/N4。
+**Holdout 计数：** 合计 **n=36**（#74 的 n=30 + INT-13–18）· R0×21 · R2×1 · R3×8 · R5×6 · 仍仅提名：INT-2/4/6、INT-8/10/12、E4-N3/N4。
 
 ---
 
@@ -50,9 +50,9 @@
 
 | | |
 |---|---|
-| **Done** | 预注册；H→E3→E4 CN 波；INT R1/R2 + **R3 partial**；跨法域合成 **#74（n=30）** + INT-13/15/17 → **n=33**；H-E3 协议稿；Round 3 提名稿 [`t4-international-holdout-nominees-round3.md`](t4-international-holdout-nominees-round3.md) |
-| **Gaps** | INT 余提名（R1/R2/R3）；H-E3 **未开跑**；新人一致率未证 |
-| **Next knife** | （A）用户确认后再编 INT-14/16/18；或（B）开 H-E3 盲评——本卡不授权 |
+| **Done** | 预注册；H→E3→E4 CN 波；INT R1/R2 + **R3 complete（INT-13–18）**；跨法域合成 **#74（n=30）** + INT-13–18 → **n=36**；H-E3 协议稿；Round 3 [`t4-international-holdout-nominees-round3.md`](t4-international-holdout-nominees-round3.md) |
+| **Gaps** | INT 余提名（R1/R2）；H-E3 **未开跑**；新人一致率未证 |
+| **Next knife** | （A）用户确认后编 INT-2/4/6/8/10/12；或（B）开 H-E3 盲评——本卡不授权 |
 
 ### T4 计数速查（摘自 #74）
 
@@ -62,8 +62,8 @@
 | US | 3 | R0 / R3 / R5 各 1 |
 | JP | 2 | R0 / R5 |
 | KR | 1 | R3 |
-| EP/UK | 3 | R0 / R3 / R5 各 1（INT-13/15/17） |
-| **Σ** | **33** | R0×19 · R2×1 · R3×8 · R5×5 |
+| EP/UK | 6 | R0×3（INT-13/14/16）· R3×1（INT-15）· R5×2（INT-17/18） |
+| **Σ** | **36** | R0×21 · R2×1 · R3×8 · R5×6 |
 
 ---
 
