@@ -2,6 +2,19 @@
 
 ## Unreleased
 
+### Theme: T4 encode INT-13/15/17（T0=2026-10-13；EP/UK Round 3）
+
+- Ledgers/evidence/sources：`holdout-INT13-EP3941306`（Dyson → **R0**）、`holdout-INT15-EP1787639`（Fostair UK SPC → **R3**）、`holdout-INT17-EP2430238`（Geofabrics £13.4M → **R5**）。
+- Analysis：`holdout/INT13-EP3941306.md` / `INT15-EP1787639.md` / `INT17-EP2430238.md`；synthesis `holdout-int-131517-synthesis.md`。
+- `t4-international-holdout-nominees-round3.md` / `world-class-roadmap` / `docs/roadmap` / `t1-t4-executive-scorecard`：标记 INT-13/15/17 已编码；n=33。
+- **未**编码 INT-14/16/18；**未** adopt V0.8。
+
+诚实结论：
+- INT-13：Airwrap/Airstrait 品牌叙事 ≠ EP3941306 双臂 plenum+30–60° claim 公开钉 SKU → claims FAIL → R0。
+- INT-15：UK SPC/GB11/051 basic patent + Fostair BDP/formoterol 对齐 claim 1/11 → R3；**无** E4 / 不抬 R4/R5（SPC 已届满仍记 map）。
+- INT-17：EWHC 单件 EP(UK) 损害探究 ≈£13.4M + 裁判 E3 → R5（争议情境；非 FMV）。
+
+
 ### Theme: T1 short memo — DEMPE ⊥ claims-check / E3–E4
 
 #### Added
