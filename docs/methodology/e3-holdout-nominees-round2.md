@@ -1,7 +1,7 @@
 # E3 Holdout Nominees — Round 2 (non-star, checkable link)
 
-> Status: **NOMINATION ONLY** (2026-10-14 Asia/Shanghai)  
-> **Not encoded.** Encode only after explicit user confirm of a subset + T0.  
+> Status: **partially encoded** (2026-10-14 Asia/Shanghai)  
+> **Encoded:** E3-N1 / N2 / N5（T0=2026-10-13；3/3 R0）。N3/N4/N6 仍待确认。  
 > Formal: V0.7 / schema 1.0 unchanged. **No** V0.8 adopt/freeze.  
 > Verified basics via iphouse `get_patent_detail` / `search_patents` (grant B where noted).  
 > Excludes: H1–H9, E3-A/B/C, all existing `data/ledgers/*`.
@@ -40,7 +40,17 @@ Suggested T0 if confirmed: **2026-10-13** (same as prior holdouts) unless user s
 - E3-N2/N3/N4 are **composition/process/ingredient** families — expect higher Unknown rate unless encoder finds exact SKU↔claim evidence.
 - E3-N5/N6 diversify away from cosmetics-only bias.
 
-## Encoding gate (do not skip)
+## Encoding results (confirmed subset)
+
+| ID | Result |
+|---|---|
+| E3-N1 | **R0** — claims FAIL（缺公开 wt%） |
+| E3-N2 | **R0** — claims FAIL（工艺参数未公开） |
+| E3-N5 | **R0** — claims FAIL（算法未公开） |
+
+Synthesis: [`../../analysis/non-award-validation/holdout-e3-n125-synthesis.md`](../../analysis/non-award-validation/holdout-e3-n125-synthesis.md).
+
+## Encoding gate (remaining IDs)
 
 1. User confirms ID subset (e.g. N1+N4+N6).  
 2. Fix T0.  
