@@ -2,6 +2,18 @@
 
 ## Unreleased
 
+### Theme: T3 P8 Network relation vocabulary v0
+
+#### Added
+- 约定稿：`docs/methodology/v0.8-probes/p8-network-relation-vocabulary-v0.md`（受控 snake_case relation + CRISPR 自由文本映射 + 边键约定）。
+
+#### Changed
+- 三例 network JSON **仅**增加顶层 `convention` 元数据（`legacy_preserved`）；**未**改写既有 `relation` 字符串。
+
+#### Notes
+- **未** adopt/freeze V0.8；**未**启动 S3；无 schema/validator。
+
+
 ### Theme: T4 phase synthesis + T3 P7 Horizon worked example
 
 #### Added

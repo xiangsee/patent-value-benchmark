@@ -1,6 +1,11 @@
 {
   "network_id": "CRISPR-CAS9-PORTFOLIO-NETWORK-T0-2026-08-05",
   "status": "experimental research object — not schema-adopted",
+  "convention": {
+    "doc": "docs/methodology/v0.8-probes/p8-network-relation-vocabulary-v0.md",
+    "version": "0.1-research",
+    "relation_surface": "legacy_preserved"
+  },
   "t0_date": "2026-08-05",
   "purpose": "Represent portfolio, claim-set, license and jurisdiction dependencies that cannot be expressed in a standalone patent ledger.",
   "nodes": [

@@ -1,6 +1,11 @@
 {
   "network_id": "AVC-H264-PATENT-POOL-NETWORK-T0-2026-10-12",
   "status": "experimental research object — not schema-adopted",
+  "convention": {
+    "doc": "docs/methodology/v0.8-probes/p8-network-relation-vocabulary-v0.md",
+    "version": "0.1-research",
+    "relation_surface": "legacy_preserved"
+  },
   "t0_date": "2026-10-12",
   "purpose": "Represent SEP/patent-pool dependencies that a standalone V0.7 ledger cannot express: multi-licensor membership, standard essentiality edges, rate-card independence from patent count, and licensee-ecosystem scale.",
   "anchor_patent": "US6825782",
