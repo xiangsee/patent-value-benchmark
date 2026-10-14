@@ -13,8 +13,8 @@
 
 | 轨 | 状态灯 | 已完成（摘要） | 缺口 | 下一刀 |
 |---|---|---|---|---|
-| **T1 理论** | 🟢 文档成套 | Construct + DEMPE⊥E3–E4 + FRAND/判赔≠R5/FMV | 建构×场景选用总表未写 | 一张「建构×T2 树」对照表 |
-| **T2 比较** | 🟢 导航可用 | 矩阵 + IVS/OECD 深化 + 场景决策树 | 缺少量已编码案的选用worked example | 可选：用 INT/E4 各 1 例走树 |
+| **T1 理论** | 🟢 文档成套 | Construct + DEMPE⊥E3–E4 + FRAND/判赔≠R5/FMV + **建构×场景表** | 金额学派字段 cheat-sheet 仍可加深 | 可选：与 IVS/OECD 字段级一行对照 |
+| **T2 比较** | 🟢 导航可用 | 矩阵 + IVS/OECD + 决策树 + **INT-5/9 走查** | 仍可加更多法域例 | 可选：再补 E4-N5（许可捆包）走树 |
 | **T3 探针** | 🟡 研究-only | P1–P8；RC 可选+#49 无裁决夹具 | Gate 0；未升格；无 S1 | **保持 Gate 0**；禁借 T4 成功 adopt |
 | **T4 外推** | 🟢 小 N 成波 | **30** 件已编码（CN24+US3+JP2+KR1） | 未编码提名；H-E3 盲评未开跑 | 用户确认后再 encode；或开 H-E3 跑 |
 
@@ -26,17 +26,17 @@
 
 | | |
 |---|---|
-| **Done** | [`t1-theory-memo-value-construct.md`](t1-theory-memo-value-construct.md)（Construct / Two Clocks / RC⊥R）；[`t1-dempe-vs-claims-e3e4.md`](t1-dempe-vs-claims-e3e4.md)；[`t1-frand-damages-vs-r5-fmv.md`](t1-frand-damages-vs-r5-fmv.md) |
-| **Gaps** | 「价值建构 × 场景选用」一张总表仍缺；与金额学派字段级对照未收成 cheat-sheet |
-| **Next knife** | 写短表：每建构对应 T2 树哪一枝 + 禁止偷换句（docs only） |
+| **Done** | [`t1-theory-memo-value-construct.md`](t1-theory-memo-value-construct.md)；[`t1-dempe-vs-claims-e3e4.md`](t1-dempe-vs-claims-e3e4.md)；[`t1-frand-damages-vs-r5-fmv.md`](t1-frand-damages-vs-r5-fmv.md)；[`t1-construct-scenario-matrix.md`](t1-construct-scenario-matrix.md) |
+| **Gaps** | 与 IVS/OECD 字段级一行 cheat-sheet 仍可加深（非阻塞） |
+| **Next knife** | 可选字段级对照；**不**借此 adopt V0.8 |
 
 ## T2 既有模型比较
 
 | | |
 |---|---|
-| **Done** | [`existing-models-comparison-matrix.md`](existing-models-comparison-matrix.md)；[`t2-v07-to-ivs-oecd-practice-schools.md`](t2-v07-to-ivs-oecd-practice-schools.md)；[`t2-scenario-selection-decision-tree.md`](t2-scenario-selection-decision-tree.md) |
-| **Gaps** | 决策树尚少「带已编码 holdout ID」的走查例；不阻碍日常选用 |
-| **Next knife** | 可选附录：INT-5（判赔枝）+ INT-9（监管 E3 停 R3）各走一棵树 |
+| **Done** | [`existing-models-comparison-matrix.md`](existing-models-comparison-matrix.md)；[`t2-v07-to-ivs-oecd-practice-schools.md`](t2-v07-to-ivs-oecd-practice-schools.md)；[`t2-scenario-selection-decision-tree.md`](t2-scenario-selection-decision-tree.md)；[`t2-decision-tree-walkthrough-int5-int9.md`](t2-decision-tree-walkthrough-int5-int9.md) |
+| **Gaps** | 许可捆包 / FRAND 组合走查仍可补（非阻塞） |
+| **Next knife** | 可选 E4-N5 或 SEP 假想枝；**不**新编码 |
 
 ## T3 自有创新探针
 
@@ -78,6 +78,8 @@
 | 文档 | 用途 |
 |---|---|
 | [`world-class-roadmap.md`](world-class-roadmap.md) | 四轨总览与进度板 |
+| [`t1-construct-scenario-matrix.md`](t1-construct-scenario-matrix.md) | T1 建构×场景对照表 |
+| [`t2-decision-tree-walkthrough-int5-int9.md`](t2-decision-tree-walkthrough-int5-int9.md) | T2 树走查 INT-5 / INT-9 |
 | [`../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md`](../../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md) | #74 跨法域计数与共享阶梯 |
 | [`external-extrapolation-preregistration.md`](external-extrapolation-preregistration.md) | T4 预注册 |
 | [`t4-inter-rater-blind-protocol-h-e3.md`](t4-inter-rater-blind-protocol-h-e3.md) | H-E3 协议（未开跑） |
