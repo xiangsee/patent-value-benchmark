@@ -70,8 +70,8 @@ flowchart TD
 ## 4. 反例（选用错误）
 
 1. 产品热销 → 直接要 IVS 收益法估「该专利」→ **应先 V0.7 E3**。  
-2. 有 FRAND 组合费率 → 写入单件 R5 → **建构偷换**。  
-3. 有判赔 → 当作市值或自动 R5 → **缺 E3/指标则停**。  
+2. 有 FRAND 组合费率 → 写入单件 R5 → **建构偷换**（详 [`t1-frand-damages-vs-r5-fmv.md`](t1-frand-damages-vs-r5-fmv.md)）。  
+3. 有判赔 → 当作市值或自动 R5 → **缺 E3/指标则停**（正例闸门：INT-5/11、E4-N1/N2）。  
 4. 关联方合同有费率 → 跳过功能分析只抄费率 → **OECD 与 V0.7 双缺**。  
 5. 引证分高 → 当 Proof 或直接交接金额 → **Screening≠Proof**。
 
@@ -85,6 +85,6 @@ flowchart TD
 
 - 矩阵：[`existing-models-comparison-matrix.md`](existing-models-comparison-matrix.md)  
 - #67 深化备忘：[`t2-v07-to-ivs-oecd-practice-schools.md`](t2-v07-to-ivs-oecd-practice-schools.md)  
-- T1：[`t1-theory-memo-value-construct.md`](t1-theory-memo-value-construct.md)  
+- T1：[`t1-theory-memo-value-construct.md`](t1-theory-memo-value-construct.md) · [`t1-frand-damages-vs-r5-fmv.md`](t1-frand-damages-vs-r5-fmv.md)（FRAND/判赔 ≠ R5/FMV）  
 - Formal：[`model-v0.7.md`](model-v0.7.md) · [`evidence-levels.md`](evidence-levels.md)  
 - 四轨：[`world-class-roadmap.md`](world-class-roadmap.md)
