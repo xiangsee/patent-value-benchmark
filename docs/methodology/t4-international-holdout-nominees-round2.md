@@ -1,6 +1,6 @@
 # T4 International Holdout Nominees — Round 2（JP / KR）
 
-> Status: **nominate only**（2026-10-14 Asia/Shanghai）· **未**编码  
+> Status: **INT-7/9/11 encoded**（T0=2026-10-13；2026-10-14 Asia/Shanghai）· INT-8/10/12 仍提名  
 > Formal: V0.7 / schema 1.0 unchanged. **No** V0.8 adopt/freeze.  
 > Verified bibliographic grants via iphouse `search_patents` / `get_patent_detail`（hyphenated pubs）；E3/E4 公开锚点经 MFDS 허가특허목록（Green List）/ 知財高裁要旨 / 특허법원 판결 / 新闻二次源。  
 > **Excludes** 全部 CN holdout、Round 1 INT-1–INT-6 及仓库既有 US/EP ledger 集合。
@@ -71,16 +71,18 @@ Round 1 把拒抬 / claims-check / 单件判赔纪律推到 **US / EP**。本轮
 
 | ID | Encoded? | R | Note |
 |---|---|---|---|
-| INT-7 | no | — | 仍提名 |
+| **INT-7** | yes | **R0** | Style ≠ multi-block/protrusion claim；claims FAIL |
 | INT-8 | no | — | 仍提名 |
-| INT-9 | no | — | 仍提名 |
+| **INT-9** | yes | **R3** | Green List + finerenone；无 E4 |
 | INT-10 | no | — | 仍提名 |
-| INT-11 | no | — | 仍提名 |
+| **INT-11** | yes | **R5** | 大合議特許２ ¥440.06M + 裁判 E3 |
 | INT-12 | no | — | 仍提名 |
 
-纪律预期：产品叙事≠E3；Green List≠自动 E4；判赔≠自动 R5。**no** V0.8。**本 PR 仅 docs，不编码。**
+纪律已落实：产品叙事≠E3；Green List≠自动 E4；判赔≠自动 R5（本案 INT-11 条件满足）。**no** V0.8。
 
 ## Related
+
+- Encode synthesis：[`../../analysis/non-award-validation/holdout-int-7911-synthesis.md`](../../analysis/non-award-validation/holdout-int-7911-synthesis.md)  
 
 - Round 1 US/EP：[`t4-international-holdout-nominees-round1.md`](t4-international-holdout-nominees-round1.md)  
 - CN T4 phase：[`../../analysis/non-award-validation/holdout-t4-phase-synthesis.md`](../../analysis/non-award-validation/holdout-t4-phase-synthesis.md)  
