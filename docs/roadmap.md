@@ -41,7 +41,7 @@
 
 > **E4 Round 1**：**N1/N2/N5 已编码**（T0=2026-10-13；R5/R5/R2）：[`methodology/e4-holdout-nominees-round1.md`](methodology/e4-holdout-nominees-round1.md) · [`../analysis/non-award-validation/holdout-e4-n125-synthesis.md`](../analysis/non-award-validation/holdout-e4-n125-synthesis.md)。
 
-> **T4 phase synthesis**（H/E3/N/P/E4 合并）：[`../analysis/non-award-validation/holdout-t4-phase-synthesis.md`](../analysis/non-award-validation/holdout-t4-phase-synthesis.md)。**T3 P7** Horizon worked example：[`methodology/v0.8-probes/p7-horizon-worked-example-mrna.md`](methodology/v0.8-probes/p7-horizon-worked-example-mrna.md)（**未** adopt V0.8）。
+> **T4 phase synthesis**（H/E3/N/P/E4 合并）：[`../analysis/non-award-validation/holdout-t4-phase-synthesis.md`](../analysis/non-award-validation/holdout-t4-phase-synthesis.md)。**T3 P7** Horizon：[`methodology/v0.8-probes/p7-horizon-worked-example-mrna.md`](methodology/v0.8-probes/p7-horizon-worked-example-mrna.md)。**T3 P8** Network vocabulary：[`methodology/v0.8-probes/p8-network-relation-vocabulary-v0.md`](methodology/v0.8-probes/p8-network-relation-vocabulary-v0.md)（**未** adopt V0.8）。
 
 ### 当前正式架构：V0.7
 

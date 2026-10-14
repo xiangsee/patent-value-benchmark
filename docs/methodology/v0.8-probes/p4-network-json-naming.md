@@ -17,4 +17,4 @@
 3. `not_apportioned_to` 在 AVC 与 Blade 都独立出现 → 支持「非继承」作为一等边，而非注释。
 4. 节点 type 已大体一致（patent / claim_set / portfolio / product），保留。
 
-不回写三份 JSON（避免改动已引用的分析制品）；规范化属 S3，需非教科书样本。
+历史 `relation` 字符串仍不回写。**词汇约定已固化为** [`p8-network-relation-vocabulary-v0.md`](p8-network-relation-vocabulary-v0.md)；三例仅增加非破坏顶层 `convention` 指针。完整 schema/S3 仍需非教科书样本与用户批准。

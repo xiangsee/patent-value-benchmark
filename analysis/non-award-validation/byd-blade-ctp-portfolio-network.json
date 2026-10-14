@@ -1,6 +1,11 @@
 {
   "network_id": "BYD-BLADE-CTP-PRODUCT-PORTFOLIO-NETWORK-T0-2026-10-12",
   "status": "experimental research object — not schema-adopted",
+  "convention": {
+    "doc": "docs/methodology/v0.8-probes/p8-network-relation-vocabulary-v0.md",
+    "version": "0.1-research",
+    "relation_surface": "legacy_preserved"
+  },
   "t0_date": "2026-10-12",
   "purpose": "Represent non-life-science complex product-portfolio dependencies that a standalone V0.7 ledger cannot express: complementary CTP claim sets, sibling mis-mapping risk, cell/pack layering, and multi-vehicle platform edges.",
   "anchor_patent": "CN110165116B",
