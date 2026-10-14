@@ -68,6 +68,8 @@
 不熟悉仓库历史的编码者（或同一代理换新案）按 Getting Started，在约定时限内产出通过 `validate_data.py` 的 R0–R2 级 Ledger（视证据而定）。  
 **预期：** ≥ 预设比例的案次一次 PR 即 CI 绿，或仅需文档级修正；不需要实验 schema。
 
+**双编码盲评协议（落实本假设 + §6.3）：** [`t4-inter-rater-blind-protocol-h-e3.md`](t4-inter-rater-blind-protocol-h-e3.md) — 样本、盲法、分歧裁断、R/E3 一致率；**docs only，默认未开跑**。
+
 ### H-E4 — Trap surface still bites
 
 至少一类已知陷阱（同族误映射 / 他案点名 / 300+ 不继承 / pre-filing E2 / PP01≠R）在 holdout 中被触发并正确处理（停住或 soft-warn）。  
@@ -200,6 +202,8 @@
 - **盲审协议：** 两名编码者独立写 R 与 mapping；第三人裁分歧。  
 - **一致率报告：** 只报一致/分歧类型，不把一致率吹成准确率。  
 - **仍不** 产生美元或总分 gold。
+
+可执行细则（样本 / 盲法 / 裁断 / 指标 / 不宣称）：[`t4-inter-rater-blind-protocol-h-e3.md`](t4-inter-rater-blind-protocol-h-e3.md)。
 
 无此门时：成功标准只用 §4 的 **过程纪律与可操作性**，不用「命中真值」。
 
