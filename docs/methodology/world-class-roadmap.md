@@ -42,7 +42,7 @@ Promotion rule: **explicit user decision** for adopt / freeze / S1. Round 2 read
 
 ## 4. Near-term milestones (next 1–2 cycles)
 
-1. **T4 nominations / encode** — CN 波已完成（见 phase synthesis）。International Round 1：**INT-1/3/5 已编码**（R0/R3/R5）；INT-2/4/6 仍提名 → [`t4-international-holdout-nominees-round1.md`](t4-international-holdout-nominees-round1.md)。**Round 2 JP/KR 提名**（INT-7–INT-12；nominate only）→ [`t4-international-holdout-nominees-round2.md`](t4-international-holdout-nominees-round2.md)。
+1. **T4 nominations / encode** — CN 波已完成（见 phase synthesis）。International Round 1：**INT-1/3/5 已编码**（R0/R3/R5）；INT-2/4/6 仍提名 → [`t4-international-holdout-nominees-round1.md`](t4-international-holdout-nominees-round1.md)。**Round 2 JP/KR**：**INT-7/9/11 已编码**（R0/R3/R5）；INT-8/10/12 仍提名 → [`t4-international-holdout-nominees-round2.md`](t4-international-holdout-nominees-round2.md)；synthesis [`../../analysis/non-award-validation/holdout-int-7911-synthesis.md`](../../analysis/non-award-validation/holdout-int-7911-synthesis.md)。
 2. **T2 comparison** — matrix v0 → [`existing-models-comparison-matrix.md`](existing-models-comparison-matrix.md)；深化备忘 → [`t2-v07-to-ivs-oecd-practice-schools.md`](t2-v07-to-ivs-oecd-practice-schools.md)；**场景选用决策树** → [`t2-scenario-selection-decision-tree.md`](t2-scenario-selection-decision-tree.md)（2026-10-14）。
 3. **T1 theory memo** — ~~short note~~ → [`t1-theory-memo-value-construct.md`](t1-theory-memo-value-construct.md)（2026-10-14）。下一版：建构 × 场景选用表。
 4. **T3 next step** — P7 Horizon + **P8 Network relation vocabulary** → [`v0.8-probes/p8-network-relation-vocabulary-v0.md`](v0.8-probes/p8-network-relation-vocabulary-v0.md)；RC 仍可选；**不**启动 S1/S2/S3；**不** adopt V0.8。
@@ -60,7 +60,7 @@ E3-P1/3/4 → R3 ×3     NHSA ZL + 规格/处方 → honest E3 (still no E4)
 E4-N1/N2  → R5 ×2     single-ZL court E3+E4 (damages≠intrinsic price)
 E4-N5     → R2        named license but service-fee bundle; no product E3
 INT-1/3/5 → R0/R3/R5  TearLab / Aubagio OB / PureWick royalty (INT-2/4/6 still nominate)
-INT-7–12   → nominate   JP/KR Round 2 (R0 Style/SIXPAD; E3 Kerendia/Wainua; E4 ReFa Art.102 / Golfzon Art.128)
+INT-7/9/11 → R0/R3/R5  Style / Kerendia Green List / ReFa Art.102 (INT-8/10/12 still nominate)
 ```
 
 Rule reinforced: **E3 ≠ E4**. Mapping ≠ attributable value. Judgment ≠ auto R5. Named license ≠ auto E4. Encode only with user-confirmed IDs and T0.
@@ -110,7 +110,7 @@ Rule reinforced: **E3 ≠ E4**. Mapping ≠ attributable value. Judgment ≠ aut
 | [`e3-holdout-nominees-round3.md`](e3-holdout-nominees-round3.md) | E3-P Round 3（P1/P3/P4 encoded R3） |
 | [`e4-holdout-nominees-round1.md`](e4-holdout-nominees-round1.md) | E4 Round 1（N1/N2/N5 encoded） |
 | [`t4-international-holdout-nominees-round1.md`](t4-international-holdout-nominees-round1.md) | T4 INT Round 1 US/EP（INT-1/3/5 encoded） |
-| [`t4-international-holdout-nominees-round2.md`](t4-international-holdout-nominees-round2.md) | T4 INT Round 2 JP/KR（INT-7–12 nominate only） |
+| [`t4-international-holdout-nominees-round2.md`](t4-international-holdout-nominees-round2.md) | T4 INT Round 2 JP/KR（INT-7/9/11 encoded） |
 | [`../../analysis/non-award-validation/holdout-e4-n125-synthesis.md`](../../analysis/non-award-validation/holdout-e4-n125-synthesis.md) | E4-N1/N2/N5 synthesis（R5/R5/R2） |
 | [`rights-control-optional-parallel-plan.md`](rights-control-optional-parallel-plan.md) | Optional RC parallel track |
 | [`../roadmap.md`](../roadmap.md) · [`../cold-start-status.md`](../cold-start-status.md) | Track A status |

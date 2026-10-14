@@ -2,6 +2,22 @@
 
 ## Unreleased
 
+### Theme: T4 encode INT-7/9/11（T0=2026-10-13；JP/KR Round 2）
+
+#### Added
+- Ledgers/evidence/sources：`holdout-INT7-JP6956213`（Style → **R0**）、`holdout-INT9-KR101614164`（Kerendia Green List → **R3**）、`holdout-INT11-JP5847904`（ReFa Art.102 → **R5**）。
+- Notes：`analysis/non-award-validation/holdout/INT{7,9,11}-*.md`；synthesis：`holdout-int-7911-synthesis.md`。
+
+#### Changed
+- `t4-international-holdout-nominees-round2.md` / `world-class-roadmap` / `docs/roadmap`：标记 INT-7/9/11 已编码。
+
+#### Notes
+- INT-7：Style 品牌 ≠ 多区块垫+骶骨突起 claim → claims FAIL → R0。
+- INT-9：MFDS Green List 10-1614164 + finerenone 物种对齐 → R3；**无** E4 / 不抬 R4/R5。
+- INT-11：大合議単件特許２判赔 ¥440.06M + 裁判 E3 → R5（争议情境；非内在定价）。
+- INT-8/10/12 **未**编码。**未** adopt V0.8。
+
+
 ### Theme: T4 International holdout nominees Round 2（JP/KR；nominate only）
 
 #### Added
