@@ -2,6 +2,18 @@
 
 ## Unreleased
 
+### Theme: T2 deepen — V0.7 ↔ IVS 210 / OECD / US·EU·CN practice schools
+
+#### Added
+- 一页深化备忘：`docs/methodology/t2-v07-to-ivs-oecd-practice-schools.md`（仅列经 web/PDF 核验的来源：IVSC IVS 210、OECD TPG Ch.VI / HTVI、WIPO 估值与 FRAND、USPAP / AICPA VS §100、中评协〔2017〕44/49号）。
+
+#### Changed
+- `existing-models-comparison-matrix.md` / `world-class-roadmap.md` / `docs/roadmap.md`：T2 深化指针。
+
+#### Notes
+- **未** adopt V0.8；**无**伪造引用；本备忘≠合规/估值意见。
+
+
 ### Theme: T4 encode INT-1/3/5（T0=2026-10-13）
 
 #### Added

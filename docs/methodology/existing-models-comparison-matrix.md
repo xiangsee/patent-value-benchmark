@@ -1,6 +1,6 @@
 # 既有专利估值 / 评估族系 vs V0.7 — 一页比较矩阵（T2）
 
-> Status: **research comparison v0**（2026-10-14 Asia/Shanghai）  
+> Status: **research comparison v0 + deepen memo**（2026-10-14 Asia/Shanghai）  
 > Track: 世界级四轨路线 **T2** · [`world-class-roadmap.md`](world-class-roadmap.md)  
 > Formal: **V0.7** + **schema 1.0** · **未** adopt / freeze V0.8 · **不**输出美元总分  
 > 目的：说清「别人在估什么 / 我们在证什么」，不是宣称谁更准。
@@ -63,11 +63,13 @@
 
 - 本页 **不是** 对 IVS、某商业打分器或某判决的合规意见。  
 - **不** adopt V0.8；**不**改 schema 1.0；**不**编码新 ledger。  
-- 下一版 T2：可补「场景选用决策树」（许可谈判 / 侵权 / 融资披露 / 冷启动诊断各用哪一层）。
+- 深化备忘（IVS 210 / OECD Ch.VI / 美欧中学派）：[`t2-v07-to-ivs-oecd-practice-schools.md`](t2-v07-to-ivs-oecd-practice-schools.md)。  
+- 下一版 T2：可补「场景选用决策树」（许可谈判 / 侵权 / 融资披露 / 转让定价 / 冷启动诊断各用哪一层）。
 
 ## 指针
 
 - Formal：[`model-v0.7.md`](model-v0.7.md) · [`evidence-levels.md`](evidence-levels.md)  
 - 建构讨论：[`../../analysis/theory/value-constructs-and-missing-dimensions.md`](../../analysis/theory/value-constructs-and-missing-dimensions.md)  
 - T1：[`t1-theory-memo-value-construct.md`](t1-theory-memo-value-construct.md)
+- T2 深化：[`t2-v07-to-ivs-oecd-practice-schools.md`](t2-v07-to-ivs-oecd-practice-schools.md)
 - 四轨：[`world-class-roadmap.md`](world-class-roadmap.md) · Track A：[`../roadmap.md`](../roadmap.md)
