@@ -39,6 +39,8 @@
 
 > **E3-P Round 3**：**P1/P3/P4 已编码**（T0=2026-10-13；3/3 R3）：[`methodology/e3-holdout-nominees-round3.md`](methodology/e3-holdout-nominees-round3.md) · [`../analysis/non-award-validation/holdout-e3-p134-synthesis.md`](../analysis/non-award-validation/holdout-e3-p134-synthesis.md)。
 
+> **E4 Round 1 提名**（判赔/销售损失/具名许可；**未**编码）：[`methodology/e4-holdout-nominees-round1.md`](methodology/e4-holdout-nominees-round1.md)。
+
 ### 当前正式架构：V0.7
 
 已采用：
