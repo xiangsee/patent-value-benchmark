@@ -5,6 +5,8 @@
 > V0.8: design draft + probes + optional RC parallel plan — **not adopted, schema not frozen**  
 > This page does **not** authorize adopt / freeze / S1 promotion / ordinary contrib expansion.
 
+**执行记分卡（中文主述）：** [`t1-t4-executive-scorecard.md`](t1-t4-executive-scorecard.md) — T1–T4 各轨 Done / Gaps / Next knife；holdout 计数对齐 [#74](https://github.com/xiangsee/patent-value-benchmark/pull/74)。
+
 ## 1. Ambition (honest)
 
 Goal: extend Xiangsee Patent Value Benchmark toward a **world-class, evidence-first patent value assessment model** — globally usable, falsifiable, and better than score-only or citation-only systems at answering:
@@ -51,11 +53,13 @@ Promotion rule: **explicit user decision** for adopt / freeze / S1. Round 2 read
 
 ## 4.0 T1–T4 progress board（through PR #72）
 
+精简执行版：[`t1-t4-executive-scorecard.md`](t1-t4-executive-scorecard.md)。
+
 > Snapshot date: **2026-10-14**（Asia/Shanghai）。Formal: **V0.7 + schema 1.0**。**V0.8 not adopted.**
 
 | Track | Status | Delivered (PR) | Next (not authorized here) |
 |---|---|---|---|
-| **T1 Theory** | **memo v0 + DEMPE⊥E3–E4 + FRAND/判赔备忘** | [#58](https://github.com/xiangsee/patent-value-benchmark/pull/58) Construct / Two Clocks / RC⊥R；[#72](https://github.com/xiangsee/patent-value-benchmark/pull/72) DEMPE ⊥ claims-check / E3–E4；**本 PR** FRAND/判赔 ≠ R5/FMV | Construct × scenario selection table；no V0.8 |
+| **T1 Theory** | **memo v0 + DEMPE⊥E3–E4 + FRAND/判赔备忘** | [#58](https://github.com/xiangsee/patent-value-benchmark/pull/58) Construct / Two Clocks / RC⊥R；[#72](https://github.com/xiangsee/patent-value-benchmark/pull/72) DEMPE ⊥ claims-check / E3–E4；[#76](https://github.com/xiangsee/patent-value-benchmark/pull/76) FRAND/判赔 ≠ R5/FMV | Construct × scenario selection table；no V0.8 |
 | **T2 Comparison** | **matrix + deepen + scenario tree done** | [#56](https://github.com/xiangsee/patent-value-benchmark/pull/56) matrix v0；[#67](https://github.com/xiangsee/patent-value-benchmark/pull/67) IVS/OECD/practice schools；[#68](https://github.com/xiangsee/patent-value-benchmark/pull/68) scenario decision tree | Optional worked examples only；not schema |
 | **T3 Innovation probes** | **P1–P8 + optional RC plan；no-ruling fixture** | [#49](https://github.com/xiangsee/patent-value-benchmark/pull/49) RC optional + no-ruling rules；[#51](https://github.com/xiangsee/patent-value-benchmark/pull/51) parallel plan；[#50](https://github.com/xiangsee/patent-value-benchmark/pull/50) P5 CF note；[#63](https://github.com/xiangsee/patent-value-benchmark/pull/63) P7 Horizon；[#64](https://github.com/xiangsee/patent-value-benchmark/pull/64) P8 Network vocab；**this PR** on-disk no-ruling RC fixture | Gate 0 only；**no** S1/S2/S3；**no** V0.8 adopt / freeze |
 | **T4 Extrapolation** | **CN + INT R1/R2 encoded；跨法域合成已写** | [#52](https://github.com/xiangsee/patent-value-benchmark/pull/52) prereg；[#53](https://github.com/xiangsee/patent-value-benchmark/pull/53) H1–H9 R0；[#54](https://github.com/xiangsee/patent-value-benchmark/pull/54)–[#62](https://github.com/xiangsee/patent-value-benchmark/pull/62) E3/E4 waves；[#65](https://github.com/xiangsee/patent-value-benchmark/pull/65)/[#66](https://github.com/xiangsee/patent-value-benchmark/pull/66) INT-1/3/5；[#69](https://github.com/xiangsee/patent-value-benchmark/pull/69)/[#71](https://github.com/xiangsee/patent-value-benchmark/pull/71) INT-7/9/11；[#70](https://github.com/xiangsee/patent-value-benchmark/pull/70) roadmap pointers | INT-2/4/6、INT-8/10/12 nominate-only；H-E3 盲评协议已稿、未开跑；no auto R5 |
@@ -124,6 +128,7 @@ Rule reinforced: **E3 ≠ E4**. Mapping ≠ attributable value. Judgment ≠ aut
 
 | Doc | Role |
 |---|---|
+| [`t1-t4-executive-scorecard.md`](t1-t4-executive-scorecard.md) | **T1–T4 执行记分卡**（Done / Gaps / Next knife；#74 计数） |
 | [`t1-theory-memo-value-construct.md`](t1-theory-memo-value-construct.md) | T1 理论备忘（Construct / Two Clocks / RC⊥R） |
 | [`t1-dempe-vs-claims-e3e4.md`](t1-dempe-vs-claims-e3e4.md) | T1 短备忘：DEMPE ⊥ claims-check / E3–E4 |
 | [`t1-frand-damages-vs-r5-fmv.md`](t1-frand-damages-vs-r5-fmv.md) | T1 短备忘：FRAND/判赔 ≠ 自动 R5 / ≠ FMV |
