@@ -5,7 +5,8 @@ T0（holdout 钟）：**2026-10-13**（除非另注）
 正式基线：**V0.7 + schema 1.0** · **未** adopt / freeze V0.8  
 预注册：[`docs/methodology/external-extrapolation-preregistration.md`](../../docs/methodology/external-extrapolation-preregistration.md)
 
-> 把 T4 外推各波学习收成一份可引用笔记。不替代各波 synthesis；不发明 gold / 美元预测准确率。
+> 把 T4 **CN 波**外推学习收成一份可引用笔记。不替代各波 synthesis；不发明 gold / 美元预测准确率。
+> 含 INT 的跨法域总表见 [`holdout-t4-cross-jurisdiction-synthesis.md`](holdout-t4-cross-jurisdiction-synthesis.md)。
 
 ---
 
@@ -87,5 +88,7 @@ Unknown ≠ 0；不继承；Screening ≠ Proof
 - E4-N3/N4 仍提名；或新 E4 波（需避开已编码集）  
 - 国际/非 CN 外推预注册扩展（可选）  
 - T3：Horizon / Network / optional RC 探针继续，**不**借 T4 成功顺带 adopt  
+
+跨法域合并（含 INT）：[`holdout-t4-cross-jurisdiction-synthesis.md`](holdout-t4-cross-jurisdiction-synthesis.md)
 
 程序入口：[`docs/methodology/world-class-roadmap.md`](../../docs/methodology/world-class-roadmap.md)
