@@ -2,6 +2,19 @@
 
 ## Unreleased
 
+### Theme: World-class roadmap + E3-N nominees Round 2（research/docs；未编码）
+
+#### Added
+- 世界级评估四轨路线：`docs/methodology/world-class-roadmap.md`（理论 / 既有模型比较 / 自有创新测试 / 实效验证；formal=V0.7+schema1.0；**未** adopt/freeze V0.8）。
+- E3 holdout 提名 Round 2：`docs/methodology/e3-holdout-nominees-round2.md`（E3-N1–N6；iphouse 核验授权 B；**提名 only**）。
+
+#### Changed
+- README / roadmap / cold-start-status：轻量指针。
+
+#### Notes
+- 不编码新 ledger；不 adopt V0.8；不冻 schema。确认名单后再编码。
+
+
 ### Theme: Holdout E3-probe E3-A/B/C（T0=2026-10-13；claims check）
 
 #### Added

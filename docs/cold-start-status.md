@@ -1,6 +1,6 @@
 # Track A — Cold-start Status
 
-> 快照日期：2026-10-12（Asia/Shanghai）  
+> 快照日期：2026-10-14（Asia/Shanghai；导航增补世界级路线 / E3-N 提名；样本表仍以 2026-10-12 平台期为准）  
 > 正式方法：**V0.7**；正式 schema：**1.0**（[`v0.1.0`](https://github.com/xiangsee/patent-value-benchmark/releases/tag/v0.1.0) 已冻结）  
 > **不**采纳 V0.8；**无** Counterfactual experimental schema。
 > **V0.8 design draft in progress / research-only；formal = V0.7 + schema 1.0** → [`methodology/model-v0.8-design-draft.md`](methodology/model-v0.8-design-draft.md)。
@@ -54,6 +54,8 @@
 | [`docs/methodology/counterfactual-control-research-overview.md`](methodology/counterfactual-control-research-overview.md) | Counterfactual 研究导读（**无** schema） |
 | [`analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md`](../analysis/non-award-validation/round2-adoption-readiness-synthesis-v0.8.md) | Round 2 综合（**不** adopt V0.8） |
 | [`docs/methodology/external-extrapolation-preregistration.md`](methodology/external-extrapolation-preregistration.md) | 外推预注册 + holdout H1–H9 已编码（T0=2026-10-13；见附录 A / synthesis；**未** adopt V0.8） |
+| [`docs/methodology/world-class-roadmap.md`](methodology/world-class-roadmap.md) | 世界级评估四轨路线（T1–T4；**未** adopt V0.8） |
+| [`docs/methodology/e3-holdout-nominees-round2.md`](methodology/e3-holdout-nominees-round2.md) | E3 holdout 提名 Round 2（**未编码**；待确认） |
 | [`docs/release/v0.1.0-notes.md`](release/v0.1.0-notes.md) · [Release v0.1.0](https://github.com/xiangsee/patent-value-benchmark/releases/tag/v0.1.0) | 发版说明 |
 
 ## 维护平台期（Maintenance plateau）

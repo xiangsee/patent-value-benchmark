@@ -78,6 +78,8 @@ V0.7更准确的定位是：
 - Patent Value Ledger 1.0（已冻结）
 - Patent Value Diagnostic 1.0（已冻结）
 - 普通冷启动扩样：**暂停**（维护平台期；见 [`docs/cold-start-status.md`](docs/cold-start-status.md)）
+- 世界级评估路线（四轨；research）：[`docs/methodology/world-class-roadmap.md`](docs/methodology/world-class-roadmap.md)
+- E3 holdout 提名 Round 2（**未编码**）：[`docs/methodology/e3-holdout-nominees-round2.md`](docs/methodology/e3-holdout-nominees-round2.md)
 - 外部冷启动复现（#2 已完成）
 - ~~Schema freeze + v0.1.0 release~~ → **v0.1.0 released**
 
