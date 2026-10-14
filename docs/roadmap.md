@@ -37,6 +37,8 @@
 >
 > **T1 理论备忘 v0**（research）：[`methodology/t1-theory-memo-value-construct.md`](methodology/t1-theory-memo-value-construct.md)。
 
+> **E3-P Round 3 提名**（PASS-oriented；**未**编码）：[`methodology/e3-holdout-nominees-round3.md`](methodology/e3-holdout-nominees-round3.md)。
+
 ### 当前正式架构：V0.7
 
 已采用：
