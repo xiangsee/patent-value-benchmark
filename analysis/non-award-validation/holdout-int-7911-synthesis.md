@@ -15,6 +15,6 @@
 
 ## 纪律
 - 产品叙事≠E3；Green List≠自动 E4；判赔≠自动 R5  
-- Formal = V0.7 + schema 1.0；**未**编码 INT-8/10/12
+- Formal = V0.7 + schema 1.0；INT-8/10/12 → [`holdout-int-81012-synthesis.md`](holdout-int-81012-synthesis.md)
 
 Related: [`holdout-t4-cross-jurisdiction-synthesis.md`](holdout-t4-cross-jurisdiction-synthesis.md) · [`holdout-int-135-synthesis.md`](holdout-int-135-synthesis.md) · [`../docs/methodology/t4-international-holdout-nominees-round2.md`](../../docs/methodology/t4-international-holdout-nominees-round2.md)
