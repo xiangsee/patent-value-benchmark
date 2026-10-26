@@ -2,6 +2,22 @@
 
 ## Unreleased
 
+### Theme: T4 encode INT-2/4/6/8/10/12（T0=2026-10-13；R1+R2 remaining）
+
+- Ledgers/evidence/sources：`holdout-INT2-US11533930`（S&D → **R0**）、`holdout-INT4-EP2477611`（Aubagio EP FAIL → **R0**）、`holdout-INT6-EP1070223`（BGH offering E3 / 无终局 E4 → **R3**）、`holdout-INT8-JP6937153`（SIXPAD → **R0**）、`holdout-INT10-KR102212275`（Wainua Green List → **R3**）、`holdout-INT12-KR101031432`（Golfzon Art.128 → **R5**）。
+- Analysis：`holdout/INT{2,4,6,8,10,12}-*.md`；synthesis `holdout-int-246-synthesis.md` · `holdout-int-81012-synthesis.md`。
+- `t4-international-holdout-nominees-round{1,2}.md` / `world-class-roadmap` / `t1-t4-executive-scorecard` / `holdout-t4-cross-jurisdiction-synthesis`：INT-1–18 全编码；**n=42**（R0×24 · R2×1 · R3×10 · R5×7）。
+- **未**改动已编码 INT；**未** adopt V0.8。
+
+诚实结论：
+- INT-2：TODDY 冷萃品牌 ≠ flash-brew+冷冻浓缩 claim → R0。
+- INT-4：无 EP listing；专利撤销；不继承 INT-3 US OB → R0。
+- INT-6：OLG Anbieten E3；BGH 发回无终局欧元判赔 → R3（judgment≠auto R5）。
+- INT-8：SIXPAD ≠ 特許6937153 钉 SKU → R0。
+- INT-10：MFDS Green List 10-2212275 on Wainua（2026-10-12≤T0）+ GalNAc-ASO/TTR → R3；无 E4。
+- INT-12：특허법원单件 Art.128⑦ ₩1.313B + 裁判 E3 → R5（争议情境；非 FMV）。
+
+
 ### Theme: T4 cross-jurisdiction synthesis + EP/UK Round 3
 
 - 更新 [`analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md`](analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md)：纳入 INT-13–18；合计 **n=36**（R0×21 · R2×1 · R3×8 · R5×6）；五法域表 + SPC 对偶 / 品牌拒抬 / territorial E4 课。
