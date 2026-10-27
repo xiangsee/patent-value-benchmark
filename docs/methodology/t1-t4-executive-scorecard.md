@@ -1,9 +1,9 @@
 # T1–T4 执行记分卡（Executive Scorecard）
 
-> 日期：**2026-10-26** Asia/Shanghai · 中文主述  
+> 日期：**2026-10-27** Asia/Shanghai · 中文主述  
 > Formal：**V0.7 + schema 1.0** · **未** adopt / freeze V0.8  
 > 程序总览：[`world-class-roadmap.md`](world-class-roadmap.md)  
-> Holdout 计数口径：[#74 跨法域合成](https://github.com/xiangsee/patent-value-benchmark/pull/74) → [`../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md`](../../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md)
+> Holdout 计数口径：[`../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md`](../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md)（INT-1–18 全量刷新；历史 [#74](https://github.com/xiangsee/patent-value-benchmark/pull/74) / [#82](https://github.com/xiangsee/patent-value-benchmark/pull/82) / [#83](https://github.com/xiangsee/patent-value-benchmark/pull/83)）
 
 **一句话：** 四轨并行推进世界级专利价值评估研究；本页只回答「各轨做完什么 / 还缺什么 / 下一刀砍哪」——**不**授权 adopt、编码或扩样。
 
@@ -18,7 +18,7 @@
 | **T3 探针** | 🟡 研究-only | P1–P8；RC 可选+#49 无裁决夹具 | Gate 0；未升格；无 S1 | **保持 Gate 0**；禁借 T4 成功 adopt |
 | **T4 外推** | 🟢 小 N 成波 | **42** 件已编码；INT R1–R3 **全编码** | E4-N3/N4；H-E3 未开跑 | 开 H-E3 盲评或编 E4-N3/N4——本卡不授权 |
 
-**Holdout 计数：** 合计 **n=42**（n=36 + INT-2/4/6/8/10/12）· R0×24 · R2×1 · R3×10 · R5×7 · 仍仅提名：E4-N3/N4。
+**Holdout 计数：** 合计 **n=42**（CN 24 + INT-1–18）· R0×24 · R2×1 · R3×10 · R5×7 · 仍仅提名：E4-N3/N4。跨法域合成已按 INT-1–18 全量刷新。
 
 ---
 
@@ -50,11 +50,11 @@
 
 | | |
 |---|---|
-| **Done** | 预注册；H→E3→E4 CN 波；INT R1–R3 **complete（INT-1–18）**；跨法域合成 → **n=42**（CN/US/JP/KR/EP·UK）[`../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md`](../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md)；H-E3 协议稿 |
+| **Done** | 预注册；H→E3→E4 CN 波；INT R1–R3 **complete（INT-1–18）**；跨法域合成 **全量刷新** → **n=42**（CN/US/JP/KR/EP·UK·DE）[`../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md`](../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md)；H-E3 协议稿 |
 | **Gaps** | E4-N3/N4；H-E3 **未开跑**；新人一致率未证 |
 | **Next knife** | （A）用户确认后编 E4-N3/N4；或（B）开 H-E3 盲评——本卡不授权 |
 
-### T4 计数速查（跨法域合成；含 INT R1–R3）
+### T4 计数速查（跨法域合成；INT-1–18 全量）
 
 | 法域 | n | R 分布 |
 |---|---|---|
@@ -62,7 +62,7 @@
 | US | 4 | R0×2（INT-1/2）· R3×1（INT-3）· R5×1（INT-5） |
 | JP | 3 | R0×2（INT-7/8）· R5×1（INT-11） |
 | KR | 3 | R3×2（INT-9/10）· R5×1（INT-12） |
-| EP/UK | 8 | R0×4（INT-4/13/14/16）· R3×2（INT-6/15）· R5×2（INT-17/18） |
+| EP/UK·DE | 8 | R0×4（INT-4/13/14/16）· R3×2（INT-6/15）· R5×2（INT-17/18） |
 | **Σ** | **42** | R0×24 · R2×1 · R3×10 · R5×7 |
 
 ---
@@ -81,8 +81,7 @@
 | [`world-class-roadmap.md`](world-class-roadmap.md) | 四轨总览与进度板 |
 | [`t1-construct-scenario-matrix.md`](t1-construct-scenario-matrix.md) | T1 建构×场景对照表 |
 | [`t2-decision-tree-walkthrough-int5-int9.md`](t2-decision-tree-walkthrough-int5-int9.md) | T2 树走查 INT-5 / INT-9 |
-| [`../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md`](../../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md) | #74 跨法域计数与共享阶梯 |
+| [`../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md`](../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md) | T4 跨法域合成（**INT-1–18 全量**；n=42；CN/US/JP/KR/EP·UK·DE） |
 | [`external-extrapolation-preregistration.md`](external-extrapolation-preregistration.md) | T4 预注册 |
 | [`t4-inter-rater-blind-protocol-h-e3.md`](t4-inter-rater-blind-protocol-h-e3.md) | H-E3 协议（未开跑） |
-| [`t4-international-holdout-nominees-round3.md`](t4-international-holdout-nominees-round3.md) | T4 INT Round 3 EP/UK（INT-13–18 **已编码**） |
-| [`../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md`](../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md) | T4 跨法域合成（n=42；含 EP/UK；R1/R2 余件） |
+| [`t4-international-holdout-nominees-round1.md`](t4-international-holdout-nominees-round1.md) · [`round2`](t4-international-holdout-nominees-round2.md) · [`round3`](t4-international-holdout-nominees-round3.md) | T4 INT R1–R3（INT-1–18 **已编码**） |
