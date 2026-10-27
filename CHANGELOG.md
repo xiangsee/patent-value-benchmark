@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+### Theme: T4 cross-jurisdiction synthesis refresh（INT-1–18 全量）
+
+- 刷新 [`analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md`](analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md)：纳入 **INT-1–18 全表**；合计 **n=42**（R0×24 · R2×1 · R3×10 · R5×7）；法域行含 EP/UK·DE（INT-6）。
+- 加压课：INT-3 OB ↔ INT-4 撤销/无 listing（不继承）；INT-6 OLG E3 / BGH 发回停 R3；INT-9/10 Green List 双件；INT-11/12 裁判 R5；品牌 FAIL INT-2/8；SPC 对偶 INT-15/16。
+- 轻触 `t1-t4-executive-scorecard` / `world-class-roadmap`：计数与指针对齐全量刷新（**无**新编码）。
+- **未**编码 E4-N3/N4；**未**开 H-E3；**未** adopt V0.8。
+
+
 ### Theme: T4 encode INT-2/4/6/8/10/12（T0=2026-10-13；R1+R2 remaining）
 
 - Ledgers/evidence/sources：`holdout-INT2-US11533930`（S&D → **R0**）、`holdout-INT4-EP2477611`（Aubagio EP FAIL → **R0**）、`holdout-INT6-EP1070223`（BGH offering E3 / 无终局 E4 → **R3**）、`holdout-INT8-JP6937153`（SIXPAD → **R0**）、`holdout-INT10-KR102212275`（Wainua Green List → **R3**）、`holdout-INT12-KR101031432`（Golfzon Art.128 → **R5**）。
