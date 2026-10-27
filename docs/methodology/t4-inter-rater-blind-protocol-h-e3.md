@@ -1,7 +1,7 @@
 # T4 Inter-Rater / Dual-Coder Blind Protocol（H-E3 新人可操作性）
 
-日期：2026-10-14 Asia/Shanghai  
-状态：**研究协议草稿（docs only）** — 尚未开跑；**不**授权本轮编码  
+日期：2026-10-14 Asia/Shanghai（案表指针 2026-10-27）  
+状态：**研究协议草稿（docs only）** — 尚未开跑；**不**授权编码；案表草案 → [`t4-inter-rater-blind-case-table-h-e3.md`](t4-inter-rater-blind-case-table-h-e3.md)（**待用户确认**）  
 正式基线：**V0.7 + schema 1.0** · **未** adopt / freeze V0.8  
 锚定假设：预注册 [`external-extrapolation-preregistration.md`](external-extrapolation-preregistration.md) **H-E3**（Cold-start operability）及可选加门 §6.3  
 程序入口：[`world-class-roadmap.md`](world-class-roadmap.md)
@@ -54,6 +54,9 @@
 
 开跑前单独冻结一页 **案 ID 表**（专利号、T0、层标签 A/B、是否陷阱/E3 候选）。  
 改表必须修订本协议日期行，并在结果笔记标明「案表修订后」。
+
+**当前草案（未冻结 / 未授权开跑）：** [`t4-inter-rater-blind-case-table-h-e3.md`](t4-inter-rater-blind-case-table-h-e3.md)  
+层 A 提案 **n=10**（陷阱 3 · E3 候选 6 · 基线 1）；T0 提案 **2026-10-13**；Coder 包与 Facilitator 密封键分节。用户确认案表后才勾 §9 并开跑。
 
 ---
 
@@ -198,14 +201,15 @@ CI 格式分歧（字段名、日期格式）由 Facilitator 文档级修正，*
 | [`../analysis/non-award-validation/holdout-extrapolation-synthesis.md`](../../analysis/non-award-validation/holdout-extrapolation-synthesis.md) | 现状：H-E3 弱支持；本协议是补测设计 |
 | [`../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md`](../../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md) | 跨法域已编码合成；**不**本试验案表 |
 | Getting Started / traps | 试验「可见文档包」；分歧原因码可反哺修订 |
+| [`t4-inter-rater-blind-case-table-h-e3.md`](t4-inter-rater-blind-case-table-h-e3.md) | 层 A 案表草案（2026-10-27；**待确认**；未开跑） |
 
 ---
 
 ## 9. 开跑检查清单（用户批准后才勾）
 
-- [ ] 案表冻结（ID / T0 / 层）  
-- [ ] 两名 Coder + 一名 Adjudicator 名单确认（含谁是新人）  
-- [ ] 盲包与沟通频道隔离就绪  
+- [ ] 案表冻结（ID / T0 / 层）— 草案见 [`t4-inter-rater-blind-case-table-h-e3.md`](t4-inter-rater-blind-case-table-h-e3.md)；确认后勾  
+- [ ] 两名 Coder + 一名 Adjudicator 名单确认（含谁是新人；原 encode 作者排除出 Coder）  
+- [ ] 盲包与沟通频道隔离就绪（§F 密封键未发 Coder）  
 - [ ] 本协议通过线已最终确认（若改 §5.3，先改文档日期）  
 - [ ] 明确：**开跑 ≠ encode 合并**；合并仍需另 PR + 用户确认  
 
@@ -216,3 +220,4 @@ CI 格式分歧（字段名、日期格式）由 Facilitator 文档级修正，*
 | 日期 | 变更 |
 |---|---|
 | 2026-10-14 | 初稿：样本、盲法、分歧裁断、R/E3 指标、不宣称；docs only |
+| 2026-10-27 | 指针 → 案表草案 `t4-inter-rater-blind-case-table-h-e3.md`（层 A=10；**未**冻结、**未**开跑）；docs only |

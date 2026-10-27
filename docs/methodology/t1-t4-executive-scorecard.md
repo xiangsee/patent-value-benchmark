@@ -16,7 +16,7 @@
 | **T1 理论** | 🟢 文档成套 | Construct + DEMPE⊥E3–E4 + FRAND/判赔≠R5/FMV + **建构×场景表** | 金额学派字段 cheat-sheet 仍可加深 | 可选：与 IVS/OECD 字段级一行对照 |
 | **T2 比较** | 🟢 导航可用 | 矩阵 + IVS/OECD + 决策树 + **INT-5/9 走查** | 仍可加更多法域例 | 可选：再补 E4-N5（许可捆包）走树 |
 | **T3 探针** | 🟡 研究-only | P1–P8；RC 可选+#49 无裁决夹具 | Gate 0；未升格；无 S1 | **保持 Gate 0**；禁借 T4 成功 adopt |
-| **T4 外推** | 🟢 小 N 成波 | **44** 件已编码；E4-N1–N5 + INT-1–18 | H-E3 未开跑 | 开 H-E3 盲评——本卡不授权 |
+| **T4 外推** | 🟢 小 N 成波 | **44** 件已编码；E4-N1–N5 + INT-1–18 | H-E3 未开跑（案表草案待确认） | 确认案表后开盲评——本卡不授权 |
 
 **Holdout 计数：** 合计 **n=44**（CN 26 + INT-1–18）· R0×24 · R2×1 · R3×10 · R5×9 · E4-N1–N5 全编码。跨法域合成计数轻触对齐。
 
@@ -51,8 +51,8 @@
 | | |
 |---|---|
 | **Done** | 预注册；H→E3→E4 CN 波（**含 E4-N3/N4**）；INT R1–R3 **complete（INT-1–18）**；跨法域合成轻触 → **n=44**（CN/US/JP/KR/EP·UK·DE）[`../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md`](../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md)；H-E3 协议稿 |
-| **Gaps** | H-E3 **未开跑**；新人一致率未证 |
-| **Next knife** | 开 H-E3 盲评——本卡不授权 |
+| **Gaps** | H-E3 **未开跑**（案表草案已出、待确认）；新人一致率未证 |
+| **Next knife** | 确认 H-E3 案表后开盲评——本卡不授权 |
 
 ### T4 计数速查（跨法域合成；INT-1–18 全量）
 
@@ -84,5 +84,5 @@
 | [`../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md`](../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md) | T4 跨法域合成（**INT-1–18 全量** + E4-N3/N4；n=44；CN/US/JP/KR/EP·UK·DE） |
 | [`../analysis/non-award-validation/holdout-e4-n125-synthesis.md`](../analysis/non-award-validation/holdout-e4-n125-synthesis.md) | E4 Round 1（N1–N5；R5/R5/R5/R5/R2） |
 | [`external-extrapolation-preregistration.md`](external-extrapolation-preregistration.md) | T4 预注册 |
-| [`t4-inter-rater-blind-protocol-h-e3.md`](t4-inter-rater-blind-protocol-h-e3.md) | H-E3 协议（未开跑） |
+| [`t4-inter-rater-blind-protocol-h-e3.md`](t4-inter-rater-blind-protocol-h-e3.md) · [`t4-inter-rater-blind-case-table-h-e3.md`](t4-inter-rater-blind-case-table-h-e3.md) | H-E3 协议 + 案表草案（未开跑；待确认） |
 | [`t4-international-holdout-nominees-round1.md`](t4-international-holdout-nominees-round1.md) · [`round2`](t4-international-holdout-nominees-round2.md) · [`round3`](t4-international-holdout-nominees-round3.md) | T4 INT R1–R3（INT-1–18 **已编码**） |

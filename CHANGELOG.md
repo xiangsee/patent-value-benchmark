@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+### Theme: H-E3 盲评案表草案（docs only；待确认）
+
+- 新增 [`docs/methodology/t4-inter-rater-blind-case-table-h-e3.md`](docs/methodology/t4-inter-rater-blind-case-table-h-e3.md)：层 A **n=10**（陷阱 3 · E3 候选 6 · 基线 1）；T0=**2026-10-13**；Coder 包与 Facilitator 密封键分节；claims-check 两端压力。
+- 轻触协议 / scorecard / roadmap：指针到案表草案；**未**冻结案表、**未**开跑、**未**新 encode、**未** adopt V0.8。
+
+诚实结论：本 PR 只交付可确认的案表设计；开跑与 encode 合并仍需用户另批。
+
+
 ### Theme: Encode E4-N3 + replaced E4-N4（T0=2026-10-13）
 
 - Ledgers/evidence/sources：`holdout-E4N3-ZL99117225.6`（朗科 × 深中法知民初510 → **R5**）、`holdout-E4N4-ZL01139886.8`（攀钢×川01知民初505；**替换**主专利 → **R5**）。

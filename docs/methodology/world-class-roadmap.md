@@ -48,7 +48,7 @@ Promotion rule: **explicit user decision** for adopt / freeze / S1. Round 2 read
 2. **T2 comparison** — matrix + deepen + 场景树；**INT-5/9 走查** → [`t2-decision-tree-walkthrough-int5-int9.md`](t2-decision-tree-walkthrough-int5-int9.md)（2026-10-14）。
 3. **T1 theory memo** — Construct / DEMPE / FRAND 备忘；**建构×场景对照** → [`t1-construct-scenario-matrix.md`](t1-construct-scenario-matrix.md)（2026-10-14）。
 4. **T3 next step** — P7 Horizon + **P8 Network relation vocabulary** → [`v0.8-probes/p8-network-relation-vocabulary-v0.md`](v0.8-probes/p8-network-relation-vocabulary-v0.md)；RC 仍可选；**no-ruling on-disk fixture**（#49 规则）已落地；**不**启动 S1/S2/S3；**不** adopt V0.8。
-5. **T4 H-E3 inter-rater** — dual-coder blind protocol → [`t4-inter-rater-blind-protocol-h-e3.md`](t4-inter-rater-blind-protocol-h-e3.md)（docs only；开跑需另批案表）。
+5. **T4 H-E3 inter-rater** — dual-coder blind protocol → [`t4-inter-rater-blind-protocol-h-e3.md`](t4-inter-rater-blind-protocol-h-e3.md)；案表草案 → [`t4-inter-rater-blind-case-table-h-e3.md`](t4-inter-rater-blind-case-table-h-e3.md)（docs only；**待确认**；未开跑）。
 6. **Data hygiene** — keep formal CI green; experimental validators separate; no silent schema drift.
 
 ## 4.0 T1–T4 progress board（through INT-1–18）
@@ -62,7 +62,7 @@ Promotion rule: **explicit user decision** for adopt / freeze / S1. Round 2 read
 | **T1 Theory** | **memo + 短备忘 + 建构×场景表** | [#58](https://github.com/xiangsee/patent-value-benchmark/pull/58) Construct / Two Clocks / RC⊥R；[#72](https://github.com/xiangsee/patent-value-benchmark/pull/72) DEMPE ⊥ claims-check / E3–E4；[#76](https://github.com/xiangsee/patent-value-benchmark/pull/76) FRAND/判赔 ≠ R5/FMV | Construct × scenario selection table；no V0.8 |
 | **T2 Comparison** | **matrix + deepen + tree + INT-5/9 走查** | [#56](https://github.com/xiangsee/patent-value-benchmark/pull/56) matrix v0；[#67](https://github.com/xiangsee/patent-value-benchmark/pull/67) IVS/OECD/practice schools；[#68](https://github.com/xiangsee/patent-value-benchmark/pull/68) scenario decision tree | Optional worked examples only；not schema |
 | **T3 Innovation probes** | **P1–P8 + optional RC plan；no-ruling fixture** | [#49](https://github.com/xiangsee/patent-value-benchmark/pull/49) RC optional + no-ruling rules；[#51](https://github.com/xiangsee/patent-value-benchmark/pull/51) parallel plan；[#50](https://github.com/xiangsee/patent-value-benchmark/pull/50) P5 CF note；[#63](https://github.com/xiangsee/patent-value-benchmark/pull/63) P7 Horizon；[#64](https://github.com/xiangsee/patent-value-benchmark/pull/64) P8 Network vocab；**this PR** on-disk no-ruling RC fixture | Gate 0 only；**no** S1/S2/S3；**no** V0.8 adopt / freeze |
-| **T4 Extrapolation** | **CN + INT R1–R3 complete（INT-1–18；E4-N1–N5；n=44）** | [#52](https://github.com/xiangsee/patent-value-benchmark/pull/52)–[#83](https://github.com/xiangsee/patent-value-benchmark/pull/83) encode waves + E4-N3/N4；跨法域合成轻触 → n=44 | H-E3 未开跑；no auto R5 |
+| **T4 Extrapolation** | **CN + INT R1–R3 complete（INT-1–18；E4-N1–N5；n=44）** | [#52](https://github.com/xiangsee/patent-value-benchmark/pull/52)–[#83](https://github.com/xiangsee/patent-value-benchmark/pull/83) encode waves + E4-N3/N4；跨法域合成轻触 → n=44 | H-E3 未开跑（案表草案待确认）；no auto R5 |
 
 **PR spine #49 → #72（research / encode / docs；none adopt V0.8）**
 
@@ -144,7 +144,7 @@ Rule reinforced: **E3 ≠ E4**. Mapping ≠ attributable value. Judgment ≠ aut
 | [`model-v0.7.md`](model-v0.7.md) | Formal method |
 | [`model-v0.8-design-draft.md`](model-v0.8-design-draft.md) | Research shape (not adopted) |
 | [`external-extrapolation-preregistration.md`](external-extrapolation-preregistration.md) | T4 prereg + appendices |
-| [`t4-inter-rater-blind-protocol-h-e3.md`](t4-inter-rater-blind-protocol-h-e3.md) | T4 H-E3 双编码盲评协议（新人可操作性；未开跑） |
+| [`t4-inter-rater-blind-protocol-h-e3.md`](t4-inter-rater-blind-protocol-h-e3.md) · [`t4-inter-rater-blind-case-table-h-e3.md`](t4-inter-rater-blind-case-table-h-e3.md) | T4 H-E3 协议 + 案表草案（未开跑；待确认） |
 | [`e3-holdout-nominees-round2.md`](e3-holdout-nominees-round2.md) | E3-N Round 2（部分已编码 N1/N2/N5） |
 | [`e3-holdout-nominees-round3.md`](e3-holdout-nominees-round3.md) | E3-P Round 3（P1/P3/P4 encoded R3） |
 | [`e4-holdout-nominees-round1.md`](e4-holdout-nominees-round1.md) | E4 Round 1（N1–N5 encoded） |
