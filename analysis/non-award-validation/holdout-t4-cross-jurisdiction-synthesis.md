@@ -6,8 +6,8 @@ T0（holdout 钟）：**2026-10-13**（除非另注）
 预注册：[`../../docs/methodology/external-extrapolation-preregistration.md`](../../docs/methodology/external-extrapolation-preregistration.md)  
 程序入口：[`../../docs/methodology/world-class-roadmap.md`](../../docs/methodology/world-class-roadmap.md) · 执行记分卡：[`../../docs/methodology/t1-t4-executive-scorecard.md`](../../docs/methodology/t1-t4-executive-scorecard.md)
 
-> **刷新口径（INT-1–18 全量）：** 把已编码 T4 holdout（H / E3-A·B·C / E3-N / E3-P / E4 / **INT Round 1+2+3 = INT-1–18**）收成一份跨法域可引用笔记。  
-> 不替代各波 synthesis；**不**新编码；**不**发明 gold / 美元内在价格 / 胜诉预测准确率。
+> **刷新口径（INT-1–18 + E4-N3/N4）：** 把已编码 T4 holdout（H / E3-A·B·C / E3-N / E3-P / E4-N1–N5 / **INT Round 1+2+3 = INT-1–18**）收成一份跨法域可引用笔记。  
+> 不替代各波 synthesis；本轮仅轻触计数对齐 E4-N3/N4；**不**发明 gold / 美元内在价格 / 胜诉预测准确率。
 
 ---
 
@@ -15,15 +15,15 @@ T0（holdout 钟）：**2026-10-13**（除非另注）
 
 | 法域 | 已编码 ID | n | R 分布 |
 |---|---|---|---|
-| **CN** | H1–H9；E3-A/B/C；E3-N1/N2/N5；E3-P1/P3/P4；E4-N1/N2/N5 | **24** | R0×16 · R2×1 · R3×5 · R5×2 |
+| **CN** | H1–H9；E3-A/B/C；E3-N1/N2/N5；E3-P1/P3/P4；E4-N1–N5 | **26** | R0×16 · R2×1 · R3×5 · R5×4 |
 | **US** | INT-1 / INT-2 / INT-3 / INT-5 | **4** | R0×2 · R3×1 · R5×1 |
 | **JP** | INT-7 / INT-8 / INT-11 | **3** | R0×2 · R5×1 |
 | **KR** | INT-9 / INT-10 / INT-12 | **3** | R3×2 · R5×1 |
 | **EP/UK·DE** | INT-4 / INT-6 / INT-13–18 | **8** | R0×4 · R3×2 · R5×2 |
-| **合计** | — | **42** | R0×24 · R2×1 · R3×10 · R5×7 |
+| **合计** | — | **44** | R0×24 · R2×1 · R3×10 · R5×9 |
 
 - INT：**INT-1–18 全部已编码**（R0×8 · R3×5 · R5×5）。  
-- 仍 **仅提名、未编码**：E4-N3/N4。  
+- E4-N3/N4：**已编码**（均为 R5；相对 T0 届满 → historical damages gaps）。详见 [`holdout-e4-n125-synthesis.md`](holdout-e4-n125-synthesis.md)。  
 - DE 注：INT-6 为 EP1070223 **DE 效力** + BGH/OLG 轨道，计入 EP/UK·DE 行。
 
 分波笔记：[`holdout-t4-phase-synthesis.md`](holdout-t4-phase-synthesis.md)（CN）· [`holdout-int-135-synthesis.md`](holdout-int-135-synthesis.md) · [`holdout-int-246-synthesis.md`](holdout-int-246-synthesis.md) · [`holdout-int-7911-synthesis.md`](holdout-int-7911-synthesis.md) · [`holdout-int-81012-synthesis.md`](holdout-int-81012-synthesis.md) · [`holdout-int-131517-synthesis.md`](holdout-int-131517-synthesis.md) · [`holdout-int-141618-synthesis.md`](holdout-int-141618-synthesis.md)
@@ -169,7 +169,7 @@ INT-1 TearLab · **INT-2 S&D/TODDY** · INT-7 Style · **INT-8 SIXPAD** · INT-1
 - 无 V0.8 adopt / schema freeze / S1 升格  
 - 无「全法域 R5」或「Orange Book / Green List / SPC 自动 R3/R5」  
 - INT-1–18 **已**编码；E4-N3/N4 **未**编码  
-- CN 24 + INT 18 = **n=42** ≠ 全球代表性样本；EP/UK/DE 仍小 N
+- CN 26 + INT 18 = **n=44** ≠ 全球代表性样本；EP/UK/DE 仍小 N
 
 ---
 
