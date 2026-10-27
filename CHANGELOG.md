@@ -2,6 +2,19 @@
 
 ## Unreleased
 
+### Theme: Encode E4-N3 + replaced E4-N4（T0=2026-10-13）
+
+- Ledgers/evidence/sources：`holdout-E4N3-ZL99117225.6`（朗科 × 深中法知民初510 → **R5**）、`holdout-E4N4-ZL01139886.8`（攀钢×川01知民初505；**替换**主专利 → **R5**）。
+- Analysis：`holdout/E4N3-*.md` · `holdout/E4N4-*.md`；刷新 `holdout-e4-n125-synthesis.md`（N1–N5）。
+- `e4-holdout-nominees-round1`：N3 KEEP + 软许可 demote + 届满；N4 **REPLACE** → ZL01139886.8；编码状态全绿。
+- 轻触 `t1-t4-executive-scorecard` / `world-class-roadmap` / `holdout-t4-cross-jurisdiction-synthesis`：**n=44**（R0×24 · R2×1 · R3×10 · R5×9）。
+- **纪律**：claims-check PASS（court claim 1）；E3≠E4；判赔≠自动 R5/FMV；软许可池≠单件 E4；届满 → historical damages gaps；**未** adopt V0.8。
+
+诚实结论：
+- E4-N3：单件 USB 闪存判赔 ¥7,663,438.43 + claim1 映射 → R5；年报许可收入 demote；2019-11-14 届满。
+- E4-N4：案涉主专利 ZL01139886.8（非 ZL201010284583.7）判赔 ¥29,648,800.5 + claim1 A–J → R5；贡献率酌减记 gaps；2021-12-04 届满。
+
+
 ### Theme: T4 cross-jurisdiction synthesis refresh（INT-1–18 全量）
 
 - 刷新 [`analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md`](analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md)：纳入 **INT-1–18 全表**；合计 **n=42**（R0×24 · R2×1 · R3×10 · R5×7）；法域行含 EP/UK·DE（INT-6）。

@@ -5,7 +5,7 @@
 > V0.8: design draft + probes + optional RC parallel plan — **not adopted, schema not frozen**  
 > This page does **not** authorize adopt / freeze / S1 promotion / ordinary contrib expansion.
 
-**执行记分卡（中文主述）：** [`t1-t4-executive-scorecard.md`](t1-t4-executive-scorecard.md) — T1–T4 各轨 Done / Gaps / Next knife；holdout 计数对齐跨法域合成（INT-1–18 全量 · n=42）。
+**执行记分卡（中文主述）：** [`t1-t4-executive-scorecard.md`](t1-t4-executive-scorecard.md) — T1–T4 各轨 Done / Gaps / Next knife；holdout 计数对齐跨法域合成（INT-1–18 + E4-N3/N4 · n=44）。
 
 ## 1. Ambition (honest)
 
@@ -22,7 +22,7 @@ Goal: extend Xiangsee Patent Value Benchmark toward a **world-class, evidence-fi
 | **T1 Theory research** | What *kinds* of patent value exist, and which layers must stay separate? | **memo v0** → [`t1-theory-memo-value-construct.md`](t1-theory-memo-value-construct.md)；DEMPE / FRAND 短备忘；**建构×场景** → [`t1-construct-scenario-matrix.md`](t1-construct-scenario-matrix.md) | Formal: V0.7 four layers. Research: design draft + RC/RP/CF overviews |
 | **T2 Comparison of existing models** | How do IVS / royalty / citation / ML score / award proxies / litigation damages differ from us? | matrix + deepen + 场景树；**走查** → [`t2-decision-tree-walkthrough-int5-int9.md`](t2-decision-tree-walkthrough-int5-int9.md) | Docs under `docs/methodology/` + `analysis/theory/`；not schema |
 | **T3 Own innovation testing** | Do RC / RP / Network / Horizon / optional parallel RC improve diagnosis without false inheritance? | P1–P8（+ **P7 Horizon** / **P8 Network vocabulary**）；optional RC plan (Gate 0)；**no-ruling fixture** `data/experimental/rights-control/fixture-no-ruling-ordinary-r0.jsonl`；**no** V0.8 adopt | Research / experimental schemas only |
-| **T4 Real-world effect validation** | On unseen patents, does the model refuse false R3+ and allow honest R3 when E3 maps—and can it reach **E4** without inheritance? | H/E3/E4 + INT R1–R3 **complete（INT-1–18）**；跨法域合成 **n=42** → [`../../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md`](../../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md) | Formal V0.7 when encoding; prereg: [`external-extrapolation-preregistration.md`](external-extrapolation-preregistration.md) |
+| **T4 Real-world effect validation** | On unseen patents, does the model refuse false R3+ and allow honest R3 when E3 maps—and can it reach **E4** without inheritance? | H/E3/E4（**N1–N5**）+ INT R1–R3 **complete（INT-1–18）**；跨法域合成 **n=44** → [`../../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md`](../../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md) | Formal V0.7 when encoding; prereg: [`external-extrapolation-preregistration.md`](external-extrapolation-preregistration.md) |
 
 Tracks are **parallel**. Winning on T3 probes does not auto-adopt V0.8. Winning on T4 discipline does not equal prediction of future cash.
 
@@ -44,7 +44,7 @@ Promotion rule: **explicit user decision** for adopt / freeze / S1. Round 2 read
 
 ## 4. Near-term milestones (next 1–2 cycles)
 
-1. **T4 nominations / encode** — CN 波已完成。INT R1–R3：**INT-1–18 全编码** → [`t4-international-holdout-nominees-round1.md`](t4-international-holdout-nominees-round1.md) · [`t4-international-holdout-nominees-round2.md`](t4-international-holdout-nominees-round2.md) · [`t4-international-holdout-nominees-round3.md`](t4-international-holdout-nominees-round3.md)。跨法域合成 **INT-1–18 全量刷新 · n=42** → [`../../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md`](../../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md)。
+1. **T4 nominations / encode** — CN 波已完成。INT R1–R3：**INT-1–18 全编码** → [`t4-international-holdout-nominees-round1.md`](t4-international-holdout-nominees-round1.md) · [`t4-international-holdout-nominees-round2.md`](t4-international-holdout-nominees-round2.md) · [`t4-international-holdout-nominees-round3.md`](t4-international-holdout-nominees-round3.md)。跨法域合成 **INT-1–18 + E4-N3/N4 · n=44** → [`../../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md`](../../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md)。
 2. **T2 comparison** — matrix + deepen + 场景树；**INT-5/9 走查** → [`t2-decision-tree-walkthrough-int5-int9.md`](t2-decision-tree-walkthrough-int5-int9.md)（2026-10-14）。
 3. **T1 theory memo** — Construct / DEMPE / FRAND 备忘；**建构×场景对照** → [`t1-construct-scenario-matrix.md`](t1-construct-scenario-matrix.md)（2026-10-14）。
 4. **T3 next step** — P7 Horizon + **P8 Network relation vocabulary** → [`v0.8-probes/p8-network-relation-vocabulary-v0.md`](v0.8-probes/p8-network-relation-vocabulary-v0.md)；RC 仍可选；**no-ruling on-disk fixture**（#49 规则）已落地；**不**启动 S1/S2/S3；**不** adopt V0.8。
@@ -62,7 +62,7 @@ Promotion rule: **explicit user decision** for adopt / freeze / S1. Round 2 read
 | **T1 Theory** | **memo + 短备忘 + 建构×场景表** | [#58](https://github.com/xiangsee/patent-value-benchmark/pull/58) Construct / Two Clocks / RC⊥R；[#72](https://github.com/xiangsee/patent-value-benchmark/pull/72) DEMPE ⊥ claims-check / E3–E4；[#76](https://github.com/xiangsee/patent-value-benchmark/pull/76) FRAND/判赔 ≠ R5/FMV | Construct × scenario selection table；no V0.8 |
 | **T2 Comparison** | **matrix + deepen + tree + INT-5/9 走查** | [#56](https://github.com/xiangsee/patent-value-benchmark/pull/56) matrix v0；[#67](https://github.com/xiangsee/patent-value-benchmark/pull/67) IVS/OECD/practice schools；[#68](https://github.com/xiangsee/patent-value-benchmark/pull/68) scenario decision tree | Optional worked examples only；not schema |
 | **T3 Innovation probes** | **P1–P8 + optional RC plan；no-ruling fixture** | [#49](https://github.com/xiangsee/patent-value-benchmark/pull/49) RC optional + no-ruling rules；[#51](https://github.com/xiangsee/patent-value-benchmark/pull/51) parallel plan；[#50](https://github.com/xiangsee/patent-value-benchmark/pull/50) P5 CF note；[#63](https://github.com/xiangsee/patent-value-benchmark/pull/63) P7 Horizon；[#64](https://github.com/xiangsee/patent-value-benchmark/pull/64) P8 Network vocab；**this PR** on-disk no-ruling RC fixture | Gate 0 only；**no** S1/S2/S3；**no** V0.8 adopt / freeze |
-| **T4 Extrapolation** | **CN + INT R1–R3 complete（INT-1–18；n=42）** | [#52](https://github.com/xiangsee/patent-value-benchmark/pull/52)–[#83](https://github.com/xiangsee/patent-value-benchmark/pull/83) encode waves；跨法域合成 **INT-1–18 全量刷新** → n=42 | E4-N3/N4；H-E3 未开跑；no auto R5 |
+| **T4 Extrapolation** | **CN + INT R1–R3 complete（INT-1–18；E4-N1–N5；n=44）** | [#52](https://github.com/xiangsee/patent-value-benchmark/pull/52)–[#83](https://github.com/xiangsee/patent-value-benchmark/pull/83) encode waves + E4-N3/N4；跨法域合成轻触 → n=44 | H-E3 未开跑；no auto R5 |
 
 **PR spine #49 → #72（research / encode / docs；none adopt V0.8）**
 
@@ -79,7 +79,7 @@ Hard stops this board does **not** lift: V0.8 adopt · schema freeze · S1 promo
 ## 4.1 T4 status snapshot（H / E3 / N / P / E4 / INT）
 
 **CN 波合并：** [`../../analysis/non-award-validation/holdout-t4-phase-synthesis.md`](../../analysis/non-award-validation/holdout-t4-phase-synthesis.md)  
-**跨法域（CN/US/JP/KR/EP·UK·DE；n=42；INT-1–18 全量）：** [`../../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md`](../../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md)
+**跨法域（CN/US/JP/KR/EP·UK·DE；n=44；INT-1–18 + E4-N3/N4）：** [`../../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md`](../../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md)
 
 ```text
 H1–H9     → R0 ×9     discipline: refuse false lift
@@ -87,6 +87,7 @@ E3-A/B/C  → R3/R3/R0  claims-check works both ways
 E3-N1/2/5 → R0 ×3     narrative ≠ claim elements
 E3-P1/3/4 → R3 ×3     NHSA ZL + 规格/处方 → honest E3 (still no E4)
 E4-N1/N2  → R5 ×2     single-ZL court E3+E4 (damages≠intrinsic price)
+E4-N3/N4  → R5 ×2     Netac USB flash / Pangang VN process; both expired vs T0 → historical damages
 E4-N5     → R2        named license but service-fee bundle; no product E3
 INT-1/2/3/5 → R0/R0/R3/R5  TearLab / S&D / Aubagio OB / PureWick
 INT-4/6 → R0/R3  Aubagio EP FAIL / BGH offering E3 no final E4
@@ -117,7 +118,7 @@ Rule reinforced: **E3 ≠ E4**. Mapping ≠ attributable value. Judgment ≠ aut
 | E3-A/B → R3; E3-C → R0 | Claims-check can pass **and** fail | R4/R5 |
 | E3-N1/N2/N5 → R0 | Brand/process/feature ≠ claim elements | Mid-tier E3 density |
 | E3-P1/P3/P4 → R3 (plausible) | Explicit ZL + dose/处方 can clear E3 | **Still no E4** (no attributable ¥) |
-| E4-N1/N2 → R5; E4-N5 → R2 | Court E4 can clear R5 **with** E3; named license alone stays R2 | N3/N4 still nominate |
+| E4-N1/N2/N3/N4 → R5; E4-N5 → R2 | Court E4 can clear R5 **with** E3; pool license / service-fee stay non-E4 | Expired patents → historical damages gaps |
 
 ## 7. Operating rules for agents / contributors
 
@@ -146,12 +147,12 @@ Rule reinforced: **E3 ≠ E4**. Mapping ≠ attributable value. Judgment ≠ aut
 | [`t4-inter-rater-blind-protocol-h-e3.md`](t4-inter-rater-blind-protocol-h-e3.md) | T4 H-E3 双编码盲评协议（新人可操作性；未开跑） |
 | [`e3-holdout-nominees-round2.md`](e3-holdout-nominees-round2.md) | E3-N Round 2（部分已编码 N1/N2/N5） |
 | [`e3-holdout-nominees-round3.md`](e3-holdout-nominees-round3.md) | E3-P Round 3（P1/P3/P4 encoded R3） |
-| [`e4-holdout-nominees-round1.md`](e4-holdout-nominees-round1.md) | E4 Round 1（N1/N2/N5 encoded） |
+| [`e4-holdout-nominees-round1.md`](e4-holdout-nominees-round1.md) | E4 Round 1（N1–N5 encoded） |
 | [`t4-international-holdout-nominees-round1.md`](t4-international-holdout-nominees-round1.md) | T4 INT Round 1（INT-1–6 **已编码**） |
 | [`t4-international-holdout-nominees-round2.md`](t4-international-holdout-nominees-round2.md) | T4 INT Round 2（INT-7–12 **已编码**） |
 | [`t4-international-holdout-nominees-round3.md`](t4-international-holdout-nominees-round3.md) | T4 INT Round 3（INT-13–18 **已编码**） |
-| [`../../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md`](../../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md) | T4 跨法域合成（CN/US/JP/KR/EP·UK·DE；**n=42**；INT-1–18 全量） |
-| [`../../analysis/non-award-validation/holdout-e4-n125-synthesis.md`](../../analysis/non-award-validation/holdout-e4-n125-synthesis.md) | E4-N1/N2/N5 synthesis（R5/R5/R2） |
+| [`../../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md`](../../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md) | T4 跨法域合成（CN/US/JP/KR/EP·UK·DE；**n=44**；INT-1–18 + E4-N3/N4） |
+| [`../../analysis/non-award-validation/holdout-e4-n125-synthesis.md`](../../analysis/non-award-validation/holdout-e4-n125-synthesis.md) | E4 Round 1 N1–N5 synthesis（R5×4 / R2） |
 | [`rights-control-optional-parallel-plan.md`](rights-control-optional-parallel-plan.md) | Optional RC parallel track |
 | [`../roadmap.md`](../roadmap.md) · [`../cold-start-status.md`](../cold-start-status.md) | Track A status |
 | [`../research-tracks.md`](../research-tracks.md) | Track A / B boundary |
