@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+### Theme: H-E3 Facilitator prep — frozen case table + coder packs（docs only）
+
+- 案表冻结并授权开跑：角色 Coder A=patent Bot · B=Leo · Adjudicator=xiang pu · Facilitator=code Bot；§7 勾选。
+- 新增 [`t4-he3-coder-pack-a.md`](docs/methodology/t4-he3-coder-pack-a.md) · [`t4-he3-coder-pack-b.md`](docs/methodology/t4-he3-coder-pack-b.md)（**仅** §2 摘录 + 顺序 + 禁链；**无** §F / 目标 R / claims 极性）。
+- 新增 [`t4-he3-visible-doc-pack.md`](docs/methodology/t4-he3-visible-doc-pack.md)：固定可见路径（Getting Started / model-v0.7 / schema 1.0 / traps）；禁读全文案表。
+- 硬规则：Coder **只用** coder-pack-*，**不**打开含 §F 的案表全文（回应 Leo 正确拒编）。
+- **未** encode 合并；**未** adopt V0.8。
+
+诚实结论：盲包已可发给 A/B；开跑 ≠ holdout merge。
+
+
 ### Theme: H-E3 盲评案表草案（docs only；待确认）
 
 - 新增 [`docs/methodology/t4-inter-rater-blind-case-table-h-e3.md`](docs/methodology/t4-inter-rater-blind-case-table-h-e3.md)：层 A **n=10**（陷阱 3 · E3 候选 6 · 基线 1）；T0=**2026-10-13**；Coder 包与 Facilitator 密封键分节；claims-check 两端压力。
