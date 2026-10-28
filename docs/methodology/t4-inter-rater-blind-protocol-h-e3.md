@@ -1,7 +1,7 @@
 # T4 Inter-Rater / Dual-Coder Blind Protocol（H-E3 新人可操作性）
 
-日期：2026-10-14 Asia/Shanghai（案表指针 2026-10-27）  
-状态：**研究协议草稿（docs only）** — 尚未开跑；**不**授权编码；案表草案 → [`t4-inter-rater-blind-case-table-h-e3.md`](t4-inter-rater-blind-case-table-h-e3.md)（**待用户确认**）  
+日期：2026-10-14 Asia/Shanghai（案表冻结 / 授权开跑：2026-10-28）  
+状态：**研究协议** — 案表已冻结并**授权开跑**；**仍不**授权把盲评草稿合并进 holdout；案表 → [`t4-inter-rater-blind-case-table-h-e3.md`](t4-inter-rater-blind-case-table-h-e3.md)；Coder 包 → [`t4-he3-coder-pack-a.md`](t4-he3-coder-pack-a.md) · [`t4-he3-coder-pack-b.md`](t4-he3-coder-pack-b.md)  
 正式基线：**V0.7 + schema 1.0** · **未** adopt / freeze V0.8  
 锚定假设：预注册 [`external-extrapolation-preregistration.md`](external-extrapolation-preregistration.md) **H-E3**（Cold-start operability）及可选加门 §6.3  
 程序入口：[`world-class-roadmap.md`](world-class-roadmap.md)
@@ -55,8 +55,9 @@
 开跑前单独冻结一页 **案 ID 表**（专利号、T0、层标签 A/B、是否陷阱/E3 候选）。  
 改表必须修订本协议日期行，并在结果笔记标明「案表修订后」。
 
-**当前草案（未冻结 / 未授权开跑）：** [`t4-inter-rater-blind-case-table-h-e3.md`](t4-inter-rater-blind-case-table-h-e3.md)  
-层 A 提案 **n=10**（陷阱 3 · E3 候选 6 · 基线 1）；T0 提案 **2026-10-13**；Coder 包与 Facilitator 密封键分节。用户确认案表后才勾 §9 并开跑。
+**已冻结并授权开跑（2026-10-28）：** [`t4-inter-rater-blind-case-table-h-e3.md`](t4-inter-rater-blind-case-table-h-e3.md)  
+层 A **n=10**（陷阱 3 · E3 候选 6 · 基线 1）；T0=**2026-10-13**；角色：Coder A=patent Bot · Coder B=Leo · Adjudicator=xiang pu · Facilitator=code Bot。  
+Coder 包（**无** §F）：[`t4-he3-coder-pack-a.md`](t4-he3-coder-pack-a.md) · [`t4-he3-coder-pack-b.md`](t4-he3-coder-pack-b.md)。**开跑 ≠ encode 合并。**
 
 ---
 
@@ -201,17 +202,19 @@ CI 格式分歧（字段名、日期格式）由 Facilitator 文档级修正，*
 | [`../analysis/non-award-validation/holdout-extrapolation-synthesis.md`](../../analysis/non-award-validation/holdout-extrapolation-synthesis.md) | 现状：H-E3 弱支持；本协议是补测设计 |
 | [`../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md`](../../analysis/non-award-validation/holdout-t4-cross-jurisdiction-synthesis.md) | 跨法域已编码合成；**不**本试验案表 |
 | Getting Started / traps | 试验「可见文档包」；分歧原因码可反哺修订 |
-| [`t4-inter-rater-blind-case-table-h-e3.md`](t4-inter-rater-blind-case-table-h-e3.md) | 层 A 案表草案（2026-10-27；**待确认**；未开跑） |
+| [`t4-inter-rater-blind-case-table-h-e3.md`](t4-inter-rater-blind-case-table-h-e3.md) | 层 A 案表（2026-10-28 **冻结**；已授权开跑；仍不 encode 合并） |
+| [`t4-he3-coder-pack-a.md`](t4-he3-coder-pack-a.md) · [`t4-he3-coder-pack-b.md`](t4-he3-coder-pack-b.md) | Coder A/B 盲包（**无** §F 密封键） |
+| [`t4-he3-visible-doc-pack.md`](t4-he3-visible-doc-pack.md) | 可见文档固定路径；禁读全文案表 |
 
 ---
 
-## 9. 开跑检查清单（用户批准后才勾）
+## 9. 开跑检查清单
 
-- [ ] 案表冻结（ID / T0 / 层）— 草案见 [`t4-inter-rater-blind-case-table-h-e3.md`](t4-inter-rater-blind-case-table-h-e3.md)；确认后勾  
-- [ ] 两名 Coder + 一名 Adjudicator 名单确认（含谁是新人；原 encode 作者排除出 Coder）  
-- [ ] 盲包与沟通频道隔离就绪（§F 密封键未发 Coder）  
-- [ ] 本协议通过线已最终确认（若改 §5.3，先改文档日期）  
-- [ ] 明确：**开跑 ≠ encode 合并**；合并仍需另 PR + 用户确认  
+- [x] 案表冻结（ID / T0 / 层）— [`t4-inter-rater-blind-case-table-h-e3.md`](t4-inter-rater-blind-case-table-h-e3.md)（2026-10-28）  
+- [x] 两名 Coder + Adjudicator + Facilitator 确认：patent Bot / Leo / xiang pu / code Bot  
+- [x] 盲包就绪（[`t4-he3-coder-pack-a.md`](t4-he3-coder-pack-a.md) · [`t4-he3-coder-pack-b.md`](t4-he3-coder-pack-b.md)；§F 未发 Coder）  
+- [x] 本协议通过线确认（§5.3 未改）  
+- [x] 明确：**开跑 ≠ encode 合并**；合并仍需另 PR + 用户确认  
 
 ---
 
@@ -221,3 +224,4 @@ CI 格式分歧（字段名、日期格式）由 Facilitator 文档级修正，*
 |---|---|
 | 2026-10-14 | 初稿：样本、盲法、分歧裁断、R/E3 指标、不宣称；docs only |
 | 2026-10-27 | 指针 → 案表草案 `t4-inter-rater-blind-case-table-h-e3.md`（层 A=10；**未**冻结、**未**开跑）；docs only |
+| 2026-10-28 | 案表冻结并授权开跑；角色填入；Coder 包 A/B + visible-doc-pack；§9 勾选；Coder 禁读全文案表；**仍不** encode 合并 |

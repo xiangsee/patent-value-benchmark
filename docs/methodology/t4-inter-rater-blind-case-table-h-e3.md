@@ -1,19 +1,22 @@
-# H-E3 双编码盲评 · 案表（层 A 草案，待确认）
+# H-E3 双编码盲评 · 案表（层 A 已冻结）
 
-日期：2026-10-27 Asia/Shanghai  
-状态：**DRAFT — 供用户确认；未冻结；未授权开跑；未授权新 encode**  
+日期：2026-10-27 Asia/Shanghai（冻结 / 授权开跑：2026-10-28）  
+状态：**FROZEN — 用户已确认案表并授权开跑**；**仍不**授权把盲评草稿合并进 holdout / encode  
 正式基线：**V0.7 + schema 1.0** · **未** adopt / freeze V0.8  
 父协议：[`t4-inter-rater-blind-protocol-h-e3.md`](t4-inter-rater-blind-protocol-h-e3.md)  
 T0（全表统一）：**2026-10-13**（与既有 H / E3 holdout 编码日 cutoff 对齐；开跑前若改 T0 须整表重冻）
 
-> **本文件做什么：** 把协议 §2 的「案表冻结」写成可勾选的具体 10 案。  
-> **本文件不做什么：** 不启动盲评、不改已合并 Ledger、不发盲包、不把一致率当准确率。
+> **本文件做什么：** 冻结层 A 10 案；记录角色与开跑清单。  
+> **本文件不做什么：** 不把盲评草稿合并进 holdout；不把一致率当准确率；Coder 包不含 §F。  
+> **Coder 包：** [`t4-he3-coder-pack-a.md`](t4-he3-coder-pack-a.md) · [`t4-he3-coder-pack-b.md`](t4-he3-coder-pack-b.md)（**无** §F）。  
+> **可见文档包：** [`t4-he3-visible-doc-pack.md`](t4-he3-visible-doc-pack.md)。  
+> **硬规则：** Coder **不得**打开本文件全文（本文件含 §F）。只使用 coder-pack-* + visible-doc-pack。Facilitator / Adjudicator 可保留本文件。
 
 ---
 
-## 0. 确认前摘要（给用户）
+## 0. 冻结摘要
 
-| 项 | 提案 |
+| 项 | 冻结值 |
 |---|---|
 | 规模 | **层 A = 10 案**（协议默认 8–12；**不开**层 B） |
 | 陷阱子集 | **3**（≥3）：HE3-02/03/04 |
@@ -25,7 +28,7 @@ T0（全表统一）：**2026-10-13**（与既有 H / E3 holdout 编码日 cutof
 | Coder **不可见** | 目标 R、已发表 synthesis 结论行、claims-check 金标、另一 Coder 草稿、§F 密封键 |
 | 成功门 | 沿用协议 §5.3（可完成率≥80%；R 与 E3 一致率「可讨论」≥0.70 / 「强支持」≥0.80；陷阱子集无双人假抬 R3+） |
 
-**确认后才勾：** 协议 §9 开跑检查清单。确认 ≠ 授权把盲评草稿合并进 holdout。
+**已确认并授权开跑。** 开跑 ≠ 授权把盲评草稿合并进 holdout（须另 PR）。
 
 ---
 
@@ -40,6 +43,8 @@ T0（全表统一）：**2026-10-13**（与既有 H / E3 holdout 编码日 cutof
 ---
 
 ## 2. Coder 包案表（可发给 A/B）
+
+> **发案只用** [`t4-he3-coder-pack-a.md`](t4-he3-coder-pack-a.md) / [`t4-he3-coder-pack-b.md`](t4-he3-coder-pack-b.md) + [`t4-he3-visible-doc-pack.md`](t4-he3-visible-doc-pack.md)。**不要**把本 MD 全文发给 Coder（§F 泄漏风险——Leo 已正确拒编）。
 
 层标签含义（**不是**答案）：
 
@@ -68,12 +73,12 @@ T0（全表统一）：**2026-10-13**（与既有 H / E3 holdout 编码日 cutof
 
 ### 3.1 角色（开跑前填姓名）
 
-| 角色 | 要求 | 本轮提名（待填） |
+| 角色 | 要求 | 本轮确认 |
 |---|---|---|
-| Coder A | 至少其一为仓库新人；**不得**是上表任一案的原 Ledger 作者 | _TBD_ |
-| Coder B | 同上；可与 A 同为新人，或「熟工具但不熟本案表」 | _TBD_ |
-| Adjudicator | 第三人；开跑前不读两份草稿 | _TBD_ |
-| Facilitator | 发案、收卷、计时；**不**提示 R/E3 | _TBD_（可与 Adjudicator 分离） |
+| Coder A | 至少其一为仓库新人；**不得**是上表任一案的原 Ledger 作者 | **patent Bot** |
+| Coder B | 同上；可与 A 同为新人，或「熟工具但不熟本案表」 | **Leo** |
+| Adjudicator | 第三人；开跑前不读两份草稿 | **xiang pu** |
+| Facilitator | 发案、收卷、计时；**不**提示 R/E3 | **code Bot** |
 
 ### 3.2 发放顺序（抗顺序偏倚）
 
@@ -123,9 +128,9 @@ T0（全表统一）：**2026-10-13**（与既有 H / E3 holdout 编码日 cutof
 
 ---
 
-## 6. 层 B（本草案默认关闭）
+## 6. 层 B（本冻结表关闭）
 
-协议可选 +4–6。本表 **不** 预填层 B。若层 A 一次跑完且用户另批，再开修订 PR（可含 1–2 非 CN）。候选池提示（非正式）：E3-N2 / E3-P3 / E3-P4 / H7 — **未**纳入本确认表。
+协议可选 +4–6。本表 **不** 预填层 B。若层 A 一次跑完且用户另批，再开修订 PR（可含 1–2 非 CN）。候选池提示（非正式）：E3-N2 / E3-P3 / E3-P4 / H7 — **未**纳入本冻结表。
 
 ---
 
@@ -152,14 +157,14 @@ T0（全表统一）：**2026-10-13**（与既有 H / E3 holdout 编码日 cutof
 
 ---
 
-## 7. 开跑检查清单（用户确认案表后才勾）
+## 7. 开跑检查清单
 
-- [ ] 用户确认本表 §2（可改 Blind 名单，改则升版日期）  
-- [ ] 用户确认 T0=2026-10-13（或给出新统一 T0）  
-- [ ] 用户确认 §4 通过线（若改阈值，先改协议日期）  
-- [ ] Coder A/B + Adjudicator 名单填入 §3.1；原 encode 作者已排除出 Coder  
-- [ ] 盲包与禁链清单就绪；§F 未发给 Coder  
-- [ ] 明确：**开跑 ≠ encode 合并**
+- [x] 用户确认本表 §2（2026-10-28 冻结）  
+- [x] 用户确认 T0=2026-10-13  
+- [x] 用户确认 §4 通过线（沿用协议 §5.3）  
+- [x] Coder A/B + Adjudicator + Facilitator 名单填入 §3.1（patent Bot / Leo / xiang pu / code Bot）  
+- [x] 盲包就绪：[`t4-he3-coder-pack-a.md`](t4-he3-coder-pack-a.md) · [`t4-he3-coder-pack-b.md`](t4-he3-coder-pack-b.md)；**§F 未写入 Coder 包**  
+- [x] 明确：**开跑 ≠ encode 合并**
 
 ---
 
@@ -168,3 +173,4 @@ T0（全表统一）：**2026-10-13**（与既有 H / E3 holdout 编码日 cutof
 | 日期 | 变更 |
 |---|---|
 | 2026-10-27 | 初稿层 A=10；Coder 包与 Facilitator 密封键分节；T0=2026-10-13；待用户确认；docs only |
+| 2026-10-28 | **冻结**并授权开跑；填 §3.1 角色；勾 §7；新增 Coder 包 A/B（无 §F）；**仍不** encode 合并 |
