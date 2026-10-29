@@ -68,6 +68,11 @@ jobs:
             exit 1
           fi
 
+      - name: Validate experimental Claim Version Gate
+        run: |
+          python tools/validate_claim_version_gate.py
+          echo "Claim Version Gate is research-only; no monetary amount, score, or formal V0.7 promotion."
+
       - name: Validate applied scoring / valuation gate fixtures
         run: |
           python tools/validate_applied_gates.py
