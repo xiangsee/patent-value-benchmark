@@ -68,6 +68,11 @@ jobs:
             exit 1
           fi
 
+      - name: Validate applied scoring / valuation gate fixtures
+        run: |
+          python tools/validate_applied_gates.py
+          echo "Applied gates are research-only; no scoring or valuation promoted to formal V0.7."
+
       - name: Validate experimental Rights Control
         run: |
           if ! python tools/validate_rights_control.py; then
