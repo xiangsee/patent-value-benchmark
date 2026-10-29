@@ -1,5 +1,7 @@
 # Roadmap
 
+> **2026-10-29 v0.2验证试验：** 先预注册六个独立公开样本的选择规则，建立评价/货币估值的证据准入测试与双人盲审流程。**尚未获得两位独立评委回表，因此一致性为 Not Run。** 源文档：[`methodology/applied-gates-v02-blind-pilot-preregistration.md`](methodology/applied-gates-v02-blind-pilot-preregistration.md)。仅研究/CI，不修改 V0.7 + schema 1.0。
+
 > **2026-10-29 应用层新增：评价与货币估值双轨准入协议**（research-only；不改变V0.7、formal schema 1.0，也不将评奖分数转成资产价格）：[`methodology/applied-evaluation-valuation-protocol-v0.1.md`](methodology/applied-evaluation-valuation-protocol-v0.1.md)。实战反方审计为匿名方法记录，客户初审表与原始收益记录不进入公共仓库。
 
 ## Research Preview — current
