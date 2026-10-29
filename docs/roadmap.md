@@ -1,5 +1,7 @@
 # Roadmap
 
+> **2026-10-29 应用层新增：评价与货币估值双轨准入协议**（research-only；不改变V0.7、formal schema 1.0，也不将评奖分数转成资产价格）：[`methodology/applied-evaluation-valuation-protocol-v0.1.md`](methodology/applied-evaluation-valuation-protocol-v0.1.md)。实战反方审计为匿名方法记录，客户初审表与原始收益记录不进入公共仓库。
+
 ## Research Preview — current
 
 当前正式研究架构：**V0.7 adopted**
