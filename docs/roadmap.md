@@ -1,5 +1,8 @@
 # Roadmap
 
+> **2026-11-01 来源穿透核验（CV3附录）**：六件普通公开专利已完成授权权项/候选公开文献的日期复核；发现比较文件B授权公告晚于目标优先日、但同申请A版本更早公开的版本陷阱。**公开前置适格≠实质创造性结论；E3/E4仍Unknown。** 研究规则及合成测试：[`methodology/prior-publication-evidence-gate-addendum.md`](methodology/prior-publication-evidence-gate-addendum.md)；人类双评仍Not Run，不改变V0.7和正式schema 1.0。
+
+
 > **2026-10-29 A→B 授权权项版本闸门 v0.3（应用层研究）**：六件匿名公开授权案例完成公开文本复议，表明应以授权独立权项而非A申请文本/摘要进行法律控制与商业归因判断；合成反例及CI禁止 A-only、跨同族、历史T0回填及未来对比文件误用。方法 [`methodology/claim-version-gate-v0.3.md`](methodology/claim-version-gate-v0.3.md)。**真实双人盲评仍未运行；正式V0.7、Schema 1.0不变。**
 
 

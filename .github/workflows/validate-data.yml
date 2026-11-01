@@ -68,6 +68,11 @@ jobs:
             exit 1
           fi
 
+      - name: Validate experimental publication timing and element mapping
+        run: |
+          python tools/validate_prior_publication_gate.py
+          echo "Prior-publication checks screen document availability only; no statutory prior-art or E3 value finding."
+
       - name: Validate experimental Claim Version Gate
         run: |
           python tools/validate_claim_version_gate.py
